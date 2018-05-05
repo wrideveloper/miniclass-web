@@ -1,14 +1,13 @@
-# Miniclass Web
+# Miniclass Web 
 
 Selamat datang di miniclass web workshop riset informatika, 
 disini materi akan diawali dengan materi web dasar, baru kemudian akan difokuskan 
-
 
 ### Materi Web Dasar
 
 Berikut merupakan materi awal yang akan dipelajari di miniclass web
 
-1. **Pengenalan Pemrograman Web**
+1. [**Pengenalan Pemrograman Web**](dasar/topik1/README.md)
    - Cara kerja website
    - HTTP Request dan HTTP Response
    - HTTP Status Code
