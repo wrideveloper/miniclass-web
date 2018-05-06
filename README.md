@@ -12,7 +12,7 @@ Berikut merupakan materi awal yang akan dipelajari di miniclass web
    - HTTP Request dan HTTP Response
    - HTTP Status Code
    - HTTP Verbs
-2. **Pembuatan Web Statis**
+2. [**Pembuatan Web Statis**](dasar/topik2/)
    - Pengenalan HTML
    - Pengenalan CSS
    - Membuat Profile Page
