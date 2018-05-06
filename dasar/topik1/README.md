@@ -19,7 +19,14 @@ Sebuah aplikasi web berkomunikasi dengan perangkat lunak client menggunakan prot
 
 ## HTTP Request dan HTTP Response
 
-Lorem Ipsum Dolor Sit Amet
+**HTTP Request** merupakan sebuah **request** ( permintaan ) kepada server yang berisi perintah dan URL. Ketika client mengirim **request,** akan terdapat sebuah header yang digunakan oleh web server untuk mengetahui tugas apa yang akan dijalankan. Ketika **request** telah diterima oleh server, selanjutnya server akan menentukan jenis **response** yang akan dikembalikan kepada client. **HTTP Request** memiliki 2 metode, yaitu `GET` dan `POST`.
+
+**HTTP Response** merupakan sebuah perintah **response** dari server ke client. Awalnya, request dari client diproses untuk selanjutnya dikembalikan kepada client dalam bentuk file HTML. 
+
+Berikut ini adalah link untuk mempelajari lebih lanjut mengenai HTTP : 
+
+- [https://bertzzie.com/knowledge/serverside-nodejs/ProtokolHTTP.html](https://bertzzie.com/knowledge/serverside-nodejs/ProtokolHTTP.html)
+- [https://bertzzie.com/knowledge/serverside-nodejs/RequestDanResponse.html#](https://bertzzie.com/knowledge/serverside-nodejs/RequestDanResponse.html#)
 
 
 
@@ -54,3 +61,4 @@ Lorem Ipsum Dolor Sit Amet
 **DELETE** : Menghapus data (DELETE)
 
 Perintah diatas lebih sering dikenal dengan istilah "CRUD".
+

@@ -16,7 +16,7 @@ Berikut merupakan materi awal yang akan dipelajari di miniclass web
    - Pengenalan HTML
    - Pengenalan CSS
    - Membuat Profile Page
-3. **Javascript**
+3. [**Javascript**](dasar/topik3/)
    - Pengenalan Syntax Javascript
    - Manipulasi DOM
    - Membuat Aplikasi Todo List
