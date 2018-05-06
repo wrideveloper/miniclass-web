@@ -27,7 +27,15 @@ Lorem Ipsum Dolor Sit Amet
 
 ![status-codes.gif](status-codes.gif)
 
-**HTTP Status Code** menunjukkan respon apakah HTTP Request telah berhasil diselesaikan. HTTP status memiliki beberapa kategori, diantaranya Informational ( 100 - 199 ), Successful Responses (200 - 299 ), Redirection Messages atau something moved (300 - 399), Client Error Responses (400 - 499), Server Error Responses (500 - 599).
+**HTTP Status Code** menunjukkan respon apakah HTTP Request telah berhasil diselesaikan. 
+
+**HTTP status Code** memiliki beberapa kategori diantaranya :
+
+1. Informational ( 100 - 199 )
+2. Successful Responses (200 - 299 )
+3. Redirection Messages atau something moved (300 - 399)
+4. Client Error Responses (400 - 499)
+5. Server Error Responses (500 - 599).
 
 
 
@@ -35,7 +43,7 @@ Lorem Ipsum Dolor Sit Amet
 
 ![http-verbs.jpg](http-verbs.jpg)
 
-**GET ** : mengambil data dari server (READ)
+**GET** : mengambil data dari server (READ)
 
 **POST** : membuat data baru (CREATE)
 
