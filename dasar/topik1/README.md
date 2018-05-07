@@ -1,6 +1,7 @@
 # TOPIK 1 : PENGENALAN PEMROGRAMAN WEB
 
 Disini akan membahas tentang dasar pemrograman web
+Topik ini mengambil referensi dari : [https://www.youtube.com/watch?v=D7lpojnH10s](https://www.youtube.com/watch?v=D7lpojnH10s)
 
 
 
@@ -8,7 +9,7 @@ Disini akan membahas tentang dasar pemrograman web
 
 ![cara-kerja-web.jpeg](cara-kerja-web.jpeg)
 
-Sebuah aplikasi web berkomunikasi dengan perangkat lunak client menggunakan protokol HTTP.  HTTP sebagai protokol yang berbicara menggunakan response dan request. Sehingga untuk dapat menghasilkan dokumen yang ingin diakses harus melalui  siklus tersebut.
+Sebuah aplikasi web berkomunikasi dengan perangkat lunak client menggunakan protokol HTTP.  HTTP sebagai protokol yang berbicara menggunakan response dan request. Sehingga untuk dapat menghasilkan dokumen yang ingin diakses harus melalui  siklus tersebut :
 
 1. Client mengirim permintaan kepada server dalam bentuk **HTTP request**.
 2. Apabila halaman yang diminta memerlukan data, maka server akan meminta data ke database.
@@ -19,30 +20,46 @@ Sebuah aplikasi web berkomunikasi dengan perangkat lunak client menggunakan prot
 
 ## HTTP Request dan HTTP Response
 
-**HTTP Request** merupakan sebuah **request** ( permintaan ) kepada server yang berisi perintah dan URL. Ketika client mengirim **request,** akan terdapat sebuah header yang digunakan oleh web server untuk mengetahui tugas apa yang akan dijalankan. Ketika **request** telah diterima oleh server, selanjutnya server akan menentukan jenis **response** yang akan dikembalikan kepada client. **HTTP Request** memiliki 2 metode, yaitu `GET` dan `POST`.
+HTTP Request dan HTTP Response memiliki struktur sebagai berikut :
 
-**HTTP Response** merupakan sebuah perintah **response** dari server ke client. Awalnya, request dari client diproses untuk selanjutnya dikembalikan kepada client dalam bentuk file HTML. 
 
-Berikut ini adalah link untuk mempelajari lebih lanjut mengenai HTTP : 
 
-- [https://bertzzie.com/knowledge/serverside-nodejs/ProtokolHTTP.html](https://bertzzie.com/knowledge/serverside-nodejs/ProtokolHTTP.html)
-- [https://bertzzie.com/knowledge/serverside-nodejs/RequestDanResponse.html#](https://bertzzie.com/knowledge/serverside-nodejs/RequestDanResponse.html#)
+###Struktur HTTP Request
+
+![http-request](http-request.png)
+
+**GET** 				: HTTP Verb yang digunakan
+**/** 					: path dari halaman yang diakses
+**HTTP/1.1** 			: versi HTTP yang digunakan
+**example.com:3000** 	: alamat host dan port yang digunakan
+**Accept**				: jenis dokumen yang ingin diterima
+
+
+
+### Struktur HTTP Response
+
+![http-response](http-response.png)
+
+**HTTP/1.1**			: versi HTTP yang digunakan
+**Content-length**		: panjang karakter yang diterima
+**Content-Type**		: jenis dokumen yang diterima
+**<!DOCTYPE html>...**	: isi dari konten
 
 
 
 ## HTTP Status Code
 
-![status-codes.gif](status-codes.gif)
+![status-codes.gif](http-status-codes.png)
 
-**HTTP Status Code** menunjukkan respon apakah HTTP Request telah berhasil diselesaikan. 
+**HTTP status code** menunjukkan apakah HTTP Request telah berhasil diselesaikan. 
 
 **HTTP status Code** memiliki beberapa kategori diantaranya :
 
-1. Informational ( 100 - 199 )
-2. Successful Responses (200 - 299 )
-3. Redirection Messages atau something moved (300 - 399)
-4. Client Error Responses (400 - 499)
-5. Server Error Responses (500 - 599).
+1. **Informational** ( 100 - 199 )
+2. **Successful Responses** (200 - 299 )
+3. **Redirection Messages atau something moved** (300 - 399)
+4. **Client Error Responses** (400 - 499)
+5. **Server Error Responses** (500 - 599).
 
 
 
@@ -50,15 +67,16 @@ Berikut ini adalah link untuk mempelajari lebih lanjut mengenai HTTP :
 
 ![http-verbs.jpg](http-verbs.jpg)
 
-**GET** : mengambil data dari server (READ)
+**GET** 	: mengambil data dari server (READ)
 
-**POST** : membuat data baru (CREATE)
+**POST** 	: membuat data baru (CREATE)
 
-**PUT** : mengganti file yang sudah ada dengan file yang baru 				   (UPDATE)
+**PUT** 	: mengganti file yang sudah ada dengan file yang baru (UPDATE)
 
-**PATCH** : mengupdate atau mengganti file yang sudah ada dengan file yang baru (UPDATE)
+**PATCH** 	: mengupdate atau mengganti file yang sudah ada dengan file yang baru (UPDATE)
 
-**DELETE** : Menghapus data (DELETE)
+**DELETE** 	: Menghapus data (DELETE)
 
-Perintah diatas lebih sering dikenal dengan istilah "CRUD".
+Perintah diatas lebih sering dikenal dengan istilah "**CRUD**".
 
+**tambahan : ** **PUT** lebih sering digunakan daripada **PATCH** apabila berususan dengan updating data
