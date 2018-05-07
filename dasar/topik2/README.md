@@ -43,7 +43,7 @@ Apabila kita ingin membuat sebuah halaman web, maka kita akan menggunakan **komb
 
 
 
-**Untuk mempelajari tentang HTML silahkan pelajari lewat link - link berikut** :
+**Untuk mempelajari tentang CSS silahkan pelajari lewat link - link berikut** :
 
 - [https://www.w3schools.com/css/default.asp](https://www.w3schools.com/css/default.asp)
 - [https://css-tricks.com/](https://css-tricks.com/)
@@ -70,3 +70,4 @@ Cara terbaik untuk belajar HTML dan CSS adalah menggunakan teknik **ATM** (Amati
 - Membuat gambar dengan border lingkaran
   [https://www.w3schools.com/howto/howto_css_rounded_images.asp](https://www.w3schools.com/howto/howto_css_rounded_images.asp)
 
+  
