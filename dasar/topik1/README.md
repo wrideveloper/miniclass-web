@@ -1,6 +1,7 @@
 # TOPIK 1 : PENGENALAN PEMROGRAMAN WEB
 
-Disini akan membahas tentang dasar pemrograman web
+Disini akan membahas tentang dasar pemrograman web 
+
 Topik ini mengambil referensi dari : [https://www.youtube.com/watch?v=D7lpojnH10s](https://www.youtube.com/watch?v=D7lpojnH10s)
 
 
@@ -50,7 +51,7 @@ HTTP Request dan HTTP Response memiliki struktur sebagai berikut :
 
 **Content-Type**		: jenis dokumen yang diterima
 
-**<!DOCTYPE html>...**	: isi dari konten
+**DOCTYPE html...**		: isi dari konten
 
 
 
@@ -87,4 +88,3 @@ HTTP Request dan HTTP Response memiliki struktur sebagai berikut :
 Perintah diatas lebih sering dikenal dengan istilah "**CRUD**".
 
 **catatan :** **PUT** lebih sering digunakan daripada **PATCH** apabila berususan dengan updating data
-
