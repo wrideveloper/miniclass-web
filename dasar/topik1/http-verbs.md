@@ -14,4 +14,4 @@
 
 Perintah diatas lebih sering dikenal dengan istilah "**CRUD**".
 
-**catatan :** **PUT** lebih sering digunakan daripada **PATCH** apabila berususan dengan updating data
+**catatan :** **PUT** lebih sering digunakan daripada **PATCH** apabila berurusan dengan updating data
