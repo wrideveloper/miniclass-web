@@ -8,14 +8,14 @@ disini materi akan diawali dengan materi web dasar, baru kemudian akan difokuska
 Berikut merupakan materi awal yang akan dipelajari di miniclass web
 
 1. [**Pengenalan Pemrograman Web**](dasar/topik1/README.md)
-   - Cara kerja website
-   - HTTP Request dan HTTP Response
-   - HTTP Status Code
-   - HTTP Verbs
+   - [Cara kerja website](dasar/topik1/cara-kerja-website.md)
+   - [HTTP Request dan HTTP Response](dasar/topik1/http-request-dan-response.md)
+   - [HTTP Status Code](dasar/topik1/http-status-code.md)
+   - [HTTP Verbs](dasar/topik1/http-verbs.md)
 2. [**Pembuatan Web Statis**](dasar/topik2/)
-   - Pengenalan HTML
-   - Pengenalan CSS
-   - Membuat Profile Page
+   - [Pengenalan HTML](dasar/topik2/pengenalan-html.md)
+   - [Pengenalan CSS](dasar/topik2/pengenalan-css.md)
+   - [Membuat Profile Page](dasar/topik2/membuat-profile-page.md)
 3. [**Javascript**](dasar/topik3/)
    - Pengenalan Syntax Javascript
    - Manipulasi DOM
