@@ -15,7 +15,7 @@ Berikut merupakan materi awal yang akan dipelajari di miniclass web
 2. [**Pembuatan Web Statis**](dasar/topik2/)
    - [Pengenalan HTML](dasar/topik2/pengenalan-html.md)
    - [Pengenalan CSS](dasar/topik2/pengenalan-css.md)
-   - [Layouting dengan CSS](dasar/topik2/layouting-dengan-css)
+   - [Layouting dengan CSS](dasar/topik2/layouting-dengan-css.md)
    - [Membuat Profile Page](dasar/topik2/membuat-profile-page.md)
 3. [**Javascript**](dasar/topik3/)
    - Pengenalan Syntax Javascript

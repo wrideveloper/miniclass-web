@@ -26,6 +26,8 @@ CSS float juga dapat mendukung layout yang **responsive** dengan menggunakan tek
 
 
 
+
+
 ### 2. Grid
 
 CSS grid merupakan layouting yang mudah diterapkan dan merupakan cara yang lebih modern daripada menggunakan float, css grid juga mendukung **responsive design** tanpa perlu teknik khusus
@@ -47,6 +49,8 @@ Jadi kedua teknik ini **berbeda!**
 
 1. **Dasar CSS Grid** : [https://css-tricks.com/snippets/css/complete-guide-grid/](https://css-tricks.com/snippets/css/complete-guide-grid/)
 2. **Layouting dengan CSS Grid** : [https://www.youtube.com/playlist?list=PL4cUxeGkcC9itC4TxYMzFCfveyutyPOCY](https://www.youtube.com/playlist?list=PL4cUxeGkcC9itC4TxYMzFCfveyutyPOCY)
+
+
 
 
 
