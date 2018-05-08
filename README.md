@@ -18,7 +18,7 @@ Berikut merupakan materi awal yang akan dipelajari di miniclass web
    - [Layouting dengan CSS](dasar/topik2/layouting-dengan-css.md)
    - [Membuat Profile Page](dasar/topik2/membuat-profile-page.md)
 3. [**Javascript**](dasar/topik3/)
-   - Pengenalan Syntax Javascript
+   - [Pengenalan Syntax Javascript](dasar/topik3/pengenalan-syntax-javascript.md)
    - Manipulasi DOM
    - Membuat Aplikasi Todo List
 4. [**Relasional Database**](dasar/topik4/README.md)
