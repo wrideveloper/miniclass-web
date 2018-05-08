@@ -21,10 +21,10 @@ Berikut merupakan materi awal yang akan dipelajari di miniclass web
    - Pengenalan Syntax Javascript
    - Manipulasi DOM
    - Membuat Aplikasi Todo List
-4. **Relasional Database**
-   - DDL
-   - DML
-   - Relasi Antar Tabel
+4. [**Relasional Database**](dasar/topik4/README.md)
+   - [DDL](dasar/topik4/DDL.md)
+   - [DML](dasar/topik4/DML.md)
+   - [Relasi Antar Tabel](dasar/topik4/relasi-antar-table.md)
 5. **Pembuatan Web Dinamis dengan Node JS**
    - Pengenalan Node JS dan NPM
    - Membuat Web Server dengan Node JS
