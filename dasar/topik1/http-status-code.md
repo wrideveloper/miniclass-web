@@ -1,6 +1,6 @@
 # HTTP Status Code
 
-![status-codes.gif](/home/aka/Project/miniclass-web/dasar/topik1/http-status-codes.png)
+![status-codes.gif](http-status-codes.png)
 
 **HTTP status code** menunjukkan apakah HTTP Request telah berhasil diselesaikan. 
 

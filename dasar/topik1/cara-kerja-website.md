@@ -1,6 +1,6 @@
 # Cara Kerja Website
 
-![cara-kerja-web.jpeg](/home/aka/Project/miniclass-web/dasar/topik1/cara-kerja-web.jpeg)
+![cara-kerja-web.jpeg](cara-kerja-web.jpeg)
 
 Sebuah aplikasi web berkomunikasi dengan perangkat lunak client menggunakan protokol HTTP.  HTTP sebagai protokol yang berbicara menggunakan response dan request. Sehingga untuk dapat menghasilkan dokumen yang ingin diakses harus melalui  siklus tersebut :
 

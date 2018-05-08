@@ -1,6 +1,6 @@
 # HTTP VERBS
 
-![http-verbs.jpg](/home/aka/Project/miniclass-web/dasar/topik1/http-verbs.jpg)
+![http-verbs.jpg](http-verbs.jpg)
 
 **GET** 	: mengambil data dari server (READ)
 

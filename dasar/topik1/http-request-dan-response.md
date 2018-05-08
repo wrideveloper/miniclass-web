@@ -6,7 +6,7 @@ HTTP Request dan HTTP Response memiliki struktur sebagai berikut :
 
 ### Struktur HTTP Request
 
-![http-request](/home/aka/Project/miniclass-web/dasar/topik1/http-request.png)
+![http-request](http-request.png)
 
 **GET** 				: HTTP Verb yang digunakan
 
@@ -22,7 +22,7 @@ HTTP Request dan HTTP Response memiliki struktur sebagai berikut :
 
 ### Struktur HTTP Response
 
-![http-response](/home/aka/Project/miniclass-web/dasar/topik1/http-response.png)
+![http-response](http-response.png)
 
 **HTTP/1.1**			: versi HTTP yang digunakan
 
