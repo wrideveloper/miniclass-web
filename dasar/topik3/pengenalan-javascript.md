@@ -16,9 +16,9 @@ Pada era development web modern saat ini, javascript benar - benar dibutuhkan un
 
   
 
-**Referensi untuk belajar dasar javascript : **
+**Referensi untuk belajar dasar javascript :**
 
-- w3school - [https://www.w3schools.com/js/default.asp](https://www.w3schools.com/js/default.asp)
-- codeschool - [https://www.codeschool.com/learn/javascript](https://www.codeschool.com/learn/javascript)
-- freecodecamp - [https://www.freecodecamp.org](https://www.freecodecamp.org/challenges/comment-your-javascript-code)
+- **w3school** - [https://www.w3schools.com/js/default.asp](https://www.w3schools.com/js/default.asp)
+- **codeschool** - [https://www.codeschool.com/learn/javascript](https://www.codeschool.com/learn/javascript)
+- **freecodecamp** - [https://www.freecodecamp.org](https://www.freecodecamp.org/challenges/comment-your-javascript-code)
 
