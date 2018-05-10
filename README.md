@@ -20,8 +20,8 @@ Berikut merupakan materi awal yang akan dipelajari di miniclass web
 3. [**Javascript**](dasar/topik3/)
    - [Pengenalan Javascript](dasar/topik3/pengenalan-javascript.md)
    - [Manipulasi DOM](dasar/topik3/manipulasi-dom.md)
-   - Event Pada Javascript
-   - Array dan Objek
+   - [Event Pada Javascript](dasar/topik3/event-pada-javascript)
+   - [Array dan Objek](dasar/topik3/array-dan-objek.md)
    - Membuat Aplikasi Todo List
 4. [**Relasional Database**](dasar/topik4/README.md)
    - [DDL](dasar/topik4/DDL.md)
