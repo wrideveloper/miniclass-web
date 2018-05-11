@@ -1,11 +1,11 @@
 # Miniclass Web 
 
-Selamat datang di miniclass web workshop riset informatika, 
-disini materi akan diawali dengan materi web dasar, baru kemudian akan difokuskan 
+Selamat datang di Miniclass Web - Workshop Riset Informatika, 
+disini materi yang akan diajarkan yaitu diawali dengan materi web dasar, baru kemudian selanjutnya akan difokuskan ke materi web tingkat lanjut.
 
 ### Materi Web Dasar
 
-Berikut merupakan materi awal yang akan dipelajari di miniclass web
+Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 
 1. [**Pengenalan Pemrograman Web**](dasar/topik1/README.md)
    - [Cara kerja website](dasar/topik1/cara-kerja-website.md)
