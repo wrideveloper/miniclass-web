@@ -1,4 +1,4 @@
-## Membuat Profile Page
+# Membuat Profile Page
 
 Cara terbaik untuk belajar HTML dan CSS adalah menggunakan teknik **ATM** (Amati Tiru dan Manipulasi)
 
