@@ -1,4 +1,4 @@
-#DDL
+# DDL
 
 **Data Definition Language (DDL)** merupakan bahasa yang digunakan untuk mendefinisikan data.
 

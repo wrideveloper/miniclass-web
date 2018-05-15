@@ -1,4 +1,4 @@
-#Relasi Antar Table
+# Relasi Antar Table
 
 Relasi antar table dalam database lebih dikenal dengan istilah **JOIN**.
 
