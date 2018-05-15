@@ -22,7 +22,7 @@ Berikut merupakan materi awal yang akan dipelajari di miniclass web
    - [Manipulasi DOM](dasar/topik3/manipulasi-dom.md)
    - [Event Pada Javascript](dasar/topik3/event-pada-javascript.md)
    - [Array dan Objek](dasar/topik3/array-dan-objek.md)
-   - [Membuat Aplikasi Todo List](dasar/topik3/membuat-aplikasi-todo-list.md)
+   - [Membuat Aplikasi Todo List](dasar/topik3/membuat-aplikasi-todo-list)
 4. [**Relasional Database**](dasar/topik4/README.md)
    - [DDL](dasar/topik4/DDL.md)
    - [DML](dasar/topik4/DML.md)
@@ -30,7 +30,10 @@ Berikut merupakan materi awal yang akan dipelajari di miniclass web
 5. **Pembuatan Web Dinamis dengan Node JS**
    - Pengenalan Node JS dan NPM
    - Membuat Web Server dengan Node JS
-   - CRUD Node JS dan MySQL
+   - Mengoneksikan MySQL dan Node JS
+   - Synchronous vs Asynchronous
+   - Berkenalan dengan express JS
+   - Membuat project dengan express JS
 6. **Pengenalan Backend dan Frontend**
 
 
