@@ -18,11 +18,11 @@ Berikut contoh - contoh template engine yang dapat digunakan dengan express js :
 
 ### 1. Pug
 
-**Dokumentasi **
+**Dokumentasi**
 
  [https://pugjs.org/api/getting-started.html](https://pugjs.org/api/getting-started.html)
 
-**Tutorial **
+**Tutorial**
 
 - [https://www.youtube.com/watch?v=cddghkeGAdU](https://www.youtube.com/watch?v=cddghkeGAdU)
 - [https://gist.github.com/joepie91/c0069ab0e0da40cc7b54b8c2203befe1](https://gist.github.com/joepie91/c0069ab0e0da40cc7b54b8c2203befe1)
@@ -31,11 +31,11 @@ Berikut contoh - contoh template engine yang dapat digunakan dengan express js :
 
 ### 2. EJS
 
-**Dokumentasi **
+**Dokumentasi**
 
  [http://ejs.co/#docs](http://ejs.co/#docs)
 
-**Tutorial **
+**Tutorial**
 
 - [https://scotch.io/tutorials/use-ejs-to-template-your-node-application](https://scotch.io/tutorials/use-ejs-to-template-your-node-application)
 - [https://www.youtube.com/watch?v=EYKjBJDPvEU](https://www.youtube.com/watch?v=EYKjBJDPvEU)
