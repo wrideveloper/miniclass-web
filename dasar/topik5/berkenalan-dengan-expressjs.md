@@ -10,5 +10,6 @@ Express merupakan salah satu framework node js yang paling populer karena sederh
 
 **Untuk belajar basic express, silahkan pelajari melalui link berikut :**
 
-[https://www.udemy.com/expressjs-fundamentals/learn/v4/overview](https://www.udemy.com/expressjs-fundamentals/learn/v4/overview)
+- [https://www.udemy.com/expressjs-fundamentals/learn/v4/overview](https://www.udemy.com/expressjs-fundamentals/learn/v4/overview)
+- [https://www.youtube.com/playlist?list=PLYxzS__5yYQmHbpKMARP04F344zYRX91I](https://www.youtube.com/playlist?list=PLYxzS__5yYQmHbpKMARP04F344zYRX91I)
 
