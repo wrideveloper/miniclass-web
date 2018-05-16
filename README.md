@@ -27,10 +27,10 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
    - [DDL](dasar/topik4/DDL.md)
    - [DML](dasar/topik4/DML.md)
    - [Relasi Antar Tabel](dasar/topik4/relasi-antar-table.md)
-5. **Pembuatan Web Dinamis dengan Node JS**
+5. **[Pembuatan Web Dinamis dengan Node JS](dasar/topik5/README.md)**
    - [Pengenalan Node JS dan NPM](dasar/topik5/pengenalan-nodejs-dan-npm.md)
    - [Membuat Web Server dengan Node JS](dasar/topik5/membuat-web-server-dengan-nodejs.md)
-   - Mengoneksikan MySQL dan Node JS
+   - [Mengoneksikan MySQL dan Node JS](dasar/topik5/mengoneksikan-mysql-dan-nodejs.md)
    - Synchronous vs Asynchronous
    - Berkenalan dengan express JS
    - Template Engine
