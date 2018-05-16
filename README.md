@@ -31,7 +31,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
    - [Pengenalan Node JS dan NPM](dasar/topik5/pengenalan-nodejs-dan-npm.md)
    - [Membuat Web Server dengan Node JS](dasar/topik5/membuat-web-server-dengan-nodejs.md)
    - [Mengoneksikan MySQL dan Node JS](dasar/topik5/mengoneksikan-mysql-dan-nodejs.md)
-   - Synchronous vs Asynchronous
+   - [Synchronous vs Asynchronous](dasar/topik5/synchronous-vs-asynchronous.md)
    - [Berkenalan dengan express JS](dasar/topik5/berkenalan-dengan-expressjs.md)
    - [Template Engine](dasar/topik5/template-engine.md)
    - Membuat project dengan express JS
