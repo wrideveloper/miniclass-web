@@ -1,6 +1,6 @@
-# Miniclass Web 
+# Miniclass Web
 
-Selamat datang di Miniclass Web - Workshop Riset Informatika, 
+Selamat datang di Miniclass Web - Workshop Riset Informatika,
 disini materi yang akan diajarkan yaitu diawali dengan materi web dasar, baru kemudian selanjutnya akan difokuskan ke materi web tingkat lanjut.
 
 ### Materi Web Dasar
@@ -29,7 +29,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
    - [Relasi Antar Tabel](dasar/topik4/relasi-antar-table.md)
 5. **Pembuatan Web Dinamis dengan Node JS**
    - [Pengenalan Node JS dan NPM](dasar/topik5/pengenalan-nodejs-dan-npm.md)
-   - Membuat Web Server dengan Node JS
+   - [Membuat Web Server dengan Node JS](dasar/topik5/membuat-web-server-dengan-nodejs.md)
    - Mengoneksikan MySQL dan Node JS
    - Synchronous vs Asynchronous
    - Berkenalan dengan express JS
@@ -62,7 +62,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 7. **Framework Frontend**
 8. **Testing**
 
-	​	
+	​
 
 ### Materi Backend
 
