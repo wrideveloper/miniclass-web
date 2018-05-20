@@ -34,7 +34,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
    - [Synchronous vs Asynchronous](dasar/topik5/synchronous-vs-asynchronous.md)
    - [Berkenalan dengan express JS](dasar/topik5/berkenalan-dengan-expressjs.md)
    - [View Engine](dasar/topik5/view-engine.md)
-   - [Membuat aplikasi CRUD dengan express JS dan MySQL](membuat-aplikasi-crud-dengan-expressjs-dan-mysql.md)
+   - [Membuat aplikasi CRUD dengan express JS dan MySQL](dasar/topik5/membuat-aplikasi-crud-dengan-expressjs-dan-mysql.md)
 6. **Pengenalan Backend dan Frontend**
 
 
