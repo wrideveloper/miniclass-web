@@ -33,7 +33,7 @@ Apakah kalian merasa terganggu melihat file html kalian yang berantakan atau ter
 
 Berikut contoh - contoh view engine yang dapat digunakan dengan express js :
 
-### 1. Pug
+### 1. [Pug](https://pugjs.org)
 
 **Dokumentasi**
 
@@ -44,9 +44,13 @@ Berikut contoh - contoh view engine yang dapat digunakan dengan express js :
 - [https://www.youtube.com/watch?v=cddghkeGAdU](https://www.youtube.com/watch?v=cddghkeGAdU)
 - [https://gist.github.com/joepie91/c0069ab0e0da40cc7b54b8c2203befe1](https://gist.github.com/joepie91/c0069ab0e0da40cc7b54b8c2203befe1)
 
+**CheatSheet**
+
+[https://devhints.io/pug](https://devhints.io/pug)
 
 
-### 2. EJS
+
+### 2. [EJS](http://ejs.co/)
 
 **Dokumentasi**
 
