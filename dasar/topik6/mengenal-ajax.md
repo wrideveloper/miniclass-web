@@ -1,6 +1,6 @@
 # Mengenal AJAX
 
-**AJAX** (Asynchronous Javascript And XML) merupakan cara untuk mengirim dan menerima data ke server secara cepat tanpa perlu mereload halaman, ajax memanfaatkan objek `XMLHttpRequest` dalam javascript agar ia bisa berkomunikasi dengan server.
+**AJAX** (Asynchronous Javascript And XML) merupakan cara untuk mengirim dan menerima data ke server secara cepat tanpa perlu mereload halaman, ajax memanfaatkan objek `XMLHttpRequest` dalam javascript agar ia bisa berkomunikasi dengan server. AJAX merupakan skill dasar yang wajib dikuasai oleh frontend developer.
 
 ![ajax](ajax.png)
 
