@@ -8,7 +8,7 @@ disini materi yang akan diajarkan yaitu diawali dengan materi web dasar, baru ke
 Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 
 1. **Pengenalan Pemrograman Web**
-   - [Cara kerja website](dasar/topik1/cara-kerja-website.md)
+   - [Cara Kerja Website](dasar/topik1/cara-kerja-website.md)
    - [HTTP Request dan HTTP Response](dasar/topik1/http-request-dan-response.md)
    - [HTTP Status Code](dasar/topik1/http-status-code.md)
    - [HTTP Verbs](dasar/topik1/http-verbs.md)
@@ -27,16 +27,16 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
    - [DDL](dasar/topik4/DDL.md)
    - [DML](dasar/topik4/DML.md)
    - [Relasi Antar Tabel](dasar/topik4/relasi-antar-table.md)
-5. **Pembuatan Web Dinamis dengan Node JS**
+5. **[Pembuatan Web Dinamis dengan Node JS]**
    - [Pengenalan Node JS dan NPM](dasar/topik5/pengenalan-nodejs-dan-npm.md)
    - [Membuat Web Server dengan Node JS](dasar/topik5/membuat-web-server-dengan-nodejs.md)
    - [Mengoneksikan MySQL dan Node JS](dasar/topik5/mengoneksikan-mysql-dan-nodejs.md)
-   - [Berkenalan dengan express JS](dasar/topik5/berkenalan-dengan-expressjs.md)
+   - [Berkenalan dengan Express JS](dasar/topik5/berkenalan-dengan-expressjs.md)
    - [View Engine](dasar/topik5/view-engine.md)
-   - [Membuat aplikasi CRUD dengan express JS dan MySQL](dasar/topik5/membuat-aplikasi-crud-dengan-expressjs-dan-mysql.md)
+   - [Membuat Aplikasi CRUD dengan Express JS dan MySQL](dasar/topik5/membuat-aplikasi-crud-dengan-expressjs-dan-mysql.md)
    - [Synchronous vs Asynchronous](dasar/topik5/synchronous-vs-asynchronous.md)
 6. **Pengenalan Backend dan Frontend**
-   - Apa itu backend dan frontend
+   - [Apa itu Frontend dan Backend Developer](dasar/topik6/apa-itu-frontend-dan-backend-developer.md)
    - Mengenal AJAX
    - Mengenal Web Service
 
