@@ -22,5 +22,7 @@ Berikut beberapa contoh dari web service yang terdapat di internet :
 
 1. **Open Weather -** https://openweathermap.org/api
 2. **Dota 2 -** https://docs.opendota.com
-3. **Pokemon -** https://pokeapi.co/
+3. **Pokemon -** https://pokeapi.co
+4. **Instagram -** https://www.instagram.com/developer
+5. **Github -** https://developer.github.com/v3
 
