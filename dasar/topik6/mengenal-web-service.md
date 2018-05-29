@@ -1,10 +1,6 @@
-
-
 # Mengenal Web Service
 
 Selama ini kita sudah mengenal apa itu website, namun apakah kita mengenal apa itu web service ?
-
-
 
 ![web service](webservice.png)
 
@@ -12,17 +8,20 @@ Selama ini kita sudah mengenal apa itu website, namun apakah kita mengenal apa i
 
 Web Service merupakan sebuah web yang bertugas untuk menerima, mengirim, dan mengelola data yang dikirimkan dari aplikasi frontend, web service tidak memiliki view atau tampilan untuk end user, inilah yang membedakan web service dengan website. Web service bisa menerima data dari beberapa aplikasi, misalnya mobile app, frontend web, desktop app, dan sebagainya.
 
-Membuat web service merupakan modal dasar apabila kita ingin mendalami backend development, karena  web service akan mendukung aplikasi frontend dalam mengolah data.
-
-
+Membuat web service merupakan modal dasar apabila kita ingin mendalami backend development, karena web service akan mendukung aplikasi frontend dalam mengolah data.
 
 ## Contoh Web Service
 
-Berikut beberapa contoh dari web service yang terdapat di internet : 
+Berikut beberapa contoh dari web service yang terdapat di internet :
 
-1. **Open Weather -** https://openweathermap.org/api
-2. **Dota 2 -** https://docs.opendota.com
-3. **Pokemon -** https://pokeapi.co
-4. **Instagram -** https://www.instagram.com/developer
-5. **Github -** https://developer.github.com/v3
+1.  **Open Weather -** https://openweathermap.org/api
+2.  **Dota 2 -** https://docs.opendota.com
+3.  **Pokemon -** https://pokeapi.co
+4.  **Instagram -** https://www.instagram.com/developer
+5.  **Github -** https://developer.github.com/v3
 
+## Membuat Web Service dengan Express
+
+Kita bisa membuat web service sendiri dengan menggunakan express js, berikut contoh penerapan web service dengan express js :
+
+https://github.com/wrideveloper/express-mysql-webservice
