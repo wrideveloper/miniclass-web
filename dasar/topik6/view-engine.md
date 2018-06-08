@@ -4,30 +4,24 @@ Apakah kalian merasa terganggu melihat file html kalian yang berantakan atau ter
 
 ![view-engine](view-engine.png)
 
-
-
 ## Penjelasan View Engine
 
 **View Engine** merupakan sebuah tool yang dapat memudahkan kita menulis sebuah tampilan web menjadi lebih sederhana, karena dengan view engine kita dapat menyingkat penulisan syntax html yang banyak menjadi lebih sedikit.
 
-
-
 ## Cara Menggunakan View Engine Dengan Express
 
-1. Install view engine yang diinginkan, misalnya pug
-   `npm install --save pug`
+1.  Install view engine yang diinginkan, misalnya pug
+    `npm install --save pug`
 
-2. Mengeset view engine yang akan digunakan, misalnya pug
-   `app.set('views', path.join(__dirname, 'views'))`
+2.  Mengeset view engine yang akan digunakan, misalnya pug
+    `app.set('views', path.join(__dirname, 'views'))`
 
-   `app.set('view engine', 'pug')`
+    `app.set('view engine', 'pug')`
 
-3. Letakkan view di folder views
+3.  Letakkan view di folder views
 
-4. Untuk merender view, gunakan syntax berikut
-   `res.render('namaView', {data})`
-
-
+4.  Untuk merender view, gunakan syntax berikut
+    `res.render('namaView', {data})`
 
 ## Beberapa Contoh View Engine
 
@@ -37,7 +31,7 @@ Berikut contoh - contoh view engine yang dapat digunakan dengan express js :
 
 **Dokumentasi**
 
- [https://pugjs.org/api/getting-started.html](https://pugjs.org/api/getting-started.html)
+[https://pugjs.org/api/getting-started.html](https://pugjs.org/api/getting-started.html)
 
 **Tutorial**
 
@@ -48,16 +42,13 @@ Berikut contoh - contoh view engine yang dapat digunakan dengan express js :
 
 [https://devhints.io/pug](https://devhints.io/pug)
 
-
-
 ### 2. [EJS](http://ejs.co/)
 
 **Dokumentasi**
 
- [http://ejs.co/#docs](http://ejs.co/#docs)
+[http://ejs.co/#docs](http://ejs.co/#docs)
 
 **Tutorial**
 
 - [https://scotch.io/tutorials/use-ejs-to-view-your-node-application](https://scotch.io/tutorials/use-ejs-to-view-your-node-application)
 - [https://www.youtube.com/watch?v=EYKjBJDPvEU](https://www.youtube.com/watch?v=EYKjBJDPvEU)
-
