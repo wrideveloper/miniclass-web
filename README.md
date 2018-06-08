@@ -69,21 +69,23 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 6.  **Framework Frontend**
 7.  **Testing**
 
-    ​
-
 ### Materi Backend
 
 1.  **Object Relational Mapping**
     - Pengenalan ORM
-    - Penggunaan ORM
+    - Berkenalan dengan Bookshelf JS
+    - Impelementasi ORM Pada Express JS dengan Bookshelf JS
 2.  **Design Pattern**
     - Pengenalan Design Pattern
-    - Model View Controller
+    - MVC Design Pattern
+    - Implementasi MVC pada Express JS
 3.  **Web Service**
     - Pengenalan Web Service
-    - Membuat Web Service
-    - Metode Web Service
+    - Membuat Web Service Sederhana
+    - REST Web Service
     - Cross Origin Resource Sharing
+    - GraphQL Web Service
 4.  **Autentikasi**
-    - Autentikasi Session
-    - Autentikasi Token
+    - Metode Autentikasi Cookie
+    - Metode Autentikasi Token
+    - Autentikasi dengan Passport JS
