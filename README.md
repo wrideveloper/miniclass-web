@@ -39,9 +39,9 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - Request dan Response
     - Routing
     - Advance Routing
+    - [Middleware](dasar/topik6/middleware.md)
     - [View Engine](dasar/topik6/view-engine.md)
-    - Static File Assets
-    - Middleware
+    - [Static File Assets](dasar/topik6/static-file-assets.md)
     - Post Method
     - [Membuat Aplikasi CRUD dengan Express JS dan MySQL](dasar/topik6/membuat-aplikasi-crud-dengan-expressjs-dan-mysql.md)
 7.  **Pengenalan Backend dan Frontend**
