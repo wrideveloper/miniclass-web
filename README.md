@@ -1,7 +1,7 @@
 # Miniclass Web
 
 Selamat datang di Miniclass Web - Workshop Riset Informatika,
-disini materi yang akan diajarkan yaitu diawali dengan materi web dasar, baru kemudian selanjutnya akan difokuskan ke materi web tingkat lanjut.
+disini materi yang akan diajarkan yaitu diawali dengan materi web dasar, baru kemudian selanjutnya akan difokuskan ke materi web tingkat lanjut (Frontend atau Backend).
 
 ### Materi Web Dasar
 
@@ -52,22 +52,27 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 
 ### Materi Frontend
 
-1.  **Preprocessor CSS**
+1.  **Framework CSS**
+    - Pengenalan Framework CSS
+2.  **Metodologi CSS**
+    - Pengenalan Metodologi CSS
+    - OSCSS
+    - SMCSS
+    - BEM
+3.  **Preprocessor CSS**
+    - Pengenalan Preprocessor CSS
     - Sass
     - Less
-2.  **Framework CSS**
-    - Bootstrap
-    - Semantic UI
-    - Material Design Lite
-    - Dll
-3.  **AJAX**
 4.  **Task Runner**
-    - Gulp
-    - Grunt
+    - Pengenalan Task Runner
+    - Contoh Penerapan Task Runner Pada Preprocessor
 5.  **Module Bundler**
+    - Pengenalan Module Bundler
     - Webpack
-6.  **Framework Frontend**
-7.  **Testing**
+6.  **AJAX**
+7.  **Framework Frontend**
+    - Pengenalan Framework Frontend
+    - React JS
 
 ### Materi Backend
 
