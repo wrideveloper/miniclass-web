@@ -1,18 +1,18 @@
-# Apa itu local storage ?
+# Local Storage
 
-Html5 web storage adalah web penyimpanan lokal, artinya dengan html5 web storage kita dapat menyimpan data secara lokal dalam browser pengguna. Kamu bisa bayangkan hal ini mirip dengan cookie. Kelebihan dari web stirage adalah lebih aman dan lebih cepat. Data tidak disertakan setiap permintaan server, tetapi digunakan HANYA ketika minta. Hal ini juga memungkinkan untuk menyimpan sejumlah besar data, tanpa mempengaruhi kinerja situs web. Data disimpan dalam pasangan kunci / nilai, dan halaman web hanya dapat mengakses data yang tersimpan dengan sendirinya.
+HTML5 Web Storage adalah web penyimpanan lokal, artinya dengan HTML5 Web Storage kita dapat menyimpan data secara lokal dalam browser pengguna. Kamu bisa bayangkan hal ini mirip dengan Cookie. Kelebihan dari web storage adalah lebih aman dan lebih cepat. Data tidak disertakan setiap permintaan server, tetapi digunakan hanya ketika meminta. Hal ini juga memungkinkan untuk menyimpan sejumlah besar data, tanpa mempengaruhi kinerja situs web. Data disimpan dalam pasangan kunci atau nilai, dan halaman web hanya dapat mengakses data yang tersimpan dengan sendirinya.
 
 ![localstorage](localstorage.png)
 
 ## Ada dua objek baru untuk menyimpan data pada klien:
 
-- LocalStorage – menyimpan data tanpa tanggal kedaluwarsa
+- **LocalStorage** - Menyimpan data tanpa tanggal kedaluwarsa.
 
-- SessionStorage – menyimpan data untuk satu sesi
+- **SessionStorage** - Menyimpan data untuk satu sesi.
 
-### Ini contoh tempat dimana local storage di simpan
+### Berikut ini contoh tempat dimana local storage di simpan
 
-Jika kita penasaran dimana sih local storage di simpan ? kita tidak usah bingung kita inspect element lalu pilih aplication disana sudah ada sebuah menu local storage. Ini contohnya
+Jika kita penasaran dimana local storage di simpan, kita tidak usah bingung kita inspect element lalu pilih aplication, disana sudah ada sebuah menu local storage. Ini contohnya:
 
 ![penyimpanan-local](tempat-simpan.png)
 

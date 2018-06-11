@@ -9,7 +9,10 @@ ___
 ## Permasalahan
 ___
 
-SQL sangat sulit sekali untuk ditulis maupun dibaca, sehingga akan sering menimbulkan error, misalnya `SELECT * FROM film_list WHERE category="Horror"`.
+SQL sangat sulit sekali untuk ditulis maupun dibaca, sehingga akan sering menimbulkan error, misalnya 
+```
+SELECT * FROM film_list WHERE category="Horror"
+```
 
 ## Solusi
 ___
@@ -22,6 +25,9 @@ Solusi dari permasalahan tersebut adalah dengan menggunakan **Object Relational 
         category: string
     }
 ```
-Setelah itu kita baru dapat mengimplementasikan ORM-nya seperti berikut `film_list.where('category', 'Horror')`.
+Setelah itu kita baru dapat mengimplementasikan ORM-nya seperti berikut 
+```
+film_list.where('category', 'Horror')
+```
 
 **Untuk lebih jelasnya silahkan lihat tutorial berikut** https://www.youtube.com/watch?v=dHQ-I7kr_SY
