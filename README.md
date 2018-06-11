@@ -22,7 +22,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Manipulasi DOM](dasar/topik3/manipulasi-dom.md)
     - [Event Pada Javascript](dasar/topik3/event-pada-javascript.md)
     - [Array dan Objek](dasar/topik3/array-dan-objek.md)
-    - Local Storage
+    - [Local Storage](dasar/topik3/local-storage.md)
     - [Membuat Aplikasi Todo List](dasar/topik3/membuat-aplikasi-todo-list)
 4.  **Relasional Database**
     - [DDL](dasar/topik4/DDL.md)
