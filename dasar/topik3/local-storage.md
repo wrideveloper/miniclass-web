@@ -1,8 +1,21 @@
 # Apa itu local storage ?
 
-Dengan penyimpanan lokal , aplikasi web dapat menyimpan data secara lokal dalam browser pengguna . Sebelum HTML5 , data aplikasi harus disimpan dalam cookie , termasuk dalam setiap permintaan server. Penyimpanan lokal lebih aman , dan sejumlah besar data dapat disimpan secara lokal , tanpa mempengaruhi kinerja website . Tidak seperti cookies , batas penyimpanan yang jauh lebih besar ( setidaknya 5MB ) dan informasi yang tidak pernah ditransfer ke server . Penyimpanan lokal adalah per asal ( per domain dan protokol ) . Semua halaman , dari satu asal , dapat menyimpan dan mengakses data yang sama.
+Html5 web storage adalah web penyimpanan lokal, artinya dengan html5 web storage kita dapat menyimpan data secara lokal dalam browser pengguna. Kamu bisa bayangkan hal ini mirip dengan cookie. Kelebihan dari web stirage adalah lebih aman dan lebih cepat. Data tidak disertakan setiap permintaan server, tetapi digunakan HANYA ketika minta. Hal ini juga memungkinkan untuk menyimpan sejumlah besar data, tanpa mempengaruhi kinerja situs web. Data disimpan dalam pasangan kunci / nilai, dan halaman web hanya dapat mengakses data yang tersimpan dengan sendirinya.
 
 ![localstorage](localstorage.png)
+
+## Ada dua objek baru untuk menyimpan data pada klien:
+
+- LocalStorage – menyimpan data tanpa tanggal kedaluwarsa
+
+- SessionStorage – menyimpan data untuk satu sesi
+
+### Ini contoh tempat dimana local storage di simpan
+
+Jika kita penasaran dimana sih local storage di simpan ? kita tidak usah bingung kita inspect element lalu pilih aplication disana sudah ada sebuah menu local storage. Ini contohnya
+
+![penyimpanan-local](tempat-simpan.png)
+
 
 **Berikut beberapa tutorial tentang manipulasi Local Storage yang dapat dipelajari :**
 
