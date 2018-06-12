@@ -32,7 +32,7 @@ Terdapat berbagai macam **Framework CSS**, diantaranya :
 
   Hasil :
 
-  ![successButton](C:\github\miniclass-web\front-end\topik1\successBtn.jpg)
+  ![successButton](successBtn.jpg)
 
   
 
