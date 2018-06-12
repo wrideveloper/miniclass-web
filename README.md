@@ -90,5 +90,5 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - GraphQL Web Service
 4.  **Autentikasi**
     - [Metode Autentikasi Cookie](back-end/topik4/metode-autentikasi-cookie.md)
-    - Metode Autentikasi Token
+    - [Metode Autentikasi Token](back-end/topik4/metode-autentikasi-token.md)
     - Autentikasi dengan Passport JS
