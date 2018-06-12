@@ -4,17 +4,17 @@
 
 **Framework** merupakan kerangka kerja yang memudahkan untuk membuat aplikasi atau web. Dengan menggunakan framework, sebuah aplikasi akan tersusun dengan rapi.
 
-###Apa itu CSS?
+###Apa itu CSS? 
 
 **CSS** (Cascading Stylesheet) merupakan aturan yang digunakan untuk mengatur komponen - komponen web sehingga lebih terstruktur dan seragam. 
 
-###Pernah mendengar istilah framework CSS?
+###Pernah mendengar istilah framework CSS? 
 
 **Framework CSS** sendiri tak lepas kaitannya dengan tampilan website. **Framework CSS** merupakan sebuah kerangka kerja yang digunakan untuk mempermudah dalam membuat tampilan website.
 
 Terdapat berbagai macam **Framework CSS**, diantaranya :
 
-- ###**Bootstrap**
+- ###**Bootstrap** 
 
   ![bootstrap-logo](bootstrap-logo.png)
 
@@ -54,7 +54,7 @@ Terdapat berbagai macam **Framework CSS**, diantaranya :
 
   
 
-- ###**Bulma**
+- ###**Bulma** 
 
   ![logo-bulma](logo-bulma.png)
 
@@ -99,7 +99,7 @@ Terdapat berbagai macam **Framework CSS**, diantaranya :
 
 
 
-- ###**Semantic UI**
+- ###**Semantic UI** 
 
   ![logo-semantic-ui](semantic-ui.jpg)
 
