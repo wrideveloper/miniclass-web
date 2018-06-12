@@ -60,9 +60,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - SMCSS
     - BEM
 3.  **Preprocessor CSS**
-    - Pengenalan Preprocessor CSS
-    - Sass
-    - Less
+    - [Pengenalan Preprocessor CSS](front-end/topik3/pengenalan-preprocessor-css.md)
 4.  **Task Runner**
     - Pengenalan Task Runner
     - Contoh Penerapan Task Runner Pada Preprocessor
