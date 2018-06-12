@@ -2,13 +2,16 @@
 
 ![Routes](routes.png)
 
-##Pengertian Routing
+## Pengertian Routing
+
 Routing merupakan suatu metode untuk menentukan bagaimana aplikasi merespon permintaan *client*, dimana permintaannya menggunakan URL dengan method GET, POST, PUT, dan sebagainya. Routing digunakan untuk memetakan atau mengatur kesesuaian URL dengan konten yang akan ditampilkan agar bisa mengakses suatu halaman javascript.
 
-##Permasalahan
+## Permasalahan
+
 Pada express untuk mengakses suatu halaman javascript kita tidak bisa membuka filenya secara langsung di browser, tapi dibutuhkan suatu URL yang mengacu ke file tersebut. Lalu bagaimana cara mengakses file javascript menggunakan URL dengan *request* yang kita inginkan
 
-##Solusi
+## Solusi
+
 Solusi dari permasalahan tersebut adalah dengan menggunakan routing, dimana routing tersebut bisa menggunakan HTTP Request method. Berikut ini method yang sering digunakan pada routing express js:
 	
 **1. GET**
