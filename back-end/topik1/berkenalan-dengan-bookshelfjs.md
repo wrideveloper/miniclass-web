@@ -9,6 +9,7 @@
 **SQL Query Builder** adalah tools untuk mempermudah kita untuk membuat maupun menjalankan query database.
 
 ## Perbedaan ORM dan Query Builder
+
 ___
 1. **Object Relational Mapping** (ORM)
     - Membuat model terlebih dahulu untuk setiap tabel
