@@ -91,6 +91,6 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - Cross Origin Resource Sharing
     - GraphQL Web Service
 4.  **Autentikasi**
-    - Metode Autentikasi Cookie
+    - [Metode Autentikasi Cookie](back-end/topik4/metode-autentikasi-cookie.md)
     - Metode Autentikasi Token
     - Autentikasi dengan Passport JS
