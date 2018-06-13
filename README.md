@@ -37,7 +37,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Berkenalan dengan Express JS](dasar/topik6/berkenalan-dengan-expressjs.md)
     - Membuat Server dengan Express JS
     - Request dan Response
-    - Routing
+    - [Routing](dasar/topik6/routing.md)
     - Advance Routing
     - [Middleware](dasar/topik6/middleware.md)
     - [View Engine](dasar/topik6/view-engine.md)
