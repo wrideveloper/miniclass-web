@@ -55,7 +55,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 1.  **Framework CSS**
     - [Pengenalan Framework CSS](front-end/topik1/pengenalan-framework-css.md)
 2.  **Metodologi CSS**
-    - Pengenalan Metodologi CSS
+    - [Pengenalan Metodologi CSS](front-end/topik2/pengenalan-metodologi-css.md)
 3.  **Preprocessor CSS**
     - [Pengenalan Preprocessor CSS](front-end/topik3/pengenalan-preprocessor-css.md)
 4.  **Task Runner**
