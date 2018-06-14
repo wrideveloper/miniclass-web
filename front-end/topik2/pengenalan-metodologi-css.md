@@ -19,12 +19,12 @@ Di sini ada dua jenis objek, pratinjau judul yang lebih besar yang akan diberi n
 
 Perlu memisahkan struktur dan kulit (yaitu gaya yang menciptakan penampilan objek). Kedua jenis objek memiliki struktur yang berbeda, yang satu berada dalam kotak yang lebih besar meskipun terlihat serupa, dengan gambar di sebelah kiri dan judul di kanan.
 
-**Pro OOCSS** : Kode styling visual yang dapat digunakan kembali, kode fleksibel lokasi, pengurangan pemilih dalam bersarang.
-**Kontra OOCSS** : Tanpa jumlah yang cukup mengulangi pola visual, memisahkan struktur dan kode gaya visual tampaknya tidak perlu.
+* **Pro OOCSS** : Kode styling visual yang dapat digunakan kembali, kode fleksibel lokasi, pengurangan pemilih dalam bersarang.
+* **Kontra OOCSS** : Tanpa jumlah yang cukup mengulangi pola visual, memisahkan struktur dan kode gaya visual tampaknya tidak perlu.
 
-**Pengembang OOCSS -** [https://github.com/stubbornella](https://github.com/stubbornella)
-**Official Website -** [http://oocss.org/](http://oocss.org/)
-**Dasar OOCSS -** [https://toddmotto.com/getting-started-with-object-orientated-css-oocss-creating-a-button-kit/](https://toddmotto.com/getting-started-with-object-orientated-css-oocss-creating-a-button-kit/)
+* **Pengembang OOCSS -** [https://github.com/stubbornella](https://github.com/stubbornella)
+* **Official Website -** [http://oocss.org/](http://oocss.org/)
+* **Dasar OOCSS -** [https://toddmotto.com/getting-started-with-object-orientated-css-oocss-creating-a-button-kit/](https://toddmotto.com/getting-started-with-object-orientated-css-oocss-creating-a-button-kit/)
 
 ### BEM (Block, Element, Modifier)
 ![bem](bem.jpg)
@@ -33,13 +33,13 @@ Perlu memisahkan struktur dan kulit (yaitu gaya yang menciptakan penampilan obje
 
 Situs **BEM** juga mencantumkan **bagaimana blok**, **elemen**, **dan segregasi pengubah juga dapat dimasukkan ke dalam sistem file CSS** . Blok seperti "tombol" dan "input" dapat memiliki folder mereka sendiri yang terdiri dari file (.css, .js) yang terkait dengan blok tersebut, yang membuat semuanya lebih mudah ketika kita ingin mengimpor blok tersebut dalam proyek lain.
 
-**Pro BEM** : Mudah untuk menggunakan nama kelas dan mengurangi pemilih dalam CSS.
-**Kontra KONTRA** : Untuk menjaga nama-nama yang terlihat kurang bagus, BEM menyarankan agar kita terus memblokir ke elemen yang dangkal.
+* **Pro BEM** : Mudah untuk menggunakan nama kelas dan mengurangi pemilih dalam CSS.
+* **Kontra KONTRA** : Untuk menjaga nama-nama yang terlihat kurang bagus, BEM menyarankan agar kita terus memblokir ke elemen yang dangkal.
 
-**Official Website -** [https://en.bem.info/](https://en.bem.info/)
-**Dasar BEM -** [https://www.sitepoint.com/css-architecture-block-element-modifier-bem/](https://www.sitepoint.com/css-architecture-block-element-modifier-bem/)
-**Youtube -** [https://www.youtube.com/watch?v=Ysf0LhP8jus](https://www.youtube.com/watch?v=Ysf0LhP8jus)
-**css-tricks -** [https://css-tricks.com/bem-101/](https://css-tricks.com/bem-101/)
+* **Official Website -** [https://en.bem.info/](https://en.bem.info/)
+* **Dasar BEM -** [https://www.sitepoint.com/css-architecture-block-element-modifier-bem/](https://www.sitepoint.com/css-architecture-block-element-modifier-bem/)
+* **Youtube -** [https://www.youtube.com/watch?v=Ysf0LhP8jus](https://www.youtube.com/watch?v=Ysf0LhP8jus)
+* **css-tricks -** [https://css-tricks.com/bem-101/](https://css-tricks.com/bem-101/)
 
 
 ### SMACSS (Scalable dan Modular Architecture for CSS)
@@ -57,9 +57,9 @@ SMACSS mengidentifikasi 5 jenis aturan gaya yaitu dasar, tata letak, modul, stat
 * Gaya keadaan untuk menyorot elemen dengan status yang dapat diubah seperti disembunyikan atau dinonaktifkan.
 * Tema digunakan untuk mengubah skema visual halaman.
 
-**Pro SMACSS** : Kode terorganisir yang lebih baik.
-**Kontra SMACSS** : Tidak ada yang bisa saya pikirkan.
+* **Pro SMACSS** : Kode terorganisir yang lebih baik.
+* **Kontra SMACSS** : Tidak ada yang bisa saya pikirkan.
 
-**Official Website -** [https://smacss.com/](https://smacss.com/)
-**css-tricks -** [https://css-tricks.com/smacss-press/](https://css-tricks.com/smacss-press/)
-**Mengorganisasi CSS dengan SMACSS -** [https://www.ariona.net/mengorganisasi-css-dengan-smacss/](https://www.ariona.net/mengorganisasi-css-dengan-smacss/)
+* **Official Website -** [https://smacss.com/](https://smacss.com/)
+* **css-tricks -** [https://css-tricks.com/smacss-press/](https://css-tricks.com/smacss-press/)
+* **Mengorganisasi CSS dengan SMACSS -** [https://www.ariona.net/mengorganisasi-css-dengan-smacss/](https://www.ariona.net/mengorganisasi-css-dengan-smacss/)
