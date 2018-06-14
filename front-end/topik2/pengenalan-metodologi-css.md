@@ -2,27 +2,26 @@
 
 ## Apa itu metodologi ?
 
-**Metodologi** adalah Metodologi adalah ilmu atau sistem tentang metode. Memikirkan metode hanya sebagai cara untuk melakukan sesuatu secara sistematis, dengan cara yang telah ditetapkan tertentu melakukan hal-hal untuk mencapai hasil yang kita inginkan.
+**Metodologi** adalah ilmu atau sistem tentang mempelajari sebuah metode.
 
 ## Apa itu metodologi CSS ?
 
-**Metodologi CSS** dapat diartikan yaitu metode atau tata cara penulisan dalam pembuatan CSS agar lebih **Fleksibel**, **Terdefinisi**, **Dapat dipahami**, dan **Dapat dikelola kembali**.
+**Metodologi CSS**  adalah metode atau tata cara penulisan dalam menulis CSS yang dirancang untuk mengoptimalkan kode CSS agar lebih **efisien** dan **terstruktur** 
 
-Terdapat berbagai **Metodologi CSS** yang dibahas pada kali ini, diantarannya : 
+Terdapat beberapa contoh **Metodologi CSS**, diantarannya : 
 
 ### 1. OOCSS (Object Oriented CSS)
+
 ![oocss](oocss.png)
 
-**OOCSS** adalah metode yang dikembangkan oleh Nicole Sullivan pada tahun 2008, konsep kunci OOCSS (Object Oriented CSS) mencakup identifikasi objek CSS , pemisahan struktur dan gaya visual, dan menghindari gaya berbasis lokasi.
-
-Di sini ada dua jenis objek, pratinjau judul yang lebih besar yang akan diberi nama `post-preview-primary` dan bilah sisi dengan judul yang akan diberi nama `post-preview-secondary`.
-
-Perlu memisahkan struktur dan kulit (yaitu gaya yang menciptakan penampilan objek). Kedua jenis objek memiliki struktur yang berbeda, yang satu berada dalam kotak yang lebih besar meskipun terlihat serupa, dengan gambar di sebelah kiri dan judul di kanan.
+**OOCSS** adalah sebuah metode yang dikembangkan untuk mencakup identifikasi objek CSS, pemisahan struktur dan gaya pada sebuah tampilan. Pada OOCSS perlu adannya sebuah pemisahan antara struktur dan latar belakang yang berfungsi untuk membedakan antara keduannya. 
 
 
- **Pro OOCSS** : Kode styling visual yang dapat digunakan kembali, kode fleksibel lokasi, pengurangan pemilih dalam bersarang.
+ **Keungulan**  
+ 
+ * Style/tampilan pada kode yang dapat digunakan kembali dan lokasi kode terlihat lebih fleksibel
 
- **Kontra OOCSS** : Tanpa jumlah yang cukup mengulangi pola visual, memisahkan struktur dan kode gaya visual tampaknya tidak perlu.
+
 
 
  **Pengembang OOCSS -** [https://github.com/stubbornella](https://github.com/stubbornella)
@@ -31,16 +30,21 @@ Perlu memisahkan struktur dan kulit (yaitu gaya yang menciptakan penampilan obje
 
  **Dasar OOCSS -** [https://toddmotto.com/getting-started-with-object-orientated-css-oocss-creating-a-button-kit/](https://toddmotto.com/getting-started-with-object-orientated-css-oocss-creating-a-button-kit/)
 
+
 ### 2. BEM (Block, Element, Modifier)
+Berbeda dengan OOCSS, **BEM** (Block, Element, Modifier) adalah salah satu teknik metode penamaan class CSS pada sebuah sintaks HTML.
+ 
 ![bem](bem.jpg)
 
-**BEM** adalah Sebuah "Block" pada dasarnya sama dengan "objek" (dari contoh sebelumnya), sebuah "Element" mengacu pada komponen blok (gambar, judul, Preview dalam objek di atas `preview-post-`). Sebuah "Modifier" dapat digunakan ketika keadaan blok atau elemen berubah, misalnya ketika Anda menambahkan kelas aktif ke item menu untuk menyorotnya, kelas aktif bertindak sebagai pengubah / Modifier.
+**Komponen pada BEM**
+* **Block**    : Adalah sebuah abstraksi dari sebuah elemen, biasannya berupa `form` yang terdiri dari beberapa elemen seperti `input`, `button` dll 
+* **Element**  : Adalah komponen yang membentuk sebuah Block **contoh** : `input`, `button`, `textarea`
+* **Modifier** : Adalah sebuah komponen yang berdiri sendiri dan tanpa bergantung pada koponen lain.
 
-Situs **BEM** juga mencantumkan **bagaimana blok**, **elemen**, **dan segregasi pengubah juga dapat dimasukkan ke dalam sistem file CSS** . Blok seperti "tombol" dan "input" dapat memiliki folder mereka sendiri yang terdiri dari file (.css, .js) yang terkait dengan blok tersebut, yang membuat semuanya lebih mudah ketika kita ingin mengimpor blok tersebut dalam proyek lain.
+ **Keunggulan** 
 
- **Pro BEM** : Mudah untuk menggunakan nama kelas dan mengurangi pemilih dalam CSS.
-
- **Kontra KONTRA** : Untuk menjaga nama-nama yang terlihat kurang bagus, BEM menyarankan agar kita terus memblokir ke elemen yang dangkal.
+ * Mudah untuk menggunakan nama Class dalam CSS.
+ * Dengan melihat nama dari Class kita dapat menjelaskan apa yang dilakukan oleh komponen tersebut.
 
 
  **Official Website -** [https://en.bem.info/](https://en.bem.info/)
@@ -52,24 +56,24 @@ Situs **BEM** juga mencantumkan **bagaimana blok**, **elemen**, **dan segregasi 
  **css-tricks -** [https://css-tricks.com/bem-101/](https://css-tricks.com/bem-101/)
 
 
+
 ### 3. SMACSS (Scalable dan Modular Architecture for CSS)
+**SMACSS** adalah sebuah metode dimana nama `class` dan sistem pengarsipan dibuat bedasarkan 5 jenis aturan gaya yaitu `base`, `layout`, `module`, `state` , dan `theme`.
+
 ![smacss](smacss.jpg)
 
-Dikembangkan pada tahun 2011 oleh Jonathan Snook **SMACSS (Scalable dan Modular Architecture for CSS)** bekerja dengan mengidentifikasi 5 jenis aturan gaya yang berbeda. Nama kelas dan sistem pengarsipan dibuat berdasarkan ini.
+* `base` adalah sebuah style default diarahkan pada tag HTML dasar seperti `<p>`, `<a:link>`.
+* `layout` adalah sebuah style yang digunakan untuk menentukan tata letak laman seperti `<header>`, `<footer>`, dll.
+* `module` adalah style khusus untuk modul seperti galeri atau tampilan slide (Slide show).
+* `state` adalah dapat diubah seperti disembunyikan ataupun dinonaktifkan.
+* `theme` digunakan untuk mengubah skema / tampilan visual halaman (page).
 
-**SMACSS** adalah cara untuk memeriksa proses desain Anda dan sebagai cara untuk menyesuaikan kerangka kerja yang kaku ke dalam proses pemikiran yang fleksibel. - Jonathan Snook
 
-SMACSS mengidentifikasi 5 jenis aturan gaya yaitu dasar, tata letak, modul, status , dan tema .
+ **Keunggulan**
+ 
+ * Kode terorganisir yang lebih baik.
+ * Kode Akan terlihat lebih terstruktur dan lebih tertata.
 
-* Gaya dasar adalah gaya default diarahkan pada tag HTML dasar seperti `<p>`, `<a:link>`.
-* Gaya tata letak adalah gaya yang digunakan untuk menentukan tata letak laman, seperti pengkodean tempat menu header, footer, dan samping akan terbuka.
-* Gaya modul khusus untuk modul seperti galeri atau tampilan slide.
-* Gaya keadaan untuk menyorot elemen dengan status yang dapat diubah seperti disembunyikan atau dinonaktifkan.
-* Tema digunakan untuk mengubah skema visual halaman.
-
- **Pro SMACSS** : Kode terorganisir yang lebih baik.
-
- **Kontra SMACSS** : Tidak ada yang bisa saya pikirkan.
 
 
  **Official Website -** [https://smacss.com/](https://smacss.com/)
@@ -77,3 +81,7 @@ SMACSS mengidentifikasi 5 jenis aturan gaya yaitu dasar, tata letak, modul, stat
  **css-tricks -** [https://css-tricks.com/smacss-press/](https://css-tricks.com/smacss-press/)
 
  **Mengorganisasi CSS dengan SMACSS -** [https://www.ariona.net/mengorganisasi-css-dengan-smacss/](https://www.ariona.net/mengorganisasi-css-dengan-smacss/)
+
+
+
+ Refrensi : [https://www.hongkiat.com/blog/css-writing-methodologies/](https://www.hongkiat.com/blog/css-writing-methodologies/)
