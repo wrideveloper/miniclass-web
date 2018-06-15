@@ -62,9 +62,24 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - ECMAScript dan Babel
     - Module Bundler
     - Membuat Frontend Starter Kit
-4.  **Framework Frontend**
-    - Pengenalan Framework Frontend
-    - React JS
+4.  **Dasar React JS**
+    - Pengenalan React JS
+    - Install React JS
+    - Pengenalan JSX
+    - Component
+    - Styling Component
+    - Conditional Rendering
+    - Props
+    - Event
+    - State
+    - Thinking In React
+    - Membuat Aplikasi Todo List
+5.  **React JS Lanjutan**
+    - Design Pattern
+    - React Route
+    - State Manager
+    - High Order Component
+    - Server Side Rendering
 
 ### Materi Backend
 
