@@ -63,7 +63,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - Module Bundler
     - Membuat Frontend Starter Kit
 4.  **Dasar React JS**
-    - Pengenalan React JS
+    - [Pengenalan React JS](front-end/topik4/pengenalan-reactjs.md)
     - Install React JS
     - Pengenalan JSX
     - Component
