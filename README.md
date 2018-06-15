@@ -66,7 +66,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Pengenalan React JS](front-end/topik4/pengenalan-reactjs.md)
     - [Pengenalan JSX](front-end/topik4/pengenalan-jsx.md)
     - [Install React JS](front-end/topik4/install-reactjs.md)
-    - Component
+    - [Component](front-end/topik4/component.md)
     - Styling Component
     - Conditional Rendering
     - Props
