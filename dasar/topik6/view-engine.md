@@ -11,12 +11,14 @@ Apakah kalian merasa terganggu melihat file html kalian yang berantakan atau ter
 ## Cara Menggunakan View Engine Dengan Express
 
 1.  Install view engine yang diinginkan, misalnya pug
+
     ```
     npm install --save pug
     ```
 
 2.  Mengeset view engine yang akan digunakan, misalnya pug
-    ```
+
+    ```Javascript
     app.set('views', path.join(__dirname, 'views'))
     app.set('view engine', 'pug')
     ```
@@ -24,7 +26,8 @@ Apakah kalian merasa terganggu melihat file html kalian yang berantakan atau ter
 3.  Letakkan view di folder views
 
 4.  Untuk merender view, gunakan syntax berikut
-    ```
+
+    ```Javascript
     res.render('namaView', {data})
     ```
 

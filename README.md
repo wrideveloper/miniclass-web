@@ -69,7 +69,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Component](front-end/topik4/component.md)
     - [Styling Component](front-end/topik4/styling-component.md)
     - [Conditional Rendering](front-end/topik4/conditional-rendering.md)
-    - Props
+    - [Props](front-end/topik4/props.md)
     - Event
     - State
     - Thinking In React

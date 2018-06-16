@@ -10,22 +10,18 @@ Array juga memiliki banyak index (pintu) dimana masing - masing index memiliki n
 
 **Perbedaan array dengan objek yaitu** :
 
-1. Pada PHP kita mengenal yang namanya asosiatif array
-2. Asosiatif array adalah array yang index nya bisa diberi nama
-3. Javascript tidak memiliki asosiatif array
-4. Sebagai gantinya javascript memiliki objek yang mirip dengan asosiatif array
+1.  Pada PHP kita mengenal yang namanya asosiatif array
+2.  Asosiatif array adalah array yang index nya bisa diberi nama
+3.  Javascript tidak memiliki asosiatif array
+4.  Sebagai gantinya javascript memiliki objek yang mirip dengan asosiatif array
 
 Untuk lebih jelasnya tentang asosiatif array silahkan kunjungi link berikut : [https://www.w3schools.com/php/php_arrays.asp](https://www.w3schools.com/php/php_arrays.asp)
 
+**Untuk mempelajari tentang array pada javascript, silahkan lihat artikel berikut :**
 
-
-**Untuk mempelajari tentang array pada javascript, silahkan lihat artikel berikut : **
-
-1. **Penggunaan** array pada javascript - [https://www.w3schools.com/js/js_arrays.asp](https://www.w3schools.com/js/js_arrays.asp)
-2. **Manipulasi** array pada javascript - [https://www.w3schools.com/js/js_array_methods.asp](https://www.w3schools.com/js/js_array_methods.asp)
-3. **Sorting** array pada javascript - [https://www.w3schools.com/js/js_array_sort.asp](https://www.w3schools.com/js/js_array_sort.asp)
-
-
+1.  **Penggunaan** array pada javascript - [https://www.w3schools.com/js/js_arrays.asp](https://www.w3schools.com/js/js_arrays.asp)
+2.  **Manipulasi** array pada javascript - [https://www.w3schools.com/js/js_array_methods.asp](https://www.w3schools.com/js/js_array_methods.asp)
+3.  **Sorting** array pada javascript - [https://www.w3schools.com/js/js_array_sort.asp](https://www.w3schools.com/js/js_array_sort.asp)
 
 ## 2. Objek
 
@@ -39,12 +35,8 @@ Pendekatan objek disini sama seperti pendekatan objek pada **OOP** (Object Orien
 
 ![objek](objek.jpg)
 
-
-
 **Dalam javascript**, objek merupakan variabel yang dapat menyimpan banyak nilai, namun bedanya dengan array adalah index pada objek bisa kita beri nama, mirip dengan asosiatif array pada PHP, untuk membuat objek kita menggunakan `{ }`
 
-
-
-**Untuk mempelajari objek didalam javascript silahkan buka artikel berikut :** 
+**Untuk mempelajari objek didalam javascript silahkan buka artikel berikut :**
 
 - **w3school** - [https://www.w3schools.com/js/js_objects.asp](https://www.w3schools.com/js/js_objects.asp)

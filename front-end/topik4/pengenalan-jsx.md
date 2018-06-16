@@ -4,7 +4,7 @@
 
 **JSX** merupakan ekstensi javascript yang digunakan untuk mendeskripsikan bentuk dari component, kalau ada yang ingin tau bagaimana bentuk JSX, seperti inilah bentuknya :
 
-```
+```Javascript
 // .js file
 const header = <h1>Hello, world!</h1>;
 ```

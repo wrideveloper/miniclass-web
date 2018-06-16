@@ -20,7 +20,7 @@ Untuk membuat component dalam react, kita bisa menggunakan dua cara, yaitu mengg
 
 **Menggunakan class :**
 
-```
+```Javascript
 import React, {Component} from 'react'
 
 export default class Header extends Component {
@@ -36,7 +36,7 @@ membuat component dengan menggunakan class cocok diterapkan untuk component yang
 
 **Menggunakan function :**
 
-```
+```Javascript
 const Header = () => {
   return (
     <h1>Judul Halaman</h1>

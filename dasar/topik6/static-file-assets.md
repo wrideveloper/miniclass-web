@@ -17,7 +17,12 @@ Untuk menginclude atau menggunakan file - file ini kita tidak dapat langsung men
 ## Solusi
 
 Solusi dari permasalahan tersebut adalah dengan menggunakan middleware static file
-`app.use(express.static('public'))` dimana `public` merupakan nama folder tempat kita menyimpan file `.css` `.js` `gambar` kita
+
+```Javascript
+app.use(express.static('public'))
+```
+
+dimana `public` merupakan nama folder tempat kita menyimpan file `.css` `.js` `gambar` kita
 
 **Untuk lebih jelasnya silahkan lihat tutorial berikut**
 https://www.youtube.com/watch?v=7UErZ43jzrU
