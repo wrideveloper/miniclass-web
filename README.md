@@ -72,10 +72,10 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Props](front-end/topik4/props.md)
     - [Handling Event](front-end/topik4/handling-event.md)
     - [State](front-end/topik4/state.md)
-    - Thinking In React
+    - [Thinking In React](front-end/topik4/thinking-in-react.md)
     - Membuat Aplikasi Todo List
-    - React Route
 5.  **React JS Lanjutan**
+    - React Route
     - Design Pattern
     - State Manager
     - High Order Component
