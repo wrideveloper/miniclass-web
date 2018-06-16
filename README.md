@@ -97,12 +97,16 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - Pengenalan Arsitektur MVC
     - Implementasi MVC pada Express JS
 3.  **Web Service**
-    - Pengenalan Web Service
     - Membuat Web Service Sederhana
-    - REST Web Service
     - Cross Origin Resource Sharing
+    - REST Web Service
     - [GraphQL Web Service](back-end/topik3/graphql-web-service.md)
 4.  **Autentikasi**
     - [Metode Autentikasi Cookie](back-end/topik4/metode-autentikasi-cookie.md)
     - [Metode Autentikasi Token](back-end/topik4/metode-autentikasi-token.md)
     - Autentikasi dengan Passport JS
+5.  **Document Oriented Database**
+    - Pengenalan Document Oriented Database
+    - Migrasi Dari Relasional Ke Document Oriented
+    - Pengenalan MongoDB
+    - Implementasi MongoDB dengan Express JS
