@@ -96,7 +96,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - Membuat Web Service Sederhana
     - REST Web Service
     - Cross Origin Resource Sharing
-    - [GraphQL Web Service](back-end/topik3/graphql-web-service)
+    - [GraphQL Web Service](back-end/topik3/graphql-web-service.md)
 4.  **Autentikasi**
     - [Metode Autentikasi Cookie](back-end/topik4/metode-autentikasi-cookie.md)
     - [Metode Autentikasi Token](back-end/topik4/metode-autentikasi-token.md)
