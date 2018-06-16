@@ -16,7 +16,7 @@ Kelebihan lain dari component yaitu **component bisa digunakan pada banyak halam
 
 ## Cara Membuat Component
 
-Untuk membuat component dalam react, kita bisa menggunakan dua cara, yaitu menggunakan class atau menggunakan function
+Untuk membuat component dalam react, kita bisa menggunakan tiga cara, yaitu :
 
 **Menggunakan class :**
 
@@ -32,7 +32,19 @@ export default class Header extends Component {
 }
 ```
 
-membuat component dengan menggunakan class cocok diterapkan untuk component yang memiliki logic (smart component)
+**Menggunakan method `React.createClass`:**
+
+```Javascript
+const Header = React.createClass({
+  render() {
+    return (
+      <h1>Judul Halaman</h1>
+    );
+  }
+});
+
+export default Header
+```
 
 **Menggunakan function :**
 
@@ -45,8 +57,6 @@ const Header = () => {
 
 export default Header
 ```
-
-membuat component dengan menggunakan function cocok diterapkan untuk component yang tidak memiliki logic (dump component)
 
 ## Hal Yang Harus Dipelajari
 

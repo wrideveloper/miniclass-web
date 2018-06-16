@@ -71,7 +71,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Conditional Rendering](front-end/topik4/conditional-rendering.md)
     - [Props](front-end/topik4/props.md)
     - [Handling Event](front-end/topik4/handling-event.md)
-    - State
+    - [State](front-end/topik4/state.md)
     - Thinking In React
     - Membuat Aplikasi Todo List
     - React Route
