@@ -68,18 +68,24 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Install React JS](front-end/topik4/install-reactjs.md)
     - [Component](front-end/topik4/component.md)
     - [Styling Component](front-end/topik4/styling-component.md)
-    - [Conditional Rendering](front-end/topik4/conditional-rendering.md)
     - [Props](front-end/topik4/props.md)
     - [Handling Event](front-end/topik4/handling-event.md)
     - [State](front-end/topik4/state.md)
+    - [Conditional Rendering](front-end/topik4/conditional-rendering.md)
     - [Thinking In React](front-end/topik4/thinking-in-react.md)
     - Membuat Aplikasi Todo List
 5.  **React JS Lanjutan**
-    - React Route
-    - Design Pattern
-    - State Manager
-    - High Order Component
+    - React Router
+    - Context
     - Server Side Rendering
+6.  **Advanced React Pattern**
+    - Compound Component
+    - High Order Component
+    - Render Props
+    - Props Collections and Getter
+    - State Initializer
+    - Controller Component
+    - Provider
 
 ### Materi Backend
 
@@ -87,9 +93,8 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Pengenalan ORM](back-end/topik1/pengenalan-orm.md)
     - [Berkenalan dengan Bookshelf JS](back-end/topik1/berkenalan-dengan-bookshelfjs.md)
     - Impelementasi ORM Pada Express JS dengan Bookshelf JS
-2.  **Design Pattern**
-    - Pengenalan Design Pattern
-    - MVC Design Pattern
+2.  **Software Architectural Pattern**
+    - Pengenalan Arsitektur MVC
     - Implementasi MVC pada Express JS
 3.  **Web Service**
     - Pengenalan Web Service
