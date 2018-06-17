@@ -75,9 +75,9 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Thinking In React](front-end/topik4/thinking-in-react.md)
     - Membuat Aplikasi Todo List
 5.  **React JS Lanjutan**
-    - React Router
-    - Context
-    - Server Side Rendering
+    - [React Router](front-end/topik5/react-router.md)
+    - [Context](front-end/topik5/context.md)
+    - [Server Side Rendering](front-end/topik5/server-side-rendering.md)
 6.  **Advanced React Pattern**
     - Compound Component
     - High Order Component
