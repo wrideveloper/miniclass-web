@@ -53,3 +53,23 @@ Sedangkan **library** hanya **fokus untuk memecahkan sebuah masalah**, misalnya 
 
 **Selengkapnya tentang perbedaan framework dan library :**
 https://medium.com/datafire-io/libraries-vs-frameworks-626cdde799a7
+
+## Virtual DOM
+
+React menggunakan **virtual DOM** untuk mempercepat proses perubahan node pada **DOM**
+
+![virtual dom](virtual-dom.png)
+
+**Virtual DOM** merupakan **DOM** yang disalin kedalam bentuk JSON.
+
+Cara kerja dari **Virtual DOM** adalah sebagai berikut :
+
+1.  **Virtual DOM** menyalin semua node yang ada pada **DOM** kedalam bentuk JSON
+2.  React mengubah state aplikasi
+3.  **Virtual DOM baru** dibuat oleh react berdasarkan **Virtual DOM lama**, namun dengan mengikuti perubahan state (**Virtual DOM lama** tetap ada)
+4.  **Virtual DOM lama** dan **Virtual DOM baru** dibandingkan untuk mengetahui letak node yang berubah
+5.  Setelah mengetahui node mana yang berubah, maka **Virtual DOM baru** menyalin node yang berubah ke **DOM**
+
+**Untuk lebih memahami cara kerja Virtual DOM, silahkan simak video berikut :**
+
+https://www.youtube.com/watch?v=RquK3TImY9U
