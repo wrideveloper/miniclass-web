@@ -26,13 +26,13 @@ Perkenalkan fitur keren yang dimiliki react yang bernama `Context`, dengan `Cont
 const {Provider, Consumer} = React.createContext(defaultValue);
 ```
 
-`Provider` merupakan component yang digunakan untuk merubah data secara global
+`Provider` merupakan component yang mendistribusikan data kepada `Consumer`
 
 ```Javascript
 <Provider value={/* some value */}>
 ```
 
-Sedangkan `Consumer` merupakan component yang digunakan untuk mengambil data secara realtime berdasarkan perubahan yang terjadi pada `Provider`
+Sedangkan `Consumer` merupakan component yang digunakan untuk mengambil data yang disediakan oleh `Provider`
 
 ```Javascript
 Consumer>
