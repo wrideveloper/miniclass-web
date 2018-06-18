@@ -91,7 +91,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 
 1.  **Object Relational Mapping**
     - [Pengenalan ORM](back-end/topik1/pengenalan-orm.md)
-    - [Berkenalan dengan Bookshelf JS](back-end/topik1/berkenalan-dengan-bookshelfjs.md)
+    - [Pengenalan Framework ORM](back-end/topik1/pengenalan-framework-orm.md)
     - Impelementasi ORM Pada Express JS dengan Bookshelf JS
 2.  **Software Architectural Pattern**
     - Pengenalan Arsitektur MVC
