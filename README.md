@@ -1,13 +1,14 @@
-# Miniclass Web
+# :earth_asia: Miniclass Web
 
 Selamat datang di Miniclass Web - Workshop Riset Informatika,
 disini materi yang akan diajarkan yaitu diawali dengan materi web dasar, baru kemudian selanjutnya akan difokuskan ke materi web tingkat lanjut (Frontend atau Backend).
 
-### Materi Web Dasar
+### :books: Materi Web Dasar
 
 Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 
 1.  **Pengenalan Pemrograman Web**
+    - [Mengenal Dunia Web dan Internet](dasar/topik0/dunia-fana.md)
     - [Cara Kerja Website](dasar/topik1/cara-kerja-website.md)
     - [HTTP Request dan HTTP Response](dasar/topik1/http-request-dan-response.md)
     - [HTTP Status Code](dasar/topik1/http-status-code.md)
@@ -50,7 +51,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Mengenal AJAX](dasar/topik7/mengenal-ajax.md)
     - [Mengenal Web Service](dasar/topik7/mengenal-web-service.md)
 
-### Materi Frontend
+### :sunflower: Materi Frontend
 
 1.  **Framework CSS**
     - [Pengenalan Framework CSS](front-end/topik1/pengenalan-framework-css.md)
@@ -87,7 +88,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - Controller Component
     - Provider
 
-### Materi Backend
+### :japanese_ogre: Materi Backend
 
 1.  **Object Relational Mapping**
     - [Pengenalan ORM](back-end/topik1/pengenalan-orm.md)
