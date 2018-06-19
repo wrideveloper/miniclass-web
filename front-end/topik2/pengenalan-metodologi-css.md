@@ -47,14 +47,19 @@ Berbeda dengan OOCSS, **BEM** (Block, Element, Modifier) adalah salah satu tekni
  * Dengan melihat nama dari Class kita dapat menjelaskan apa yang dilakukan oleh komponen tersebut.
 
 
- **Official Website -** [https://en.bem.info/](https://en.bem.info/)
+ **Official Website -** 
+ - [https://en.bem.info/](https://en.bem.info/)
 
- **Dasar BEM -** [https://www.sitepoint.com/css-architecture-block-element-modifier-bem/](https://www.sitepoint.com/css-architecture-block-element-modifier-bem/)
+**Referensi BEM CSS**
 
- **Youtube -** [https://www.youtube.com/watch?v=Ysf0LhP8jus](https://www.youtube.com/watch?v=Ysf0LhP8jus)
+ - [Mengenal BEM pada CSS](https://mazipanneh.com/blog/2017/04/mengenal-bem-css/)
 
- **css-tricks -** [https://css-tricks.com/bem-101/](https://css-tricks.com/bem-101/)
+ - [CSS Architecture BEM by Sitepoint](https://www.sitepoint.com/css-architecture-block-element-modifier-bem/)
 
+- [BEM by CSStricks](https://css-tricks.com/bem-101/)
+
+ **Youtube** 
+ - [https://www.youtube.com/watch?v=Ysf0LhP8jus](https://www.youtube.com/watch?v=Ysf0LhP8jus)
 
 
 ### 3. SMACSS (Scalable dan Modular Architecture for CSS)
@@ -68,20 +73,17 @@ Berbeda dengan OOCSS, **BEM** (Block, Element, Modifier) adalah salah satu tekni
 * `state` adalah dapat diubah seperti disembunyikan ataupun dinonaktifkan.
 * `theme` digunakan untuk mengubah skema / tampilan visual halaman (page).
 
-
  **Keunggulan**
  
  * Kode terorganisir yang lebih baik.
  * Kode Akan terlihat lebih terstruktur dan lebih tertata.
 
+ **Official Website** 
+ - [https://smacss.com/](https://smacss.com/)
 
+**Referensi** 
+- [Smacss press by csstricks](https://css-tricks.com/smacss-press/)
+- [Smacss oleh Ariona](https://www.ariona.net/mengorganisasi-css-dengan-smacss/)
 
- **Official Website -** [https://smacss.com/](https://smacss.com/)
-
- **css-tricks -** [https://css-tricks.com/smacss-press/](https://css-tricks.com/smacss-press/)
-
- **Mengorganisasi CSS dengan SMACSS -** [https://www.ariona.net/mengorganisasi-css-dengan-smacss/](https://www.ariona.net/mengorganisasi-css-dengan-smacss/)
-
-
-
- Refrensi : [https://www.hongkiat.com/blog/css-writing-methodologies/](https://www.hongkiat.com/blog/css-writing-methodologies/)
+ Refrensi : 
+ - [CSS Writing by Hongkiat](https://www.hongkiat.com/blog/css-writing-methodologies/)
