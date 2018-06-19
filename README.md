@@ -8,7 +8,7 @@ disini materi yang akan diajarkan yaitu diawali dengan materi web dasar, baru ke
 Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 
 1.  **Pengenalan Pemrograman Web**
-    - [Mengenal Dunia Web dan Internet](dasar/topik0/dunia-fana.md)
+    - [Mengenal Dunia Web dan Internet](dasar/topik1/dunia-fana.md)
     - [Cara Kerja Website](dasar/topik1/cara-kerja-website.md)
     - [HTTP Request dan HTTP Response](dasar/topik1/http-request-dan-response.md)
     - [HTTP Status Code](dasar/topik1/http-status-code.md)
