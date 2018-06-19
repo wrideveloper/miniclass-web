@@ -46,7 +46,7 @@ Namun sayangnya, browser lama kita tidak bisa menjalankan ES6 (atau setelahnya),
 
 ## Mengubah ES6 Menjadi ES5
 
-**Babel** merupakan transpiler yang dapat merubah kode ES6 menjadi kode ES5 atau javascript yang kita kenal sekarang, yang bisa disupport oleh browser baru dan browser lama.
+**Babel** merupakan compiler yang dapat merubah kode ES6 menjadi kode ES5 atau javascript yang kita kenal sekarang, yang bisa disupport oleh browser baru dan browser lama.
 
 **Untuk mempelajari bagaimana cara mengubah ES6 menjadi ES5, silahkan kunjungi link berikut :**
 

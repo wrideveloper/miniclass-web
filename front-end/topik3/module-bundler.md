@@ -1,19 +1,32 @@
-## Webpack Module Bundler
+# Module Bundler
 
 ## :bookmark_tabs: Tujuan
 
-- Mengulas Webpack Module bundler 
+- Mengulas Module bundler
 
-## :clipboard: Pembelajaran
+## Penjelasan Module Bundler
 
-Webpack adalah module bundler untuk aplikasi javascript modern. webpack membantu kita dalam mengelolah file javascript dengan segala modul yang ada di dalamnya, dan kemudian pada prosesnya file-file javascript tersebut akan di paketkan ke dalam sebuah file dengan ukuran yang lebih kecil.
+**Module bundler** membantu kita dalam mengelolah file javascript beserta segala modul yang ada di dalamnya, dan kemudian file - file javascript tersebut akan di paketkan ke dalam sebuah file dengan ukuran yang lebih kecil.
 
 Ilustrasinya seperti berikut :
+
 ![module bundler](webpack-roadmap.png)
 
-Selain sebagai module bundler, dengan berbagai loader dan plugin yang sudah disediakan untuk Webpack, kita bisa gunakan Webpack untuk mengubah ES6 (ECMAScript 2015) menjadi format ES5 (JavaScript yang kita kenal) yang bisa dibaca oleh browser dan bisa mengubah preprocessor CSS kayak SASS, LESS, Stylus, dan saudara-saudaranya menjadi sebuah file CSS yang bisa dibaca di browser.Jadi webpack bisa disebut task runner yang udah hampir komplit hehe. Webpack juga digunakan saat kita pakai Front-end Framework kayak ReactJS, VueJS, Angular dan sejenisnya.
+Seperti yang kita lihat, disana terdapat banyak file javascript yang saling berkaitan satu sama lain, sehingga apabila tidak di bundler maka kita harus mengimport mereka satu per satu kedalam file HTML. Dengan dilakukan bundler, maka file - file javascript tersebut akan menjadi satu, dan kita cukup mengimport satu file tersebut kedalam HTML kita.
 
-**Requirmentnya** seperti pada umumnya harus terinstall nodejs beserta package managernya(npm / yarn)
+## Module Bundling Menggunakan Webpack
 
-## Referensi
-- [Contoh Sample ES6 Babel Webpack](https://github.com/wrideveloper/workshop-babel-starter) ini merupakan contoh implementasi Webpack babel dan ES6 yang berfungsi membundle sebuah file javascript 
+**Webpack** merupakan salah satu tool yang digunakan untuk melakukan bundling terhadap file - file javascript.
+
+Selain sebagai module bundler, dengan berbagai loader dan plugin yang sudah disediakan untuk webpack, kita bisa menggunakan webpack untuk :
+
+1.  Mengubah ES6 menjadi ES5
+2.  Mengubah preprocessor CSS menjadi file CSS
+
+Sehingga selain sebagai module bundler, webpack juga bisa menjadi task runner, tentu saja dengan bantuan loader dan pluginnya.
+
+Webpack juga digunakan pada Framework Front-end seperti ReactJS, VueJS, Angular dan sejenisnya.
+
+**Untuk mempelajari penggunaan webpack, silahkan kunjungi link berikut :**
+
+https://www.youtube.com/playlist?list=PL4cUxeGkcC9iTQ3J5oa6orDIMQKKxl8dC
