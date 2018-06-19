@@ -25,6 +25,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Array dan Objek](dasar/topik3/array-dan-objek.md)
     - [Local Storage](dasar/topik3/local-storage.md)
     - [Membuat Aplikasi Todo List](dasar/topik3/membuat-aplikasi-todo-list)
+    - ECMAScript dan Babel
 4.  **Relasional Database**
     - [DDL](dasar/topik4/DDL.md)
     - [DML](dasar/topik4/DML.md)
@@ -59,10 +60,8 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Pengenalan Metodologi CSS](front-end/topik2/pengenalan-metodologi-css.md)
 3.  **Modern Frontend Development**
     - [Preprocessor CSS](front-end/topik3/preprocessor-css.md)
-    - Task Runner
-    - ECMAScript dan Babel
-    - Module Bundler
-    - Membuat Frontend Starter Kit
+    - [Task Runner](front-end/topik3/task-runner.md)
+    - Setup Automation Tools
 4.  **Dasar React JS**
     - [Pengenalan React JS](front-end/topik4/pengenalan-reactjs.md)
     - [Pengenalan JSX](front-end/topik4/pengenalan-jsx.md)
