@@ -82,7 +82,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 6.  **Advanced React Pattern**
     - [Compound Component](front-end/topik6/compound-component.md)
     - [Higher Order Component](front-end/topik6/higher-order-component.md)
-    - Render Props
+    - [Render Props](front-end/topik6/render-props.md)
 
 ### :japanese_ogre: Materi Backend
 
