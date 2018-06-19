@@ -81,7 +81,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Server Side Rendering](front-end/topik5/server-side-rendering.md)
 6.  **Advanced React Pattern**
     - [Compound Component](front-end/topik6/compound-component.md)
-    - High Order Component
+    - [Higher Order Component](front-end/topik6/higher-order-component.md)
     - Render Props
 
 ### :japanese_ogre: Materi Backend
