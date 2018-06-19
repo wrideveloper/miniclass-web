@@ -19,7 +19,7 @@
 
 Untuk lebih detail dapat dilihat pada link referensi
 
-**Babel** merupakan transpiler yang dapat merubah kode ES6 menjadi kode ES5 atau javascript yang kita kenal sekarang.dikarenakan browser sekarang baru mendukung ES5.
+**Babel** merupakan transpiler yang dapat merubah kode ES6 menjadi kode ES5 atau javascript yang kita kenal sekarang dikarenakan browser sekarang baru mendukung ES5.
 
 ## Referensi
 - [Contoh Sample ES6 dan Babel](https://github.com/wrideveloper/workshop-babel-starter)
