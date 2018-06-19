@@ -61,7 +61,9 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 3.  **Modern Frontend Development**
     - [Preprocessor CSS](front-end/topik3/preprocessor-css.md)
     - [Task Runner](front-end/topik3/task-runner.md)
-    - Setup Automation Tools
+    - ECMAScript dan Babel
+    - Module Bundler
+    - Membuat Frontend Starter Kit
 4.  **Dasar React JS**
     - [Pengenalan React JS](front-end/topik4/pengenalan-reactjs.md)
     - [Pengenalan JSX](front-end/topik4/pengenalan-jsx.md)
