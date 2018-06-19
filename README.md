@@ -19,6 +19,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Layouting dengan CSS](dasar/topik2/layouting-dengan-css.md)
     - [Membuat Profile Page](dasar/topik2/membuat-profile-page.md)
 3.  **Javascript**
+
     - [Pengenalan Javascript](dasar/topik3/pengenalan-javascript.md)
     - [Manipulasi DOM](dasar/topik3/manipulasi-dom.md)
     - [Event Pada Javascript](dasar/topik3/event-pada-javascript.md)
@@ -61,7 +62,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 3.  **Modern Frontend Development**
     - [Preprocessor CSS](front-end/topik3/preprocessor-css.md)
     - [Task Runner](front-end/topik3/task-runner.md)
-    - [ECMAScript dan Babel](front-end/topik3/es6-babel.md)
+    - [ECMAScript dan Babel](front-end/topik3/ecmascript-babel.md)
     - [Module Bundler](front-end/topik3/module-bundler.md)
     - Membuat Frontend Starter Kit
 4.  **Dasar React JS**
