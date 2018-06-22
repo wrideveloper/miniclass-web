@@ -50,8 +50,8 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 7.  **Pengenalan Backend dan Frontend**
 
     - [Apa itu Frontend dan Backend Developer](dasar/topik7/apa-itu-frontend-dan-backend-developer.md)
-    - [Mengenal AJAX](dasar/topik7/mengenal-ajax.md)
     - [Mengenal Web Service](dasar/topik7/mengenal-web-service.md)
+    - [Mengenal AJAX](dasar/topik7/mengenal-ajax.md)
 
 ### :sunflower: Materi Frontend
 
