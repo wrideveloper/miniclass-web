@@ -1,4 +1,16 @@
-# Web Service
+# Membuat Web Service Dengan Express JS dan MySQL
+
+Setelah memahami apa itu web service maka disini kita akan belajar bagaimana membuat Web Service dengan express JS dan MySQL
+
+**Link Aplikasi** - https://github.com/wrideveloper/express-mysql-webservice
+
+### Hal yang perlu dipahami untuk membuat aplikasi tersebut yaitu :
+
+1.  [CRUD application](../../dasar/topik6/membuat-aplikasi-crud-dengan-expressjs-dan-mysql.md)
+2.  [Pengenalan web service](../../dasar/topik7/mengenal-web-service.md)
+
+
+<!-- # Web Service
 
 ![](membuat-web-service-sederhana.jpg)
 
@@ -28,4 +40,4 @@ Salah satu perbedaan yang signifikan adalah:
 ___
 **Untuk penjelasan mengenai Web Service dapat mengunjungi** https://medium.com/@umerfarooq_26378/web-services-in-python-ef81a9067aaf
 
-**Untuk mengetahui perbedaan SOAP dan REST dapat mengunjungi** http://pusdiklat.bps.go.id/index.php?r=artikel/view&id=206
+**Untuk mengetahui perbedaan SOAP dan REST dapat mengunjungi** http://pusdiklat.bps.go.id/index.php?r=artikel/view&id=206 -->
