@@ -93,7 +93,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Pengenalan Framework ORM](back-end/topik1/pengenalan-framework-orm.md)
     - Impelementasi ORM Pada Express JS dengan Bookshelf JS
 2.  **Software Architectural Pattern**
-    - Pengenalan Arsitektur MVC
+    - [Pengenalan Arsitektur MVC](back-end/topik2/pengenalan-arsitektur-mvc.md)
     - Implementasi MVC pada Express JS
 3.  **Web Service**
     - [Membuat Web Service Sederhana](back-end/topik3/membuat-web-service-sederhana.md)
