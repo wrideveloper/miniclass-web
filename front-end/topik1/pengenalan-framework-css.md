@@ -2,7 +2,7 @@
 
 ## Apa itu Framework?
 
-**Framework** merupakan kerangka kerja yang memudahkan untuk membuat aplikasi atau web. Dengan menggunakan framework, sebuah aplikasi akan tersusun dengan rapi.
+**Framework** merupakan kerangka kerja yang memudahkan untuk membuat sebuah aplikasi agar tersusun dengan rapi.
 
 ## Apa itu CSS?
 
@@ -10,7 +10,7 @@
 
 ## Pernah mendengar istilah framework CSS?
 
-**Framework CSS** sendiri tak lepas kaitannya dengan tampilan website. **Framework CSS** merupakan sebuah kerangka kerja yang digunakan untuk mempermudah dalam membuat tampilan website.
+**Framework CSS** merupakan sebuah kerangka kerja untuk mempermudah dalam membuat tampilan website.
 
 Terdapat berbagai macam **Framework CSS**, diantaranya :
 
@@ -18,9 +18,9 @@ Terdapat berbagai macam **Framework CSS**, diantaranya :
 
 ![bootstrap-logo](bootstrap-logo.png)
 
-**Bootstrap** dianggap sebagai framework CSS responsive terbaik. **Bootstrap** dirancang untuk pengembangan front-end secara khusus untuk membantu membangun konsep desain web, proyek seluler pertama, sistem grid, tipografi, tombol dan sebagainya.
+**Bootstrap** dianggap sebagai framework CSS responsive terbaik. 
 
-Fitur **Bootstrap** sudah terbilang lengkap. CSS Framework ini sudah dilengkapi dengan fitur seperti UI, grid system, responsiveness, dropdown menu, dan lain sebagainya.
+**Bootstrap** ini sudah dilengkapi dengan fitur seperti UI, grid system, responsiveness, dropdown menu, dan lain sebagainya.
 
 **Untuk mempelajarinya lebih lanjut, klik link berikut :**
 
@@ -32,13 +32,13 @@ Fitur **Bootstrap** sudah terbilang lengkap. CSS Framework ini sudah dilengkapi 
 
 ![logo-bulma](logo-bulma.png)
 
-**Bulma** merupakan free dan open source framework. **Bulma** sangat mudah dipelajari dan digunakan.
+**Bulma** merupakan framework yang open source. **Bulma** sangat mudah dipelajari dan digunakan.
 
 **Kelebihannya :**
 
 **Pertama**, Bulma berisi **komponen UI yang hebat**, seperti tab, bilah navigasi, kotak, panel, dan banyak lagi karena kerangka ini dirancang untuk memberi Anda UI yang jelas dan menarik.
 
-**Kedua**, Bulma sangat **modular** artinya Anda hanya dapat mengimpor fitur-fitur yang dibutuhkan dan Anda dapat memulai pekerjaan Anda.
+**Kedua**, Bulma sangat **modular** artinya kita dapat mengimpor fitur-fitur yang dibutuhkan.
 
 **Ketiga**, framework ini memiliki **kelas yang sangat mudah dibaca**.
 
@@ -52,13 +52,13 @@ Fitur **Bootstrap** sudah terbilang lengkap. CSS Framework ini sudah dilengkapi 
 
 ![logo-semantic-ui](semantic-ui.jpg)
 
-Seperti pada namanya, **semantic UI** adalah framework yang bertujuan untuk membuat proses pembuatan situs web lebih cantik dan menarik. Fitur utamanya adalah memanfaatkan prinsip-prinsip bahasa alami hingga membuat **kode lebih mudah dibaca dan dipahami**.
+Seperti pada namanya, **semantic UI** adalah framework untuk pembuatan situs web yang lebih cantik dan menarik. Fitur utamanya adalah memanfaatkan prinsip-prinsip bahasa alami yang membuat **kode lebih mudah dipahami**.
 
 **Kelebihan :**
 
 **Pertama**, **Debugging Sederhana** dengan pencatatan kinerja yang memungkinkan melacak error tanpa menggali melalui jejak tumpukan.
 
-**Kedua**, **HTML ringkas** . Semantic UI memperlakukan kata dan kelas sebagai konsep yang dapat dipertukarkan. Kelas menggunakan sintaks dari bahasa alami seperti hubungan nomina / pengubah, susunan kata, dan kemajemukan untuk menghubungkan konsep secara intuitif.
+**Kedua**, **HTML ringkas**.
 
 **Untuk mempelajarinya lebih lanjut, klik link berikut :**
 
@@ -68,7 +68,7 @@ Seperti pada namanya, **semantic UI** adalah framework yang bertujuan untuk memb
 
 ![logo-mdl](logo-mdl.png)
 
-Apabila kamu menggunakan *smartphone* dengan sistem operasi Android versi 5.1 Lollipop, mungkin sudah tidak asing lagi dengan **material desain**, bahasa desain baru buatan **Google** yang diperkenalkan semenjak tahun 2014 lalu. **Material Design Lite** memungkinkan Anda menambahkan tampilan dan nuansa Desain Material ke situs web Anda. Komponen tersebut terdiri dari seperangkat kode CSS, HTML, dan JavaScript. Serupa dengan *framework* lain, MDL memiliki sejumlah komponen yang siap digunakan. Aturan penggunaan MDL sangat sederhana, pertama kamu harus memulai dengan *tag* HTML, kemudian diikuti dengan komponen-komponen MDL di dalam *tag* tersebut.
+**Material desain** merupakan bahasa desain baru buatan **Google** yang diperkenalkan semenjak tahun 2014 lalu. **Material Design Lite** memungkinkan kita untuk menambahkan nuansa Desain Material ke situs web kita. Aturan penggunaan MDL sangat sederhana, pertama dimulai dengan *tag* HTML, kemudian diikuti dengan komponen-komponen MDL di dalam *tag* tersebut.
 
 **Untuk mempelajarinya lebih lanjut, klik link berikut :**
 
@@ -78,7 +78,7 @@ Apabila kamu menggunakan *smartphone* dengan sistem operasi Android versi 5.1 
 
 ![logo-materialize](logo-materialize.png)
 
-**Materialize** adalah framework yang dirancang dan dibuat berdasarkan **google material design** . **Materialize** menggabungkan prinsip-prinsip klasik dari desain yang sukses bersama dengan inovasi dan teknologi.
+**Materialize** adalah framework yang dirancang dan dibuat berdasarkan **google material design** .
 
 **Untuk mempelajarinya lebih lanjut, klik link berikut :**
 
