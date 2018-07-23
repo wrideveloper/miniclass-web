@@ -1,4 +1,4 @@
-# Metode Autentikasi Cookie
+# Metode Autentikasi Token
 
 ![](metode-autentikasi-token.jpg)
 

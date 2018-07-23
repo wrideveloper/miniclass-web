@@ -90,10 +90,10 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 
 1.  **Object Relational Mapping**
     - [Pengenalan ORM](back-end/topik1/pengenalan-orm.md)
-    - [Pengenalan Framework ORM](back-end/topik1/pengenalan-framework-orm.md)
-    - Impelementasi ORM Pada Express JS dengan Bookshelf JS
+    - [Pengenalan Framework ORM Sequelize JS](back-end/topik1/pengenalan-framework-orm-sequelize-js.md)
+    - Impelementasi ORM Pada Express JS dengan Sequelize JS
 2.  **Software Architectural Pattern**
-    - Pengenalan Arsitektur MVC
+    - [Pengenalan Arsitektur MVC](back-end/topik2/pengenalan-arsitektur-mvc.md)
     - Implementasi MVC pada Express JS
 3.  **Web Service**
     - [Membuat Web Service Sederhana](back-end/topik3/membuat-web-service-sederhana.md)
@@ -101,9 +101,10 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [REST Web Service](back-end/topik3/rest-web-service.md)
     - [GraphQL Web Service](back-end/topik3/graphql-web-service.md)
 4.  **Autentikasi**
-    - [Metode Autentikasi Cookie](back-end/topik4/metode-autentikasi-cookie.md)
+    - [Metode Autentikasi Session](back-end/topik4/metode-autentikasi-session.md)
+    - Implementasi autentikasi dengan session menggunakan Passport JS Local  
     - [Metode Autentikasi Token](back-end/topik4/metode-autentikasi-token.md)
-    - Autentikasi dengan Passport JS
+    - Implementasi autentikasi dengan token menggunakan Passport JS JWT 
 5.  **Document Oriented Database**
     - Pengenalan Document Oriented Database
     - Migrasi Dari Relasional Ke Document Oriented
