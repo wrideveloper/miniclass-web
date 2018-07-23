@@ -25,7 +25,7 @@ Untuk menerapkan task runner ke suatu proyek, kita bisa menggunakan tool - tool 
 
 **Dokumentasi -** https://github.com/gulpjs/gulp/blob/v3.9.1/docs/API.md
 
-**Tutorial -** https://www.youtube.com/playlist?list=PL6gx4Cwl9DGCSvv2N_6jhnEOZnq_419XJ
+**Tutorial -** https://appdividend.com/2018/03/09/gulp-js-tutorial-beginners/
 
 ### [Grunt](https://gruntjs.com/)
 
