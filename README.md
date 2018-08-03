@@ -102,9 +102,9 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [GraphQL Web Service](back-end/topik3/graphql-web-service.md)
 4.  **Autentikasi**
     - [Metode Autentikasi Session](back-end/topik4/metode-autentikasi-session.md)
-    - Implementasi autentikasi dengan session menggunakan Passport JS Local  
+    - Implementasi autentikasi dengan session menggunakan Passport JS Local
     - [Metode Autentikasi Token](back-end/topik4/metode-autentikasi-token.md)
-    - Implementasi autentikasi dengan token menggunakan Passport JS JWT 
+    - Implementasi autentikasi dengan token menggunakan Passport JS JWT
 5.  **Document Oriented Database**
     - Pengenalan Document Oriented Database
     - Migrasi Dari Relasional Ke Document Oriented
