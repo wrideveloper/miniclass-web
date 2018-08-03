@@ -76,7 +76,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [State](front-end/topik4/state.md)
     - [Conditional Rendering](front-end/topik4/conditional-rendering.md)
     - [Thinking In React](front-end/topik4/thinking-in-react.md)
-    - Membuat Aplikasi Todo List
+    - [Membuat Aplikasi Todo List](front-end/topik4/membuat-aplikasi-todolist.md)
 5.  **React JS Lanjutan**
     - [React Router](front-end/topik5/react-router.md)
     - [Context](front-end/topik5/context.md)
