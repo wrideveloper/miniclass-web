@@ -16,6 +16,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 2.  **Web Statis**
     - [Pengenalan HTML](dasar/topik2/pengenalan-html.md)
     - [Pengenalan CSS](dasar/topik2/pengenalan-css.md)
+    - [Membuat UI Component](dasar/topik2/ui-component.md)
     - [Layouting dengan CSS](dasar/topik2/layouting-dengan-css.md)
     - [Membuat Profile Page](dasar/topik2/membuat-profile-page.md)
 3.  **Javascript**
@@ -24,6 +25,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Manipulasi DOM](dasar/topik3/manipulasi-dom.md)
     - [Event Pada Javascript](dasar/topik3/event-pada-javascript.md)
     - [Array dan Objek](dasar/topik3/array-dan-objek.md)
+    - [Membuat UI Component Lanjutan](dasar/topik3/ui-component-lanjutan.md)
     - [Local Storage](dasar/topik3/local-storage.md)
     - [Membuat Aplikasi Todo List](dasar/topik3/membuat-aplikasi-todo-list)
 
