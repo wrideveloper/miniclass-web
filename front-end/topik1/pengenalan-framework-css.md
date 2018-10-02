@@ -62,7 +62,8 @@ Seperti pada namanya, **semantic UI** adalah framework untuk pembuatan situs web
 
 **Untuk mempelajarinya lebih lanjut, klik link berikut :**
 
-**​Official Website -** [https://semantic-ui.com/](https://semantic-ui.com/)
+**​Official Website -** 
+[https://semantic-ui.com/](https://semantic-ui.com/)
 [semantic UI forest](http://semantic-ui-forest.com/)
 
 ### Material Design Lite
