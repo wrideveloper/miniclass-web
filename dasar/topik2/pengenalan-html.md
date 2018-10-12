@@ -1,6 +1,7 @@
 # :school_satchel: Pengenalan HTML
 
 ## :bookmark_tabs: Tujuan
+
 - Mengulas dasar dasar pada HTML
 
 ## :clipboard: Pembelajaran
@@ -26,54 +27,10 @@ Sintaks atau cara penulisan HTML biasanya terlihat seperti ini:
 
 ### :pencil2: Elemen Dasar html
 
-Dokumen atau konten HTML dalam sebuah halaman web dideskripsikan dengan elemen HTML atau tag seperti `head`, `title`, `body`, `article`, `section`, `p`, `div`, `span`, `img`, `picture`, dan banyak lainnya. Elemen-elemen ini membentuk bagian pembangun  blok pada sebuah website. Website dapat memiliki sedikit atau banyak dari elemen-elemen tersebut.
-
-### :scroll: Deklarasi Tipe Dokumen 
-
-Deklarasi `!DOCTYPE` di awal membantu browser untuk menampilkan halaman web secara benar.
-Secara formal, setiap dokumen HTML yang valid harus menyertakan ini (satu kali saja di atas) setiap dokumen. Ini juga termasuk mengatur tipe dokumen (yang mana adalah HTML) dan versinya sekaligus. Untuk sekarang kita hanya perlu HTML versi 5, atau disebut juga "HTML5".
-Deklarasinya tidak case sensitive, jadi kita bisa gunakan bentuk huruf apapun:
-
-```html
-<!DOCTYPE HTML>
-<!DOCTYPE html>
-<!doctype html>
-```
-
-### :pencil: Komentar (Comment)
-
-Kadang kala kita butuh menjelaskan apa yang terjadi atau menaruh penjelasan di beberapa tempat. Kita dapat gunakan komentar yang disertakan di baris sendiri atau di tempat yang tepat. Kita bisa juga gunakan ini sebagai teks sementara (placeholder).
-
-```html
-<!-- Ini sebuah artikel -->
-<article>
-  <h1><!-- Ini title --></h1>
-  <p>ini cerita gw</p> <!-- lagi nulis -->
-</article>
-```
-
-### :chart_with_upwards_trend: Meta Data/Information
-
-Meta data/information adalah sebuah cara untuk menyertakan hal penting tentang sebuah dokumen
-yang akan dibaca oleh browser, walau tidak terlalu diperhatikan pengunjung website pada umumnya, walaupun developer biasanya membacanya. Ada beberapa tag meta data umum yang digunakan seperti `head`, `meta`, `link`, `style`, dan `script`. Biasanya mereka ada di bagian `head`.
-
-```html
-<html>
-    <head>
-    <meta charset="utf-8">
-    <title>My Simple Website Title</title>
-    <meta description="Showing what HTML can do">
-    <link href="/favicon.png" rel="icon" type="image/png">
-    <link href="/index.css" rel="stylesheet" type="text/css" media="all">
-    </head>
-    <body>
-    </body>
-</html>
-```
-
-### :card_index: Header dan Footer
+Dokumen atau konten HTML dalam sebuah halaman web dideskripsikan dengan elemen HTML atau tag seperti `head`, `title`, `body`, `p`, `div`, `span`, `img`, dan banyak lainnya. Elemen-elemen ini membentuk bagian pembangun blok pada sebuah website. Website dapat memiliki sedikit atau banyak dari elemen-elemen tersebut.
 
 ### :orange_book: Varian Headings
+
 Terdapat enam varian heading, diurutkan (ranked) tergantung dari pentingnya dan ukurannya, menggunakan angka seperti `h1`, `h2`, `h3`, `h4`, `h5`, `h6`,
 
 ```
@@ -86,6 +43,7 @@ Terdapat enam varian heading, diurutkan (ranked) tergantung dari pentingnya dan 
 ```
 
 ### :page_facing_up: Paragraph
+
 Sebelumnya sudah melihat paragraf, teks panjang yang berisi sebuah penjelasan atau cerita (apapun!), yang juga dapat terbagi ke beberapa bagian (section). Kita bisa gunakan paragraf untuk menyajikan teks polos apapun.
 
 ```html
@@ -95,7 +53,8 @@ Sejarah. JavaScript pertama kali dikembangkan oleh Brendan Eich dari Netscape di
 ```
 
 ### :book: Styling pada teks
-Dalam paragraf atau heading, kita bisa gunakan strong (`strong`) untuk hal penting yang kuat dan emphasis (`em`) untuk penekanan. Ada juga styling umum lain seperti bold (`b`), italic (`i`), underline (`u`), dan strike-through (`s`).
+
+Styling umum yang dapat digunakan antara lain bold (`b`), italic (`i`), underline (`u`), dan strike-through (`s`).
 
 ```html
 <p>
@@ -104,62 +63,43 @@ Dalam paragraf atau heading, kita bisa gunakan strong (`strong`) untuk hal penti
 </p>
 ```
 
-### :memo: Blockquotes
-Kutipan dari sumber lain, atau membuat teks kita terlihat keren seperti sebuah kuripan/quote.
-
-```html
-<blockquote>
-  "Jika ingin bahagia, jangan jadi karyawan"
-  — Bob Sadino
-</blockquote>
-```
-
 ### :anchor: Anchor untuk Link
-Jika kita butuh menautkan halaman ke halaman lain, gunakan _anchor_ dengan URL. Anchor ini juga disebut hyperlink (hypertext anchor).Beberapa atributnya yang bisa digunakan antara lain adalah `target`, `rel`, `media`, `hreflang`, dan `type`; juga mereka memerlukan atribut `href` agar bisa bekerja.
 
-Contoh penggunaan menggunakan `href` :
+Jika kita butuh menautkan halaman ke halaman lain, gunakan _anchor_ dengan URL. Anchor ini juga disebut hyperlink (hypertext anchor). Anchor ini memerlukan atribut `href` agar bisa bekerja.
+
+Contoh penggunaan menggunakan :
 
 ```html
+<a href="https://www.instagram.com/wri_polinema/">Go to WRI Instagram page</a>
 <a>Ini Ngga bisa dipencet loh</a>
-<a href="https://www.instagram.com/wri_polinema/">Go to Polinema Instagram page</a>  <!-- kita akan sering membutuhkan anchor -->
 ```
 
-### :clipboard: List 
-Ada dua jenis daftar, tidak berurutan `unordered list`(`ul`) dan berutuan `ordered list`(`ol`). Setiap butir daftar dideklarasikan dengan tag `li`.
+### :clipboard: List
+
+Ada dua jenis daftar, tidak berurutan `unordered list`(`ul`) dan berutuan `ordered list`(`ol`). Setiap item pada list dideklarasikan dengan tag `li`.
 
 ```html
 <ul>
   <li>Pikachu</li>
   <li>Raichu</li>
-  <ol>
-    <li>Bulbasaur</li>
-    <li>Charmeleon</li>
-  </ol>
 </ul>
-```
 
-### :dart: Button
-
-Kita biasanya memakai sebuah tombol yang dapat melakukan sesuatu. Gunakan tombol untuk membuat masukan sekali atau bahkan saklar saat diklik. Tombol dapat diaktifkan atau dinon-aktifkan tergantung dari keinginan kita.
-
-```html
-<button name="success">Success Button</button>
-<button disabled name="danger">Dangerous Button</button>
+<ol>
+  <li>Bulbasaur</li>
+  <li>Charmeleon</li>
+</ol>
 ```
 
 ### :straight_ruler: Table
 
-Menampilkan data dan informasi dalam dua dimensi , Diwajibkan menggunakan `table` untuk melakukannya. Catatan bahwa table bukan untuk digunakan sebagai `layout` atau `memposisikan` sebuah halaman website, namun sebaiknya hanya untuk menampilkan data saja. Gunakan kombinasi `table` dengan `caption`, `thead`, `tbody`, `tfoot`, `tr`, `th`, `td`, `col`, `colgroup`.
+Menampilkan data dan informasi dalam dua dimensi , Diwajibkan menggunakan `table` untuk melakukannya. Catatan bahwa table bukan untuk digunakan sebagai `layout` atau `memposisikan` sebuah halaman website, namun sebaiknya hanya untuk menampilkan data saja. Gunakan kombinasi `table` dengan `tr`, `th`, `td`.
 
 ```html
 <table>
-  <thead>
     <tr>
       <th>Nama Negara</th>
       <th>Ibukota</th>
     </tr>
-  </thead>
-  <tbody>
     <tr>
       <td>Indonesia</td>
       <td>Jakarta</td>
@@ -168,29 +108,16 @@ Menampilkan data dan informasi dalam dua dimensi , Diwajibkan menggunakan `table
       <td>Kanada</td>
       <td>Ottawa</td>
     </tr>
-  </tbody>
-  <tfoot>
     <tr>
       <td>Palestina</td>
       <td>Jarrussalem</td>
     </tr>
-  </tfoot>
 </table>
 ```
 
 ### :cd: Figure Image , Audio , Video
 
-Sebuah gambar bermakna ribuan kata. Namun bukan hanya untuk gambar, figur dapat juga sebuah foto, ilustrasi, diagram, listing kode (code listings), video, lagu audio, dan lain-lain. Dalam HTML5, direkomendasikan untuk menggunakan `figure` yang dapat berisi berbagai informasi yang juga sejalan dengan sebuah judul/caption (`figcaption`) seperti gambar/image (`img`), video (`video`), dan audio (`audio`).
-
-```html
-<figure>
-  <audio src="music.mp3" controls>
-    <a href="music.mp3">Download this music</a>
-  </audio>
-</figure>
-```
-
-Tidak apa-apa menggunakan elemen-elemen tersebut tanpa `figure` jika tidak terlalu dibutuhkan.
+Dengan html, kita juga bisa menampilkan gambar, video dan audio dengan menggunakan tag `img`, `video`, dan `audio`
 
 ```html
 <img src="assets/fotoku.jpg">
@@ -198,12 +125,27 @@ Tidak apa-apa menggunakan elemen-elemen tersebut tanpa `figure` jika tidak terla
 <audio src="music.mp3" controls>
 ```
 
-### :triangular_ruler: iFrame
+### :pencil: Input
 
-Dengan HTML, kita dapat menyertakan HTML di dalam HTML! Seringkali disebut framing, seperti embedding juga, kita dapat gunakan `iframe`.
+Untuk menerima inputan dari user, kita bisa menggunakan tag `input` untuk menampilkan input text, checkbox, radio, button, dan lain lain
 
 ```html
-<iframe src="http://wri.polinema.ac.id/" height="300" width="800"></iframe>
+<input type="text">
+<input type="checkbox">
+<input type="radio">
+<input type="button">
+```
+
+### :office: Div
+
+untuk mengelompokkan beberapa tag html biasanya kita menggunakan `div`, div ini berfungsi agar tag - tag html yang dikelompokkan mudah diberikan styling serta mempermudah dalam pembuatan layout
+
+```html
+<div>
+  <h1>Saya berada didalam div</h1>
+  <p>Saya juga berada didalam div</p>
+  <a href="http://google.com">pergi ke google</a>
+</div>
 ```
 
 **:books: Untuk mempelajari tentang HTML silahkan pelajari lewat link - link berikut :**
