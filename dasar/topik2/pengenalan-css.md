@@ -67,6 +67,48 @@ selector {
 }
 ```
 
+Beberapa cara untuk menyeleksi elemen dengan selector
+
+1. Seleksi elemen berdasarkan id
+
+```css
+#nama-id {
+  property: value;
+}
+```
+
+2. Seleksi elemen berdasarkan class
+
+```css
+.nama-class {
+  property: value;
+}
+```
+
+3. Seleksi semua elemen
+
+```css
+* {
+  property: value;
+}
+```
+
+4. Seleksi elemen yang berada didalam elemen lain
+
+```css
+div p {
+  property: value;
+}
+```
+
+5. Menyeleksi link yang sedang di hover
+
+```css
+a:hover {
+  property: value;
+}
+```
+
 ### :ribbon: Property
 
 Setelah elemen dipilih, property dari style yang tersedia dapat diterapkan pada elemen tersebut. Nama properti diikuti dengan tanda titik dua (colon) (`:`) diikuti dengan nilai/value yang ditutup dengan titik koma (`;`)
@@ -80,6 +122,8 @@ Properti umum yang bisa digunakan :
 - `width dan height`
 - `margin dan padding`
 - `display`
+- `float`
+- `clear`
 
 ### :mega: Komentar
 
