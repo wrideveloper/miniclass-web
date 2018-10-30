@@ -17,6 +17,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Pengenalan HTML](dasar/topik2/pengenalan-html.md)
     - [Pengenalan CSS](dasar/topik2/pengenalan-css.md)
     - [Membuat UI Component](dasar/topik2/ui-component.md)
+    - [Pengenalan Icon Font](dasar/topik2/font-icon.md)
     - [Layouting dengan CSS](dasar/topik2/layouting-dengan-css.md)
     - [Membuat Profile Page](dasar/topik2/membuat-profile-page.md)
 3.  **Javascript**
