@@ -4,7 +4,7 @@
 
 ![pengenalan-javascript](pengenalan-javascript.gif)
 
-Pada era development web modern saat ini, javascript benar - benar dibutuhkan untuk membuat tampilan yang interaktif seperti : 
+Pada era development web modern saat ini, javascript benar - benar dibutuhkan untuk membuat tampilan yang interaktif seperti :
 
 - Menampilkan google map pada halaman website
 
@@ -14,11 +14,8 @@ Pada era development web modern saat ini, javascript benar - benar dibutuhkan un
 
 - dan masih banyak lagi
 
-  
-
 **Referensi untuk belajar dasar javascript :**
 
-- **w3school** - [https://www.w3schools.com/js/default.asp](https://www.w3schools.com/js/default.asp)
-- **codeschool** - [https://www.codeschool.com/learn/javascript](https://www.codeschool.com/learn/javascript)
-- **freecodecamp** - [https://www.freecodecamp.org](https://www.freecodecamp.org/challenges/comment-your-javascript-code)
-
+- [**w3school**](https://www.w3schools.com/js/default.asp)
+- [**Petanikode**](https://www.petanikode.com/tutorial/javascript/)
+- [**freecodecamp**](https://www.freecodecamp.org/challenges/comment-your-javascript-code)
