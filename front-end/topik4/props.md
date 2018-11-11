@@ -13,24 +13,18 @@ import React, {Component} from 'react'
 
 export default class Header extends Component {
   render () {
-    <h1>Selamat Datang</h1>
+    <h1>Halaman Beranda</h1>
   }
 }
 ```
 
-Component `Header` ini awalnya akan kita gunakan pada **halaman beranda**, maka dari itu kata - kata didalam component tersebut adalah **Selamat Datang**
+Dalam react kita dapat membuat sebuah component yang dapat digunakan berkali - kali di banyak halaman. Misalnya component header diatas dapat kita gunakan di halaman apapun, baik itu di halaman beranda ataupun di halaman lain.
 
-Namun setelah membuat halaman baru, misalnya **halaman kontak**, kita ingin menggunakan component `Header` tersebut pada halaman kontak juga, namun kata - kata di dalamnya berbeda, misalnya **Selamat Datang di Halaman Kontak**
-
-Namun kita tidak bisa melakukannya, karena kata - kata **Selamat Datang** di dalam component `Header` tidak bisa kita ubah, apabila kita ubah menjadi **Selamat Datang di Halaman Kontak** maka kata - kata tersebut juga akan diterapkan ke **halaman beranda**.
-
-Solusi sementara yaitu dengan membuat component `Header` baru namun dengan kata - kata yang berbeda, misalnya untuk **halaman kontak** kita membuat component `Header` dengan kata **Selamat Datang di Halaman Kontak**, dan hal tersebut juga berlaku apabila kita ingin membuat halaman lain.
-
-Intinya kita harus membuat component `Header` berulang kali sebanyak kita membuat halaman baru, dan hal ini jelas tidak efektif
+Namun masalahnya adalah teks yang ada di dalam component header tersebut adalah `Halaman Beranda`, dan teks tersebut tidak akan cocok apabila diterapkan ke halaman lain
 
 ## Solusi
 
-Permasalahan di atas bisa kita pecahkan dengan menggunakan `props`, kita cukup membuat satu component `Header` namun dengan disisipi props didalamnya
+Permasalahan di atas bisa kita pecahkan dengan menggunakan `props`, kita cukup membuat satu component `Header` namun dengan disisipi props di dalamnya
 
 ```Javascript
 import React, {Component} from 'react'
@@ -46,14 +40,18 @@ Component `Header` yang kita buat diatas memiliki satu buah `props`, yaitu `titl
 
 ```Javascript
 // pada halaman beranda
-<Header title="Selamat Datang">
+<Header title="Halaman Beranda">
 
 // pada halaman kontak
-<Header title="Selamat Datang di Halaman Kontak">
+<Header title="Halaman Kontak">
 
 // pada halaman X
-<Header title="Selamat Datang di Halaman X">
+<Header title="Halaman X">
 ```
+
+## Tipe Props
+
+<!-- TODO: materi proptypes -->
 
 ## Kesimpulan
 

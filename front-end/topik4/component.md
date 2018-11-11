@@ -58,12 +58,6 @@ const Header = () => {
 export default Header
 ```
 
-## Hal Yang Harus Dipelajari
+## Merubah Halaman Website Menjadi Component
 
-Untuk memahami topik component, kita perlu memahami hal - hal berikut :
-
-1.  **Membuat sebuah component :**
-    https://medium.freecodecamp.org/how-to-write-your-first-react-js-component-d728d759cabc
-
-2.  **Membuat multiple component :** https://www.youtube.com/watch?v=9wK4gHoOh1g
-3.  **Component life cycle :** https://medium.com/@baphemot/understanding-reactjs-component-life-cycle-823a640b3e8d
+Cara efektif untuk belajar tentang component di react yaitu dengan mengubah sebuah halaman website yang semula jadi satu menjadi beberapa component - component kecil

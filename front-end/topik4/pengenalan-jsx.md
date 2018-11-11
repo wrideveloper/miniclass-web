@@ -5,7 +5,6 @@
 **JSX** merupakan ekstensi javascript yang digunakan untuk mendeskripsikan bentuk dari component, kalau ada yang ingin tau bagaimana bentuk JSX, seperti inilah bentuknya :
 
 ```Javascript
-// .js file
 const header = <h1>Hello, world!</h1>;
 ```
 
@@ -13,7 +12,7 @@ Syntax diatas bukanlah XML atau HTML, melainkan JSX, memang agak lucu. Pada scri
 
 ## Penjelasan JSX secara simpel
 
-Secara simpelnya sih biasanya orang - orang menyebut JSX sebagai _"HTML didalam javascript"_, namun disini ada perbedaan, biasanya kita meletakkan petik `'` kedalam tag misalnya `'<h1></h1>'` hal ini bertujuan agar tag tersebut menjadi `string` dan dapat dimasukkan ke sebuah variabel, tapi dengan JSX kita tidak membutuhkan petik tersebut sehingga dari segi penulisan lebih mudah
+Secara simpel biasanya orang - orang menyebut JSX sebagai **_HTML di dalam javascript_**, namun disini ada perbedaan, biasanya kita meletakkan petik `'` kedalam tag misalnya `'<h1></h1>'` hal ini bertujuan agar tag tersebut menjadi `string` dan dapat dimasukkan ke sebuah variabel, tapi dengan JSX kita tidak membutuhkan petik tersebut sehingga dari segi penulisan lebih mudah
 
 ## Tapi tunggu, menggabungkan logic dan view didalam satu file kan tidak bagus
 

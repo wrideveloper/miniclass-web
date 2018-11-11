@@ -75,10 +75,10 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Component](front-end/topik4/component.md)
     - [Styling Component](front-end/topik4/styling-component.md)
     - [Props](front-end/topik4/props.md)
-    - [Handling Event](front-end/topik4/handling-event.md)
     - [State](front-end/topik4/state.md)
     - [Conditional Rendering](front-end/topik4/conditional-rendering.md)
-    - [Thinking In React](front-end/topik4/thinking-in-react.md)
+    - Component Lifecycle
+    - [Handling Event](front-end/topik4/handling-event.md)
     - [Membuat Aplikasi Todo List](front-end/topik4/membuat-aplikasi-todolist.md)
 5.  **React JS Lanjutan**
     - [React Router](front-end/topik5/react-router.md)

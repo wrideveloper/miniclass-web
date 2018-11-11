@@ -14,23 +14,6 @@ React dibuat oleh facebook dan menjadi salah satu tool frontend populer karena p
 
 **Official Website -** https://reactjs.org/
 
-## Sekilas Tentang Component Based Architecture
-
-React menggunakan konsep component based architecture yang membuat dia menjadi populer seperti sekarang, namun apa itu component based architecture ?
-
-![component based](component-based.png)
-
-**Component based architecture** merupakan teknik pembuatan UI yang memecah sebuah halaman besar menjadi beberapa component - component kecil yang memiliki logic sendiri - sendiri, sehingga apabila ada satu component yang error maka kita tidak perlu membuka sebuah halaman besar melainkan hanya perlu fokus kepada satu component kecil itu saja.
-
-Kebalikan dari component based architecture adalah **template based architecture**, arsitektur ini biasa digunakan sebelum component based populer, dimana kita akan memiliki sebuah halaman dengan logic yang ditumpuk pada satu halaman tersebut, kelemahannya yaitu apabila ada sebagian fitur yang error, maka kita perlu membuka keseluruhan halaman untuk menangani error tersebut.
-
-**Selengkapnya tentang component based architecture :**
-
-**Penjelasan component based architecture -** https://medium.com/@dan.shapiro1210/understanding-component-based-architecture-3ff48ec0c238
-
-**Kelebihan component based architecture -**
-https://www.tandemseven.com/technology/6-reasons-component-based-ui-development/
-
 ## React Bukan Framework
 
 Banyak yang membandingkan react dengan angular, vue atau framework lain, sedangkan react sendiri bukanlah framework melainkan hanyalah sebuah library
@@ -73,3 +56,20 @@ Cara kerja dari **Virtual DOM** adalah sebagai berikut :
 **Untuk lebih memahami cara kerja Virtual DOM, silahkan simak video berikut :**
 
 https://www.youtube.com/watch?v=RquK3TImY9U
+
+## Component Based Architecture
+
+React menggunakan konsep component based architecture yang membuat dia menjadi populer seperti sekarang, namun apa itu component based architecture ?
+
+![component based](component-based.png)
+
+**Component based architecture** merupakan teknik pembuatan UI yang memecah sebuah halaman besar menjadi beberapa component - component kecil yang memiliki logic sendiri - sendiri, sehingga apabila ada satu component yang error maka kita tidak perlu membuka sebuah halaman besar melainkan hanya perlu fokus kepada satu component kecil itu saja.
+
+Kebalikan dari component based architecture adalah **template based architecture**, arsitektur ini biasa digunakan sebelum component based populer, dimana kita akan memiliki sebuah halaman dengan logic yang ditumpuk pada satu halaman tersebut, kelemahannya yaitu apabila ada sebagian fitur yang error, maka kita perlu membuka keseluruhan halaman untuk menangani error tersebut.
+
+**Selengkapnya tentang component based architecture :**
+
+**Penjelasan component based architecture -** https://medium.com/@dan.shapiro1210/understanding-component-based-architecture-3ff48ec0c238
+
+**Kelebihan component based architecture -**
+https://www.tandemseven.com/technology/6-reasons-component-based-ui-development/
