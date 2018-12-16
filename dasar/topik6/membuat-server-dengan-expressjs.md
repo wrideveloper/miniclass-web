@@ -6,16 +6,26 @@ Tentunya sebelum kita dapat menggunakan Express JS, kita harus menginstallnya te
 
 ## Instalasi Express JS
 
-Dikarenakan Express JS adalah framework dari Node JS, jadi kita menginstall Express JS melalui package manager yaitu **npm**.
+Sebelum menggunakan express, kita harus menginstallnya terlebih dahulu dengan menggunakan npm.
 
-Untuk mempelajari cara install Express JS, silahkan kunjungi url berikut :
-
-https://www.youtube.com/watch?v=28ebl3eOt4w&index=13&list=PLYxzS__5yYQmHbpKMARP04F344zYRX91I
+```bash
+npm install express
+```
 
 ## Membuat Server
 
-Untuk membuat server, yang kita lakukan adalah meload `express` yang telah kita install. Berbeda dengan node js yang apabila kita membuat server harus menuliskan syntax yang terlalu panjang, di Express JS kita hanya meload/memanggil `express` saja.
+Berikut script untuk membuat web server dengan menggunakan express
 
-Untuk memepelajari cara membuat server dengan Express JS, silahkan kunjungi url berikut :
+```javascript
+const express = require('express')
+const app = express()
+const port = 3000
 
-https://www.youtube.com/watch?v=l2dKL2YrR1U&list=PLYxzS__5yYQmHbpKMARP04F344zYRX91I&index=14
+app.get('/', function(req, res) {
+  res.send('Hello World!')
+})
+
+app.listen(port, function() {
+  console.log('Server listening')
+})
+```

@@ -2,19 +2,15 @@
 
 ![Routes](routes.png)
 
-## Pengertian Routing
+### Penjelasan Routing
 
-Routing merupakan suatu metode untuk menentukan bagaimana aplikasi merespon permintaan _client_, dimana permintaannya menggunakan URL dengan method GET, POST, PUT, dan sebagainya. Routing digunakan untuk memetakan atau mengatur kesesuaian URL dengan konten yang akan ditampilkan agar bisa mengakses suatu halaman javascript.
+Dalam dunia pengembangan web, routing merupakan pemetaan URL - URL yang dapat diakses oleh client menggunakan method tertentu seperti `GET`, `POST`, `PUT`, `DELETE`
 
-## Permasalahan
+### Melakukan Routing dengan Express
 
-Pada express untuk mengakses suatu halaman javascript kita tidak bisa membuka filenya secara langsung di browser, tapi dibutuhkan suatu URL yang mengacu ke file tersebut. Lalu bagaimana cara mengakses file javascript menggunakan URL dengan _request_ yang kita inginkan
+#### 1. Routing dengan Method GET
 
-## Solusi
-
-Solusi dari permasalahan tersebut adalah dengan menggunakan routing, dimana routing tersebut bisa menggunakan HTTP Request method. Berikut ini method yang sering digunakan pada routing express js:
-
-**1. GET**
+Method ini biasanya digunakan untuk menuju ke suatu halaman atau menampilkan data pada database.
 
 ```Javascript
 app.get('/', function (req, res) {
@@ -22,9 +18,9 @@ app.get('/', function (req, res) {
 })
 ```
 
-Method ini biasanya digunakan untuk menuju ke suatu halaman atau menampilkan data pada database.
+#### 2. Routing dengan Method POST
 
-**2. POST**
+Method POST biasanya digunakan untuk menambahkan data pada database.
 
 ```Javascript
 app.post('/', function (req, res) {
@@ -32,9 +28,9 @@ app.post('/', function (req, res) {
 })
 ```
 
-Method POST biasanya digunakan untuk submit data pada form untuk ditambahkan di database.
+#### 3. Routing dengan Method PUT
 
-**3. PUT**
+Method PUT biasanya digunakan untuk mengedit data pada database.
 
 ```Javascript
 app.put('/user', function (req, res) {
@@ -42,18 +38,12 @@ app.put('/user', function (req, res) {
 })
 ```
 
-Method PUT biasanya digunakan untuk mengedit data pada database.
+#### 4. Routing dengan Method DELETE
 
-**4. DELETE**
+Method DELETE digunakan untuk menghapus data pada database
 
 ```Javascript
 app.delete('/user', function (req, res) {
   res.send('Got a DELETE request at /user')
 })
 ```
-
-Method DELETE digunakan untuk menghapus data.
-
-**Agar lebih paham mengenai routing, silahkan pelajari tutorial berikut ini:**
-
-Routing Express: [https://www.youtube.com/watch?v=Ba1_zIoerp4](https://www.youtube.com/watch?v=Ba1_zIoerp4)

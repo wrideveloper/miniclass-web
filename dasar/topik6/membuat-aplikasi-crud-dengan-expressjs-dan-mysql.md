@@ -10,5 +10,4 @@ Setelah memahami bagaimana cara menggunakan express JS maka disini kita akan bel
 2.  [Konfigurasi environment variable dengan file .env](https://www.npmjs.com/package/dotenv)
 3.  [Routing express](https://www.youtube.com/watch?v=26wm0IQsDCs)
 4.  [Middleware express](https://medium.com/@agoiabeladeyemi/a-simple-explanation-of-express-middleware-c68ea839f498)
-5.  [View engine](view-engine.md)
-6.  [Body parser](https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters)
+5.  [Body parser](https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters)

@@ -13,13 +13,15 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [HTTP Request dan HTTP Response](dasar/topik1/http-request-dan-response.md)
     - [HTTP Status Code](dasar/topik1/http-status-code.md)
     - [HTTP Verbs](dasar/topik1/http-verbs.md)
-2.  **Web Statis**
+
+2)  **Web Statis**
     - [Pengenalan HTML](dasar/topik2/pengenalan-html.md)
     - [Pengenalan CSS](dasar/topik2/pengenalan-css.md)
     - [Membuat UI Component](dasar/topik2/ui-component.md)
     - [Pengenalan Icon Font](dasar/topik2/font-icon.md)
     - [Layouting dengan CSS](dasar/topik2/layouting-dengan-css.md)
     - [Membuat Profile Page](dasar/topik2/membuat-profile-page.md)
+
 3.  **Javascript**
 
     - [Pengenalan Javascript](dasar/topik3/pengenalan-javascript.md)
@@ -34,11 +36,13 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [DDL](dasar/topik4/DDL.md)
     - [DML](dasar/topik4/DML.md)
     - [Relasi Antar Tabel](dasar/topik4/relasi-antar-table.md)
-5.  **Web Dinamis dengan Node JS**
+
+5)  **Web Dinamis dengan Node JS**
     - [Pengenalan Node JS dan NPM](dasar/topik5/pengenalan-nodejs-dan-npm.md)
     - [Membuat Web Server dengan Node JS](dasar/topik5/membuat-web-server-dengan-nodejs.md)
     - [Mengoneksikan MySQL dan Node JS](dasar/topik5/mengoneksikan-mysql-dan-nodejs.md)
-    - [Synchronous vs Asynchronous](dasar/topik5/synchronous-vs-asynchronous.md)
+    - [Import dan Export Module](dasar/topik5/import-export-module.md)
+
 6.  **Web Dinamis Lanjutan dengan Express**
     - [Berkenalan dengan Express JS](dasar/topik6/berkenalan-dengan-expressjs.md)
     - [Membuat Server dengan Express JS](dasar/topik6/membuat-server-dengan-expressjs.md)
@@ -46,15 +50,14 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Routing](dasar/topik6/routing.md)
     - [Advance Routing](dasar/topik6/advance-routing.md)
     - [Middleware](dasar/topik6/middleware.md)
-    - [View Engine](dasar/topik6/view-engine.md)
-    - [Static File Assets](dasar/topik6/static-file-assets.md)
     - [Post Method](dasar/topik6/post-method.md)
     - [Membuat Aplikasi CRUD dengan Express JS dan MySQL](dasar/topik6/membuat-aplikasi-crud-dengan-expressjs-dan-mysql.md)
-7.  **Pengenalan Backend dan Frontend**
 
+7)  **Pengenalan Backend dan Frontend**
     - [Apa itu Frontend dan Backend Developer](dasar/topik7/apa-itu-frontend-dan-backend-developer.md)
     - [Mengenal Web Service](dasar/topik7/mengenal-web-service.md)
     - [Mengenal AJAX](dasar/topik7/mengenal-ajax.md)
+    - [Synchronous vs Asynchronous](dasar/topik5/synchronous-vs-asynchronous.md)
 
 ### :sunflower: Materi Frontend
 
@@ -76,9 +79,9 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Styling Component](front-end/topik4/styling-component.md)
     - [Props](front-end/topik4/props.md)
     - [State](front-end/topik4/state.md)
+    - [Handling Event](front-end/topik4/handling-event.md)
     - [Conditional Rendering](front-end/topik4/conditional-rendering.md)
     - Component Lifecycle
-    - [Handling Event](front-end/topik4/handling-event.md)
     - [Membuat Aplikasi Todo List](front-end/topik4/membuat-aplikasi-todolist.md)
 5.  **React JS Lanjutan**
     - [React Router](front-end/topik5/react-router.md)
