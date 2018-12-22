@@ -62,15 +62,21 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 ### :sunflower: Materi Frontend
 
 1.  **Framework CSS**
+
     - [Pengenalan Framework CSS](front-end/topik1/pengenalan-framework-css.md)
+
 2.  **Metodologi CSS**
+
     - [Metodologi CSS](front-end/topik2/pengenalan-metodologi-css.md)
+
 3.  **Modern Frontend Development**
+
     - [Preprocessor CSS](front-end/topik3/preprocessor-css.md)
     - [Task Runner](front-end/topik3/task-runner.md)
     - [Module Bundler](front-end/topik3/module-bundler.md)
     - [ECMAScript dan Babel](front-end/topik3/ecmascript-babel.md)
     - [Membuat Modern Frontend Starter Kit](front-end/topik3/membuat-modern-frontend-starter-kit.md)
+
 4.  **Dasar React JS**
     - [Pengenalan React JS](front-end/topik4/pengenalan-reactjs.md)
     - [Pengenalan JSX](front-end/topik4/pengenalan-jsx.md)

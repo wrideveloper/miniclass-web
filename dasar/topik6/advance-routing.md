@@ -17,6 +17,8 @@ Ketika aplikasi yang dibuat sudah dalam skala besar dan kompleks, perlu dibuat s
 File ini merupakan kondisi awal sebelum kita memisah rute kedalam file yang lain
 
 ```javascript
+// index.js
+
 const express = require('express')
 const app = express()
 const port = 3000
@@ -47,6 +49,8 @@ app.listen(port, function() {
 File ini hanya berisi rute dari web yang akan dibuat
 
 ```javascript
+// router.js
+
 const express = require('express')
 const router = express.Router()
 
@@ -74,12 +78,14 @@ module.exports = router
 Karena rute sudah ditulis pada file router.js, maka kita tidak perlu lagi menuliskannya pada file index.js, kita hanya perlu memberitahu index.js untuk menggunakan rute yang sudah ditulis pada router.js
 
 ```javascript
+// index.js
+
 const express = require('express')
 const app = express()
 const port = 3000
 const router = require('./router')
 
-app.use(router())
+app.use(router)
 
 app.listen(port, function() {
   console.log('Server listening')
