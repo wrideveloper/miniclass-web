@@ -49,6 +49,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Request dan Response](dasar/topik6/request-dan-response.md)
     - [Middleware](dasar/topik6/middleware.md)
     - [Request Body](dasar/topik6/request-body.md)
+    - [Serving Static File](dasar/topik6/static-file-assets.md)
     - [Routing](dasar/topik6/routing.md)
     - [Advance Routing](dasar/topik6/advance-routing.md)
     - [Membuat Aplikasi CRUD dengan Express JS dan MySQL](dasar/topik6/membuat-aplikasi-crud-dengan-expressjs-dan-mysql.md)

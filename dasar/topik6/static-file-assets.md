@@ -1,28 +1,21 @@
-# Static File Assets
+# Serving Static File
 
-![static file](static-files.png)
-
-## Pengertian File Assets
-
-File asset merupakan file yang berguna untuk mendukung konten dari suatu website, misalnya file `.css` `.js` `gambar` dan sebagainya
+<img src="static-files.png" width="150">
 
 ## Permasalahan
 
-Untuk menginclude atau menggunakan file - file ini kita tidak dapat langsung menuliskan path dari filenya, misalnya `/public/img/yolo.jpg`
+Untuk membuka static file yang terletak pada aplikasi express, kita tidak bisa menuliskan path nya secara langsung pada url, misalnya `http://localhost:3000/public/img/yolo.jpg`
 
-**Mengapa ?** Karena apabila kita melakukannya maka express akan menganggap bahwa kita akan mengunjungi rute `/public/img/yolo.jpg` sedangkan rute tersebut tidak ada
-
-**Ingat !** dengan express kita tidak dapat membuka file secara langsung melalui path, kita perlu menuliskan rutenya, nah bagaimana apabila kita ingin membuka atau menginclude file statis seperti `.css` `.js` `gambar`
+**Mengapa ?** Karena apabila kita melakukannya maka express akan menganggap bahwa kita akan mengunjungi rute `http://localhost:3000/public/img/yolo.jpg` sedangkan rute tersebut tidak ada
 
 ## Solusi
 
-Solusi dari permasalahan tersebut adalah dengan menggunakan middleware static file
+Solusi dari permasalahan tersebut adalah dengan menggunakan middleware static file `express.static()`
+
+Misalnya kita ingin menampilkan gambar yang terletak pada direktori `/public/img/yolo.jpg`. Pada direktori tersebut kita tau bahwa root foldernya adalah folder `public` maka script yang kita gunakan seperti berikut
 
 ```Javascript
 app.use(express.static('public'))
 ```
 
-dimana `public` merupakan nama folder tempat kita menyimpan file `.css` `.js` `gambar` kita
-
-**Untuk lebih jelasnya silahkan lihat tutorial berikut**
-https://www.youtube.com/watch?v=7UErZ43jzrU
+Kemudian pada URL kita bisa mengetikkan `http://localhost:3000/img/yolo.jpg`, disini kita tidak perlu menuliskan folder public lagi
