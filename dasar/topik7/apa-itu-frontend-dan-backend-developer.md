@@ -2,9 +2,7 @@
 
 Dalam pengembangan web terdapat dua istilah yang sering kita dengar, yaitu frontend dan backend, singkatnya dua istilah ini digunakan untuk membedakan job dan role dari masing - masing developer ketika mengembangkan sebuah website
 
-![frontend vs backend](frontend-vs-backend.jpg)	
-
-
+![frontend vs backend](frontend-vs-backend.jpg)
 
 ## Frontend :rainbow:
 
@@ -13,15 +11,13 @@ Dalam pengembangan web terdapat dua istilah yang sering kita dengar, yaitu front
 **Beberapa skill yang wajib dikuasi oleh frontend developer :**
 
 1. HTML dan CSS untuk membangun tampilan
-2. Javascript untuk membuat logik dari tampilan
-3. AJAX untuk mengambil data dari backend secara *seamless*
+2. Javascript untuk membuat logika dari tampilan
+3. AJAX untuk mengambil data dari backend secara _seamless_
 4. Frontend Framework untuk membangun aplikasi frontend dengan cepat dan terstruktur
 
 **Referensi untuk lebih memahami tentang frontend developer :**
 
 https://www.youtube.com/watch?v=Xd7huBu39qk
-
-
 
 ## Backend :gear:
 

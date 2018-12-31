@@ -8,13 +8,15 @@ disini materi yang akan diajarkan yaitu diawali dengan materi Web dasar, baru ke
 Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 
 1.  **Pengenalan Pemrograman Web**
+
     - [Mengenal Dunia Web dan Internet](dasar/topik1/dunia-fana.md)
     - [Cara Kerja Website](dasar/topik1/cara-kerja-website.md)
     - [HTTP Request dan HTTP Response](dasar/topik1/http-request-dan-response.md)
     - [HTTP Status Code](dasar/topik1/http-status-code.md)
     - [HTTP Verbs](dasar/topik1/http-verbs.md)
 
-2)  **Web Statis**
+2.  **Web Statis**
+
     - [Pengenalan HTML](dasar/topik2/pengenalan-html.md)
     - [Pengenalan CSS](dasar/topik2/pengenalan-css.md)
     - [Membuat UI Component](dasar/topik2/ui-component.md)
@@ -33,17 +35,20 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Membuat Aplikasi Todo List](dasar/topik3/membuat-aplikasi-todo-list)
 
 4.  **Relasional Database**
+
     - [DDL](dasar/topik4/DDL.md)
     - [DML](dasar/topik4/DML.md)
     - [Relasi Antar Tabel](dasar/topik4/relasi-antar-table.md)
 
-5)  **Web Dinamis dengan Node JS**
+5.  **Web Dinamis dengan Node JS**
+
     - [Pengenalan Node JS dan NPM](dasar/topik5/pengenalan-nodejs-dan-npm.md)
     - [Membuat Web Server dengan Node JS](dasar/topik5/membuat-web-server-dengan-nodejs.md)
     - [Mengoneksikan MySQL dan Node JS](dasar/topik5/mengoneksikan-mysql-dan-nodejs.md)
     - [Import dan Export Module](dasar/topik5/import-export-module.md)
 
 6.  **Web Dinamis Lanjutan dengan Express**
+
     - [Berkenalan dengan Express JS](dasar/topik6/berkenalan-dengan-expressjs.md)
     - [Membuat Server dengan Express JS](dasar/topik6/membuat-server-dengan-expressjs.md)
     - [Request dan Response](dasar/topik6/request-dan-response.md)
@@ -54,7 +59,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Advance Routing](dasar/topik6/advance-routing.md)
     - [Membuat Aplikasi CRUD dengan Express JS dan MySQL](dasar/topik6/membuat-aplikasi-crud-dengan-expressjs-dan-mysql.md)
 
-7)  **Pengenalan Backend dan Frontend**
+7.  **Kolaborasi Backend dan Frontend**
     - [Apa itu Frontend dan Backend Developer](dasar/topik7/apa-itu-frontend-dan-backend-developer.md)
     - [Mengenal Web Service](dasar/topik7/mengenal-web-service.md)
     - [Mengenal AJAX](dasar/topik7/mengenal-ajax.md)
@@ -102,22 +107,30 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 ### :japanese_ogre: Materi Backend
 
 1.  **Object Relational Mapping**
+
     - [Pengenalan ORM](back-end/topik1/pengenalan-orm.md)
     - [Pengenalan Framework ORM Sequelize JS](back-end/topik1/pengenalan-framework-orm-sequelize-js.md)
     - Impelementasi ORM Pada Express JS dengan Sequelize JS
+
 2.  **Software Architectural Pattern**
+
     - [Pengenalan Arsitektur MVC](back-end/topik2/pengenalan-arsitektur-mvc.md)
     - Implementasi MVC pada Express JS
+
 3.  **Web Service**
+
     - [Membuat Web Service Sederhana](back-end/topik3/membuat-web-service-sederhana.md)
     - [Cross Origin Resource Sharing](back-end/topik3/cross-origin-resource-sharing.md)
     - [REST Web Service](back-end/topik3/rest-web-service.md)
     - [GraphQL Web Service](back-end/topik3/graphql-web-service.md)
+
 4.  **Autentikasi**
+
     - [Metode Autentikasi Session](back-end/topik4/metode-autentikasi-session.md)
     - Implementasi autentikasi dengan session menggunakan Passport JS Local
     - [Metode Autentikasi Token](back-end/topik4/metode-autentikasi-token.md)
     - Implementasi autentikasi dengan token menggunakan Passport JS JWT
+
 5.  **Document Oriented Database**
     - Pengenalan Document Oriented Database
     - Migrasi Dari Relasional Ke Document Oriented

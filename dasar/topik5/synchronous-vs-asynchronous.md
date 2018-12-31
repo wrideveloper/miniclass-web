@@ -4,44 +4,179 @@ Disini kita akan membahas tentang alur eksekusi program, yaitu synchronous dan a
 
 ![synchronous-vs-asynchronous](async-sync.png)
 
-## Synchronous
+## Penjelasan
 
-Merupakan alur eksekusi program yang dilakukan secara **seri** atau **berurutan**, sehingga suatu statement / request akan menunggu hingga response nya terjawab dahulu, baru kemudian request lain boleh dieksekusi.
+### Synchronous
 
-Hal tersebut akan menjadi **permasalahan** apabila ada sebuah request yang membutuhkan waktu eksekusi yang cukup lama, misalnya meload sejuta data di database, hal ini akan **membloking** request lain karena harus menunggu request sebelumnya selesai.
+Merupakan alur eksekusi program yang dilakukan secara seri atau berurutan, sehingga suatu statement atau request akan menunggu hingga responsenya terjawab dahulu, baru kemudian request lain dapat dieksekusi.
 
-## Asynchronous
+Hal tersebut akan menjadi permasalahan apabila ada sebuah request yang membutuhkan waktu eksekusi yang cukup lama, misalnya meload sejuta data di database atau mengirimkan request ke server, hal ini akan membloking request lain karena harus menunggu request sebelumnya selesai.
 
-Merupakan alur eksekusi program yang dilakukan secara **pararel**, artinya suatu statement / request tidak perlu menunggu request sebelumnya agar dapat dieksekusi, sehingga dalam satu waktu akan ada banyak request yang dapat dilakukan **secara bersamaan**. Hal ini akan mempercepat eksekusi suatu program.
+### Asynchronous
+
+Merupakan alur eksekusi program yang dilakukan secara pararel, artinya suatu statement atau request tidak perlu menunggu request sebelumnya selesai terlebih dahulu, sehingga dalam satu waktu akan ada banyak request yang dapat dilakukan secara bersamaan. Hal ini akan mempercepat eksekusi suatu program.
+
+## Contoh Asynchronous
+
+Berikut ada beberapa contoh fungsi yang secara default menggunakan konsep asynchronous
+
+### 1. Set Timeout
+
+`setTimeout` merupakan salah satu contoh fungsi yang berjalan secara asynchronous
+
+```javascript
+// tampilkan hello
+console.log('Hello.')
+
+// tampilkan Goodbye dua detik dari sekarang
+setTimeout(function() {
+  console.log('Goodbye!')
+}, 2000)
+
+// tampilkan hello lagi
+console.log('Hello again!')
+```
+
+Apabila kita terbiasa dengan synchronous, kita pasti berfikir bahwa alur programnya akan seperti berikut :
+
+- Tampilkan Hello
+- Diam selama dua detik
+- Tampilkan Goodbye
+- Tampilkan Hello again
+
+Namun `setTimeout` berjalan secara asynchronous dan tidak melakukan pause saat dijalankan, dia hanya mengeset sesuatu agar dijalankan setelah dua detik, sehingga urutannya akan menjadi seperti berikut :
+
+- Tampilkan Hello
+- Tampilkan Hello again
+- Diam selama dua detik
+- Tampilkan Goodbye
+
+### 2. Ajax Call
+
+`XMLHttpRequest` secara default juga menggunakan asynchronous untuk mengirimkan request ke server. Misalnya disini kita mempunyai fungsi bernama `getData()` yang akan mengirimkan request ke server dan mereturn responsenya
+
+```javascript
+function getData() {
+  const xhttp = new XMLHttpRequest()
+
+  // deklarasi variable response
+  var response
+
+  // mengisi variable response berdasarkan response dari server
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      response = xhttp.responseText
+    }
+  }
+
+  xhttp.open('GET', 'https://api.github.com/users/wrideveloper/repos')
+  xhttp.send()
+
+  // mereturn variable response
+  return response
+}
+```
+
+Kemudian dengan memanfaatkan fungsi `getData()` yang sudah dibuat kita berfikir untuk menggunakannya seperti berikut
+
+```javascript
+var data = getData()
+console.log(data)
+```
+
+Harusnya variable data akan berisi response text dari server yang didapatkan dari pemanggilan fungsi `getData()`
+
+Namun apabila script diatas kita jalankan maka kita akan tau bahwa variable data berisi undefined, ini terjadi karena variable response pada fungsi `getData()` akan langsung direturn sebelum statement `response = xhttp.responseText` selesai dijalankan
 
 ## Handling Asynchronous dengan Javascript
 
-Ada beberapa metode untuk melakukan handling async pada javascript, yaitu :
+Dari penjelasan diatas kita tau bahwa untuk menggunakan fungsi yang asynchronous seperti `XMLHttpRequest` kita tidak bisa menghandle dengan cara biasa. Berikut beberapa metode untuk melakukan handling async, yaitu :
 
 ### 1. Callback
 
-Callback merupakan sebuah **fungsi yang akan dijalankan tepat setelah suatu fungsi selesai dijalankan.** Callback merupakan cara paling sederhana untuk menghandle proses asynchronous, tetapi terkadang penggunaan callback yang berlebihan akan membuat code tidak rapi dan susah dibaca dan mengakibatkan _callback hell_
+Callback merupakan suatu fungsi yang akan dijalankan apabila suatu proses asyncrhonous telah selesai dijalankan. Berikut penerapannya pada `getData()`
 
-**Beberapa tutorial tentang callback :**
+```javascript
+// tanpa callback
+var data = getData()
+console.log(data) // undefined
 
-- **The net ninja -** [https://www.youtube.com/watch?v=QRq2zMHlBz4](https://www.youtube.com/watch?v=QRq2zMHlBz4)
-- **Codeburst -** [https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced](https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced)
+// dengan callback
+getData(function(data) {
+  // kode yang dijalankan ketika getData selesai
+  console.log(data) // response server
+})
+```
+
+Kemudian kita perlu merubah isi dari `getData()` sebagai berikut :
+
+```javascript
+function getData(callback) {
+  const xhttp = new XMLHttpRequest()
+
+  // jalankan callback ketika request selesai
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      callback(xhttp.responseText)
+    }
+  }
+
+  xhttp.open('GET', 'https://api.github.com/users/wrideveloper/repos')
+  xhttp.send()
+}
+```
+
+Disana kita menambahkan sebuah parameter berupa fungsi yang bernama `callback` dimana fungsi ini akan dijalankan ketika request selesai, callback juga akan menerima parameter berupa response dari server
 
 ### 2. Promise
 
-![promise](promise.png)
-Promise merupakan suatu **objek yang berisi status dari proses asynchronous.** Status yang dimaksud adalah `pending` yaitu masih sedang diproses, `fulfilled` apabila proses async berhasil diselesaikan dan menghasilkan value, dan `rejected` apabila proses async gagal dilakukan beserta alasan mengapa gagal dilakukan.
+Promise merupakan cara yang paling populer untuk menghandle asynchronous, caranya adalah dengan membuat sebuah fungsi yang akan mereturn object promise. Object promise merupakan object yang nantinya akan berisi value di masa depan setelah proses asynchronous terjadi
 
-**Beberapa tutorial tentang promise :**
+**Membuat Promise**
 
-- **Sekolah Koding -** [https://www.youtube.com/watch?v=6QMB74Mc9ME](https://www.youtube.com/watch?v=6QMB74Mc9ME)
-- **Scotch io -** [https://scotch.io/tutorials/javascript-promises-for-dummies](https://scotch.io/tutorials/javascript-promises-for-dummies)
+Untuk menerapkan promise maka kita perlu memodifikasi fungsi `getData()` agar mereturn object promise
 
-### 3. Async Await
+```javascript
+function getData() {
+  return new Promise(function(resolve, reject) {
+    const xhttp = new XMLHttpRequest()
 
-Merupakan cara baru untuk menghandle promise, dengan async await kita dapat **menulis kode async serasa menulis kode sync**, sehingga membuat kita mudah membaca koding yang kita tulis
+    xhttp.onreadystatechange = function() {
+      if (xhttp.readyState == 4) {
+        if (xhttp.status == 200) {
+          // resolve promise apabila request berhasil
+          resolve(xhttp.responseText)
+        } else {
+          // reject promise apabila request gagal
+          reject()
+        }
+      }
+    }
 
-**Beberapa tutorial tentang async await :**
+    xhttp.open('GET', 'https://api.github.com/users/wrideveloper/repos')
+    xhttp.send()
+  })
+}
+```
 
-- **Tutorialzine -** [https://tutorialzine.com/2017/07/javascript-async-await-explained](https://tutorialzine.com/2017/07/javascript-async-await-explained)
-- **Medium -** [https://medium.com/@habibridho/javascript-es7-async-await-tutorial-64275c81ce2e](https://medium.com/@habibridho/javascript-es7-async-await-tutorial-64275c81ce2e)
+Pada fungsi `getData()` kita mereturn promise dengan perintah `new Promise(callback)` dimana `callback` merupakan fungsi yang memiliki dua argument yaitu `resolve` dan `reject`. Kita akan memanggil `resolve` setelah kita berhasil mendapatkan response dari server, dan `reject` ketika kita gagal mendapatkan response dari server
+
+**Menjalankan Promise**
+
+Setelah kita mengubah `getData()` dengan konsep promise, maka kita bisa menggunakannya seperti berikut :
+
+```javascript
+getData()
+  .then(function(data) {
+    // lakukan sesuatu ketika promise resolve
+    console.log(data) // response server
+  })
+  .catch(function() {
+    // lakukan sesuatu ketika promise reject
+    console.log('gagal')
+  })
+```
+
+`then` berisi callback yang menentukan apa yang akan kita lakukan ketika promise berhasil di resolve, sedangkan `catch` berisi callback yang menentukan apa yang akan kita lakukan ketika promise di reject
+
+**catatan :** penggunaan `catch` pada pemanggilan promise bersifat optional, boleh disertakan dan boleh tidak
