@@ -82,7 +82,6 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Task Runner](front-end/topik3/task-runner.md)
     - [Module Bundler](front-end/topik3/module-bundler.md)
     - [ECMAScript dan Babel](front-end/topik3/ecmascript-babel.md)
-    - [Membuat Modern Frontend Starter Kit](front-end/topik3/membuat-modern-frontend-starter-kit.md)
 
 4.  **React Fundamental**
 

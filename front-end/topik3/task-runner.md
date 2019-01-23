@@ -1,46 +1,74 @@
-# :cyclone: Task Runner
+# Task Runner
 
-## :bookmark_tabs: Tujuan
+## Penjelasan
 
-- Mengulas task runner pada frontend development
-- Mengenalkan jenis task runner
-
-## :clipboard: Pembelajaran
-
-**Task Runner** merupakan sebuah program yang digunakan untuk mengeksekusi suatu tugas berdasarkan kriteria tertentu. Contoh pekerjaan yang bisa dilakukan oleh task runner yaitu :
+**Task Runner** merupakan sebuah program yang digunakan untuk mengeksekusi beberapa tugas secara otomatis. Contoh pekerjaan yang bisa dilakukan oleh task runner yaitu :
 
 - Minify sebuah css, js, maupun html
 - Optimasi sebuah gambar
-- Melakukan Compile [CSS Preprosessor](preprocessor-css.md) ke sebuah single file css
-- Melakukan concat pada css
+- Mengcompile [CSS Preprocessor](preprocessor-css.md) ke sebuah single file css
 - dan masih banyak lagi
 
-Kita tidak perlu lagi repot - repot melakukan task diatas secara manual, biarkan task runner yang melakukannya untuk kita. Ditambah lagi kita bisa mensetting task runner agar berjalan setiap kali kita merubah suatu file, sehingga kita tidak perlu menjalankan task runner secara manual berulang kali.
+Kita tidak perlu lagi repot - repot melakukan task diatas secara manual, biarkan task runner yang melakukannya untuk kita.
 
-## Contoh Task Runner
+## Beberapa Tool Task Runner
 
-Untuk menerapkan task runner ke suatu proyek, kita bisa menggunakan tool - tool berikut :
+Ada beberapa tool yang dapat kita gunakan untuk menjalankan beberapa perintah sekaligus, yaitu :
 
-### [Gulp](https://gulpjs.com/)
+1. [NPM Script](https://docs.npmjs.com/misc/scripts)
+2. [Gulp](https://gulpjs.com/)
+3. [Grunt](https://gruntjs.com/)
 
-**Dokumentasi -** https://github.com/gulpjs/gulp/blob/v3.9.1/docs/API.md
+## Penerapan Task Runner dengan NPM Script
 
-**Tutorial -** https://appdividend.com/2018/03/09/gulp-js-tutorial-beginners/
+Disini kita akan mencoba menerapkan task runner menggunakan npm script, contoh kasusnya adalah seperti berikut
 
-### [Grunt](https://gruntjs.com/)
+1. Mengcompile sass menjadi css
+2. Melakukan minify pada css
 
-**Dokumentasi -** https://gruntjs.com/getting-started
+### Mengcompile SASS Menjadi CSS
 
-**Tutorial -** https://www.youtube.com/playlist?list=PL4cUxeGkcC9j85fkVyCzCMJDfteLtrl_y
+Untuk mengcompile sass menjadi css, kita akan membuat sebuah npm script bernama `build-css`
 
-### [Broccoli](http://broccolijs.com/)
+```json
+"script": {
+  "build-css": "sass index.sass"
+}
+```
 
-**Dokumentasi -** https://github.com/broccolijs/broccoli
+Kemudian kita bisa menjalankan script tersebut dengan perintah `npm run build-css` sehingga file `index.css` akan muncul
 
-**Tutorial -** http://www.oligriffiths.com/broccolijs/
+Perlu diingat bahwa untuk menjalankan perintah diatas kita perlu menginstall package sass secara global terlebih dahulu menggunakan perintah `npm install -g sass`
 
-### [Brunch](https://brunch.io/)
+### Melakukan Minify Pada CSS
 
-**Dokumentasi -** https://brunch.io/docs/getting-started
+Untuk melakukan minify pada css, kita akan membuat sebuah npm script bernama `minify-css`
 
-**Tutorial -** https://scotch.io/tutorials/getting-started-with-brunch-the-ultra-fast-simple-config-build-tool
+```json
+"script": {
+  "build-css": "sass index.sass",
+  "minify-css": "uglifycss index.css"
+}
+```
+
+Kemudian kita bisa menjalankan script tersebut dengan perintah `npm run minify-css` sehingga file `index.css` akan terminify
+
+Jangan lupa untuk menginstall package `uglifycss` sebelum menjalankan perintah diatas dengan menggunakan perintah `npm install -g uglifycss`
+
+### Menjalankan NPM Script Secara Otomatis Saat File Berubah
+
+Dengan menggunakan perintah - perintah diatas kita dapat mengcompile file sass menjadi css serta melakukan minify terhadapnya, namun kita perlu menjalankan perintah `npm run build-css` dan `npm run minify-css` setiap kali kita melakukan perubahan terhadap file sass
+
+Untuk menjalankan kedua perintah tersebut secara otomatis setiap kali ada perubahan pada file sass, kita dapat memanfaatkan package yang bernama `onchange` yang dapat kita install dengan perintah `npm install onchange`
+
+Setelah itu kita dapat menerapkan `onchange` dengan membuat sebuah npm script baru bernama `dev`
+
+```json
+"script": {
+  "build-css": "sass index.sass",
+  "minify-css": "uglifycss index.css",
+  "dev": "onchange index.sass -- npm run build-css && npm run minify-css"
+}
+```
+
+Sekarang kita hanya perlu menjalankan perintah `npm run dev` untuk mengcompile sass menjadi css serta melakukan minify terhadapnya
