@@ -1,37 +1,37 @@
-# View Engine
+# Template Engine
 
-Apakah kalian merasa terganggu melihat file html kalian yang berantakan atau terlalu panjang ? padahal hanya untuk menampilkan halaman sederhana, kalau iya disini kita akan mempelajari yang namanya view engine.
+Sebelumnya kita sudah mempelajari bagaimana menerima request dan memberikan respond berupa teks ke client, namun bagaimana apabila kita ingin memberikan respond berupa data yang dimasukkan kedalam html ? caranya adalah menggunakan template engine
 
-![view-engine](view-engine.png)
+![template-engine](template-engine.png)
 
-## Penjelasan View Engine
+## Penjelasan Template Engine
 
-**View Engine** merupakan sebuah tool yang dapat memudahkan kita menulis sebuah tampilan web menjadi lebih sederhana, karena dengan view engine kita dapat menyingkat penulisan syntax html yang banyak menjadi lebih sedikit.
+**Template Engine** merupakan sebuah tool yang digunakan untuk memasukkan data kedalam sebuah halaman html
 
-## Cara Menggunakan View Engine Dengan Express
+## Cara Menggunakan Template Engine Dengan Express
 
-1.  Install view engine yang diinginkan, misalnya pug
+1.  Install template engine yang diinginkan, misalnya pug
 
     ```
     npm install --save pug
     ```
 
-2.  Mengeset view engine yang akan digunakan, misalnya pug
+2.  Mengeset template engine yang akan digunakan, misalnya pug
 
     ```Javascript
     app.set('views', path.join(__dirname, 'views'))
     app.set('view engine', 'pug')
     ```
 
-3.  Letakkan view di folder views
+3.  Letakkan template di folder views
 
-4.  Untuk merender view, gunakan syntax berikut
+4.  Untuk merender template, gunakan syntax berikut
 
     ```Javascript
-    res.render('namaView', {data})
+    res.render('namaFile', {data})
     ```
 
-## Beberapa Contoh View Engine
+## Beberapa Contoh Template Engine
 
 Berikut contoh - contoh view engine yang dapat digunakan dengan express js :
 

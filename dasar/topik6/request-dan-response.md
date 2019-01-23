@@ -6,7 +6,7 @@
 
 Request berisi data yang dikirimkan oleh client kepada server, biasanya data dikirim dari client lewat URL menggunakan URL Query atau URL Params
 
-### URL Query
+### 1. URL Query
 
 #### Penjelasan URL Query
 
@@ -21,13 +21,13 @@ github.com/?user=wrideveloper&repo=miniclass-web
 Kita bisa menggunakan `req.query` untuk mengambil data dari url query
 
 ```javascript
-app.get('/?user=wrideveloper&repo=miniclass-web', function(req, res) {
+app.get("/?user=wrideveloper&repo=miniclass-web", function(req, res) {
   const user = req.query.user
   const repo = req.query.repo
 })
 ```
 
-### URL Params
+### 2. URL Params
 
 #### Penjelasan URL Params
 
@@ -42,7 +42,7 @@ github.com/:user/:repo
 Kita bisa menggunakan `req.params` untuk mengambil data dari url params
 
 ```javascript
-app.get('/:user/:repo', function(req, res) {
+app.get("/:user/:repo", function(req, res) {
   const user = req.params.user
   const repo = req.params.repo
 })
@@ -50,10 +50,26 @@ app.get('/:user/:repo', function(req, res) {
 
 ## Response
 
-Response merupakan data yang diberikan oleh server kepada client, pada express kita bisa menggunakan `res.send()` untuk mengirimkan data kepada client
+Response merupakan data yang diberikan oleh server kepada client, ada beberapa cara yang dapat digunakan untuk mengirim response kepada client
+
+### 1. Send
+
+`res.send()` digunakan untuk mengirimkan sebuah data kepada client secara mentah (tidak dibungkus kedalam sebuah view)
 
 ```javascript
-app.get('/', function(req, res) {
-  res.send('hello world')
+app.get("/", function(req, res) {
+  res.send("hello world")
 })
 ```
+
+### 2. Render
+
+`res.render()` digunakan untuk mengirimkan sebuah data yang akan dibungkus kedalam sebuah tampilan HTML terlebih dahulu
+
+```Javascript
+app.get("/", function(req, res) {
+  res.render('namaView', {data})
+})
+```
+
+untuk menggunakan `res.render()` kita perlu mempersiapkan template engine terlebih yang akan digunakan terlebih dahulu

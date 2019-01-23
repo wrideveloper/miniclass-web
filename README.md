@@ -54,6 +54,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Request dan Response](dasar/topik6/request-dan-response.md)
     - [Middleware](dasar/topik6/middleware.md)
     - [Request Body](dasar/topik6/request-body.md)
+    - [Template Engine](dasar/topik6/template-engine.md)
     - [Serving Static File](dasar/topik6/static-file-assets.md)
     - [Routing](dasar/topik6/routing.md)
     - [Advance Routing](dasar/topik6/advance-routing.md)
@@ -83,26 +84,25 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [ECMAScript dan Babel](front-end/topik3/ecmascript-babel.md)
     - [Membuat Modern Frontend Starter Kit](front-end/topik3/membuat-modern-frontend-starter-kit.md)
 
-4.  **Dasar React JS**
+4.  **React Fundamental**
+
     - [Pengenalan React JS](front-end/topik4/pengenalan-reactjs.md)
     - [Pengenalan JSX](front-end/topik4/pengenalan-jsx.md)
     - [Install React JS](front-end/topik4/install-reactjs.md)
     - [Component](front-end/topik4/component.md)
-    - [Styling Component](front-end/topik4/styling-component.md)
     - [Props](front-end/topik4/props.md)
     - [State](front-end/topik4/state.md)
     - [Handling Event](front-end/topik4/handling-event.md)
-    - [Conditional Rendering](front-end/topik4/conditional-rendering.md)
     - Component Lifecycle
-    - [Membuat Aplikasi Todo List](front-end/topik4/membuat-aplikasi-todolist.md)
-5.  **React JS Lanjutan**
-    - [React Router](front-end/topik5/react-router.md)
+    - [Styling Component](front-end/topik4/styling-component.md)
+    - [React Router](front-end/topik4/react-router.md)
+    - Membuat Aplikasi Sederhana
+
+5.  **Share Logic Between Component**
+    - [Higher Order Component](front-end/topik5/higher-order-component.md)
+    - [Render Props](front-end/topik5/render-props.md)
     - [Context](front-end/topik5/context.md)
-    - [Server Side Rendering](front-end/topik5/server-side-rendering.md)
-6.  **Advanced React Pattern**
-    - [Compound Component](front-end/topik6/compound-component.md)
-    - [Higher Order Component](front-end/topik6/higher-order-component.md)
-    - [Render Props](front-end/topik6/render-props.md)
+    - Hooks
 
 ### :japanese_ogre: Materi Backend
 
