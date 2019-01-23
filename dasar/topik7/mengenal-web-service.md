@@ -19,3 +19,10 @@ Berikut beberapa contoh dari web service yang terdapat di internet :
 3.  **Pokemon -** https://pokeapi.co
 4.  **Instagram -** https://www.instagram.com/developer
 5.  **Github -** https://developer.github.com/v3
+
+## Membuat Web Service dengan Express
+
+Untuk membuat web service menggunakan express caranya mudah sekali, kita tinggal mengirimkan data dari database ke client menggunakan `res.send()` tanpa perlu membungkus data tersebut dengan template engine
+
+Berikut contoh proyek web service menggunakan express:
+https://github.com/wrideveloper/express-mysql-webservice
