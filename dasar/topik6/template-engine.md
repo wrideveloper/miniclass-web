@@ -28,35 +28,23 @@ Sebelumnya kita sudah mempelajari bagaimana menerima request dan memberikan resp
 4.  Untuk merender template, gunakan syntax berikut
 
     ```Javascript
-    res.render('namaFile', {data})
+    res.render('namaTemplate', {data})
     ```
 
 ## Beberapa Contoh Template Engine
 
-Berikut contoh - contoh view engine yang dapat digunakan dengan express js :
+Berikut contoh - contoh template engine yang dapat digunakan dengan express js :
 
-### 1. [Pug](https://pugjs.org)
+### 1. Pug
 
-**Dokumentasi**
+[Dokumentasi](https://pugjs.org/api/getting-started.html)
 
-[https://pugjs.org/api/getting-started.html](https://pugjs.org/api/getting-started.html)
+[Tutorial](https://gist.github.com/joepie91/c0069ab0e0da40cc7b54b8c2203befe1)
 
-**Tutorial**
+[CheatSheet](https://devhints.io/pug)
 
-- [https://www.youtube.com/watch?v=cddghkeGAdU](https://www.youtube.com/watch?v=cddghkeGAdU)
-- [https://gist.github.com/joepie91/c0069ab0e0da40cc7b54b8c2203befe1](https://gist.github.com/joepie91/c0069ab0e0da40cc7b54b8c2203befe1)
+### 2. EJS
 
-**CheatSheet**
+[Dokumentasi](http://ejs.co/#docs)
 
-[https://devhints.io/pug](https://devhints.io/pug)
-
-### 2. [EJS](http://ejs.co/)
-
-**Dokumentasi**
-
-[http://ejs.co/#docs](http://ejs.co/#docs)
-
-**Tutorial**
-
-- [https://scotch.io/tutorials/use-ejs-to-view-your-node-application](https://scotch.io/tutorials/use-ejs-to-view-your-node-application)
-- [https://www.youtube.com/watch?v=EYKjBJDPvEU](https://www.youtube.com/watch?v=EYKjBJDPvEU)
+[Tutorial](https://scotch.io/tutorials/use-ejs-to-template-your-node-application)

@@ -8,7 +8,7 @@ Request body merupakan data yang dikirimkan oleh client ke server melalui http b
 
 Berbeda dengan URL query maupun URL params, data yang dikirimkan tidak terlihat di URL karena dikirim melalui http body, cocok apabila kita ingin mengirimkan data sensitif seperti username atau password
 
-Cara paling mudah untuk membuat request body dari client yaitu dengan menggunakan tag `<form></form>` pada html
+Cara paling mudah untuk membuat request body dari client yaitu dengan menggunakan tag `<form/>` pada html
 
 ```html
 <form method="POST" action="http://wri.polinema.ac.id">
@@ -77,13 +77,13 @@ Multipart merupakan encoding yang digunakan apabila kita ingin mengirimkan data 
 Data yang dikirimkan melalui encoding text biasanya berformat JSON, kita bisa menggunakan middleware `express.json()` untuk membaca data berupa JSON
 
 ```javascript
-const express = require('express')
+const express = require("express")
 const app = express()
 
 // parsing json
 app.use(express.json())
 
-app.post('/', function(req, res) {
+app.post("/", function(req, res) {
   const data = req.body // berisi json yang dikirimkan client
   res.send(data)
 })
@@ -94,13 +94,13 @@ app.post('/', function(req, res) {
 Untuk membaca data yang dikirimkan dengan encoding URL Encoded maka kita bisa menggunakan middleware `express.urlencoded()`
 
 ```javascript
-const express = require('express')
+const express = require("express")
 const app = express()
 
 // parsing data url encoded
 app.use(express.urlencoded())
 
-app.post('/', function(req, res) {
+app.post("/", function(req, res) {
   const data = req.body // berisi data url encoded
   res.send(data)
 })
@@ -117,13 +117,13 @@ npm install --save multer
 Setelah berhasil diinstall kita bisa menggunakan middleware multer ini seperti berikut
 
 ```javascript
-var express = require('express')
-var multer = require('multer')
-var upload = multer({ dest: 'uploads/' })
+var express = require("express")
+var multer = require("multer")
+var upload = multer({ dest: "uploads/" })
 
 var app = express()
 
-app.post('/profile', upload.single('avatar'), function(req, res, next) {
+app.post("/profile", upload.single("avatar"), function(req, res, next) {
   // req.file berisi file avatar
   // req.body will hold the text fields, if there were any
 })
