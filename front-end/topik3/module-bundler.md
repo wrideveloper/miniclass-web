@@ -24,7 +24,7 @@ Sehingga selain sebagai module bundler, webpack juga bisa menjadi task runner, t
 
 ## Cara Menggunakan Webpack
 
-### Membuat file yang akan dibundling
+### 1. Membuat file yang akan dibundling
 
 ```javascript
 // src/index.js
@@ -34,13 +34,13 @@ const moment = require("moment")
 
 Disini kita akan menggunakan [moment](https://momentjs.com/) dan [chart js](https://www.chartjs.org/) sebagai contoh module yang akan dibundle
 
-### Install webpack
+### 2. Install webpack
 
 ```bash
 npm install webpack webpack-cli
 ```
 
-### Buat Config File
+### 3. Buat Config File
 
 ```javascript
 // webpack.config.js
@@ -48,7 +48,7 @@ npm install webpack webpack-cli
 module.exports = {
   entry: "./src/index.js",
   output: {
-    path: "./dist",
+    path: __dirname + "/dist",
     filename: "bundle.js"
   }
 }
@@ -56,7 +56,7 @@ module.exports = {
 
 `entry` menentukan lokasi file javascript yang akan dibundle, file ini merupakan file utama yang mengimport semua module yang dibutuhkan oleh aplikasi, sedangkan `output` menentukan lokasi bundling dan nama file yang akan dibuat
 
-### Bundling
+### 4. Bundling
 
 Untuk melakukan proses bundling kita tinggal menjalankan perintah berikut pada terminal
 
@@ -65,6 +65,68 @@ webpack
 ```
 
 Setelah perintah tersebut dijalankan, maka pada folder `dist` akan dibuat sebuah file bernama `bundle.js` yang sudah berisi dua module yaitu `chart js` dan `moment`, sehingga `bundle.js` sekarang bisa kita import ke file html tanpa perlu mengimport library lain
+
+## Webpack Loader
+
+Secara default webpack hanya bisa melakukan bundling pada javascript, namun dengan bantuan loader kita dapat membundle aset lain seperti css dan image kedalam file javascript
+
+### Bundling CSS
+
+Berikut merupakan contoh penerapan salah satu loader webpack yang digunakan untuk memasukkan styling pada file css kedalam javascript
+
+#### 1. Install Loader
+
+```bash
+npm install style-loader css-loader
+```
+
+#### 2. Terapkan Loader ke Config
+
+```javascript
+// webpack.config.js
+
+module.exports = {
+  entry: "./src/index.js",
+  output: {
+    path: __dirname + "/dist",
+    filename: "bundle.js"
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"]
+      }
+    ]
+  }
+}
+```
+
+`test` menentukan jenis file apa yang akan kita terapkan loader, sedangkan `use` menentukan loader apa yang akan digunakan untuk file tersebut
+
+#### 3. Buat File CSS dan Import ke File Javascript (File Entry)
+
+```css
+/* src/index.css */
+body {
+  background-color: black;
+}
+```
+
+```javascript
+// src/index.js
+require("index.css")
+```
+
+#### 4. Bundling
+
+Setelah selesai melakukan langkah - langkah diatas maka kita bisa menjalankan perintah berikut pada terminal
+
+```bash
+webpack
+```
+
+kemudian secara otomatis akan muncul file `bundle.js` yang didalamnya sudah berisi styling dari file css yang kita bundle, kita hanya perlu mengimport `bundle.js` ke html tanpa perlu mengimport file css sebelumnya
 
 ## Zero Configuration Webpack
 

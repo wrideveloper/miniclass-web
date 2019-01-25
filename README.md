@@ -95,7 +95,6 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - Component Lifecycle
     - [Styling Component](front-end/topik4/styling-component.md)
     - [React Router](front-end/topik4/react-router.md)
-    - Membuat Aplikasi Sederhana
 
 5.  **Share Logic Between Component**
     - [Higher Order Component](front-end/topik5/higher-order-component.md)
