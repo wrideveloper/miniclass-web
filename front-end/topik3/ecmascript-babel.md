@@ -1,10 +1,6 @@
-# :cyclone: ECMAScript dan Babel
+# ECMAScript dan Babel
 
-## :bookmark_tabs: Tujuan
-
-- Mengulas ECMAScript dan Babel
-
-## Apa Itu ECMAScript
+## Penjelasan ECMAScript
 
 **ECMAScript (disingkat ES)** merupakan standard penulisan dari scripting language seperti javascript. Dengan mengimplementasikan ECMAScript, maka syntax javascript yang kita tulis dapat dipersingkat dan lebih mudah dibaca.
 
@@ -12,16 +8,19 @@
 
 ECMAScript memiliki banyak versi, yaitu :
 
-1.  ES5 (tahun 2011)
-2.  ES6 (tahun 2015)
-3.  ES7 (tahun 2016) biasa disebut **ES2016**
-4.  ES8 (tahun 2017) biasa disebut **ES2017**
-
-**Catatan : versi sebelum ES5 tidak dituliskan disini**
+1.  ES1 (tahun 1997)
+2.  ES2 (tahun 1998)
+3.  ES3 (tahun 1999)
+4.  ES4 (tahun 2000)
+5.  **ES5 (tahun 2011)**
+6.  **ES6 (tahun 2015)**
+7.  ES7 (tahun 2016)
+8.  ES8 (tahun 2017)
+9.  ES9 (tahun 2018)
 
 Javascript yang biasa kita gunakan menggunakan standarisasi **ES5**, yang disupport oleh browser terbaru hingga browser lama, hanya saja karena ada banyak permasalahan dalam penggunaan syntaxnya, maka para developer cenderung menggunakan **ES6** atau setelahnya.
 
-## ES6
+## Penjelasan ES6
 
 Seperti yang sudah dijelaskan diatas, bahwa ES6 merupakan versi dari ECMAScript yang diterbitkan pada tahun 2015, ES6 cenderung digunakan oleh developer karena memiliki syntax yang mudah dipahami, dan memberikan kemampuan baru terhadap javascript.
 
@@ -40,16 +39,56 @@ Tidak hanya ES6, versi ECMAScript setelah ES6 pun juga sering digunakan oleh dev
 
 https://www.youtube.com/playlist?list=PLCZlgfAG0GXBWhs2AwMdPyKtMG2cF4YSR
 
-## ES6 Tidak Mensupport Browser Lama
+## Penjelasan Babel
 
-Namun sayangnya, browser lama kita tidak bisa menjalankan ES6 (atau setelahnya), versi terakhir yang disupport oleh browser baru dan browser lama adalah ES5
+Sayangnya, tidak semua versi browser mensupport ES6, sehingga sebelum kita mendeploy sebuah website ada baiknya kita perlu merubah semua syntax ES6 menjadi ES5
 
-## Mengubah ES6 Menjadi ES5
+Babel merupakan compiler yang dapat merubah syntax ES6 menjadi ES5 yang disupport oleh browser baru dan browser lama.
 
-**Babel** merupakan compiler yang dapat merubah kode ES6 menjadi kode ES5 atau javascript yang kita kenal sekarang, yang bisa disupport oleh browser baru dan browser lama.
+## Setup Babel
 
-**Untuk mempelajari bagaimana cara mengubah ES6 menjadi ES5, silahkan kunjungi link berikut :**
+### 1. Buat File Javascript yang Akan Dicompile
 
-**Tutorial ES6 ke ES5 menggunakan babel -** https://www.youtube.com/watch?v=XSgSWPLfFvE
+```javascript
+// src/index.js
+const nama = "amir"
+console.log(`nama saya ${nama}`)
+```
 
-**Contoh Proyek ES6 dan Babel -** https://github.com/wrideveloper/workshop-babel-starter
+File ini merupakan file javascript yang berisi syntax ES6 yang nantinya akan dicompile menjadi ES5
+
+### 2. Install Babel
+
+```bash
+npm install @babel/core @babel/cli
+```
+
+### 3. Setup Babel Preset
+
+Preset digunakan untuk menentukan versi ecmascript berapakah yang akan dicompile oleh babel, preset yang biasa digunakan adalah `preset-env` yang dapat mengcompile ECMAScript versi 6 keatas
+
+**Install Preset**
+
+```bash
+npm install @babel/preset-env
+```
+
+**Menerapkan Preset**
+
+Untuk menerapkan preset, maka kita perlu membuat file bernama `.babelrc` yang isinya adalah sebagai berikut
+
+```json
+{
+  "presets": ["@babel/preset-env"]
+}
+```
+
+### 4. Compile
+
+Langkah terakhir kita tinggal mengcompile file javascript yang berisi syntax es6 menjadi syntax es5 dengan menjalankan perintah berikut pada terminal
+
+```bash
+babel src -d lib
+```
+
+`src` merupakan nama folder letak file javascript yang berisi syntax es6 berada, sedangkan `lib` merupakan folder tujuan file javascript yang sudah tercompile
