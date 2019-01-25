@@ -7,7 +7,8 @@
 - Minify sebuah css, js, maupun html
 - Optimasi sebuah gambar
 - Mengcompile [CSS Preprocessor](preprocessor-css.md) ke sebuah single file css
-- dan masih banyak lagi
+- Mengcompile ECMAScript
+- Dan masih banyak lagi
 
 Kita tidak perlu lagi repot - repot melakukan task diatas secara manual, biarkan task runner yang melakukannya untuk kita.
 
@@ -24,7 +25,7 @@ Ada beberapa tool yang dapat kita gunakan untuk menjalankan beberapa perintah se
 Disini kita akan mencoba menerapkan task runner menggunakan npm script, contoh kasusnya adalah seperti berikut
 
 1. Mengcompile sass menjadi css
-2. Melakukan minify pada css
+2. Mengcompile ES6 menjadi ES5
 
 ### Mengcompile SASS Menjadi CSS
 
@@ -32,43 +33,33 @@ Untuk mengcompile sass menjadi css, kita akan membuat sebuah npm script bernama 
 
 ```json
 "script": {
-  "build-css": "sass index.sass"
+  "build-css": "sass src:dist"
 }
 ```
 
-Kemudian kita bisa menjalankan script tersebut dengan perintah `npm run build-css` sehingga file `index.css` akan muncul
+### Mengcompile ES6 Menjadi ES5
 
-Perlu diingat bahwa untuk menjalankan perintah diatas kita perlu menginstall package sass secara global terlebih dahulu menggunakan perintah `npm install -g sass`
-
-### Melakukan Minify Pada CSS
-
-Untuk melakukan minify pada css, kita akan membuat sebuah npm script bernama `minify-css`
+Untuk mengcompile es6 menjadi es5, kita akan menambahkan sebuah npm script bernama `build-js`
 
 ```json
 "script": {
-  "build-css": "sass index.sass",
-  "minify-css": "uglifycss index.css"
+  "build-css": "sass src:dist",
+  "build-js": "babel src -d dist"
 }
 ```
 
-Kemudian kita bisa menjalankan script tersebut dengan perintah `npm run minify-css` sehingga file `index.css` akan terminify
+**Catatan** : jangan lupa untuk melakukan setup babel terlebih dahulu
 
-Jangan lupa untuk menginstall package `uglifycss` sebelum menjalankan perintah diatas dengan menggunakan perintah `npm install -g uglifycss`
+### Menjalankan Semua Task Secara Bersamaan
 
-### Menjalankan NPM Script Secara Otomatis Saat File Berubah
-
-Dengan menggunakan perintah - perintah diatas kita dapat mengcompile file sass menjadi css serta melakukan minify terhadapnya, namun kita perlu menjalankan perintah `npm run build-css` dan `npm run minify-css` setiap kali kita melakukan perubahan terhadap file sass
-
-Untuk menjalankan kedua perintah tersebut secara otomatis setiap kali ada perubahan pada file sass, kita dapat memanfaatkan package yang bernama `onchange` yang dapat kita install dengan perintah `npm install onchange`
-
-Setelah itu kita dapat menerapkan `onchange` dengan membuat sebuah npm script baru bernama `dev`
+Sampai disini kita sudah bisa mengcompile sass dan es6, namun untuk melakukan kedua task tersebut kita harus menjalankan dua perintah, disini kita akan menambah npm script baru bernama `build` yang akan menjalankan semua task - task diatas
 
 ```json
 "script": {
-  "build-css": "sass index.sass",
-  "minify-css": "uglifycss index.css",
-  "dev": "onchange index.sass -- npm run build-css && npm run minify-css"
+  "build-css": "sass src:dist",
+  "build-js": "babel src -d dist",
+  "build": "npm run build-css && npm run build-js"
 }
 ```
 
-Sekarang kita hanya perlu menjalankan perintah `npm run dev` untuk mengcompile sass menjadi css serta melakukan minify terhadapnya
+Sekarang kita hanya perlu menjalankan perintah `npm run build` untuk mengcompile sass menjadi css dan mengcompile es6 menjadi es5
