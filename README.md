@@ -57,8 +57,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Template Engine](dasar/topik6/template-engine.md)
     - [Serving Static File](dasar/topik6/static-file-assets.md)
     - [Routing](dasar/topik6/routing.md)
-    - [Advance Routing](dasar/topik6/advance-routing.md)
-    - [Membuat Aplikasi CRUD dengan Express JS dan MySQL](dasar/topik6/membuat-aplikasi-crud-dengan-expressjs-dan-mysql.md)
+    - Konsep MVC
 
 7.  **Kolaborasi Backend dan Frontend**
     - [Apa itu Frontend dan Backend Developer](dasar/topik7/apa-itu-frontend-dan-backend-developer.md)
@@ -108,29 +107,24 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 
     - [Pengenalan ORM](back-end/topik1/pengenalan-orm.md)
     - [Pengenalan Framework ORM Sequelize JS](back-end/topik1/pengenalan-framework-orm-sequelize-js.md)
-    - Impelementasi ORM Pada Express JS dengan Sequelize JS
 
-2.  **Software Architectural Pattern**
+2.  **Document Oriented Database**
 
-    - [Pengenalan Arsitektur MVC](back-end/topik2/pengenalan-arsitektur-mvc.md)
-    - Implementasi MVC pada Express JS
+    - Penjelasan Document Oriented Database
+    - Implementasi MongoDB dengan Express JS
+    - Relasi Antar Document
 
 3.  **Web Service**
 
-    - [Membuat Web Service Sederhana](back-end/topik3/membuat-web-service-sederhana.md)
-    - [Cross Origin Resource Sharing](back-end/topik3/cross-origin-resource-sharing.md)
     - [REST Web Service](back-end/topik3/rest-web-service.md)
     - [GraphQL Web Service](back-end/topik3/graphql-web-service.md)
 
 4.  **Autentikasi**
 
     - [Metode Autentikasi Session](back-end/topik4/metode-autentikasi-session.md)
-    - Implementasi autentikasi dengan session menggunakan Passport JS Local
     - [Metode Autentikasi Token](back-end/topik4/metode-autentikasi-token.md)
-    - Implementasi autentikasi dengan token menggunakan Passport JS JWT
 
-5.  **Document Oriented Database**
-    - Pengenalan Document Oriented Database
-    - Migrasi Dari Relasional Ke Document Oriented
-    - Pengenalan MongoDB
-    - Implementasi MongoDB dengan Express JS
+5.  **Microservices**
+    - Microservices
+    - Gateway Microservices
+    - Message Broker
