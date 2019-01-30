@@ -57,7 +57,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Template Engine](dasar/topik6/template-engine.md)
     - [Serving Static File](dasar/topik6/static-file-assets.md)
     - [Routing](dasar/topik6/routing.md)
-    - Konsep MVC
+    - [Konsep MVC](dasar/topik6/mvc.md)
 
 7.  **Kolaborasi Backend dan Frontend**
     - [Apa itu Frontend dan Backend Developer](dasar/topik7/apa-itu-frontend-dan-backend-developer.md)
