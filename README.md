@@ -105,14 +105,12 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 
 1.  **Object Relational Mapping**
 
-    - [Pengenalan ORM](back-end/topik1/pengenalan-orm.md)
-    - [Pengenalan Framework ORM Sequelize JS](back-end/topik1/pengenalan-framework-orm-sequelize-js.md)
+    - [Object Relational Mapping](back-end/topik1/pengenalan-orm.md)
 
 2.  **Document Oriented Database**
 
-    - Penjelasan Document Oriented Database
-    - Implementasi MongoDB dengan Express JS
-    - Relasi Antar Document
+    - Document Oriented Database
+    - Object Document Mapping
 
 3.  **Web Service**
 
