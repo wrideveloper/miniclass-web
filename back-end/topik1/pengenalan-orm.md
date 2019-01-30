@@ -52,16 +52,26 @@ module.exports = sequalize
 ```javascript
 // models/Biodata.js
 
-const sequalize = require("../config/db.js")
+const Sequelize = require("sequelize")
+const sequelize = require("../config/db")
 
-const Biodata = sequelize.define("biodata", {
-  nama: {
-    type: Sequelize.STRING(100)
+const Biodata = sequelize.define(
+  "biodata",
+  {
+    id_biodata: {
+      type: Sequelize.INTEGER,
+      primaryKey: true,
+      autoIncrement: true
+    },
+    nama: {
+      type: Sequelize.STRING(100)
+    },
+    alamat: {
+      type: Sequelize.STRING(150)
+    }
   },
-  alamat: {
-    type: Sequelize.STRING(150)
-  }
-})
+  { timestamps: false }
+)
 
 module.exports = Biodata
 ```
@@ -91,20 +101,20 @@ module.exports = {
   },
 
   edit: function(req, res) {
-    Biodata.findById(req.params.id).then(function(row) {
+    Biodata.findByPrimary(req.params.id).then(function(row) {
       res.render("biodata/edit", { data: row })
     })
   },
 
   update: function(req, res) {
-    Biodata.findById(req.params.id).then(function(row) {
+    Biodata.findByPrimary(req.params.id).then(function(row) {
       row.update(req.body)
       res.redirect("/biodata")
     })
   },
 
   destroy: function(req, res) {
-    Biodata.findById(req.params.id).then(function(row) {
+    Biodata.findByPrimary(req.params.id).then(function(row) {
       row.destroy()
       res.redirect("/biodata")
     })
