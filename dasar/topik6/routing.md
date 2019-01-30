@@ -8,30 +8,59 @@ Dalam dunia pengembangan web, routing merupakan pemetaan URL - URL yang dapat di
 
 ## Melakukan Routing
 
+Berikut merupakan standar routing untuk melakukan CRUD pada website
+
+| Verb   | URI              | Action  | Description                        |
+| ------ | ---------------- | ------- | ---------------------------------- |
+| GET    | /biodata         | index   | Menampilkan semua biodata          |
+| GET    | /biodata/id      | show    | Menampilkan biodata berdasarkan ID |
+| GET    | /biodata/create  | create  | Menampilkan form tambah biodata    |
+| POST   | /biodata         | store   | Menambahkan biodata                |
+| GET    | /biodata/id/edit | edit    | Menampilkan form ubah biodata      |
+| PUT    | /biodata/id      | update  | Mengubah biodata berdasarkan ID    |
+| DELETE | /biodata/id      | destroy | Menghapus biodata berdasarkan ID   |
+
+Berikut contoh penerapan menggunakan express
+
 ```Javascript
 // index.js
 
 const express = require("express")
 const app = express()
 
-// GET biasa digunakan untuk menampilkan data
-app.get('/', function (req, res) {
-  	res.send('Get Method')
+// Menampilkan semua biodata
+app.get('/biodata', function (req, res) {
+  
 })
 
-// POST biasa digunakan untuk menambah data
-app.post('/', function (req, res) {
-  	res.send('POST Method')
+// Menampilkan biodata berdasarkan ID
+app.get('/biodata/:id', function (req, res) {
+  	
 })
 
-// PUT biasa digunakan untuk merubah data
-app.put('/', function (req, res) {
-  res.send('Put Method')
+// Menampilkan form tambah biodata
+app.get('/biodata/create', function (req, res) {
+  	
 })
 
-// DELETE biasa digunakan untuk menghapus data
-app.delete('/', function (req, res) {
-  res.send('Delete Method')
+// Menambah biodata
+app.post('/biodata', function (req, res) {
+  
+})
+
+// Menampilkan form ubah biodata berdasarkan ID
+app.get('/biodata/:id/edit', function (req, res) {
+  
+})
+
+// Mengubah biodata berdasarkan ID
+app.put('/biodata/:id', function (req, res) {
+
+})
+
+// Menghapus biodata berdasarkan ID
+app.delete('/biodata/:id', function (req, res) {
+
 })
 
 app.listen(3000, function () {})
@@ -41,111 +70,66 @@ app.listen(3000, function () {})
 
 Selama ini kita selalu meletakkan routing pada satu file saja, yaitu pada `index.js` hal ini tidak baik karena semakin fitur dari aplikasi bertambah maka `index.js` akan semakin penuh dengan baris kode, berikut langkah - langkah untuk memisahkan routing ke file lain
 
-### 1. Kondisi Awal index.js
+### 1. Membuat File Untuk Routing
+
+Karena kita akan membuat routing untuk biodata, maka disini kita akan membuat sebuah file bernama `biodataRouter.js` yang hanya berisi routing dari biodata
+
+```javascript
+// biodataRouter.js
+
+const express = require("express")
+const router = express.Router()
+
+// Menampilkan semua biodata
+router.get('/biodata', function (req, res) {
+  	
+})
+
+// Menampilkan biodata berdasarkan ID
+router.get('/biodata/:id', function (req, res) {
+  	
+})
+
+// Menampilkan form tambah biodata
+router.get('/biodata/create', function (req, res) {
+  	
+})
+
+// Menambah biodata
+router.post('/biodata', function (req, res) {
+  
+})
+
+// Menampilkan form ubah biodata berdasarkan ID
+router.get('/biodata/:id/edit', function (req, res) {
+  
+})
+
+// Mengubah biodata berdasarkan ID
+router.put('/biodata/:id', function (req, res) {
+
+})
+
+// Menghapus biodata berdasarkan ID
+router.delete('/biodata/:id', function (req, res) {
+
+})
+
+module.exports = router
+```
+
+### 2. Menerapkan File Routing ke index.js
+
+Setelah kita memisah routing ke file lain, maka kita perlu mengimport dan menggunakan routing tersebut ke `index.js` menggunakan `app.use`
 
 ```javascript
 // index.js
 
 const express = require("express")
 const app = express()
+const biodataRouter = require("./biodataRouter")
 
-// route user
-app.get("/user", function(req, res) {
-  console.log("get user")
-})
-app.post("/user", function(req, res) {
-  console.log("add user")
-})
-app.put("/user", function(req, res) {
-  console.log("edit user")
-})
-app.delete("/user", function(req, res) {
-  console.log("delete user")
-})
-
-// route product
-app.get("/product", function(req, res) {
-  console.log("get product")
-})
-app.post("/product", function(req, res) {
-  console.log("add product")
-})
-app.put("/product", function(req, res) {
-  console.log("edit product")
-})
-app.delete("/product", function(req, res) {
-  console.log("delete product")
-})
-
-// run server
-app.listen(3000, function() {})
-```
-
-Disini kita memiliki dua jenis routing, yaitu routing untuk data user, dan routing untuk data produk
-
-### 2. Buat File Untuk Routing
-
-Karena kita memiliki dua jenis routing, yaitu user dan produk, maka disini kita perlu membuat dua file routing yaitu `userRouter.js` yang menentukan routing untuk user, dan `productRouter.js` yang menentukan routing untuk produk
-
-```javascript
-// userRouter.js
-
-const express = require("express")
-const router = express.Router()
-
-router.get("/user", function(req, res) {
-  console.log("get user")
-})
-router.post("/user", function(req, res) {
-  console.log("add user")
-})
-router.put("/user", function(req, res) {
-  console.log("edit user")
-})
-router.delete("/user", function(req, res) {
-  console.log("delete user")
-})
-
-module.exports = router
-```
-
-```javascript
-// productRouter.js
-
-const express = require("express")
-const router = express.Router()
-
-router.get("/product", function(req, res) {
-  console.log("get product")
-})
-router.post("/product", function(req, res) {
-  console.log("add product")
-})
-router.put("/product", function(req, res) {
-  console.log("edit product")
-})
-router.delete("/product", function(req, res) {
-  console.log("delete product")
-})
-
-module.exports = router
-```
-
-### 3. Menerapkan File Routing ke index.js
-
-Setelah kita memisah routing ke file lain, maka kita perlu mengimport dan menggunakan routing yang ada pada file lain tersebut menggunakan `app.use`
-
-```javascript
-// index.js
-
-const express = require("express")
-const app = express()
-const userRouter = require("./userRouter")
-const productRouter = require("./productRouter")
-
-app.use(userRouter)
-app.use(productRouter)
-
+app.use(biodataRouter)
 app.listen(3000, function() {})
 ```
 
