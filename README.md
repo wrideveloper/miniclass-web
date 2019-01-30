@@ -105,7 +105,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 
 1.  **Object Relational Mapping**
 
-    - [Object Relational Mapping](back-end/topik1/pengenalan-orm.md)
+    - [Pengenalan Object Relational Mapping](back-end/topik1/pengenalan-orm.md)
 
 2.  **Document Oriented Database**
 
