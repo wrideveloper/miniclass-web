@@ -110,7 +110,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 2.  **Document Oriented Database**
 
     - [Document Oriented Database](back-end/topik2/document-oriented-database.md)
-    - Object Document Mapping
+    - [Object Document Mapping](back-end/topik2/object-document-mapping.md)
 
 3.  **Web Service**
 
