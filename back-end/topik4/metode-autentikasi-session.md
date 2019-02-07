@@ -185,12 +185,12 @@ app.use(
   })
 )
 
-// menerapkan middlewares redirectIfAuthenticated
+// implement middlewares redirectIfAuthenticated
 app.get("/login", redirectIfAuthenticated, function(req, res) {
   res.sendFile(__dirname + "/views/login.html")
 })
 
-// menerapkan middlewares redirectIfAuthenticated
+// implement middlewares redirectIfAuthenticated
 app.post("/login", redirectIfAuthenticated, function(req, res) {
   const { username, password } = req.body
   if (username === "admin" && password === "admin") {

@@ -120,7 +120,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 4.  **Autentikasi**
 
     - [Metode Autentikasi Session](back-end/topik4/metode-autentikasi-session.md)
-    - [Metode Autentikasi Token](back-end/topik4/metode-autentikasi-token.md)
+    - [Metode Autentikasi JSON Web Token](back-end/topik4/metode-autentikasi-jwt.md)
 
 5.  **Microservices**
     - Microservices
