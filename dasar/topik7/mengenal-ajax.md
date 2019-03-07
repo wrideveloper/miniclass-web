@@ -27,7 +27,7 @@ const xhttp = new XMLHttpRequest()
 
 // menentukan apa yang akan dilakukan setelah menerima response dari server
 xhttp.onreadystatechange = function() {
-  if (this.readyState == 4) {
+  if (xhttp.readyState == 4) {
     console.log(xhttp.responseText)
   }
 }
