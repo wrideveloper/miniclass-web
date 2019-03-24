@@ -6,7 +6,7 @@ Hal yang pertama kali dilakukan untuk belajar react adalah menginstallnya kedala
 
 ## Install Manual
 
-Ini merupakan cara standard apabila kita ingin menginstall react kedalam proyek kita, sebagai frontend developer yang budiman harusnya kita paham bagaimana cara melakukan hal ini.
+Ini merupakan cara standard apabila kita ingin menginstall react ke dalam proyek kita, sebagai frontend developer yang budiman harusnya kita paham bagaimana cara melakukan hal ini.
 
 Untuk menginstall react, kita membutuhkan hal berikut :
 
@@ -20,9 +20,7 @@ Untuk menginstall react, kita membutuhkan hal berikut :
 
 **Untuk lebih jelasnya silahkan lihat tutorial berikut :**
 
-**Medium -** https://blog.usejournal.com/creating-a-react-app-from-scratch-f3c693b84658
-
-**Youtube -** https://www.youtube.com/watch?v=uextYhQGP6k
+[How To Build Your Own React Boilerplate](https://dev.to/itzsaga/how-to-build-your-own-react-boilerplate-with-webpack-4--babel-7-510c?fbclid=IwAR0NAjeFOw4ERyJZ0JulXDMoqG_IdeM2sj7qxYVCWgncQcjuZE6JKq1UfiM)
 
 ## Install dengan create-react-app
 
