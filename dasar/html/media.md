@@ -1,10 +1,33 @@
-### :cd: Figure Image , Audio , Video
+# Media
 
-Dengan html, kita juga bisa menampilkan gambar, video dan audio dengan menggunakan tag `img`, `video`, dan `audio`
+Kita dapat menampilkan media seperti image, audio, serta video dedngan menggunakan html
+
+## Image
+
+kita dapat menggunakan tag `img` untuk menampilkan image pada html, berikut contoh penggunaannya :
 
 ```html
-<img src="assets/fotoku.jpg" />
-<video src="video.mp4" controls>
-  <audio src="music.mp3" controls></audio>
-</video>
+<img src="fotoku.jpg" />
 ```
+
+attribut `src` diarahkan ke lokasi image yang ingin kita tampilkan
+
+## Audio
+
+kita dapat menggunakan tag `audio` untuk menampilkan audio player pada html, berikut contoh penggunaannya :
+
+```html
+<audio src="audioku.ogg" controls />
+```
+
+attribut `src` diarahkan ke lokasi audio yang ingin kita putar
+
+## Video
+
+kita dapat menggunakan tag `video` untuk menampilkan video player pada html, berikut contoh penggunaannya :
+
+```html
+<video src="videoku.ogg" controls />
+```
+
+attribut `src` diarahkan ke lokasi video yang ingin kita putar
