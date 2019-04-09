@@ -1,6 +1,10 @@
-### :orange_book: Varian Headings
+# Text Formatting
 
-Terdapat enam varian heading, diurutkan (ranked) tergantung dari pentingnya dan ukurannya, menggunakan angka seperti `h1`, `h2`, `h3`, `h4`, `h5`, `h6`,
+Dengan menggunakan html, kita bisa malakukan formatting terhadap text, seperti menebalkan, memiringkan, mencoret, atau menggaris bawahi suatu text
+
+## Heading
+
+Heading digunakan untuk menuliskan judul, terdapat enam jenis heading, diurutkan tergantung dari pentingnya dan ukurannya, menggunakan angka seperti `h1`, `h2`, `h3`, `h4`, `h5`, `h6`,
 
 ```
 <h1>Ini heading 1 loh</h1>
@@ -11,9 +15,9 @@ Terdapat enam varian heading, diurutkan (ranked) tergantung dari pentingnya dan 
 <h6>Ini heading 6 loh</h6>
 ```
 
-### :page_facing_up: Paragraph
+## Paragraph
 
-Sebelumnya sudah melihat paragraf, teks panjang yang berisi sebuah penjelasan atau cerita (apapun!), yang juga dapat terbagi ke beberapa bagian (section). Kita bisa gunakan paragraf untuk menyajikan teks polos apapun.
+Paragraph digunakan untuk mengelompokkan kumpulan text kedalam satu paragraph, untuk membuat paragraph pada html, kita bisa membungkus kumpulan text menggunakan tag `p`.
 
 ```html
 <p>
@@ -24,13 +28,16 @@ Sebelumnya sudah melihat paragraf, teks panjang yang berisi sebuah penjelasan at
 </p>
 ```
 
-### :book: Styling pada teks
+## Styling pada teks
 
-Styling umum yang dapat digunakan antara lain bold (`b`), italic (`i`), underline (`u`), dan strike-through (`s`).
+Styling umum yang dapat digunakan antara lain bold `b`, italic `i`, underline `u`, dan strike-through `s`.
 
 ```html
-<p>
-  He is <strong>the strongest hero<strong> in <em>Universe 7</em>.
-  <b>"But I also need to compare with heroes in other universes, <i>right</i>?"</b>, said <s>them</s> him.
-</p>
+<b>menebalkan text</b>
+
+<i>memiringkan text</i>
+
+<u>menggaris bawahi text</u>
+
+<s>mencoret text</s>
 ```
