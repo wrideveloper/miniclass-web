@@ -17,25 +17,25 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 
 2.  **HTML**
 
-    - Pengenalan HTML
-    - Text Formatting
-    - Link
-    - Media
-    - List
-    - Table
-    - Form
-    - Grouping
+    - [Pengenalan HTML](dasar/html/pengenalan-html.md)
+    - [Text Formatting](dasar/html/text-formatting.md)
+    - [Link](dasar/html/link.md)
+    - [Media](dasar/html/media.md)
+    - [List](dasar/html/list.md)
+    - [Table](dasar/html/table.md)
+    - [Form](dasar/html/form.md)
+    - [Grouping](dasar/html/grouping.md)
 
 3.  **CSS**
 
-    - Pengenalan CSS
+    - [Pengenalan CSS](dasar/css/pengenalan-css.md)
     - Text Formatting
     - Background
     - Border
     - Dimension
     - Spacing
-    - Layouting
-    - Membuat UI Component
+    - [Layouting](dasar/css/layouting.md)
+    - [Membuat UI Component](dasar/css/membuat-ui-component.md)
 
 4.  **Javascript**
 

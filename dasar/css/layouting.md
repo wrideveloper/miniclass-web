@@ -1,4 +1,4 @@
-# Layouting dengan CSS
+# Layouting
 
 Setelah mempelajari dasar - dasar penggunaan css untuk mempercantik halaman web, sekarang kita akan belajar cara membuat layout dengan menggunakan css
 
