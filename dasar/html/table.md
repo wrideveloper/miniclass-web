@@ -1,6 +1,10 @@
-### :straight_ruler: Table
+# Table
 
-Menampilkan data dan informasi dalam dua dimensi , Diwajibkan menggunakan `table` untuk melakukannya. Catatan bahwa table bukan untuk digunakan sebagai `layout` atau `memposisikan` sebuah halaman website, namun sebaiknya hanya untuk menampilkan data saja. Gunakan kombinasi `table` dengan `tr`, `th`, `td`.
+Table digunakan untuk menampilkan data dalam format table, dimana dalam table terdapat baris dan kolom untuk memudahkan penyajian data
+
+## Membuat Table
+
+Untuk membuat table pada html, kita dapat menggunakan kombinasi tag `table` dengan `tr`, `th`, dan `td`.
 
 ```html
 <table>
@@ -22,3 +26,5 @@ Menampilkan data dan informasi dalam dua dimensi , Diwajibkan menggunakan `table
   </tr>
 </table>
 ```
+
+tag `table` digunakan sebagai pembungkus, tag `tr` atau table row digunakan untuk membuat baris pada table, tag `th` atau table header digunakan untuk membuat judul kolom pada table, sedangkan tag `td` atau table data digunakan untuk membuat kolom pada table
