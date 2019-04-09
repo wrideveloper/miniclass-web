@@ -1,8 +1,10 @@
-### :anchor: Anchor untuk Link
+# Link
 
-Jika kita butuh menautkan halaman ke halaman lain, gunakan _anchor_ dengan URL. Anchor ini juga disebut hyperlink (hypertext anchor). Anchor ini memerlukan atribut `href` agar bisa bekerja.
+Link merupakan koneksi yang dapat menghubungkan suatu halaman web ke halaman web yang lain
 
-Contoh penggunaan menggunakan :
+## Membuat Link
+
+Kita dapat menggunakan tag `a` untuk membuat link menuju halaman web lain, berikut contoh penggunaannya :
 
 ```html
 <a href="https://www.instagram.com/wri_polinema/">Go to WRI Instagram page</a>

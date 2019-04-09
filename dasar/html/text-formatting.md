@@ -28,7 +28,7 @@ Paragraph digunakan untuk mengelompokkan kumpulan text kedalam satu paragraph, u
 </p>
 ```
 
-## Styling pada teks
+## Styling Text
 
 Styling umum yang dapat digunakan antara lain bold `b`, italic `i`, underline `u`, dan strike-through `s`.
 
