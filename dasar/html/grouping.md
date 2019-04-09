@@ -1,6 +1,10 @@
-### :office: Div
+# Grouping
 
-untuk mengelompokkan beberapa tag html biasanya kita menggunakan `div`, div ini berfungsi agar tag - tag html yang dikelompokkan mudah diberikan styling serta mempermudah dalam pembuatan layout
+Untuk memudahkan proses styling dan layouting menggunakan css, atau melakukan suatu task menggunakan javascript, ada kalanya kita perlu membungkus kumpulan tag html menjadi satu, untuk melakukannya kita dapat menggunakan tag `div`
+
+## Membuat Div
+
+Untuk mengelompokkan beberapa tag html, kita dapat menggunakan tag `div`, contohnya seperti berikut :
 
 ```html
 <div>
