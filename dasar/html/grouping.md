@@ -1,10 +1,10 @@
 # Grouping
 
-Untuk memudahkan proses styling dan layouting menggunakan css, atau melakukan suatu task menggunakan javascript, ada kalanya kita perlu membungkus kumpulan tag html menjadi satu, untuk melakukannya kita dapat menggunakan tag `div`
+Untuk memudahkan proses styling dan layouting menggunakan css, atau melakukan suatu task menggunakan javascript, ada kalanya kita perlu membungkus kumpulan tag HTML menjadi satu, untuk melakukannya kita dapat menggunakan tag `div`
 
 ## Membuat Div
 
-Untuk mengelompokkan beberapa tag html, kita dapat menggunakan tag `div`, contohnya seperti berikut :
+Untuk mengelompokkan beberapa tag HTML, kita dapat menggunakan tag `div`, contohnya seperti berikut :
 
 ```html
 <div>

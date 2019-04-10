@@ -1,6 +1,10 @@
 # Pengenalan HTML
 
-**Hypertext Markup Language** (HTML) adalah satu dari banyak bahasa markup yang digunakan untuk menentukan struktur dari website yang akan kita buat. Sintaks atau cara penulisan HTML biasanya terlihat seperti ini:
+Hypertext Markup Language (HTML) adalah satu dari banyak bahasa markup yang digunakan untuk menentukan struktur dari website yang akan kita buat.
+
+## Cara Penulisan
+
+Sintaks atau cara penulisan HTML biasanya terlihat seperti ini:
 
 ```html
 <!DOCTYPE html>

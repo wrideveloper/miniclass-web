@@ -4,7 +4,7 @@ Table digunakan untuk menampilkan data dalam format table, dimana dalam table te
 
 ## Membuat Table
 
-Untuk membuat table pada html, kita dapat menggunakan kombinasi tag `table` dengan `tr`, `th`, dan `td`.
+Untuk membuat table pada HTML, kita dapat menggunakan kombinasi tag `table` dengan `tr`, `th`, dan `td`.
 
 ```html
 <table>

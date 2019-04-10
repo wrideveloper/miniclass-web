@@ -1,6 +1,6 @@
 # Text Formatting
 
-Dengan menggunakan html, kita bisa malakukan formatting terhadap text, seperti menebalkan, memiringkan, mencoret, atau menggaris bawahi suatu text
+Dengan menggunakan HTML, kita bisa malakukan formatting terhadap text, seperti menebalkan, memiringkan, mencoret, atau menggaris bawahi suatu text
 
 ## Heading
 
@@ -17,7 +17,7 @@ Heading digunakan untuk menuliskan judul, terdapat enam jenis heading, diurutkan
 
 ## Paragraph
 
-Paragraph digunakan untuk mengelompokkan kumpulan text kedalam satu paragraph, untuk membuat paragraph pada html, kita bisa membungkus kumpulan text menggunakan tag `p`.
+Paragraph digunakan untuk mengelompokkan kumpulan text kedalam satu paragraph, untuk membuat paragraph pada HTML, kita bisa membungkus kumpulan text menggunakan tag `p`.
 
 ```html
 <p>

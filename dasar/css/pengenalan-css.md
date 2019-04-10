@@ -1,10 +1,12 @@
 # Pengenalan CSS
 
-**Cascading StyleSheet** CSS merupakan bahasa `style sheet` yang berguna untuk membantu menyajikan dokumen yang ditulis dengan HTML maupun XML bahkan SVG. CSS mengatur bagaimana elemen-elemen seharusnya ditampilkan di layar, di kertas, dan berbagai media lainnya. Hal-hal seperti warna, ukuran, posisi, dll (color, size, position, etc) dapat diatur oleh CSS. Tentu saja berarti CSS membutuhkan HTML agar dapat bekerja. Saat ini versi terbarunya adalah versi 3, secara resmi disebut CSS3.Kalau HTML hanya bisa menentukan struktur tampilannya, maka CSS dapat menentukan bagaimana gaya dari tampilan tersebut.
+Cascading StyleSheet (CSS) merupakan bahasa `style sheet` yang berguna untuk membantu menyajikan dokumen yang ditulis dengan HTML. Apabila HTML hanya bisa menentukan struktur tampilannya, maka CSS dapat menentukan bagaimana gaya dari tampilan tersebut.
 
-Apabila kita ingin membuat sebuah halaman web, maka kita akan menggunakan **kombinasi dari HTML dan CSS** agar tampilan web kita **terstruktur** dan **indah**
+Apabila kita ingin membuat sebuah halaman web, maka kita akan menggunakan kombinasi dari HTML dan CSS agar tampilan web kita terstruktur dan indah
 
-Cara penulisan **CSS** biasanya terlihat seperti ini:
+## Cara Penulisan
+
+Cara penulisan CSS biasanya terlihat seperti ini
 
 ```css
 h1 {
@@ -25,30 +27,47 @@ button:hover {
 }
 ```
 
-### :telescope: Memasukkan CSS untuk HTML
+## Memasukkan CSS untuk HTML
 
 Ada 4 metode untuk menyertakan CSS agar dapat mengubah layout HTML.
 
-- Embed HTML
-  ```css
-      <style type="text/css" media="screen">
-          selector { property: value; }
-      </style>
-  ```
-- Eksternal CSS
-  ```css
-      <link href="mystyles.css" rel="stylesheet" type="text/css">
-  ```
-- Inline CSS
-  ```css
-      <tag style="color:orange background:yellow;">isi tag</tag>
-  ```
-- Import ke tiap CSS ,misal didalam custom.css
-  ```css
-  @import 'otherfile.css';
-  ```
+### 1. Embed HTML
 
-### :gem: Selector
+Menulis css ke dalam head html menggunakan tag `style`
+
+```html
+<html>
+  <head>
+    <style>
+      selector {
+        property: value;
+      }
+    </style>
+  </head>
+</html>
+```
+
+### 2. Eksternal CSS
+
+Memasukkan file css eksternal ke dalam html
+
+```html
+<html>
+  <head>
+    <link href="mystyles.css" rel="stylesheet" />
+  </head>
+</html>
+```
+
+### 3. Inline CSS
+
+Menulis css langsung ke tag tertentu pada html
+
+```css
+    <tag style="color:orange background:yellow;">isi tag</tag>
+```
+
+## Selector
 
 Setiap elemen HTML yang ada di halaman web dapat dimodifikasi ataupun dihias dengan CSS. Selector digunakan untuk memilih elemen html mana yang akan kita ubah stylingnya.
 
@@ -61,9 +80,9 @@ selector {
 }
 ```
 
-Beberapa cara untuk menyeleksi elemen dengan selector
+Ada beberapa cara untuk menyeleksi elemen dengan selector
 
-1. Seleksi elemen berdasarkan id
+### 1. Seleksi elemen berdasarkan id
 
 ```css
 #nama-id {
@@ -71,7 +90,7 @@ Beberapa cara untuk menyeleksi elemen dengan selector
 }
 ```
 
-2. Seleksi elemen berdasarkan class
+### 2. Seleksi elemen berdasarkan class
 
 ```css
 .nama-class {
@@ -79,7 +98,7 @@ Beberapa cara untuk menyeleksi elemen dengan selector
 }
 ```
 
-3. Seleksi semua elemen
+### 3. Seleksi semua elemen
 
 ```css
 * {
@@ -87,7 +106,7 @@ Beberapa cara untuk menyeleksi elemen dengan selector
 }
 ```
 
-4. Seleksi elemen yang berada didalam elemen lain
+### 4. Seleksi elemen yang berada didalam elemen lain
 
 ```css
 div p {
@@ -95,7 +114,7 @@ div p {
 }
 ```
 
-5. Menyeleksi link yang sedang di hover
+### 5. Seleksi link yang sedang di hover
 
 ```css
 a:hover {
@@ -103,9 +122,9 @@ a:hover {
 }
 ```
 
-### :ribbon: Property
+## Property
 
-Setelah elemen dipilih, property dari style yang tersedia dapat diterapkan pada elemen tersebut. Nama properti diikuti dengan tanda titik dua (colon) (`:`) diikuti dengan nilai/value yang ditutup dengan titik koma (`;`)
+Setelah elemen dipilih, property dari style yang tersedia dapat diterapkan pada elemen tersebut. Nama properti diikuti dengan tanda titik dua (colon) (`:`) diikuti dengan nilai atau value yang ditutup dengan titik koma (`;`)
 
 Properti umum yang bisa digunakan :
 
@@ -116,10 +135,8 @@ Properti umum yang bisa digunakan :
 - `width dan height`
 - `margin dan padding`
 - `display`
-- `float`
-- `clear`
 
-### :mega: Komentar
+## Komentar
 
 Menambahkan Komentar pada CSS
 
