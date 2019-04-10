@@ -29,7 +29,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 3.  **CSS**
 
     - [Pengenalan CSS](dasar/css/pengenalan-css.md)
-    - Text Formatting
+    - [Text Formatting](dasar/css/text-formatting.md)
     - Background
     - Border
     - Dimension
