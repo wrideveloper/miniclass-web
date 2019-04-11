@@ -31,7 +31,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Pengenalan CSS](dasar/css/pengenalan-css.md)
     - [Text Formatting](dasar/css/text-formatting.md)
     - [Background](dasar/css/background.md)
-    - Border
+    - [Border](dasar/css/border.md)
     - Dimension
     - Spacing
     - [Layouting](dasar/css/layouting.md)
