@@ -33,7 +33,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Background](dasar/css/background.md)
     - [Border](dasar/css/border.md)
     - [Height dan Width](dasar/css/height-dan-width.md)
-    - Spacing
+    - [Spacing](dasar/css/spacing.md)
     - [Layouting](dasar/css/layouting.md)
     - [Membuat UI Component](dasar/css/membuat-ui-component.md)
 
