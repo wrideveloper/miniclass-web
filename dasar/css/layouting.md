@@ -1,55 +1,36 @@
 # Layouting
 
-Setelah mempelajari dasar - dasar penggunaan css untuk mempercantik halaman web, sekarang kita akan belajar cara membuat layout dengan menggunakan css
+Untuk membuat desain website yang rapi, kita perlu belajar melakukan layouting menggunakan CSS. Untuk melakukan hal tersebut kita dapat menggunakan property `display` untuk menentukan layout suatu elemen, ada beberapa jenis layout yang bisa kita gunakan, yaitu `block`, `inline`, `inline-block`, dan `flexbox`
 
-## Metode Layouting dengan CSS
+## Block
 
-Ada beberapa teknik layouting CSS yang sering digunakan untuk pembuatan halaman web, yaitu :
+Block merupakan layout default yang diterapkan ke beberapa elemen seperti `div`, `ul`, `ol`, `p`, `h1` dan sebagainya. Ciri khas dari layout ini yaitu selalu membuat baris sendiri
 
-### 1. Float
+![block-layout](block-layout.png)
 
-Membuat layouting dengan memanfaatkan css float, teknik ini sering digunakan untuk membuat layouting yang sederhana dan merupakan cara yang paling umum digunakan.
+## Inline
 
-CSS float juga dapat mendukung layout yang **responsive** dengan menggunakan teknik yang bernama **12 grid column**, teknik ini sering digunakan pada framework CSS seperti **bootstrap**
+Inline merupakan layout default yang diterapkan ke beberapa elemen seperti `span`, `b`, `i` dan sebagainya. Ciri khas dari layout ini yaitu mengikuti baris yang sudah ada
 
-![float-layout](float-layout.png)
+![inline](inline-layout.png)
 
-**Beberapa referensi untuk belajar layouting dengan css float :**
+Apabila kita memberikan `margin` dan `padding` terhadap inline layout, maka ia hanya akan mendorong elemen disekitarnya secara horizontal dan tidak secara vertical
 
-1. [Dasar CSS Float](https://css-tricks.com/all-about-floats/)
-2. [Layouting dengan CSS Float](https://www.youtube.com/playlist?list=PLFIM0718LjIUu4Ju9GUL5zpLcuq08TKYr)
-3. [Responsive dengan CSS Float](https://www.w3schools.com/css/css_rwd_grid.asp)
+![inline-padding](inline-padding.png)
 
-### 2. Grid
+## Inline Block
 
-CSS grid merupakan layouting yang mudah diterapkan dan merupakan cara yang lebih modern daripada menggunakan float, css grid juga mendukung **responsive design** tanpa perlu teknik khusus
+Inline block mirip dengan inline, yaitu akan selalu mengikuti baris yang sudah ada. Namun apabila kita memberikan `margin` dan `padding`, maka ia akan mendorong elemen disekitarnya secara horizontal dan juga vertical
 
-CSS grid menggunakan baris dan kolom untuk membangun design yang terstruktur dan responsive
+![inline-block-level](inline-block-layout.png)
 
-![grid-layout](grid-layout.png)
+## Flexbox
 
-Walaupun sama - sama mendukung responsive, teknik yang digunakan pada **css grid** dan **12 grid column** sangat **berbeda**
+Flexbox (Flexible Box) merupakan cara terbaru untuk melakukan layouting pada web yang mendukung design responsive
 
-- **12 grid column** menggunakan `float`
-- **css grid** menggunakan `display:grid`
-
-Jadi kedua teknik ini **berbeda!**
-
-**Beberapa referensi untuk belajar layouting dengan css grid :**
-
-1. [Dasar CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
-2. [Layouting dengan CSS Grid](https://www.youtube.com/playlist?list=PL4cUxeGkcC9itC4TxYMzFCfveyutyPOCY)
-
-### 3. Flexbox
-
-**Flexbox** (Flexible Box) merupakan cara terbaru untuk melakukan layouting pada web dan mendukung design responsive
-
-Ciri khas dari **flexbox** yaitu kita dapat mendesain layout berdasarkan containernya, sedangkan child elementnya dapat memiliki **size yang berbeda - beda** namun tetap **responsive**, sedangkan **CSS grid** memiliki child yang **size nya sama**
+Ciri khas dari flexbox yaitu kita dapat mendesain layout berdasarkan containernya, sedangkan child elementnya dapat memiliki size yang berbeda - beda namun tetap responsive
 
 ![flexbox-layout](flexbox-layout.png)
-
-**Flexbox** cocok diterapkan untuk layout yang kecil atau bagian kecil dari aplikasi
-**CSS Grid** cocok diterapkan untuk layout yang besar
 
 **Beberapa referensi untuk belajar layouting dengan css grid :**
 
