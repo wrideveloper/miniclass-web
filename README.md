@@ -104,11 +104,16 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Props](front-end/react-fundamental/props.md)
     - [Event](front-end/react-fundamental/event.md)
     - [State](front-end/react-fundamental/state.md)
-    - Component Lifecycle
     - [Styling Component](front-end/react-fundamental/styling-component.md)
-    - [React Router](front-end/react-fundamental/react-router.md)
+    - Component Lifecycle
 
-5.  **Share Logic Between Component**
+5.  **React Advanced**
+
+    - Passing Data to Parent Component
+    - Using Web API
+    - [Routing](front-end/react-advanced/routing.md)
+
+6.  **Share Logic Between Component**
     - [Higher Order Component](front-end/share-logic-between-component/higher-order-component.md)
     - [Render Props](front-end/share-logic-between-component/render-props.md)
     - [Context](front-end/share-logic-between-component/context.md)
