@@ -79,10 +79,13 @@ Setelah component `Header` selesai dibuat, maka selanjutnya tinggal kita import 
 // App.js
 
 import React, { Component } from 'react'
+
+// import component Header
 import Header from './components/Header'
 
 class App extends Component {
   render() {
+    // menggunakan component Header
     return (
       <div>
         <Header />

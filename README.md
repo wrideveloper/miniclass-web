@@ -98,12 +98,12 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 4.  **React Fundamental**
 
     - [Pengenalan React JS](front-end/react-fundamental/pengenalan-reactjs.md)
-    - [Pengenalan JSX](front-end/react-fundamental/pengenalan-jsx.md)
     - [Install React JS](front-end/react-fundamental/install-reactjs.md)
+    - [JSX](front-end/react-fundamental/jsx.md)
     - [Component](front-end/react-fundamental/component.md)
     - [Props](front-end/react-fundamental/props.md)
+    - [Event](front-end/react-fundamental/event.md)
     - [State](front-end/react-fundamental/state.md)
-    - [Handling Event](front-end/react-fundamental/handling-event.md)
     - Component Lifecycle
     - [Styling Component](front-end/react-fundamental/styling-component.md)
     - [React Router](front-end/react-fundamental/react-router.md)

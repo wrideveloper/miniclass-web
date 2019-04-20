@@ -9,6 +9,8 @@
 Sebelumnya, kita sudah membuat component `Header` seperti dibawah ini :
 
 ```Javascript
+// Header.js
+
 import React, {Component} from 'react'
 
 class Header extends Component {
@@ -34,6 +36,8 @@ Namun masalahnya adalah teks yang ada di dalam component `Header` tersebut adala
 Permasalahan di atas bisa kita pecahkan dengan menggunakan `props`, kita cukup membuat satu component `Header` namun dengan disisipi props di dalamnya
 
 ```Javascript
+// Header.js
+
 import React, {Component} from 'react'
 
 class Header extends Component {
