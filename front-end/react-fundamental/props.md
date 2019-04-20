@@ -6,21 +6,28 @@
 
 ## Permasalahan
 
-Misalnya kita memiliki component `Header` seperti dibawah ini :
+Sebelumnya, kita sudah membuat component `Header` seperti dibawah ini :
 
 ```Javascript
 import React, {Component} from 'react'
 
-export default class Header extends Component {
-  render () {
-    <h1>Halaman Beranda</h1>
+class Header extends Component {
+  render() {
+    return (
+      <div>
+        <h1>Halaman Beranda</h1>
+        <p>selamat datang di website kami</p>
+      </div>
+    )
   }
 }
+
+export default Header
 ```
 
-Dalam react kita dapat membuat sebuah component yang dapat digunakan berkali - kali di banyak halaman. Misalnya component header diatas dapat kita gunakan di halaman apapun, baik itu di halaman beranda ataupun di halaman lain.
+Dalam react kita dapat membuat sebuah component yang dapat digunakan berkali - kali pada banyak halaman. Misalnya component `Header` diatas dapat kita gunakan di halaman apapun, baik itu di halaman beranda maupun di halaman lain.
 
-Namun masalahnya adalah teks yang ada di dalam component header tersebut adalah `Halaman Beranda`, dan teks tersebut tidak akan cocok apabila diterapkan ke halaman lain
+Namun masalahnya adalah teks yang ada di dalam component `Header` tersebut adalah `Halaman Beranda`, dan teks tersebut tidak akan cocok apabila diterapkan ke halaman lain
 
 ## Solusi
 
@@ -29,24 +36,31 @@ Permasalahan di atas bisa kita pecahkan dengan menggunakan `props`, kita cukup m
 ```Javascript
 import React, {Component} from 'react'
 
-export default class Header extends Component {
-  render () {
-    <h1>{ this.props.title }</h1>
+class Header extends Component {
+  render() {
+    return (
+      <div>
+        <h1>{this.props.title}</h1>
+        <p>{this.props.description}</p>
+      </div>
+    )
   }
 }
+
+export default Header
 ```
 
-Component `Header` yang kita buat diatas memiliki satu buah `props`, yaitu `title`, dan title ini bisa kita isi berbeda - beda sesuai kebutuhan
+Component `Header` yang kita buat diatas sekarang memiliki duah buah `props`, yaitu `title` dan `description` yang bisa kita isi sesuai kebutuhan
 
 ```Javascript
 // pada halaman beranda
-<Header title="Halaman Beranda">
+<Header title="Halaman Beranda" description="selamat datang di website kami">
 
 // pada halaman kontak
-<Header title="Halaman Kontak">
+<Header title="Halaman Kontak" description="hubungi kami apabila ada saran atau keluhan">
 
 // pada halaman X
-<Header title="Halaman X">
+<Header title="Halaman X" description="deskripsi halaman x">
 ```
 
 ## Tipe Props

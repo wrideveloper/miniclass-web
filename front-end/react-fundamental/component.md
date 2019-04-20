@@ -61,7 +61,7 @@ class Header extends Component {
   render() {
     return (
       <div>
-        <h1>Selamat Datang</h1>
+        <h1>Halaman Beranda</h1>
         <p>selamat datang di website kami</p>
       </div>
     )
