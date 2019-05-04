@@ -32,7 +32,6 @@ Disini kita akan membuat koneksi menggunakan fungsi `createConnection()`, setela
 ```javascript
 // index.js
 
-// import mysql module
 const mysql = require('mysql')
 
 // membuat koneksi
@@ -59,10 +58,8 @@ Setelah node terkoneksi ke database, maka kita dapat melakukan query database me
 ```javascript
 // index.js
 
-// import mysql module
 const mysql = require('mysql')
 
-// membuat koneksi
 const con = mysql.createConnection({
   host: 'localhost',
   user: 'username',
@@ -70,9 +67,7 @@ const con = mysql.createConnection({
   db: 'database'
 })
 
-// melakukan koneksi ke database
 con.connect(function(err) {
-  // hentikan eksekusi apabila gagal melakukan koneksi
   if (err) throw err
 
   // melakukan query ke database
@@ -87,12 +82,10 @@ con.connect(function(err) {
 Disini kita tinggal membuat http server seperti tutorial sebelumnya, kemudian letakkan koneksi database didalam callback fungsi `createServer()`
 
 ```javascript
-// import mysql module
 const mysql = require('mysql')
 // import http module
 const http = require('http')
 
-// membuat koneksi
 const con = mysql.createConnection({
   host: 'localhost',
   user: 'username',
@@ -103,12 +96,9 @@ const con = mysql.createConnection({
 // membuat http server
 http
   .createServer(function(req, res) {
-    // melakukan  koneksi ke database
     con.connect(function(err) {
-      // hentikan eksekusi apabila gagal melakukan koneksi
       if (err) throw err
 
-      // melakukan query ke database
       con.query('SELECT name, address FROM customers', function(err, result) {
         // menampilkan hasil query database ke browser
         res.write(result)
