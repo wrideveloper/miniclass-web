@@ -1,4 +1,4 @@
-## Apa itu Frontend dan Backend Developer
+## Pengenalan Backend dan Frontend
 
 Dalam pengembangan web terdapat dua istilah yang sering kita dengar, yaitu frontend dan backend, singkatnya dua istilah ini digunakan untuk membedakan job dan role dari masing - masing developer ketika mengembangkan sebuah website
 
