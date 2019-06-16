@@ -49,34 +49,36 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 
 5.  **Relasional Database**
 
+    - Pengenalan Database
+    - Structured Query Language
     - [Data Definition Language](dasar/relational-database/DDL.md)
     - [Data Manipulation Language](dasar/relational-database/DML.md)
     - [Relasi Antar Tabel](dasar/relational-database/relasi-antar-table.md)
 
-6.  **Node JS**
+6.  **Node.js**
 
-    - [Node JS](dasar/node-js/node-js.md)
+    - [Pengenalan Node.js](dasar/node-js/node-js.md)
     - [Node Package Manager](dasar/node-js/node-package-manager.md)
     - [Import Export Module](dasar/node-js/import-export-module.md)
     - [Node HTTP Server](dasar/node-js/node-http-server.md)
     - [Node MySQL](dasar/node-js/node-mysql.md)
 
-7.  **Express JS**
+7.  **Express.js**
 
-    - [Berkenalan dengan Express JS](dasar/express-js/berkenalan-dengan-expressjs.md)
-    - [Membuat Server dengan Express JS](dasar/express-js/membuat-server-dengan-expressjs.md)
+    - [Pengenalan Express.js](dasar/express-js/pengenalan-express-js.md)
+    - [Membuat Server dengan Express.js](dasar/express-js/membuat-server-dengan-express-js.md)
     - [Request dan Response](dasar/express-js/request-dan-response.md)
     - [Middleware](dasar/express-js/middleware.md)
     - [Request Body](dasar/express-js/request-body.md)
     - [Template Engine](dasar/express-js/template-engine.md)
     - [Serving Static File](dasar/express-js/static-file-assets.md)
     - [Routing](dasar/express-js/routing.md)
-    - [Konsep MVC](dasar/express-js/mvc.md)
+    - [Model View Controller](dasar/express-js/mvc.md)
 
 8.  **Kolaborasi Backend dan Frontend**
-    - [Apa itu Frontend dan Backend Developer](dasar/backend-frontend/apa-itu-frontend-dan-backend-developer.md)
-    - [Mengenal Web Service](dasar/backend-frontend/mengenal-web-service.md)
-    - [Mengenal AJAX](dasar/backend-frontend/mengenal-ajax.md)
+    - [Pengenalan Backend dan Frontend](dasar/backend-frontend/pengenalan-backend-dan-frontend.md)
+    - [Web Service](dasar/backend-frontend/web-service.md)
+    - [AJAX](dasar/backend-frontend/ajax.md)
     - [Synchronous vs Asynchronous](dasar/backend-frontend/synchronous-vs-asynchronous.md)
 
 ### :sunflower: Materi Frontend
@@ -115,10 +117,22 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Routing](front-end/react-advanced/routing.md)
 
 6.  **Share Logic Between Component**
+
     - [Higher Order Component](front-end/share-logic-between-component/higher-order-component.md)
     - [Render Props](front-end/share-logic-between-component/render-props.md)
     - [Context](front-end/share-logic-between-component/context.md)
     - Hooks
+
+7.  **React Component Pattern**
+
+    - Container vs Presentional Component
+    - Compound Component
+
+8.  **React Testing**
+    - Unit Testing
+    - Integration Testing
+    - End to End Testing
+    - Snapshot Testing
 
 ### :japanese_ogre: Materi Backend
 
@@ -142,6 +156,12 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - [Metode Autentikasi JSON Web Token](back-end/autentikasi/metode-autentikasi-jwt.md)
 
 5.  **Microservices**
+
     - Microservices
-    - Gateway Microservices
-    - Message Broker
+    - Microservices Gateway
+    - Message Queue
+    - Remote Procedure Call
+
+6.  **Searching**
+
+7.  **Caching**
