@@ -9,158 +9,161 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 
 1.  **Pengenalan Pemrograman Web**
 
-    - [Web dan Internet](dasar/pendahuluan/web-dan-internet.md)
-    - [Cara Kerja Website](dasar/pendahuluan/cara-kerja-website.md)
-    - [HTTP Request dan HTTP Response](dasar/pendahuluan/http-request-dan-response.md)
-    - [HTTP Status Code](dasar/pendahuluan/http-status-code.md)
-    - [HTTP Verbs](dasar/pendahuluan/http-verbs.md)
+    - :books: [Web dan Internet](dasar/pendahuluan/web-dan-internet.md)
+    - :books: [Cara Kerja Website](dasar/pendahuluan/cara-kerja-website.md)
+    - :books: [HTTP Request dan HTTP Response](dasar/pendahuluan/http-request-dan-response.md)
+    - :books: [HTTP Status Code](dasar/pendahuluan/http-status-code.md)
+    - :books: [HTTP Verbs](dasar/pendahuluan/http-verbs.md)
 
 2.  **HTML**
 
-    - [Pengenalan HTML](dasar/html/pengenalan-html.md)
-    - [Text Formatting](dasar/html/text-formatting.md)
-    - [Link](dasar/html/link.md)
-    - [Media](dasar/html/media.md)
-    - [List](dasar/html/list.md)
-    - [Table](dasar/html/table.md)
-    - [Form](dasar/html/form.md)
-    - [Grouping](dasar/html/grouping.md)
+    - :books: [Pengenalan HTML](dasar/html/pengenalan-html.md)
+    - :books: [Text Formatting](dasar/html/text-formatting.md)
+    - :books: [Link](dasar/html/link.md)
+    - :books: [Media](dasar/html/media.md)
+    - :books: [List](dasar/html/list.md)
+    - :books: [Table](dasar/html/table.md)
+    - :books: [Form](dasar/html/form.md)
+    - :books: [Grouping](dasar/html/grouping.md)
 
 3.  **CSS**
 
-    - [Pengenalan CSS](dasar/css/pengenalan-css.md)
-    - [Text Formatting](dasar/css/text-formatting.md)
-    - [Background](dasar/css/background.md)
-    - [Border](dasar/css/border.md)
-    - [Height dan Width](dasar/css/height-dan-width.md)
-    - [Spacing](dasar/css/spacing.md)
-    - [Layouting](dasar/css/layouting.md)
-    - [Membuat UI Component](dasar/css/membuat-ui-component.md)
+    - :books: [Pengenalan CSS](dasar/css/pengenalan-css.md)
+    - :books: [Text Formatting](dasar/css/text-formatting.md)
+    - :books: [Background](dasar/css/background.md)
+    - :books: [Border](dasar/css/border.md)
+    - :books: [Height dan Width](dasar/css/height-dan-width.md)
+    - :books: [Spacing](dasar/css/spacing.md)
+    - :books: [Layouting](dasar/css/layouting.md)
+    - :computer: Membuat Template Web Responsive
 
 4.  **Javascript**
 
-    - [Pengenalan Javascript](dasar/javascript/pengenalan-javascript.md)
-    - [Array dan Objek](dasar/javascript/array-dan-objek.md)
-    - [Manipulasi DOM](dasar/javascript/manipulasi-dom.md)
-    - [Event](dasar/javascript/event.md)
-    - [Membuat UI Component Lanjutan](dasar/javascript/ui-component-lanjutan.md)
-    - [Local Storage](dasar/javascript/local-storage.md)
-    - [Membuat Aplikasi Todo List](dasar/javascript/membuat-aplikasi-todo-list)
+    - :books: [Pengenalan Javascript](dasar/javascript/pengenalan-javascript.md)
+    - :books: [Array dan Objek](dasar/javascript/array-dan-objek.md)
+    - :books: [Manipulasi DOM](dasar/javascript/manipulasi-dom.md)
+    - :books: [Event](dasar/javascript/event.md)
+    - :books: [Membuat UI Component Lanjutan](dasar/javascript/ui-component-lanjutan.md)
+    - :books: [Local Storage](dasar/javascript/local-storage.md)
 
 5.  **Relasional Database**
 
-    - Pengenalan Database
-    - Structured Query Language
-    - [Data Definition Language](dasar/relational-database/DDL.md)
-    - [Data Manipulation Language](dasar/relational-database/DML.md)
-    - [Relasi Antar Tabel](dasar/relational-database/relasi-antar-table.md)
+    - :books: Pengenalan Database
+    - :books: Structured Query Language
+    - :books: [Data Definition Language](dasar/relational-database/DDL.md)
+    - :books: [Data Manipulation Language](dasar/relational-database/DML.md)
+    - :books: [Relasi Antar Tabel](dasar/relational-database/relasi-antar-table.md)
 
 6.  **Node.js**
 
-    - [Pengenalan Node.js](dasar/node-js/node-js.md)
-    - [Node Package Manager](dasar/node-js/node-package-manager.md)
-    - [Import Export Module](dasar/node-js/import-export-module.md)
-    - [Node HTTP Server](dasar/node-js/node-http-server.md)
-    - [Node MySQL](dasar/node-js/node-mysql.md)
+    - :books: [Pengenalan Node.js](dasar/node-js/node-js.md)
+    - :books: [Node Package Manager](dasar/node-js/node-package-manager.md)
+    - :books: [Import Export Module](dasar/node-js/import-export-module.md)
+    - :books: [Node HTTP Server](dasar/node-js/node-http-server.md)
+    - :books: [Node MySQL](dasar/node-js/node-mysql.md)
 
 7.  **Express.js**
 
-    - [Pengenalan Express.js](dasar/express-js/pengenalan-express-js.md)
-    - [Membuat Server dengan Express.js](dasar/express-js/membuat-server-dengan-express-js.md)
-    - [Request dan Response](dasar/express-js/request-dan-response.md)
-    - [Middleware](dasar/express-js/middleware.md)
-    - [Request Body](dasar/express-js/request-body.md)
-    - [Template Engine](dasar/express-js/template-engine.md)
-    - [Serving Static File](dasar/express-js/static-file-assets.md)
-    - [Routing](dasar/express-js/routing.md)
-    - [Model View Controller](dasar/express-js/mvc.md)
+    - :books: [Pengenalan Express.js](dasar/express-js/pengenalan-express-js.md)
+    - :books: [Membuat Server dengan Express.js](dasar/express-js/membuat-server-dengan-express-js.md)
+    - :books: [Request dan Response](dasar/express-js/request-dan-response.md)
+    - :books: [Middleware](dasar/express-js/middleware.md)
+    - :books: [Request Body](dasar/express-js/request-body.md)
+    - :books: [Template Engine](dasar/express-js/template-engine.md)
+    - :books: [Serving Static File](dasar/express-js/static-file-assets.md)
+    - :books: [Routing](dasar/express-js/routing.md)
+    - :books: [Model View Controller](dasar/express-js/mvc.md)
+    - :computer: Membuat Web Dinamis dengan Express
 
 8.  **Kolaborasi Backend dan Frontend**
-    - [Pengenalan Backend dan Frontend](dasar/backend-frontend/pengenalan-backend-dan-frontend.md)
-    - [Web Service](dasar/backend-frontend/web-service.md)
-    - [AJAX](dasar/backend-frontend/ajax.md)
-    - [Synchronous vs Asynchronous](dasar/backend-frontend/synchronous-vs-asynchronous.md)
+    - :books: [Pengenalan Backend dan Frontend](dasar/backend-frontend/pengenalan-backend-dan-frontend.md)
+    - :books: [Web Service](dasar/backend-frontend/web-service.md)
+    - :books: [AJAX](dasar/backend-frontend/ajax.md)
+    - :books: [Synchronous vs Asynchronous](dasar/backend-frontend/synchronous-vs-asynchronous.md)
+    - :computer: Membuat Aplikasi Backend dan Frontend Sederhana
 
 ### :sunflower: Materi Frontend
 
 1.  **Framework CSS**
 
-    - [Pengenalan Framework CSS](front-end/framework-css/pengenalan-framework-css.md)
+    - :books: [Pengenalan Framework CSS](front-end/framework-css/pengenalan-framework-css.md)
 
 2.  **Metodologi CSS**
 
-    - [Metodologi CSS](front-end/metodologi-css/pengenalan-metodologi-css.md)
+    - :books: [Metodologi CSS](front-end/metodologi-css/pengenalan-metodologi-css.md)
 
 3.  **Modern Frontend Development**
 
-    - [Preprocessor CSS](front-end/modern-frontend-development/preprocessor-css.md)
-    - [ECMAScript](front-end/modern-frontend-development/ecmascript.md)
-    - [Task Runner](front-end/modern-frontend-development/task-runner.md)
-    - [Module Bundler](front-end/modern-frontend-development/module-bundler.md)
+    - :books: [Preprocessor CSS](front-end/modern-frontend-development/preprocessor-css.md)
+    - :books: [ECMAScript](front-end/modern-frontend-development/ecmascript.md)
+    - :books: [Task Runner](front-end/modern-frontend-development/task-runner.md)
+    - :books: [Module Bundler](front-end/modern-frontend-development/module-bundler.md)
 
 4.  **React Fundamental**
 
-    - [Pengenalan React JS](front-end/react-fundamental/pengenalan-reactjs.md)
-    - [Install React JS](front-end/react-fundamental/install-reactjs.md)
-    - [JSX](front-end/react-fundamental/jsx.md)
-    - [Component](front-end/react-fundamental/component.md)
-    - [Props](front-end/react-fundamental/props.md)
-    - [Event](front-end/react-fundamental/event.md)
-    - [State](front-end/react-fundamental/state.md)
-    - [Styling Component](front-end/react-fundamental/styling-component.md)
-    - Component Lifecycle
+    - :books: [Pengenalan React JS](front-end/react-fundamental/pengenalan-reactjs.md)
+    - :books: [Install React JS](front-end/react-fundamental/install-reactjs.md)
+    - :books: [JSX](front-end/react-fundamental/jsx.md)
+    - :books: [Component](front-end/react-fundamental/component.md)
+    - :books: [Props](front-end/react-fundamental/props.md)
+    - :books: [Event](front-end/react-fundamental/event.md)
+    - :books: [State](front-end/react-fundamental/state.md)
+    - :books: [Styling Component](front-end/react-fundamental/styling-component.md)
+    - :books: Component Lifecycle
 
 5.  **React Advanced**
 
-    - Passing Data to Parent Component
-    - Using Web API
-    - [Routing](front-end/react-advanced/routing.md)
+    - :books: Passing Data to Parent Component
+    - :books: Using Web API
+    - :books: [Routing](front-end/react-advanced/routing.md)
+    - :computer: Membuat Aplikasi React
 
 6.  **Share Logic Between Component**
 
-    - [Higher Order Component](front-end/share-logic-between-component/higher-order-component.md)
-    - [Render Props](front-end/share-logic-between-component/render-props.md)
-    - [Context](front-end/share-logic-between-component/context.md)
-    - Hooks
+    - :books: [Higher Order Component](front-end/share-logic-between-component/higher-order-component.md)
+    - :books: [Render Props](front-end/share-logic-between-component/render-props.md)
+    - :books: [Context](front-end/share-logic-between-component/context.md)
+    - :books: Hooks
 
 7.  **React Component Pattern**
 
-    - Container vs Presentional Component
-    - Compound Component
+    - :books: Container vs Presentional Component
+    - :books: Compound Component
 
 8.  **React Testing**
-    - Unit Testing
-    - Integration Testing
-    - End to End Testing
-    - Snapshot Testing
+    - :books: Unit Testing
+    - :books: Snapshot Testing
+    - :books: End to End Testing
 
 ### :japanese_ogre: Materi Backend
 
 1.  **Object Relational Mapping**
 
-    - [Pengenalan Object Relational Mapping](back-end/object-relational-mapping/pengenalan-orm.md)
+    - :books: [Pengenalan Object Relational Mapping](back-end/object-relational-mapping/pengenalan-orm.md)
 
 2.  **Document Oriented Database**
 
-    - [Document Oriented Database](back-end/document-oriented-database/document-oriented-database.md)
-    - [Object Document Mapping](back-end/document-oriented-database/object-document-mapping.md)
+    - :books: [Document Oriented Database](back-end/document-oriented-database/document-oriented-database.md)
+    - :books: [Object Document Mapping](back-end/document-oriented-database/object-document-mapping.md)
 
 3.  **Web Service**
 
-    - [REST Web Service](back-end/web-service/rest-web-service.md)
-    - [GraphQL Web Service](back-end/web-service/graphql-web-service.md)
+    - :books: [REST](back-end/web-service/rest-web-service.md)
+    - :books: [GraphQL](back-end/web-service/graphql-web-service.md)
 
 4.  **Autentikasi**
 
-    - [Metode Autentikasi Session](back-end/autentikasi/metode-autentikasi-session.md)
-    - [Metode Autentikasi JSON Web Token](back-end/autentikasi/metode-autentikasi-jwt.md)
+    - :books: [Session](back-end/autentikasi/session.md)
+    - :books: [JSON Web Token](back-end/autentikasi/json-web-token.md)
+    - :computer: Membuat Web Service Sederhana
 
 5.  **Microservices**
 
-    - Microservices
-    - Microservices Gateway
-    - Message Queue
-    - Remote Procedure Call
+    - :books: Microservices
+    - :books: Microservices Gateway
+    - :books: Message Queue
+    - :books: Remote Procedure Call
+    - :computer: Membuat Micro Service Sederhana
 
 6.  **Searching**
 
