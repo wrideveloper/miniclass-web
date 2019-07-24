@@ -2,19 +2,19 @@
 
 ![Preprocessor CSS](css-preprocessor.jpg)
 
-## Penjelasan
+## 1. Penjelasan
 
 **Preprocessor CSS** adalah tools yang menyediakan fitur-fitur yang tidak terdapat pada CSS. Fitur-fitur tersebut banyak mengadopsi konsep-konsep pemograman seperti operasi matematika dasar, variabel, perulangan dan fungsi.
 
 Cara kerjanya adalah kita menulis script pada file berekstensi lain, lalu dengan memasukan baris perintah pada terminal atau command prompt, preprocessor akan menerjemahkan sintaks-sintaks tersebut ke dalam bentuk CSS dan menghasilkan file CSS yang siap untuk digunakan.
 
-## Penerapan Preprocessor CSS dengan SASS
+## 2. Penerapan Preprocessor CSS dengan SASS
 
 <img src="sass.png" width="200">
 
 **Sass** merupakan kepanjangan dari _Syntactically Awesome Style Sheets_ yang termasuk dalam salah satu tools preprocessor css.
 
-### Cara Install
+### 2.1. Cara Install
 
 Untuk menginstall sass, kita perlu menginstallnya secara global menggunakan npm
 
@@ -22,7 +22,7 @@ Untuk menginstall sass, kita perlu menginstallnya secara global menggunakan npm
 npm install -g sass
 ```
 
-### Cara Mengcompile SASS menjadi CSS
+### 2.2. Cara Mengcompile SASS menjadi CSS
 
 Seperti yang sudah dijelaskan sebelumnya, sebelum menggunakan file sass pada browser, kita perlu mengcompilenya menjadi css biasa terlebih dahulu
 
@@ -54,7 +54,7 @@ sass namaFolder
 sass namaFolder:namaFolderTujuan
 ```
 
-### Fitur SASS
+### 2.3. Fitur SASS
 
 Berikut beberapa fitur yang bisa digunakan pada sass
 

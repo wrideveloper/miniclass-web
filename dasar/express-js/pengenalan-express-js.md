@@ -1,6 +1,10 @@
 # Berkenalan dengan Express.js
 
+## 1. Permasalahan
+
 Membuat server dengan menggunakan node.js mungkin bisa dibilang mudah, namun apabila kita lihat lagi, syntax yang digunakan terlalu panjang, hal ini hanya untuk membuat sebuah server, belum lagi ketika kita membuat sebuah proyek yang besar, maka dari itu disini akan dikenalkan yang namanya Express.js untuk mempercepat pembuatan web server
+
+## 2. Penjelasan Express.js
 
 ![express](express.png)
 

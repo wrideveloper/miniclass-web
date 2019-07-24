@@ -2,7 +2,7 @@
 
 Dalam css, kita dapat mengatur `width` dan `height` dari sebuah elemen HTML, tidak hanya itu, kita juga dapat memberikan ukuran minimal dan maksimal dari elemen tersebut
 
-## Menentukan Height dan Width
+## 1. Menentukan Height dan Width
 
 Untuk menentukan ukuran dari suatu elemen, kita dapat menggunakan property `height` dan `width`
 
@@ -13,7 +13,7 @@ div {
 }
 ```
 
-## Menentukan Maksimal Height dan Width
+## 2. Menentukan Maksimal Height dan Width
 
 Untuk menentukan ukuran maksimal dari suatu elemen, kita dapat menggunakan property `max-height` dan `max-width`
 
@@ -24,7 +24,7 @@ div {
 }
 ```
 
-## Menentukan Minimal Height dan Width
+## 3. Menentukan Minimal Height dan Width
 
 Untuk menentukan ukuran minimal dari suatu elemen, kita dapat menggunakan property `min-height` dan `min-width`
 

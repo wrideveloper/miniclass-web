@@ -24,7 +24,7 @@ DOM dapat kita manipulasi strukturnya, artinya struktur dokumen HTML yang sudah 
 
 Setelah DOM berhasil dimuat di browser, maka kita bisa melakukan manipulasi dengan menggunakan javascript
 
-### Menentukan Element
+### 2.1. Menentukan Element
 
 Sebelum memanipulasi dom, kita perlu menentukan element apa yang akan kita manipulasi
 
@@ -39,7 +39,7 @@ document.getElementsByTagName(name)
 document.getElementsByClassName(name)
 ```
 
-### Manipulasi Element
+### 2.2. Manipulasi Element
 
 Setelah mendapatkan element yang ingin kita manipulasi, maka kita bisa langsung melakukan manipulasi pada element tersebut
 
@@ -56,7 +56,7 @@ element.attribute = value
 element.style.property = value
 ```
 
-### Merubah Class Element
+### 2.3. Merubah Class Element
 
 Merubah style dari suatu element secara langsung kurang dianjurkan, lebih baik merubah class dari element tersebut dengan menggunakan `classList`
 

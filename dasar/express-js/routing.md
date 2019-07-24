@@ -2,11 +2,11 @@
 
 ![Routes](routes.png)
 
-## Penjelasan Routing
+## 1. Penjelasan Routing
 
 Dalam dunia pengembangan web, routing merupakan pemetaan URL - URL yang dapat diakses oleh client menggunakan method tertentu seperti `GET`, `POST`, `PUT`, `DELETE`
 
-## Melakukan Routing
+## 2. Melakukan Routing
 
 Berikut merupakan standar routing untuk melakukan CRUD pada website
 
@@ -66,11 +66,11 @@ app.delete('/biodata/:id', function (req, res) {
 app.listen(3000, function () {})
 ```
 
-## Memisahkan Routing ke File Lain
+## 3. Memisahkan Routing ke File Lain
 
 Selama ini kita selalu meletakkan routing pada satu file saja, yaitu pada `index.js` hal ini tidak baik karena semakin fitur dari aplikasi bertambah maka `index.js` akan semakin penuh dengan baris kode, berikut langkah - langkah untuk memisahkan routing ke file lain
 
-### 1. Membuat File Untuk Routing
+### 3.1. Membuat File Untuk Routing
 
 Karena kita akan membuat routing untuk biodata, maka disini kita akan membuat sebuah file bernama `biodataRouter.js` yang hanya berisi routing dari biodata
 
@@ -118,7 +118,7 @@ router.delete('/biodata/:id', function (req, res) {
 module.exports = router
 ```
 
-### 2. Menerapkan File Routing ke index.js
+### 3.2. Menerapkan File Routing ke index.js
 
 Setelah kita memisah routing ke file lain, maka kita perlu mengimport dan menggunakan routing tersebut ke `index.js` menggunakan `app.use`
 
@@ -133,7 +133,7 @@ app.use(biodataRouter)
 app.listen(3000, function() {})
 ```
 
-## Contoh Penerapan
+## 4. Contoh Penerapan
 
 Berikut contoh penerapan routing dengan membuat aplikasi CRUD dengan express dan mysql
 

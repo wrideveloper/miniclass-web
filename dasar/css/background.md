@@ -2,7 +2,7 @@
 
 Dengan menggunakan CSS, kita dapat memberikan background pada elemen HTML seperti div
 
-## Background Color
+## 1. Background Color
 
 Kita bisa merubah warna background suatu elemen menggunakan property `background-color`
 
@@ -23,7 +23,7 @@ p {
 }
 ```
 
-## Background Image
+## 2. Background Image
 
 Kita juga bisa merubah background menggunakan image tertentu, caranya dengan menggunakan property `background-image`
 
@@ -33,7 +33,7 @@ body {
 }
 ```
 
-## Background Repeat
+## 3. Background Repeat
 
 Apabila image yang kita jadikan background tidak cukup besar, maka kita bisa melakukan repeating pada image tersebut menggunakan property `background-repeat`
 
@@ -57,7 +57,7 @@ h1 {
 }
 ```
 
-## Background Position
+## 4. Background Position
 
 Apabila image yang kita jadikan background terlalu besar, kita dapat memposisikan background tersebut menggunakan property `background-position` dan diisi dengan posisi horizontal dan vertical
 

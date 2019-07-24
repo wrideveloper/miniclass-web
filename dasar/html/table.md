@@ -1,8 +1,10 @@
 # Table
 
+## 1. Penjelasan Table
+
 Table digunakan untuk menampilkan data dalam format table, dimana dalam table terdapat baris dan kolom untuk memudahkan penyajian data
 
-## Membuat Table
+## 2. Cara Membuat Table
 
 Untuk membuat table pada HTML, kita dapat menggunakan kombinasi tag `table` dengan `tr`, `th`, dan `td`.
 

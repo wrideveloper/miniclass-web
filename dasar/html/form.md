@@ -1,8 +1,12 @@
 # Form
 
+## 1. Penjelasan Form
+
 Form digunakan untuk menerima data dari inputan user, biasanya diterapkan pada form login, pendaftaran, transaksi, dan sebagainya.
 
-## Form
+## 2. Macam - Macam Tag Untuk Membuat Form
+
+### 2.1. Form
 
 Untuk mulai membuat form, kita perlu membungkusnya menggunakan tag `form`, nantinya semua inputan akan kita masukkan ke dalam tag ini
 
@@ -12,7 +16,7 @@ Untuk mulai membuat form, kita perlu membungkusnya menggunakan tag `form`, nanti
 </form>
 ```
 
-## Input
+### 2.2 Input
 
 Untuk menerima inputan dari user, kita bisa menggunakan tag `input` untuk menampilkan input text, checkbox, radio, button, dan lain lain
 
@@ -28,7 +32,7 @@ Untuk menerima inputan dari user, kita bisa menggunakan tag `input` untuk menamp
 </form>
 ```
 
-## Label
+### 2.3 Label
 
 Label digunakan untuk memberikan label pada inputan yang kita buat, sehingga user tau data apa yang perlu dimasukkan
 

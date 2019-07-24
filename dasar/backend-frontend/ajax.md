@@ -1,10 +1,10 @@
 # Mengenal AJAX
 
-## Penjelasan
+## 1. Penjelasan
 
 **AJAX** (Asynchronous Javascript And XML) merupakan cara untuk mengirim dan menerima data ke server secara cepat tanpa perlu mereload halaman, ajax memanfaatkan objek `XMLHttpRequest` dalam javascript agar ia bisa berkomunikasi dengan server. AJAX merupakan skill dasar yang wajib dikuasai oleh frontend developer agar dapat berkolaborasi dengan backend developer.
 
-## Cara Kerja AJAX
+## 2. Cara Kerja AJAX
 
 ![cara kerja ajax](cara-kerja-ajax.gif)
 
@@ -17,7 +17,7 @@ Berikut langkah - langkah bagaimana ajax dapat mengirim dan menerima data dari s
 5. Data yang ada di dalam response akan diekstrak oleh browser
 6. Browser kemudian mengupdate beberapa bagian kecil halaman (tidak seluruh halaman) dengan data yang diterima, karena itu browser tidak perlu mereload seluruh halaman.
 
-## Mengirim AJAX dengan XMLHttpRequest
+## 3. Mengirim AJAX dengan XMLHttpRequest
 
 Berikut cara membuat request AJAX ke server dengan menggunakan `XMLHttpRequest`
 
@@ -39,7 +39,7 @@ xhttp.open('GET', 'https://api.github.com/users/wrideveloper/repos')
 xhttp.send()
 ```
 
-## Mengirim AJAX dengan Library Axios
+## 4. Mengirim AJAX dengan Library Axios
 
 Axios merupakan library yang mempermudah kita untuk mengirimkan ajax ke server tanpa harus membuat `XMLHttpRequest` secara manual
 

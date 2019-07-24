@@ -2,13 +2,13 @@
 
 <img src="static-files.png" width="150">
 
-## Permasalahan
+## 1. Permasalahan
 
 Untuk membuka static file yang terletak pada aplikasi express, kita tidak bisa menuliskan path nya secara langsung pada url, misalnya `http://localhost:3000/public/img/yolo.jpg`
 
 **Mengapa ?** Karena apabila kita melakukannya maka express akan menganggap bahwa kita akan mengunjungi rute `http://localhost:3000/public/img/yolo.jpg` sedangkan rute tersebut tidak ada
 
-## Solusi
+## 2. Solusi
 
 Solusi dari permasalahan tersebut adalah dengan menggunakan middleware static file `express.static()`
 

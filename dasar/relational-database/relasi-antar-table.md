@@ -1,52 +1,48 @@
 # Relasi Antar Table
 
+## 1. Penjelasan Relasi
+
 Relasi antar table dalam database lebih dikenal dengan istilah **JOIN**.
+
+## 2. Jenis - Jenis Relasi
 
 Berikut beberapa jenis join yang ada pada relasi antar table :
 
-1. **(INNER) JOIN**
+### 2.1. Inner Join
 
-   **INNER JOIN** mengembalikan record yang  memiliki kesamaan data antara kedua table.
+**Inner Join** mengembalikan record yang  memiliki kesamaan data antara kedua table.
 
-   ![inner-join.jpg](inner-join.jpg)
+![inner-join.jpg](inner-join.jpg)
 
-   Untuk referensinya dapat dilihat pada link berikut :
-
-   https://www.w3schools.com/sql/sql_join_inner.asp
-
-   
-
-2. **LEFT (OUTER) JOIN**
-
-   **LEFT JOIN** mengembalikan semua record dari left table, dan mengembalikan record yang memiliki kesamaan (irisan) dengan right table.
-
-   ![left-join.jpg](left-join.jpg)
-
-   Untuk referensinya dapat dilihat pada link berikut :
-
-   https://www.w3schools.com/sql/sql_join_left.asp 
+Untuk referensinya dapat dilihat pada link berikut :
+https://www.w3schools.com/sql/sql_join_inner.asp
 
    
 
-3. **RIGHT (OUTER) JOIN**
+### 2.2. **Left Outer Join**
 
-   **RIGHT JOIN** mengembalikan semua record dari right table, dan mengembalikan record yang memiliki kesamaan (irisan) dengan left table.
+**Left Outer Join** mengembalikan semua record dari left table, dan mengembalikan record yang memiliki kesamaan (irisan) dengan right table.
 
-   ![right-join.jpg](right-join.jpg)
+![left-join.jpg](left-join.jpg)
 
-   Untuk referensinya dapat dilihat pada link berikut :
+Untuk referensinya dapat dilihat pada link berikut :
+https://www.w3schools.com/sql/sql_join_left.asp 
 
-   https://www.w3schools.com/sql/sql_join_right.asp
+### 2.3. **Right Outer Join**
 
-   
+**Right Outer Join** mengembalikan semua record dari right table, dan mengembalikan record yang memiliki kesamaan (irisan) dengan left table.
 
-4. **FULL (OUTER) JOIN**
+![right-join.jpg](right-join.jpg)
 
-   **FULL JOIN** mengembalikan semua record pada kedua table, sekaligus record yang memiliki kesamaan diantara kedua table.
+Untuk referensinya dapat dilihat pada link berikut :
+https://www.w3schools.com/sql/sql_join_right.asp
 
-   ![full-outer-join.jpg](full-outer-join.jpg)
+### 2.4. **Full Outer Join**
 
-   Untuk referensinya dapat dilihat pada link berikut :
+**Full Outer Join** mengembalikan semua record pada kedua table, sekaligus record yang memiliki kesamaan diantara kedua table.
 
-   https://www.w3schools.com/sql/sql_join_full.asp
+![full-outer-join.jpg](full-outer-join.jpg)
+
+Untuk referensinya dapat dilihat pada link berikut :
+https://www.w3schools.com/sql/sql_join_full.asp
 

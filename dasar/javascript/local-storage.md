@@ -4,7 +4,7 @@ Local storage atau web storage merupakan fitur baru pada HTML 5, dengan local st
 
 ![localstorage](localstorage.png)
 
-### Cara Menggunakan Local Storage
+### 1. Cara Menggunakan Local Storage
 
 Local storage cukup mudah untuk digunakan, caranya seperti berikut
 
@@ -16,7 +16,7 @@ localStorage.setItem("lastname", "Smith");
 localStorage.getItem("lastname");
 ```
 
-### Menyimpan Array atau Object pada Local Storage
+### 2. Menyimpan Array atau Object pada Local Storage
 
 Local storage hanya dapat menyimpan data primitif seperti string, integer, boolean, float, kita tidak dapat menyimpan array atau objek secara langsung kedalam local storage
 

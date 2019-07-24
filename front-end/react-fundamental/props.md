@@ -2,9 +2,11 @@
 
 <img src="props.png" height="200">
 
+## 1. Penjelasan Props
+
 `Props` merupakan suatu nilai yang diberikan kepada suatu component ketika component tersebut dibuat. Untuk lebih memahami apa itu props, maka kita perlu berangkat dari sebuah permasalahan
 
-## Permasalahan
+## 2. Permasalahan
 
 Sebelumnya, kita sudah membuat component `Header` seperti dibawah ini :
 
@@ -31,7 +33,7 @@ Dalam react kita dapat membuat sebuah component yang dapat digunakan berkali - k
 
 Namun masalahnya adalah teks yang ada di dalam component `Header` tersebut adalah `Halaman Beranda`, dan teks tersebut tidak akan cocok apabila diterapkan ke halaman lain
 
-## Solusi
+## 3. Solusi
 
 Permasalahan di atas bisa kita pecahkan dengan menggunakan `props`, kita cukup membuat satu component `Header` namun dengan disisipi props di dalamnya
 
@@ -67,7 +69,7 @@ Component `Header` yang kita buat diatas sekarang memiliki duah buah `props`, ya
 <Header title="Halaman X" description="deskripsi halaman x">
 ```
 
-## Tipe Props
+## 4. Tipe Props
 
 Untuk menentukan suatu tipe pada props kita bisa menggunakan library bernama `prop-types`
 
@@ -101,7 +103,7 @@ MyComponent.propTypes = {
 }
 ```
 
-#### Tipe Dasar
+### 4.1. Tipe Dasar
 
 | Tipe     | Contoh        | Kelas            |
 | -------- | ------------- | ---------------- |
@@ -112,7 +114,7 @@ MyComponent.propTypes = {
 | Symbol   | Symbol('msg') | PropTypes.symbol |
 | Object   | {name: 'aka'} | PropTypes.object |
 
-#### Tipe Collection
+### 4.2. Tipe Collection
 
 | Tipe               | Contoh          | Penjelasan                |
 | ------------------ | --------------- | ------------------------- |
@@ -120,7 +122,7 @@ MyComponent.propTypes = {
 | Array Berisi Angka | [1, 2, 3]       | PropTypes.arrayOf([type]) |
 | Enum               | ['Red', 'Blue'] | PropTypes.arrayOf([arr])  |
 
-#### Tipe Object
+### 4.3. Tipe Object
 
 | Tipe          | Contoh        | Penjelasan           |
 | ------------- | ------------- | -------------------- |
@@ -129,13 +131,13 @@ MyComponent.propTypes = {
 | Instance      | new Message() | PropTypes.objectOf() |
 | Object shape  | {name: 'aka'} | PropTypes.shape()    |
 
-#### Tipe Element
+### 4.4. Tipe Element
 
 | Tipe    | Contoh        | Penjelasan        |
 | ------- | ------------- | ----------------- |
 | Element | `<Element />` | PropTypes.element |
 
-## Kesimpulan
+## 5. Kesimpulan
 
 Dengan menggunakan `props` kita bisa membuat component kita reusable namun nilainya tetap dinamis
 

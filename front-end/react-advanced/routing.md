@@ -2,11 +2,11 @@
 
 <img src="route.png" height="200">
 
-## Penjelasan Routing
+## 1. Penjelasan Routing
 
 **Routing** merupakan istilah pada web development untuk menghandle request dari user berdasarkan URL yang dikunjungi. Pada **React** sendiri, dengan memanfaatkan fitur routing, kita bisa menghandle component apa yang akan ditampilkan pada browser berdasarkan URL yang dikunjungi.
 
-## Routing Pada React
+## 2. Routing Pada React
 
 Untuk melakukan routing pada react kita membutuhkan library tambahan yang bernama `react-router`
 

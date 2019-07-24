@@ -2,7 +2,7 @@
 
 Dengan menggunakan border css, kita dapat menentukan style, lebar, dan warna dari border pada suatu elemen HTML
 
-## Border Style
+## 1. Border Style
 
 Property `border-style` digunakan untuk menentukan jenis border yang akan ditampilkan ke layar
 
@@ -39,7 +39,7 @@ p.hidden {
 }
 ```
 
-## Border Width
+## 2. Border Width
 
 Untuk menentukan lebar dari border, kita bisa menggunakan property `border-width`
 
@@ -49,7 +49,7 @@ p {
 }
 ```
 
-## Border Color
+## 3. Border Color
 
 Untuk menentukan warna dari border, kita bisa menggunakan property `border-color`
 
@@ -59,7 +59,7 @@ p {
 }
 ```
 
-## Border Radius
+## 4. Border Radius
 
 Kita dapat menggunakan property `border-radius` untuk membuat border menjadi bulat, semakin tinggi nilai yang kita masukkan, maka bordernya akan semakin bulat
 

@@ -2,21 +2,21 @@
 
 ![pengenalan-orm.jpg](pengenalan-orm.jpg)
 
-## Permasalahan
+## 1. Permasalahan
 
 Masalah yang sering dialami oleh developer ketika melakukan perubahan data pada database yaitu melakukan kesalahan dalam penulisan query SQL, hal ini wajar karena SQL memiliki aturan sendiri dalam penulisan syntaxnya
 
-## Penjelasan ORM
+## 2. Penjelasan ORM
 
 ORM merupakan suatu teknik untuk mengubah tabel pada database menjadi objek yang mudah digunakan, dimana objek tersebut akan memiliki properti yang sama dengan field yang dimiliki oleh tabel tersebut
 
 Dengan ORM kita hanya perlu mendefinisikan sebuah objek dan menuliskan field apa saja yang dimiliki oleh objek tersebut, misalnya kita akan membuat objek `biodata`, maka field yang dimiliki adalah `id`, `nama`, dan `alamat`, setelah itu kita bisa menggunakan objek tersebut untuk melakukan CRUD tanpa menuliskan query SQL sama sekali
 
-## Penerapan ORM dengan Sequelize
+## 3. Penerapan ORM dengan Sequelize
 
 Sequelize merupakan ORM yang mensupport berbagai macam database seperti `msyql`, `mssql`, `postgresql` dan lain - lain, berikut langkah - langkah untuk menggunakan sequalize
 
-### 1. Install Sequelize
+### 3.1. Install Sequelize
 
 ```bash
 # Menginstall sequalize
@@ -29,7 +29,7 @@ npm install --save sqlite3 # sqlite
 npm install --save tedious # mssql
 ```
 
-### 2. Mengoneksikan Sequelize ke Database
+### 3.2. Mengoneksikan Sequelize ke Database
 
 ```javascript
 // config/db.js
@@ -47,7 +47,7 @@ const sequalize = new Sequelize("database", "username", "password", {
 module.exports = sequalize
 ```
 
-### 3. Membuat Model
+### 3.3. Membuat Model
 
 ```javascript
 // models/Biodata.js
@@ -76,7 +76,7 @@ const Biodata = sequelize.define(
 module.exports = Biodata
 ```
 
-### 4. Menggunakan Model pada Controller
+### 3.4. Menggunakan Model pada Controller
 
 ```javascript
 // controllers/biodataController.js

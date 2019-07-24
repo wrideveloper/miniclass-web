@@ -1,5 +1,7 @@
 # Pengenalan Javascript
 
+## 1. Penjelasan Javascript
+
 **Javascript** (JS) merupakan bahasa pemrograman yang biasa digunakan bersama dengan HTML dan CSS untuk menambahkan fitur interaktif pada website.
 
 ![pengenalan-javascript](pengenalan-javascript.gif)
@@ -14,7 +16,7 @@ Pada era development web modern saat ini, javascript benar - benar dibutuhkan un
 
 - dan masih banyak lagi
 
-**Referensi untuk belajar dasar javascript :**
+## 2. Referensi Untuk Mempelajari Javascript
 
 - [**w3school**](https://www.w3schools.com/js/default.asp)
 - [**Petanikode**](https://www.petanikode.com/tutorial/javascript/)

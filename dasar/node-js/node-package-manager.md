@@ -2,17 +2,19 @@
 
 ![npm](npm.png)
 
+## 1. Penjelasan Node Package Manager
+
 Node Package Manager (NPM) merupakan salah satu package manager yang digunakan untuk menginstall framework atau library node js.
 
-## Perintah Dasar
+## 2. Perintah Dasar
 
-### 1. Initiate Node Project
+### 2.1. Initiate Node Project
 
 ```bash
 npm init
 ```
 
-### 2. Install Package
+### 2.2. Install Package
 
 ```bash
 # install local package
@@ -22,7 +24,7 @@ npm install <package-name>
 npm install -g <package-name>
 ```
 
-### 3. Uninstall Package
+### 2.3. Uninstall Package
 
 ```bash
 # uninstall local package
@@ -32,7 +34,7 @@ npm uninstall <package-name>
 npm uninstall -g <package-name>
 ```
 
-### 4. Update Package
+### 2.4. Update Package
 
 ```bash
 # update local package
@@ -42,7 +44,7 @@ npm update
 npm update -g
 ```
 
-### 5. List Installed Package
+### 2.5. List Installed Package
 
 ```bash
 # list local package
@@ -51,6 +53,8 @@ npm ls
 # list global package
 npm ls -g
 ```
+
+## 3. Referensi
 
 **website resmi npm -** [https://www.npmjs.com/](https://www.npmjs.com/)
 

@@ -4,7 +4,7 @@ Hal pertama yang akan kita pelajari yaitu membuat server sederhana dengan menggu
 
 Tentunya sebelum kita dapat menggunakan Express.js, kita harus menginstallnya terlebih dahulu, baru kita dapat membuat servernya.
 
-## Instalasi Express.js
+## 1. Instalasi Express.js
 
 Sebelum menggunakan express, kita harus menginstallnya terlebih dahulu dengan menggunakan npm.
 
@@ -12,7 +12,7 @@ Sebelum menggunakan express, kita harus menginstallnya terlebih dahulu dengan me
 npm install express
 ```
 
-## Membuat Server
+## 2. Membuat Server
 
 Berikut script untuk membuat web server dengan menggunakan express
 

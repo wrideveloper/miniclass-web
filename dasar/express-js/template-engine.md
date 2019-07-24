@@ -4,38 +4,42 @@ Sebelumnya kita sudah mempelajari bagaimana menerima request dan memberikan resp
 
 ![template-engine](template-engine.png)
 
-## Penjelasan Template Engine
+## 1. Penjelasan Template Engine
 
-**Template Engine** merupakan sebuah tool yang digunakan untuk memasukkan data kedalam sebuah halaman html
+Template Engine merupakan sebuah tool yang digunakan untuk memasukkan data kedalam sebuah halaman html
 
-## Cara Menggunakan Template Engine Dengan Express
+## 2. Cara Menggunakan Template Engine Dengan Express
 
-1.  Install template engine yang diinginkan, misalnya pug
+### 2.1.  Install template engine
 
-    ```
-    npm install --save pug
-    ```
+Ada berbagai macam jenis template engine yang dapat digunakan, berikut contoh instalasi salah satu template engine yang bernama `pug`
 
-2.  Mengeset template engine yang akan digunakan, misalnya pug
+```
+npm install --save pug
+```
 
-    ```Javascript
-    app.set('views', path.join(__dirname, 'views'))
-    app.set('view engine', 'pug')
-    ```
+### 2.2. Mengeset template engine yang akan digunakan
 
-3.  Letakkan template di folder views
+```Javascript
+app.set('views', path.join(__dirname, 'views'))
+app.set('view engine', 'pug')
+```
 
-4.  Untuk merender template, gunakan syntax berikut
+### 2.3  Letakkan template di folder views
 
-    ```Javascript
-    res.render('namaTemplate', {data})
-    ```
+Selanjutnya, kita harus meletakkan file - file yang akan digunakan sebagai view pada folder `views`
 
-## Beberapa Contoh Template Engine
+### 2.4 Render Template
+
+```Javascript
+res.render('namaTemplate', {data})
+```
+
+## 3. Beberapa Contoh Template Engine
 
 Berikut contoh - contoh template engine yang dapat digunakan dengan express js :
 
-### 1. Pug
+### 3.1. Pug
 
 [Dokumentasi](https://pugjs.org/api/getting-started.html)
 
@@ -43,7 +47,7 @@ Berikut contoh - contoh template engine yang dapat digunakan dengan express js :
 
 [CheatSheet](https://devhints.io/pug)
 
-### 2. EJS
+### 3.2. EJS
 
 [Dokumentasi](http://ejs.co/#docs)
 

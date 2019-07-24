@@ -2,11 +2,11 @@
 
 ![context](context.png)
 
-## Penjelasan Context
+## 1. Penjelasan Context
 
 **Context** merupakan fitur yang dimiliki react untuk melakukan distribusi data pada component tree tanpa harus melakukan passing props secara manual
 
-## Permasalahan
+## 2. Permasalahan
 
 ![components tree](components-tree.png)
 
@@ -16,7 +16,7 @@ Begitu juga sebaliknya, apabila ingin mengupdate data yang berada di parent comp
 
 Mempassing data atau event menggunakan props seperti ini membuat kita susah untuk memprediksi lokasi data saat ini, serta memakan banyak waktu dalam penulisan koding.
 
-## Solusi
+## 3. Solusi
 
 Perkenalkan fitur keren yang dimiliki react yang bernama `Context`, dengan `Context` kita bisa mendistribusikan serta mengupdate data dari parent ke child secara mudah tanpa harus menggunakan props.
 

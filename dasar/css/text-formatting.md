@@ -2,7 +2,7 @@
 
 CSS menawarkan text formatting yang lebih lengkap daripada hanya mengandalkan HTML, misalnya seperti ukuran text, warna, perataan, indentasi, transformasi, dan masih banyak lagi
 
-## Text Size
+## 1. Text Size
 
 Kita dapat menggunakan property `font-size` untuk menentukan ukuran dari text
 
@@ -12,7 +12,7 @@ p {
 }
 ```
 
-## Text Color
+## 2. Text Color
 
 Kita dapat menggunakan property `color` untuk menentukan warna dari text
 
@@ -26,7 +26,7 @@ h1 {
 }
 ```
 
-## Text Alignment
+## 3. Text Alignment
 
 Kita dapat menggunakan property `text-align` untuk menentukan perataan text
 
@@ -48,7 +48,7 @@ h3 {
 }
 ```
 
-## Text Decoration
+## 4. Text Decoration
 
 Kita dapat menggunakan property `text-decoration` untuk menentukan dekorasi text
 
@@ -70,7 +70,7 @@ h3 {
 }
 ```
 
-## Text Transformation
+## 5. Text Transformation
 
 Kita dapat menggunakan property `text-transform` untuk menentukan transformasi text
 
@@ -88,7 +88,7 @@ h3 {
 }
 ```
 
-## Text Indentation
+## 6. Text Indentation
 
 Kita dapat menggunakan property `text-indent` untuk menentukan indentasi text
 

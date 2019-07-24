@@ -1,5 +1,7 @@
 # Event Pada Javascript
 
+## 1. Penjelasan Javascript
+
 Javascript bisa dijalankan atau dieksekusi ketika **sebuah event terjadi**, contoh dari event dalam HTML msisalnya : 
 
 - ketika user mengklik pada suatu elemen html misalnya button (**onclick**)
@@ -11,8 +13,7 @@ Javascript bisa dijalankan atau dieksekusi ketika **sebuah event terjadi**, cont
 ![javascript-event](event.png)
 
 
-
-**Referensi untuk belajar event pada javascript** :
+## 2. Referensi Untuk Mempelajari Event Pada Javascript
 
 - **w3school** - [https://www.w3schools.com/js/js_events.asp](https://www.w3schools.com/js/js_events.asp)
 

@@ -1,10 +1,10 @@
 # Event
 
-## Handling Event
+## 1. Handling Onclick Pada Button
 
 Untuk melakukan handling event menggunakan react, caranya mirip seperti menggunakan javascript biasa, berikut contoh penerapan handling event pada component `Button` saat event `OnClick` terjadi
 
-### 1. Membuat Component Button
+### 1.2. Membuat Component Button
 
 ```javascript
 // Button.js
@@ -20,7 +20,7 @@ class Button extends Component {
 export default Button
 ```
 
-### 2. Membuat Method showMessage
+### 1.2. Membuat Method showMessage
 
 ```javascript
 // Button.js
@@ -41,7 +41,7 @@ class Button extends Component {
 export default Button
 ```
 
-### 3. Menjalankan Method Ketika OnClick
+### 1.3. Menjalankan Method Ketika OnClick
 
 ```javascript
 // Button.js
@@ -62,9 +62,9 @@ class Button extends Component {
 export default Button
 ```
 
-## Menggunakan `this` Saat Handling Event
+## 2. Menggunakan `this` Saat Handling Event
 
-### Permasalahan
+### 2.1. Permasalahan
 
 Disini kita akan mencoba merubah pesan yang ditampilkan pada method `showMessage` menggunakan props
 
@@ -89,7 +89,7 @@ export default Button
 
 Yang terjadi adalah saat component `Button` kita klik, maka akan terjadi error yang memberitahu bahwa `this undefined`, ini artinya dalam method `showMessage` kita tidak dapat mengakses `this`
 
-### Solusi
+### 2.2. Solusi
 
 Agar kita dapat mengakses `this` dalam method `showMessage`, maka kita perlu merubah deklarasi method `showMessage` menggunakan `arrow function`
 

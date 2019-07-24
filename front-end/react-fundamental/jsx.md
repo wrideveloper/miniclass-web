@@ -2,6 +2,8 @@
 
 ![jsx](jsx.png)
 
+## 1. Penjelasan JSX
+
 **JSX** merupakan ekstensi javascript yang digunakan untuk mendeskripsikan bentuk dari component, kalau ada yang ingin tau bagaimana bentuk JSX, seperti inilah bentuknya :
 
 ```Javascript
@@ -10,11 +12,11 @@ const header = <h1>Hello, world!</h1>;
 
 Syntax diatas bukanlah XML atau HTML, melainkan JSX, memang agak lucu. Pada script diatas kita membuat component header yang isinya adalah tag `h1`
 
-## Penjelasan JSX secara simpel
+## 2. Penjelasan JSX secara simpel
 
 Secara simpel biasanya orang - orang menyebut JSX sebagai **_HTML di dalam javascript_**, namun disini ada perbedaan, biasanya kita meletakkan petik `'` kedalam tag misalnya `'<h1></h1>'` hal ini bertujuan agar tag tersebut menjadi `string` dan dapat dimasukkan ke sebuah variabel, tapi dengan JSX kita tidak membutuhkan petik tersebut sehingga dari segi penulisan lebih mudah
 
-## Tapi tunggu, menggabungkan logic dan view didalam satu file kan tidak bagus
+## 3. Tapi tunggu, menggabungkan logic dan view didalam satu file kan tidak bagus
 
 ![view-logic](view-logic.png)
 
@@ -28,7 +30,7 @@ Akan tetapi, dengan menggunakan **component based architecture**, menggabungkan 
 
 https://reactjs.org/docs/introducing-jsx.html
 
-## Lalu apa hubungan react dan JSX
+## 4. Lalu apa hubungan React dan JSX
 
 Walaupun react dan JSX sama - sama buatan facebook, namun keduanya merupakan dua tool yang berbeda, namun benar - benar disarankan untuk menggunakan react bersama dengan JSX (react :heart: jsx)
 

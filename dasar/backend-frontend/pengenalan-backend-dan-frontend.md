@@ -4,7 +4,7 @@ Dalam pengembangan web terdapat dua istilah yang sering kita dengar, yaitu front
 
 ![frontend vs backend](frontend-vs-backend.jpg)
 
-## Frontend :rainbow:
+## 1. Frontend :rainbow:
 
 **Frontend Developer** bertugas untuk membangun UI (User Interface) dari suatu aplikasi ataupun website, serta membangun fitur yang dapat dilihat langsung oleh end user
 
@@ -19,7 +19,7 @@ Dalam pengembangan web terdapat dua istilah yang sering kita dengar, yaitu front
 
 https://www.youtube.com/watch?v=Xd7huBu39qk
 
-## Backend :gear:
+## 2. Backend :gear:
 
 **Backend Developer** bertugas untuk membangun server side application, yaitu suatu sistem yang berjalan pada server yang bertugas untuk mendukung aplikasi frontend, misalnya dengan memberikan dan mengelola data yang dibutuhkan frontend, membangun sistem autentikasi, serta menyimpan file yang diupload melalui aplikasi frontend.
 

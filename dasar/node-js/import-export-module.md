@@ -1,10 +1,10 @@
 # Import Export Module
 
-## Penjelasan Module
+## 1. Penjelasan Module
 
 Module merupakan kumpulan perintah yang dibungkus kedalam satu paket yang bisa digunakan berulang kali pada file lain
 
-## Export Module
+## 2. Cara Export Module
 
 Kita bisa mengeksport variabel, fungsi, object, dan sebagainya agar bisa digunakan pada file lain, untuk melakukan hal ini kita bisa menggunakan perintah `module.exports`
 
@@ -22,7 +22,7 @@ const mahasiswa = {
 module.exports = mahasiswa
 ```
 
-## Import Module
+## 3. Cara Import Module
 
 Setelah mengeksport module, maka kita bisa menggunakannya di file lain dengan menggunakan perintah `require`
 

@@ -1,50 +1,50 @@
 # DML
 
+## 1. Penjelasan DML
+
 **Data Manipulation Language (DML)** merupakan bahasa yang digunakan untuk memanipulasi data.
 
-- **Mengambil Record Table**
+## 2. Perintah - Perintah Pada DML
 
-  ```sql
-  SELECT column1, column2, column3 FROM table_name
-  ```
+### 2.1. Mengambil Record Table
 
-  Berikut link untuk referensi :
+```sql
+SELECT column1, column2, column3 FROM table_name
+```
 
-  https://www.w3schools.com/sql/sql_select.asp
+Berikut link untuk referensi :
+https://www.w3schools.com/sql/sql_select.asp
 
-- **Mengisi Record Table**
+### 2.2. Mengisi Record Table
 
-  ```sql
-  INSERT INTO table_name SET
-    column1 = value1,
-    column2 = value2,
-    column3 = value3
-  ```
+```sql
+INSERT INTO table_name SET
+  column1 = value1,
+  column2 = value2,
+  column3 = value3
+```
 
-  Berikut link untuk referensi :
+Berikut link untuk referensi :
+https://www.w3schools.com/sql/sql_insert.asp
 
-  https://www.w3schools.com/sql/sql_insert.asp
+### 2.3. Memodifikasi Informasi Pada Table
 
-- **Memodifikasi Informasi Pada Table**
+```sql
+UPDATE table_name SET
+  column1 = value1,
+  column2 = value2,
+  column3 = value3
+WHERE primary_column = value_id
+```
 
-  ```sql
-  UPDATE table_name SET
-    column1 = value1,
-    column2 = value2,
-    column3 = value3
-  WHERE primary_column = value_id
-  ```
+Berikut link untuk referensi :
+https://www.w3schools.com/sql/sql_update.asp
 
-  Berikut link untuk referensi :
+### 2.4. Menghapus Record Pada Table
 
-  https://www.w3schools.com/sql/sql_update.asp
+```sql
+DELETE FROM table_name WHERE primary_column = value_id
+```
 
-- **Menghapus Record Pada Table**
-
-  ```sql
-  DELETE FROM table_name WHERE primary_column = value_id
-  ```
-
-  Berikut link untuk referensi :
-
-  https://www.w3schools.com/sql/sql_delete.asp
+Berikut link untuk referensi :
+https://www.w3schools.com/sql/sql_delete.asp

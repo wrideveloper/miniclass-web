@@ -2,7 +2,7 @@
 
 ![](metode-autentikasi-token.jpg)
 
-## Penjelasan Autentikasi Token
+## 1. Penjelasan Autentikasi Token
 
 Autentikasi token merupakan jenis autentikasi yang sering digunakan pada webservice, cara kerjanya yaitu server menyimpan sebuah token berupa random string yang dipasangkan pada satu akun.
 
@@ -10,24 +10,24 @@ Setelah client melakukan login dengan akun tertentu maka server akan memberikan 
 
 Kemudian setiap kali client mengirimkan request maka token tersebut perlu disertakan sebagai penanda bahwa client tersebut sudah terautentikasi
 
-## Penjelasan JSON Web Token
+## 2. Penjelasan JSON Web Token
 
 JSON Web Token atau disingkat JWT merupakan pengembangan dari metode autentikasi token, dimana server tidak perlu lagi menyimpan token di database
 
 Token yang diberikan ke client bukan lagi berupa random string, namun berupa data user yang sudah login dan dienkripsi menjadi string
 
-## Langkah - langkah Autentikasi dengan JSON Web Token
+## 3. Langkah - langkah Autentikasi dengan JSON Web Token
 
 1.  Client melakukan login
 2.  Apabila username dan password benar, maka server akan memberikan data dari akun tersebut kedalam sebuah token dan memberikannya ke client
 3.  Setelah client menerima token maka token tersebut harus selalu dikirim setiap kali client melakukan request ke server
 4.  Server akan mengecek token, apabila token valid maka request dari client akan diterima, jika tidak valid maka request akan ditolak
 
-## Implementasi JWT Menggunakan Express
+## 4. Implementasi JWT Menggunakan Express
 
 Disini kita akan belajar bagaimana menerapkan jwt pada web service menggunakan express
 
-### 1. Menginstall Dependency
+### 4.1. Menginstall Dependency
 
 Untuk mengimplementasikan json web token kita membutuhkan package yang bernama `jsonwebtoken`
 
@@ -35,7 +35,7 @@ Untuk mengimplementasikan json web token kita membutuhkan package yang bernama `
 npm install express jsonwebtoken
 ```
 
-### 2. Membuat Server dan Route
+### 4.2. Membuat Server dan Route
 
 Pada tutorial ini kita hanya membutuhkan dua rute, yaitu `/login` untuk mengautentikasi client, dan `/` untuk mengirimkan data user apabila client telah melakukan login
 
@@ -59,7 +59,7 @@ app.get("/", function(req, res) {
 app.listen(3000)
 ```
 
-### 3. Mengautentikasi Client
+### 4.3. Mengautentikasi Client
 
 Untuk melakukan autentikasi, pertama kita memeriksa username dan password yang dikirimkan oleh client, apabila benar maka kita akan membuat token menggunakan `jwt.sign()` dengan menyertakan data dari akun yang bersangkutan dan memberikan token tersebut ke client
 
@@ -82,7 +82,7 @@ app.post("/login", function(req, res) {
 })
 ```
 
-### 4. Memeriksa Apakah Token Valid
+### 4.4. Memeriksa Apakah Token Valid
 
 Sekarang kita akan membuat middleware yang bernama `verifyToken` yang akan memeriksa token yang dikirimkan oleh client menggunakan `jwt.verify`, apabila valid maka server akan mengubah token tersebut menjadi data user dan memasukkannya sebagai properti ke objek `req`
 
@@ -108,7 +108,7 @@ function verifyToken(req, res, next) {
 module.exports = verifyToken
 ```
 
-### 5. Menerapkan Middleware ke Route
+### 4.5. Menerapkan Middleware ke Route
 
 Setelah middleware `verifyToken` dibuat, kita tinggal menerapkannya ke route `/`
 
@@ -143,7 +143,7 @@ app.get("/", verifyToken, (req, res) => {
 app.listen(3000)
 ```
 
-## Source Code
+## 5. Source Code
 
 Berikut link menuju source code dari tutorial diatas :
 

@@ -2,7 +2,7 @@
 
 ![reactjs](reactjs.png)
 
-## Apa itu React JS
+## 1. Apa itu React JS
 
 Seperti yang sudah dijelaskan pada website resmi react, react merupakan library javascript untuk membangun sebuah user interface
 
@@ -14,7 +14,7 @@ React dibuat oleh facebook dan menjadi salah satu tool frontend populer karena p
 
 **Official Website -** https://reactjs.org/
 
-## React Bukan Framework
+## 2. React Bukan Framework
 
 Banyak yang membandingkan react dengan angular, vue atau framework lain, sedangkan react sendiri bukanlah framework melainkan hanyalah sebuah library
 
@@ -37,7 +37,7 @@ Sedangkan **library** hanya **fokus untuk memecahkan sebuah masalah**, misalnya 
 **Selengkapnya tentang perbedaan framework dan library :**
 https://medium.com/datafire-io/libraries-vs-frameworks-626cdde799a7
 
-## Virtual DOM
+## 3. Virtual DOM
 
 React menggunakan **virtual DOM** untuk mempercepat proses perubahan node pada **DOM**
 
@@ -57,7 +57,7 @@ Cara kerja dari **Virtual DOM** adalah sebagai berikut :
 
 https://www.youtube.com/watch?v=RquK3TImY9U
 
-## Component Based Architecture
+## 4. Component Based Architecture
 
 React menggunakan konsep component based architecture yang membuat dia menjadi populer seperti sekarang, namun apa itu component based architecture ?
 

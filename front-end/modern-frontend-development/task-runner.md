@@ -1,6 +1,6 @@
 # Task Runner
 
-## Penjelasan
+## 1. Penjelasan
 
 **Task Runner** merupakan sebuah program yang digunakan untuk mengeksekusi beberapa tugas secara otomatis. Contoh pekerjaan yang bisa dilakukan oleh task runner yaitu :
 
@@ -12,7 +12,7 @@
 
 Kita tidak perlu lagi repot - repot melakukan task diatas secara manual, biarkan task runner yang melakukannya untuk kita.
 
-## Beberapa Tool Task Runner
+## 2. Beberapa Tool Task Runner
 
 Ada beberapa tool yang dapat kita gunakan untuk menjalankan beberapa perintah sekaligus, yaitu :
 
@@ -20,14 +20,14 @@ Ada beberapa tool yang dapat kita gunakan untuk menjalankan beberapa perintah se
 2. [Gulp](https://gulpjs.com/)
 3. [Grunt](https://gruntjs.com/)
 
-## Penerapan Task Runner dengan NPM Script
+## 3. Penerapan Task Runner dengan NPM Script
 
 Disini kita akan mencoba menerapkan task runner menggunakan npm script, contoh kasusnya adalah seperti berikut
 
 1. Mengcompile sass menjadi css
 2. Mengcompile ES6 menjadi ES5
 
-### Mengcompile SASS Menjadi CSS
+### 3.1. Mengcompile SASS Menjadi CSS
 
 Untuk mengcompile sass menjadi css, kita akan membuat sebuah npm script bernama `build-css`
 
@@ -37,7 +37,7 @@ Untuk mengcompile sass menjadi css, kita akan membuat sebuah npm script bernama 
 }
 ```
 
-### Mengcompile ES6 Menjadi ES5
+### 3.2. Mengcompile ES6 Menjadi ES5
 
 Untuk mengcompile es6 menjadi es5, kita akan menambahkan sebuah npm script bernama `build-js`
 
@@ -50,7 +50,7 @@ Untuk mengcompile es6 menjadi es5, kita akan menambahkan sebuah npm script berna
 
 **Catatan** : jangan lupa untuk melakukan setup babel terlebih dahulu
 
-### Menjalankan Semua Task Secara Bersamaan
+### 3.3. Menjalankan Semua Task Secara Bersamaan
 
 Sampai disini kita sudah bisa mengcompile sass dan es6, namun untuk melakukan kedua task tersebut kita harus menjalankan dua perintah, disini kita akan menambah npm script baru bernama `build` yang akan menjalankan semua task - task diatas
 

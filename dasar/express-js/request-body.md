@@ -2,7 +2,7 @@
 
 <img src="request-body.png" width="250">
 
-## Penjelasan Request Body
+## 1. Penjelasan Request Body
 
 Request body merupakan data yang dikirimkan oleh client ke server melalui http body
 
@@ -25,11 +25,11 @@ Cara paling mudah untuk membuat request body dari client yaitu dengan menggunaka
 Selegkapnya tentang html form :
 https://www.w3schools.com/html/html_forms.asp
 
-## Jenis Encoding
+## 2. Jenis Encoding
 
 Berikut beberapa encoding yang dapat digunakan untuk mengirimkan request body
 
-### 1. Plain Text
+### 2.1. Plain Text
 
 Seperti namanya, sebenarnya disini kita tidak menggunakan encoding sama sekali dan mengirimkan data secara raw, biasanya digunakan untuk mengirimkan data berupa `JSON`, untuk penerapannya kita bisa menggunakan `text/plain` pada `enctype`
 
@@ -40,7 +40,7 @@ Seperti namanya, sebenarnya disini kita tidak menggunakan encoding sama sekali d
 </form>
 ```
 
-### 2. URL Encoded
+### 2.2. URL Encoded
 
 Encoding ini merupakan encoding default yang digunakan pada form html, digunakan untuk mengirimkan data yang sederhana seperti text, untuk penerapannya kita bisa menggunakan `application/x-www-form-urlencoded` pada `enctype`
 
@@ -55,7 +55,7 @@ Encoding ini merupakan encoding default yang digunakan pada form html, digunakan
 </form>
 ```
 
-### 3. Multipart
+### 2.3. Multipart
 
 Multipart merupakan encoding yang digunakan apabila kita ingin mengirimkan data berupa text atau file, untuk penerapannya kita bisa menggunakan `multipart/form-data` pada `enctype`
 
@@ -70,9 +70,9 @@ Multipart merupakan encoding yang digunakan apabila kita ingin mengirimkan data 
 </form>
 ```
 
-## Parsing Request Body
+## 3. Parsing Request Body
 
-### Parsing Text Berupa JSON
+### 3.1. Parsing Text Berupa JSON
 
 Data yang dikirimkan melalui encoding text biasanya berformat JSON, kita bisa menggunakan middleware `express.json()` untuk membaca data berupa JSON
 
@@ -89,7 +89,7 @@ app.post("/", function(req, res) {
 })
 ```
 
-### Parsing URL Encoded
+### 3.2. Parsing URL Encoded
 
 Untuk membaca data yang dikirimkan dengan encoding URL Encoded maka kita bisa menggunakan middleware `express.urlencoded()`
 
@@ -106,7 +106,7 @@ app.post("/", function(req, res) {
 })
 ```
 
-### Parsing Multipart
+### 3.3. Parsing Multipart
 
 Untuk membaca data yang dikirimkan dengan encoding multipart, kita perlu menginstall package middleware bernama `multer`
 

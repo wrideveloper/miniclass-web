@@ -2,10 +2,10 @@
 
 ![](rest-web-service.jpg)
 
-## Penjelasan REST
+## 1. Penjelasan REST
 **Representational State Transfer** (REST) merupakan **Architectural style**, **Architectural style** sendiri merupakan sebuah Arsitektur dengan penambahan beberapa **Constraint** (batasan) sehingga menjadi Arsitektur yang diinginkan dan teroptimisasi.
 
-### REST mendefinisikan 6 Constraint:
+REST mendefinisikan 6 Constraint:
 1. Client-Server
 2. Stateless
 3. Cacheable
@@ -17,6 +17,8 @@ Sebuah Web Service dianggap **RESTful** jika bekerja sesuai **Constraint** setia
 
 **RESTful Application** dapat menggunakan HTTP untuk melakukan operasi **CRUD** (Create, Read, Update, Delete).
 
-**Untuk mengtahui tentang REST ebih lanjut dapat mengunjungi**:
-- https://medium.com/@lazlojuly/what-is-a-restful-api-fabb8dc2afeb
-- https://www.codementor.io/olatundegaruba/nodejs-restful-apis-in-10-minutes-q0sgsfhbd
+## 2. Referensi
+
+https://medium.com/@lazlojuly/what-is-a-restful-api-fabb8dc2afeb
+
+https://www.codementor.io/olatundegaruba/nodejs-restful-apis-in-10-minutes-q0sgsfhbd

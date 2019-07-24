@@ -2,7 +2,7 @@
 
 ![component](component-based.png)
 
-## Penjelasan Component
+## 1. Penjelasan Component
 
 Component merupakan sebuah bagian kecil dari suatu halaman yang apabila disatukan dengan component lain akan membentuk sebuah halaman utuh, pada contoh gambar diatas ada beberapa contoh component misalnya `Header`, `SearchBar`, `EmployeeList`, `EmployeeListItem`, `App` dan sebagainya. Masing - masing component kecil diatas memiliki logic dan perannya sendiri, yaitu :
 
@@ -14,11 +14,11 @@ Component merupakan sebuah bagian kecil dari suatu halaman yang apabila disatuka
 
 Kelebihan lain dari component yaitu component bisa digunakan pada banyak halaman tanpa mengganti struktur kodenya (Reuseable), misalnya component `SearchBar` bisa digunakan untuk melakukan pencarian data apapun, sehingga bisa diterapkan di halaman apapun.
 
-## Cara Membuat Component
+## 2. Cara Membuat Component
 
 Untuk membuat component dalam react, kita bisa menggunakan tiga cara, yaitu :
 
-**Menggunakan class :**
+### 2.1. Menggunakan class
 
 ```Javascript
 import React, {Component} from 'react'
@@ -32,7 +32,7 @@ export default class Header extends Component {
 }
 ```
 
-**Menggunakan function :**
+### 2.2. Menggunakan function
 
 ```Javascript
 const Header = () => {
@@ -44,11 +44,11 @@ const Header = () => {
 export default Header
 ```
 
-## Membuat Component Header
+## 3. Membuat Component Header
 
 Disini kita akan membuat component `Header` yang digunakan untuk memberikan judul pada suatu halaman
 
-### 1. Membuat Component
+### 3.1. Membuat Component
 
 Pertama kita perlu membuat component `Header` terlebih dahulu, buatlah file `Header.js` pada direktori `src/components`, direktori ini merupakan direktori yang biasa digunakan untuk meletakkan component - component yang kita buat
 
@@ -71,7 +71,7 @@ class Header extends Component {
 export default Header
 ```
 
-### 2. Import Component
+### 3.2. Import Component
 
 Setelah component `Header` selesai dibuat, maka selanjutnya tinggal kita import ke `App`
 

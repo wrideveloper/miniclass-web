@@ -2,7 +2,7 @@
 
 Dengan menggunakan HTML, kita bisa malakukan formatting terhadap text, seperti menebalkan, memiringkan, mencoret, atau menggaris bawahi suatu text
 
-## Heading
+## 1. Heading
 
 Heading digunakan untuk menuliskan judul, terdapat enam jenis heading, diurutkan tergantung dari pentingnya dan ukurannya, menggunakan angka seperti `h1`, `h2`, `h3`, `h4`, `h5`, `h6`,
 
@@ -15,7 +15,7 @@ Heading digunakan untuk menuliskan judul, terdapat enam jenis heading, diurutkan
 <h6>Ini heading 6 loh</h6>
 ```
 
-## Paragraph
+## 2. Paragraph
 
 Paragraph digunakan untuk mengelompokkan kumpulan text kedalam satu paragraph, untuk membuat paragraph pada HTML, kita bisa membungkus kumpulan text menggunakan tag `p`.
 
@@ -28,7 +28,7 @@ Paragraph digunakan untuk mengelompokkan kumpulan text kedalam satu paragraph, u
 </p>
 ```
 
-## Styling Text
+## 3. Styling Text
 
 Styling umum yang dapat digunakan antara lain bold `b`, italic `i`, underline `u`, dan strike-through `s`.
 

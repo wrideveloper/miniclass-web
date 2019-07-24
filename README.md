@@ -84,22 +84,14 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 
 ### :sunflower: Materi Frontend
 
-1.  **Framework CSS**
-
-    - :books: [Pengenalan Framework CSS](front-end/framework-css/pengenalan-framework-css.md)
-
-2.  **Metodologi CSS**
-
-    - :books: [Metodologi CSS](front-end/metodologi-css/pengenalan-metodologi-css.md)
-
-3.  **Modern Frontend Development**
+1.  **Modern Frontend Development**
 
     - :books: [Preprocessor CSS](front-end/modern-frontend-development/preprocessor-css.md)
     - :books: [ECMAScript](front-end/modern-frontend-development/ecmascript.md)
     - :books: [Task Runner](front-end/modern-frontend-development/task-runner.md)
     - :books: [Module Bundler](front-end/modern-frontend-development/module-bundler.md)
 
-4.  **React Fundamental**
+2.  **React Fundamental**
 
     - :books: [Pengenalan React JS](front-end/react-fundamental/pengenalan-reactjs.md)
     - :books: [Install React JS](front-end/react-fundamental/install-reactjs.md)
@@ -111,26 +103,26 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: [Styling Component](front-end/react-fundamental/styling-component.md)
     - :books: Component Lifecycle
 
-5.  **React Advanced**
+3.  **React Advanced**
 
     - :books: Passing Data to Parent Component
     - :books: Using Web API
     - :books: [Routing](front-end/react-advanced/routing.md)
     - :computer: Membuat Aplikasi React
 
-6.  **Share Logic Between Component**
+4.  **Share Logic Between Component**
 
     - :books: [Higher Order Component](front-end/share-logic-between-component/higher-order-component.md)
     - :books: [Render Props](front-end/share-logic-between-component/render-props.md)
     - :books: [Context](front-end/share-logic-between-component/context.md)
     - :books: Hooks
 
-7.  **React Component Pattern**
+5.  **React Component Pattern**
 
     - :books: Container vs Presentional Component
     - :books: Compound Component
 
-8.  **React Testing**
+6.  **React Testing**
     - :books: Unit Testing
     - :books: Snapshot Testing
     - :books: End to End Testing
@@ -148,8 +140,8 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 
 3.  **Web Service**
 
-    - :books: [REST](back-end/web-service/rest-web-service.md)
-    - :books: [GraphQL](back-end/web-service/graphql-web-service.md)
+    - :books: [REST](back-end/web-service/rest.md)
+    - :books: [GraphQL](back-end/web-service/graphql.md)
 
 4.  **Autentikasi**
 

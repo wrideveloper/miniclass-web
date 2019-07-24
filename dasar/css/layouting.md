@@ -2,13 +2,13 @@
 
 Untuk membuat desain website yang rapi, kita perlu belajar melakukan layouting menggunakan CSS. Untuk melakukan hal tersebut kita dapat menggunakan property `display` untuk menentukan layout suatu elemen, ada beberapa jenis layout yang bisa kita gunakan, yaitu `block`, `inline`, `inline-block`, dan `flexbox`
 
-## Block
+## 1. Block
 
 Block merupakan layout default yang diterapkan ke beberapa elemen seperti `div`, `ul`, `ol`, `p`, `h1` dan sebagainya. Ciri khas dari layout ini yaitu selalu membuat baris sendiri
 
 ![block-layout](block-layout.png)
 
-## Inline
+## 2. Inline
 
 Inline merupakan layout default yang diterapkan ke beberapa elemen seperti `span`, `b`, `i` dan sebagainya. Ciri khas dari layout ini yaitu mengikuti baris yang sudah ada
 
@@ -18,13 +18,13 @@ Apabila kita memberikan `margin` dan `padding` terhadap inline layout, maka ia h
 
 ![inline-padding](inline-padding.png)
 
-## Inline Block
+## 3. Inline Block
 
 Inline block mirip dengan inline, yaitu akan selalu mengikuti baris yang sudah ada. Namun apabila kita memberikan `margin` dan `padding`, maka ia akan mendorong elemen disekitarnya secara horizontal dan juga vertical
 
 ![inline-block-level](inline-block-layout.png)
 
-## Flexbox
+## 4. Flexbox
 
 Flexbox (Flexible Box) merupakan cara terbaru untuk melakukan layouting pada web yang mendukung design responsive
 

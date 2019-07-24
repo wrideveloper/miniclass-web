@@ -2,7 +2,7 @@
 
 ![render props](render-props.jpg)
 
-## Apa Itu Render Props
+## 1. Apa Itu Render Props
 
 **Render props** merupakan teknik untuk mendistribusikan logic ke component menggunakan props yang diisi sebuah function, ada beberapa library yang menggunakan teknik ini, antara lain React Router dan Context API
 
@@ -16,7 +16,7 @@ Tujuan dari penggunaan teknik ini sama dengan higher order component, dimana kit
 
 ![render props tweet](render-props-tweet.png)
 
-## Referensi Belajar Render Props
+## 2. Referensi Belajar Render Props
 
 Silahkan kunjungi link berikut untuk mempelajari lebih lanjut tentang render props :
 

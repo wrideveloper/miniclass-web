@@ -2,17 +2,17 @@
 
 ![](metode-autentikasi-session.jpg)
 
-## Penjelasan Session
+## 1. Penjelasan Session
 
 **Session** adalah waktu yang dihabiskan oleh user saat sedang membuka sebuah website. Session ini disimpan di sebuah cookie, tepatnya session cookie, cookie sendiri merupakan file yang disimpan oleh web browser yang berisi data - data dari client.
 
-## Autentikasi dengan Session
+## 2. Autentikasi dengan Session
 
 HTTP adalah **_stateless_**, **_stateless_** disini berarti HTTP tidak dapat menyimpan informasi dari client, sehingga server tidak dapat mengenali clientnya walaupun sudah login sekalipun.
 
 **Solusi** : Menggunakan autentikasi dengan session, dimana session ini akan membuat session id yang kemudian disimpan ke cookies client, sehingga kali ini server akan mengenali clientnya dengan cara mencocokan session id yang ada di cookies client
 
-## Langkah - langkah Autentikasi dengan Session
+## 3. Langkah - langkah Autentikasi dengan Session
 
 1.  User melakukan login.
 2.  Server mengecek informasi login user, jika benar, maka server akan membuatkan session id ke cookies client.
@@ -20,9 +20,9 @@ HTTP adalah **_stateless_**, **_stateless_** disini berarti HTTP tidak dapat men
 4.  Server menerima request dan menggunakan cookies tadi untuk mengetahui session id dari client, sehingga server dapat mengenali client tersebut.
 5.  Ketika client melakukan logout, maka session id yang ada di cookie akan dihapus. (cookies juga dapat di set waktu expiresnya, sehingga apabila client lupa logout, session akan lenyap dengan sendirinya)
 
-## Menerapkan Session Pada Express
+## 4. Menerapkan Session Pada Express
 
-### 1. Menginstall Dependency
+### 4.1. Menginstall Dependency
 
 Untuk menerapkan autentikasi session pada express, kita membutuhkan `express` dan `express-session` untuk mengelola session pada express
 
@@ -30,7 +30,7 @@ Untuk menerapkan autentikasi session pada express, kita membutuhkan `express` da
 npm install express express-session
 ```
 
-### 2. Membuat Server dan Route
+### 4.2. Membuat Server dan Route
 
 Pertama kita akan membuat server dan route - route yang akan kita gunakan
 
@@ -65,7 +65,7 @@ app.listen(3000)
 
 Disini kita memiliki dua view, yaitu `login.html` untuk halaman form login, dan `home.html` untuk halaman awal setelah client melakukan login
 
-### 3. Membuat Session
+### 4.3. Membuat Session
 
 Setelah membuat server dan route yang akan digunakan, selanjutnya kita akan membuat middleware session yang akan mengirimkan session id ke cookies client
 
@@ -104,7 +104,7 @@ app.get("/", function(req, res) {
 app.listen(3000)
 ```
 
-### 4. Mengautentikasi Client
+### 4.4. Mengautentikasi Client
 
 Setelah mengkonfigurasi session, langkah selanjutnya kita harus mengautentikasi client dengan mengecek apakah username dan password yang dikirimkan sudah benar, jika benar maka kita akan menambahkan properti user ke session yang berisi informasi user yang sedang login
 
@@ -126,7 +126,7 @@ app.post("/login", function(req, res) {
 
 Pada tutorial ini kita menggunakan data dummy dengan username `admin` dan password `admin`, untuk implementasi yang sesungguhnya kita bisa mengambil username dan password dari database
 
-### 5. Melindungi Route
+### 4.5. Melindungi Route
 
 Sekarang kita akan membuat middleware untuk mencegah user yang belum login untuk masuk ke halaman home, serta mencegah user yang sudah login untuk masuk ke halaman login lagi
 
@@ -211,7 +211,7 @@ app.get("/", authenticate, function(req, res) {
 app.listen(3000)
 ```
 
-### 6. Melakukan Logout
+### 4.6. Melakukan Logout
 
 Untuk melakukan logout, kita hanya perlu mengeset properti user dari objek session menjadi `undefined`
 
@@ -226,7 +226,7 @@ app.get("/logout", function(req, res) {
 })
 ```
 
-### Source Code
+## 5. Source Code
 
 Silahkan kunjungi link berikut untuk melihat full source code dari tutorial diatas
 

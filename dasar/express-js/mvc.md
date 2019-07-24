@@ -1,10 +1,10 @@
 # Konsep MVC
 
-## Penjelasan
+## 1. Penjelasan MVC
 
 MVC (Model - View - Controller) merupakan teknik untuk memecah file menjadi tiga jenis yang memiliki tugas dan peran masing - masing, ketiga jenis file tersebut yaitu
 
-### 1. Model
+### 1.1. Model
 
 Model merupakan file yang berguna sebagai jembatan untuk berkomunikasi langsung dengan database, file ini lah yang nantinya akan mengeksekusi query untuk mendapatkan atau merubah data pada database
 
@@ -45,7 +45,7 @@ module.exports = {
 }
 ```
 
-### 2. Controller
+### 1.2. Controller
 
 Controller disini bertugas untuk menerima data dari model dan meneruskannya ke view (tampilan), selain itu controller juga bertugas meneruskan inputan user ke model untuk merubah data pada database
 
@@ -91,7 +91,7 @@ module.exports = {
 }
 ```
 
-### 3. View
+### 1.3. View
 
 View merupakan tampilan dari website yang bertugas untuk menampilkan data yang diberikan oleh controller
 
@@ -121,7 +121,7 @@ html
 
 ```
 
-## Contoh Penerapan MVC
+## 2. Contoh Penerapan MVC
 
 Berikut merupakan contoh proyek yang menerapkan konsep MVC
 

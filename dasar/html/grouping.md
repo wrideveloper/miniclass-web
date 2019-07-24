@@ -1,8 +1,10 @@
 # Grouping
 
+## 1. Penjelasan Div
+
 Untuk memudahkan proses styling dan layouting menggunakan css, atau melakukan suatu task menggunakan javascript, ada kalanya kita perlu membungkus kumpulan tag HTML menjadi satu, untuk melakukannya kita dapat menggunakan tag `div`
 
-## Membuat Div
+## 2. Cara Membuat Div
 
 Untuk mengelompokkan beberapa tag HTML, kita dapat menggunakan tag `div`, contohnya seperti berikut :
 

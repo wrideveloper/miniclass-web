@@ -2,20 +2,20 @@
 
 ![](object-document-mapper.png)
 
-## Penjelasan Singkat
+## 1. Penjelasan Singkat
 
 **ODM (Oobject Document Mapping)** memiliki fungsi yang sama dengan **ORM (Object Relational Mapping)**, perbedaannya hanya terletak pada jenis database yang digunakan, dimana **ODM digunakan untuk Document Oriented Database** sedangkan **ORM digunakan untuk Relational Database**
 
-## Penerapan ODM dengan Mongoose
+## 2. Penerapan ODM dengan Mongoose
 
-### 1. Installasi
+### 2.1. Installasi
 
 ```bash
 # Menginstall mongoose
 npm install mongoose
 ```
 
-### 2. Mengkoneksikan Mongoose ke Database
+### 2.2. Mengkoneksikan Mongoose ke Database
 
 Tentukan nama database yang akan dihubungkan ke aplikasi terlebih dahulu, misal: **test**
 
@@ -34,7 +34,7 @@ db.once('open', function() {
 })
 ```
 
-### 3. Membuat Model
+### 2.3. Membuat Model
 
 Semisal kita ingin membuat _collection_ dengan nama mahasiswa. Terlebih dahulu kita harus membuat sebuah Schema.
 
@@ -52,26 +52,22 @@ Lalu compile Schema diatas menjadi sebuah Model
 const Mahasiswa = mongoose.model('Mahasiswa', mahasiswaSchema)
 ```
 
-### 4. Melakukan Operasi CRUD dengan Mongoose
+### 2.4. Melakukan Operasi CRUD dengan Mongoose
 
-**1. Create Document**
+#### 2.4.1. Create Document
 
 ```javascript
-//Membuat document
-let aka = new Mahasiswa({
+Mahasiswa.create({
   name: 'Mnindrazaka',
   address: 'Probolinggo',
   age: 19
-})
-
-//Menyimpan document ke dalam database
-aka.save(function(err, mahasiswa) {
+}, function(err, mahasiswa) {
   if (err) return console.error(err)
   console.log(mahasiswa)
 })
 ```
 
-**2. Read Document**
+#### 2.4.2. Read Document
 
 ```javascript
 Mahasiswa.find(function(err, mahasiswa) {
@@ -82,7 +78,7 @@ Mahasiswa.find(function(err, mahasiswa) {
 //Akan mengoutputkan semua document yang berada di dalam collection Mahasiswa
 ```
 
-**3. Update Document**
+#### 2.4.3. Update Document
 
 ```javascript
 Mahasiswa.findOneAndUpdate(
@@ -106,7 +102,7 @@ Mahasiswa.findOneAndUpdate(
 )
 ```
 
-**4. Delete Document**
+#### 2.4.4. Delete Document
 
 ```javascript
 Mahasiswa.findOneAndRemove(
@@ -122,7 +118,7 @@ Mahasiswa.findOneAndRemove(
 )
 ```
 
-## Referensi
+## 3. Referensi
 
 Untuk melihat seluruh source code penerapan ODM menggunakan mongoose, silahkan kunjungi link berikut
 https://github.com/wrideveloper/express-mongo-webservice

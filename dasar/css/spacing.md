@@ -4,7 +4,7 @@ Space atau ruang kosong sangat penting dalam mendesain sebuah website, karena me
 
 <img src="margin-padding.jpeg" width="600" />
 
-## Padding
+## 1. Padding
 
 Padding merupakan space yang berada di dalam konten suatu elemen, untuk menentukan padding kita dapat menggunakan css seperti berikut
 
@@ -17,7 +17,7 @@ div {
 }
 ```
 
-## Margin
+## 2. Margin
 
 Margin merupakan space yang berada di luar elemen, untuk menentukan margin kita dapat menggunakan css seperti berikut
 
@@ -30,7 +30,7 @@ div {
 }
 ```
 
-## Box Sizing
+## 3. Box Sizing
 
 Ada satu lagi property yang sering digunakan untuk mengatur space pada CSS, yaitu `box-sizing`. Property ini digunakan untuk memasukkan `border`, `padding` dan `margin` untuk keseluruhan total tinggi dan lebar suatu elemen
 

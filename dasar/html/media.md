@@ -1,8 +1,8 @@
 # Media
 
-Kita dapat menampilkan media seperti image, audio, serta video dedngan menggunakan HTML
+Kita dapat menampilkan media seperti image, audio, serta video dengan menggunakan HTML
 
-## Image
+## 1. Image
 
 kita dapat menggunakan tag `img` untuk menampilkan image pada HTML, berikut contoh penggunaannya :
 
@@ -12,7 +12,7 @@ kita dapat menggunakan tag `img` untuk menampilkan image pada HTML, berikut cont
 
 attribut `src` diarahkan ke lokasi image yang ingin kita tampilkan
 
-## Audio
+## 2. Audio
 
 kita dapat menggunakan tag `audio` untuk menampilkan audio player pada HTML, berikut contoh penggunaannya :
 
@@ -22,7 +22,7 @@ kita dapat menggunakan tag `audio` untuk menampilkan audio player pada HTML, ber
 
 attribut `src` diarahkan ke lokasi audio yang ingin kita putar
 
-## Video
+## 3. Video
 
 kita dapat menggunakan tag `video` untuk menampilkan video player pada HTML, berikut contoh penggunaannya :
 

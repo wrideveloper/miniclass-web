@@ -4,7 +4,7 @@
 
 Ada beberapa metode untuk melakukan styling pada component react
 
-## CSS Stylesheet
+## 1. CSS Stylesheet
 
 Cara ini merupakan cara yang paling mudah, karena mirip dengan cara yang biasa kita lakukan. Kita bisa menggunakan file css biasa kemudian kita import ke component kita.
 
@@ -37,7 +37,7 @@ const DottedBox = () => (
 export default DottedBox
 ```
 
-## Inline Styling
+## 2. Inline Styling
 
 Dengan cara ini kita bisa menuliskan **styling secara langsung didalam component** kita, sehingga kita bisa fokus melihat tampilan component dan stylingnya dalam satu file.
 
@@ -62,7 +62,7 @@ const Box = () => (
 export default Box
 ```
 
-## Styled Component
+## 3. Styled Component
 
 Untuk menggunakan metode kita membutuhkan library bernama `styled-components`, kita bisa menginstallnya dengan menggunakan perintah
 
@@ -111,7 +111,7 @@ class ToDoApp extends React.Component {
 Untuk mempelajari tentang `styled-components` lebih lanjut, silahkan kunjungi link berikut :
 https://www.styled-components.com/docs/
 
-## Referensi
+## 4. Referensi
 
 https://codeburst.io/4-four-ways-to-style-react-components-ac6f323da822
 
