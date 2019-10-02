@@ -9,11 +9,9 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 
 1.  **Pengenalan Pemrograman Web**
 
-    - :books: [Web dan Internet](dasar/pendahuluan/web-dan-internet.md)
     - :books: [Cara Kerja Website](dasar/pendahuluan/cara-kerja-website.md)
+    - :books: [Pengenalan Backend dan Frontend](dasar/pendahuluan/pengenalan-backend-dan-frontend.md)
     - :books: [HTTP Request dan HTTP Response](dasar/pendahuluan/http-request-dan-response.md)
-    - :books: [HTTP Status Code](dasar/pendahuluan/http-status-code.md)
-    - :books: [HTTP Verbs](dasar/pendahuluan/http-verbs.md)
 
 2.  **HTML**
 
@@ -69,14 +67,11 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: [Request dan Response](dasar/express-js/request-dan-response.md)
     - :books: [Middleware](dasar/express-js/middleware.md)
     - :books: [Request Body](dasar/express-js/request-body.md)
-    - :books: [Template Engine](dasar/express-js/template-engine.md)
     - :books: [Serving Static File](dasar/express-js/static-file-assets.md)
     - :books: [Routing](dasar/express-js/routing.md)
     - :books: [Model View Controller](dasar/express-js/mvc.md)
-    - :computer: Membuat Web Dinamis dengan Express
 
 8.  **Kolaborasi Backend dan Frontend**
-    - :books: [Pengenalan Backend dan Frontend](dasar/backend-frontend/pengenalan-backend-dan-frontend.md)
     - :books: [Web Service](dasar/backend-frontend/web-service.md)
     - :books: [AJAX](dasar/backend-frontend/ajax.md)
     - :books: [Synchronous vs Asynchronous](dasar/backend-frontend/synchronous-vs-asynchronous.md)
@@ -86,7 +81,6 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 
 1.  **Modern Frontend Development**
 
-    - :books: [Preprocessor CSS](front-end/modern-frontend-development/preprocessor-css.md)
     - :books: [ECMAScript](front-end/modern-frontend-development/ecmascript.md)
     - :books: [Task Runner](front-end/modern-frontend-development/task-runner.md)
     - :books: [Module Bundler](front-end/modern-frontend-development/module-bundler.md)
@@ -100,8 +94,8 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: [Props](front-end/react-fundamental/props.md)
     - :books: [Event](front-end/react-fundamental/event.md)
     - :books: [State](front-end/react-fundamental/state.md)
-    - :books: [Styling Component](front-end/react-fundamental/styling-component.md)
     - :books: Component Lifecycle
+    - :books: [Styling Component](front-end/react-fundamental/styling-component.md)
 
 3.  **React Advanced**
 
@@ -122,11 +116,6 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: Container vs Presentional Component
     - :books: Compound Component
 
-6.  **React Testing**
-    - :books: Unit Testing
-    - :books: Snapshot Testing
-    - :books: End to End Testing
-
 ### :japanese_ogre: Materi Backend
 
 1.  **Object Relational Mapping**
@@ -145,7 +134,6 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 
 4.  **Autentikasi**
 
-    - :books: [Session](back-end/autentikasi/session.md)
     - :books: [JSON Web Token](back-end/autentikasi/json-web-token.md)
     - :computer: Membuat Web Service Sederhana
 
