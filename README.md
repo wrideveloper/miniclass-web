@@ -139,7 +139,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 
 5.  **Microservices**
 
-    - :books: Microservices
+    - :books: [Microservices](back-end/microservice/microservice.md)
     - :books: Microservices Gateway
     - :books: Message Queue
     - :books: Remote Procedure Call
