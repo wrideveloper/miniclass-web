@@ -94,7 +94,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: [Props](front-end/react-fundamental/props.md)
     - :books: [Event](front-end/react-fundamental/event.md)
     - :books: [State](front-end/react-fundamental/state.md)
-    - :books: Component Lifecycle
+    - :books: [Component Lifecycle](front-end/react-fundamental/component-lifecycle.md)
     - :books: [Styling Component](front-end/react-fundamental/styling-component.md)
 
 3.  **React Advanced**
