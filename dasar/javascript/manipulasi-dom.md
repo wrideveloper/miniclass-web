@@ -31,12 +31,15 @@ Sebelum memanipulasi dom, kita perlu menentukan element apa yang akan kita manip
 ```javascript
 // Mencari element berdasarkan ID
 document.getElementById(id)
+document.getElementById('header')
 
 // Mencari element berdasarkan nama tag
 document.getElementsByTagName(name)
+document.getElementsByTagName('h1')
 
 // Mencari element berdasarkan class
 document.getElementsByClassName(name)
+document.getElementsByClassName('card')
 ```
 
 ### 2.2. Manipulasi Element
