@@ -39,9 +39,10 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 
     - :books: [Pengenalan Javascript](dasar/javascript/pengenalan-javascript.md)
     - :books: [Array dan Objek](dasar/javascript/array-dan-objek.md)
+    - :books: Fungsi
     - :books: [Manipulasi DOM](dasar/javascript/manipulasi-dom.md)
     - :books: [Event](dasar/javascript/event.md)
-    - :books: [Local Storage](dasar/javascript/local-storage.md)
+    - :books: [XML HTTP Request](dasar/javascript/xmlhttprequest.md)
     - :computer: Membuat Aplikasi Web Sederhana
 
 5.  **Relasional Database**
