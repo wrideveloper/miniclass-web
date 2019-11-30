@@ -2,23 +2,11 @@
 
 ![code](code.jpeg)
 
-## 1. Apa Itu DOM ?
+## 1. Penjelasan DOM
 
-**DOM** (Document Object Model) merupakan API dari dokumen HTML dan XML yang berisi struktur dari dokumen yang telah dimuat di browser kita, file HTML yang kita buka di browser akan diproses oleh DOM parser dan akan berubah menjadi bentuk DOM
+DOM (Document Object Model) merupakan object yang berisi struktur dari halaman web kita. DOM berasal dari script HTML yang telah dimuat di browser.
 
 ![dom-parser](dom-parser.jpg)
-
-DOM dapat kita manipulasi strukturnya, artinya struktur dokumen HTML yang sudah dimuat di browser bisa kita manipulasi dengan menggunakan javascript, hal ini akan sangat membantu dalam membuat interface yang interaktif, misalnya membuat pop up menu, slider, animasi, dan sebagainya.
-
-**Untuk mengenal lebih lanjut seputar DOM bisa dibaca di artikel berikut :**
-
-[https://www.w3.org/TR/WD-DOM/introduction.html](https://www.w3.org/TR/WD-DOM/introduction.html)
-
-**Banyak yang salah paham terhadap DOM dan menganggap bahwa struktur DOM sama seperti struktur yang ada di file HTML :**
-
-[https://css-tricks.com/dom/](https://css-tricks.com/dom/)
-
-**kesimpulan** : struktur DOM yang sudah dimuat di browser bisa jadi berbeda dengan struktur file HTML sebelum dimuat di browser
 
 ## 2. Manipulasi DOM dengan Javascript
 
@@ -30,16 +18,13 @@ Sebelum memanipulasi dom, kita perlu menentukan element apa yang akan kita manip
 
 ```javascript
 // Mencari element berdasarkan ID
-document.getElementById(id)
-document.getElementById('header')
+document.getElementById('id')
 
 // Mencari element berdasarkan nama tag
-document.getElementsByTagName(name)
-document.getElementsByTagName('h1')
+document.getElementsByTagName('tagName')
 
 // Mencari element berdasarkan class
-document.getElementsByClassName(name)
-document.getElementsByClassName('card')
+document.getElementsByClassName('className')
 ```
 
 ### 2.2. Manipulasi Element
@@ -51,9 +36,6 @@ var element = document.getElementById('header')
 
 // merubah isi dari element
 element.innerHTML = value
-
-// merubah attribute dari element
-element.attribute = value
 
 // merubah style dari element
 element.style.property = value
