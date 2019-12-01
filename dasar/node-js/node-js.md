@@ -4,12 +4,41 @@
 
 ## 1. Penjelasan Node.js
 
-Node.js merupakan runtime environment javascript yang dibangun menggunakan javascript engine milik chrome bernama V8.
+Node.js merupakan runtime environment javascript yang membuat javascript dapat berjalan di server
 
-Runtime environment merupakan tempat dimana suatu aplikasi dapat berjalan, misalnya aplikasi java akan berjalan pada JVM (Java Virtual Machine), sedangkan aplikasi javascript berjalan pada Node.js, karena Node.js inilah javascript saat ini dapat berjalan di server, mobile (dengan react native), IOT, robotik, desktop, dan masih banyak lagi.
+## 2. Install Node.js
 
-## 2. Referensi
+### 2.1. Windows
 
-**website resmi nodejs** - [https://nodejs.org](https://nodejs.org)
+Download instalasi node.js untuk windows pada link berikut :
 
-**dokumentasi nodejs** - [https://nodejs.org/en/docs/](https://nodejs.org/en/docs/)
+https://nodejs.org/en/download/
+
+### 2.2. Ubuntu
+
+Gunakan perintah berikut untuk menginstall node.js versi 13 pada ubuntu
+
+```bash
+curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
+sudo apt install nodejs
+```
+
+## 3. Hello World
+
+### 3.1. Membuat Script Node.js
+
+Untuk membuat script node.js, buatlah sebuah file dengan ekstensi `.js`, misalnya `index.js`
+
+```javascript
+// index.js
+
+console.log('hello world')
+```
+
+### 3.2. Menjalankan Script Node.js
+
+Kemudian untuk menjalankan script tersebut, gunakanlah perintah `node`
+
+```bash
+node index.js
+```
