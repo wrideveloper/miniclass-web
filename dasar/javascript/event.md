@@ -56,27 +56,6 @@ button.onclick = function() {
 }
 ```
 
-#### 2.2.3 Menggunakan Fungsi `addEventListener()`
-
-Untuk menambahkan beberapa event handler pada satu element, kita dapat menggunakan fungsi `addEventListener()`
-
-```javascript
-// index.js
-
-// ambil element yang akan ditambahkan event handler
-var button = document.getElementById("id")
-
-// tambahkan event handler pada onclick
-button.addEventListener("click", function() {
-  console.log('event click terjadi')
-})
-
-// kita bisa menambahkan event handler lagi pada onclick
-button.addEventListener("click", function() {
-  console.log('ini juga akan dijalankan saat click')
-})
-```
-
 ## 3. Event Object
 
 Sebuah event handler akan mendapatkan object `event` sebagai parameter pertama yang berisi informasi terkait event yang sedang terjadi
@@ -85,20 +64,16 @@ Sebuah event handler akan mendapatkan object `event` sebagai parameter pertama y
 // index.js
 
 var button = document.getElementById("id-button")
-button.addEventListener("click", function(event) {
+button.onclick = function(event) {
   // menampilkan button mouse mana yang diklik (kanan atau kiri)
   console.log(event.button)
-})
+}
 
 var input = document.getElementById("id-input")
-input.addEventListener("keydown", function(event) {
-  // menampilkan tombol keyboard mana yang ditekan
-  console.log(event.key)
-})
-input.addEventListener("change", function(event) {
+input.onchange = function(event) {
   // menampilkan value dari input setelah valuenya berubah
   console.log(event.target.value)
-})
+}
 ```
 
 ## 4. Referensi

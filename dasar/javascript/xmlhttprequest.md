@@ -41,7 +41,7 @@ xhttp.onreadystatechange = function() {
   if (xhttp.readyState == 4 && xhttp.status == 200) {
     // tampilkan response dari server saat request berhasil
     console.log(xhttp.responseText)
-  } else {
+  } else if (xhttp.readyState == 4 && xhttp.status != 200) {
     // lakukan sesuatu ketika request gagal
   }
 }
@@ -58,11 +58,34 @@ xhttp.open('GET', 'https://jsonplaceholder.typicode.com/users')
 xhttp.onreadystatechange = function() {
   if (xhttp.readyState == 4 && xhttp.status == 200) {
     console.log(xhttp.responseText)
-  } else {
+  } else if (xhttp.readyState == 4 && xhttp.status != 200) {
     // lakukan sesuatu ketika request gagal
   }
 }
 
 // mengirim request ke server
 xhttp.send()
+```
+
+## 3. Mengirim JSON ke Server
+
+```javascript
+// index.js
+
+var xhttp = new XMLHttpRequest()
+xhttp.open('POST', 'https://jsonplaceholder.typicode.com/users')
+
+xhttp.onreadystatechange = function() {
+  if (xhttp.readyState == 4 && xhttp.status == 200) {
+    console.log(xhttp.responseText)
+  } else if (xhttp.readyState == 4 && xhttp.status != 200) {
+    // lakukan sesuatu ketika request gagal
+  }
+}
+
+// set content type sebagai json
+xhttp.setRequestHeader('Content-Type', 'application/json')
+
+// mengirim json ke server
+xhttp.send(JSON.stringify({ name: 'aka', phone: '085674567678' }))
 ```
