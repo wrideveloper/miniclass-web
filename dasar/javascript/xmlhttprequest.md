@@ -37,13 +37,8 @@ var xhttp = new XMLHttpRequest()
 xhttp.open('GET', 'https://jsonplaceholder.typicode.com/users')
 
 // menentukan apa yang akan dilakukan setelah menerima response dari server
-xhttp.onreadystatechange = function() {
-  if (xhttp.readyState == 4 && xhttp.status == 200) {
-    // tampilkan response dari server saat request berhasil
-    console.log(xhttp.responseText)
-  } else if (xhttp.readyState == 4 && xhttp.status != 200) {
-    // lakukan sesuatu ketika request gagal
-  }
+xhttp.onload = function() {
+  console.log(xhttp.responseText)
 }
 ```
 
@@ -55,12 +50,8 @@ xhttp.onreadystatechange = function() {
 var xhttp = new XMLHttpRequest()
 xhttp.open('GET', 'https://jsonplaceholder.typicode.com/users')
 
-xhttp.onreadystatechange = function() {
-  if (xhttp.readyState == 4 && xhttp.status == 200) {
-    console.log(xhttp.responseText)
-  } else if (xhttp.readyState == 4 && xhttp.status != 200) {
-    // lakukan sesuatu ketika request gagal
-  }
+xhttp.onload = function() {
+  console.log(xhttp.responseText)
 }
 
 // mengirim request ke server
@@ -75,12 +66,8 @@ xhttp.send()
 var xhttp = new XMLHttpRequest()
 xhttp.open('POST', 'https://jsonplaceholder.typicode.com/users')
 
-xhttp.onreadystatechange = function() {
-  if (xhttp.readyState == 4 && xhttp.status == 200) {
-    console.log(xhttp.responseText)
-  } else if (xhttp.readyState == 4 && xhttp.status != 200) {
-    // lakukan sesuatu ketika request gagal
-  }
+xhttp.onload = function() {
+  console.log(xhttp.responseText)
 }
 
 // set content type sebagai json
