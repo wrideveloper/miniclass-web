@@ -56,9 +56,10 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 6.  **Node.js**
 
     - :books: [Pengenalan Node.js](dasar/node-js/node-js.md)
-    - :books: [Node Package Manager](dasar/node-js/node-package-manager.md)
-    - :books: [Import Export Module](dasar/node-js/import-export-module.md)
+    - :books: [Import Export](dasar/node-js/import-export.md)
     - :books: [Node HTTP Server](dasar/node-js/node-http-server.md)
+    - :books: [Node Package Manager](dasar/node-js/node-package-manager.md)
+    - :books: [Package.json](dasar/node-js/package-json.md)
     - :books: [Node MySQL](dasar/node-js/node-mysql.md)
 
 7.  **Express.js**
