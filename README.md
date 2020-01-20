@@ -102,10 +102,10 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: [Routing](front-end/react-fundamental/routing.md)
     - :computer: Membuat Aplikasi React
 
-3.  **Consume Web API**
+3.  **Consume Web Service**
 
     - :books: Consume REST
-    - :books: Consume GraphQL
+    - :books: [Consume GraphQL](front-end/consume-web-service/graphql.md)
 
 4)  **Share Logic Between Component**
 
