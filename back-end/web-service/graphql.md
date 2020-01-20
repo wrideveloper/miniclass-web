@@ -4,7 +4,7 @@
 
 ## 1. Penjelasan GraphQL
 
-GraphQL merupakan query language seperti SQL, namun perbedaannya adalah SQL bertugas untuk melakukan query ke database, sedangkan GraphQL bertugas untuk melakukan query ke suatu web service
+GraphQL merupakan query language seperti SQL, namun perbedaannya adalah SQL bertugas untuk melakukan query ke database, sedangkan GraphQL bertugas untuk melakukan query ke suatu web service yang menjalankan GraphQL server
 
 ## 2. Mengapa Menggunakan GraphQL
 
@@ -28,6 +28,7 @@ const Biodata = {
   jenisKelamin: boolean
 }
 ```
+
 Misalnya dari data biodata diatas, client hanya membutuhkan `nama` saja, hal ini tidak dapat kita lakukan karena REST akan memberikan seluruh field yang dimiliki dan membuat kita menjadi boros
 
 Dengan menggunakan GraphQL maka client bisa menentukan field apa saja yang ia butuhkan, sehingga tidak boros resource
@@ -54,7 +55,7 @@ Sebelum membuat GraphQL server, mari kita pahami dulu cara kerja dari GraphQL se
 
 ### 4.1. GraphQL Server
 
-GraphQL server merupakan server yang dapat menerima query GraphQL dan memberikan data berdasarkan permintaan client, untuk membuat GraphQL server kita bisa menggunakan package yang bernama `graphql` ditambah dengan framework web seperti `express` 
+GraphQL server merupakan server yang dapat menerima query GraphQL dan memberikan data berdasarkan permintaan client, untuk membuat GraphQL server kita bisa menggunakan package yang bernama `graphql` ditambah dengan framework web seperti `express`
 
 ### 4.2. Schema
 
@@ -91,7 +92,7 @@ Kita bisa membuat sebuah schema dengan menggunakan fungsi `buildSchema`, kita ti
 ```javascript
 // schema.js
 
-const { buildSchema } = require("graphql")
+const { buildSchema } = require('graphql')
 
 const schema = buildSchema(`
   type Biodata {
@@ -128,35 +129,35 @@ Kali ini kita akan membuat sebuah variabel yang berisi data biodata untuk mensim
 
 const biodata = [
   {
-    nama: "Budi",
-    alamat: "Probolinggo"
+    nama: 'Budi',
+    alamat: 'Probolinggo'
   },
   {
-    nama: "Yanto",
-    alamat: "Malang"
+    nama: 'Yanto',
+    alamat: 'Malang'
   }
 ]
 
 const resolver = {
-  getBiodata: function () {
+  getBiodata: function() {
     return biodata
   },
 
-  getBiodataByIndex: function (args) {
+  getBiodataByIndex: function(args) {
     return biodata[args.index]
   },
 
-  createBiodata: function (args) {
+  createBiodata: function(args) {
     biodata.push(args.biodata)
     return args.biodata
   },
 
-  updateBiodata: function (args) {
+  updateBiodata: function(args) {
     biodata[args.index] = args.biodata
     return args.biodata
   },
 
-  deleteBiodata: function (args) {
+  deleteBiodata: function(args) {
     biodata.splice(args.index, 1)
     return null
   }
@@ -172,17 +173,20 @@ Terakhir kita tinggal menggabungkan schema dan resolver dengan membuat sebuah se
 ```javascript
 // index.js
 
-const express = require("express")
-const expressGraphql = require("express-graphql")
-const schema = require("./schema")
-const rootValue = require("./resolver")
+const express = require('express')
+const expressGraphql = require('express-graphql')
+const schema = require('./schema')
+const rootValue = require('./resolver')
 
 const app = express()
-app.use("/graphql", expressGraphql({
-  schema,
-  rootValue,
-  graphiql: true
-}))
+app.use(
+  '/graphql',
+  expressGraphql({
+    schema,
+    rootValue,
+    graphiql: true
+  })
+)
 
 app.listen(3000)
 ```

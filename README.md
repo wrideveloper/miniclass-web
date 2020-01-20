@@ -96,24 +96,25 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: [Props](front-end/react-fundamental/props.md)
     - :books: [Event](front-end/react-fundamental/event.md)
     - :books: [State](front-end/react-fundamental/state.md)
+    - :books: Passing Data to Parent Component
     - :books: Component Lifecycle
     - :books: [Styling Component](front-end/react-fundamental/styling-component.md)
-
-3.  **React Advanced**
-
-    - :books: Passing Data to Parent Component
-    - :books: Using Web API
-    - :books: [Routing](front-end/react-advanced/routing.md)
+    - :books: [Routing](front-end/react-fundamental/routing.md)
     - :computer: Membuat Aplikasi React
 
-4.  **Share Logic Between Component**
+3.  **Consume Web API**
+
+    - :books: Consume REST
+    - :books: Consume GraphQL
+
+4)  **Share Logic Between Component**
 
     - :books: [Higher Order Component](front-end/share-logic-between-component/higher-order-component.md)
     - :books: [Render Props](front-end/share-logic-between-component/render-props.md)
     - :books: [Context](front-end/share-logic-between-component/context.md)
     - :books: Hooks
 
-5.  **React Component Pattern**
+5)  **React Component Pattern**
 
     - :books: Container vs Presentional Component
     - :books: Compound Component
