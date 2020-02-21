@@ -28,13 +28,109 @@ Inline block mirip dengan inline, yaitu akan selalu mengikuti baris yang sudah a
 
 Flexbox (Flexible Box) merupakan cara terbaru untuk melakukan layouting pada web yang mendukung design responsive
 
-Ciri khas dari flexbox yaitu kita dapat mendesain layout berdasarkan containernya, sedangkan child elementnya dapat memiliki size yang berbeda - beda namun tetap responsive
-
 ![flexbox-layout](flexbox-layout.png)
 
-**Beberapa referensi untuk belajar layouting dengan css grid :**
+### 4.1 Cara Menggunakan Flexbox
+
+Sebelum belajar menggunakan flexbox, perlu diketahui ada dua istilah yang akan sering disebutkan saat menggunakan flexbox, yaitu `container` dan `item`
+
+<img src="./container.svg" width="500">
+<img src="./items.svg" width="500">
+
+Dari gambar diatas, dapat disimpulkan bahwa `container` merupakan elemen yang membungkus `item`
+
+#### 4.1.1 Mengaktifkan Flexbox
+
+Untuk mengaktifkan flexbox, maka tambahkan `display: flexbox` pada `container`
+
+```html
+<!-- index.html -->
+<div class="container">
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+</div>
+```
+
+```css
+/* index.css */
+.container {
+  display: flex; /* mengaktifkan flexbox */
+}
+
+/* berikan width dan height pada item agar hasilnya terlihat */
+.item {
+  width: 100px;
+  height: 100px;
+}
+```
+
+Maka secara otomatis, semua `item` yang berada di dalam `container` akan berjajar kesamping
+
+#### 4.1.2 Mengatur Align Secara Horizontal
+
+Untuk mengatur align atau perataan secara horizontal, gunakan `justify-content` pada container
+
+```html
+<!-- index.html -->
+<div class="container">
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+</div>
+```
+
+```css
+/* index.css */
+.container {
+  display: flex;
+  justify-content: center; /* mengatur layout agar ke tengah secara horizontal */
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+}
+```
+
+Berikut beberapa pilihan yang dapat digunakan pada `justify content`
+
+<img src="./justify-content.svg" width="300">
+
+#### 4.1.2 Mengatur Align Secara Vertikal
+
+Untuk mengatur align atau perataan secara vertikal, gunakan `align-items` pada container
+
+```html
+<!-- index.html -->
+<div class="container">
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+</div>
+```
+
+```css
+/* index.css */
+.container {
+  display: flex;
+  align-items: center; /* mengatur layout agar ke tengah secara vertikal */
+  height: 800px; /* pastikan tinggi container lebih tinggi daripada item */
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+}
+```
+
+Berikut beberapa pilihan yang dapat digunakan pada `align-items`
+
+<img src="./align-items.svg" width="300">
+
+### 4.2 Referensi Materi Flexbox
+
+Beberapa referensi untuk belajar layouting dengan flexbox :
 
 1. [Dasar CSS Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-2. [Layouting dengan CSS Flexbox](https://www.youtube.com/playlist?list=PL4cUxeGkcC9i3FXJSUfmsNOx8E7u6UuhG)
-3. [Cheatsheet flexbox](flexboxsheet.png)
-4. [Membuat UI dengan flexbox](https://www.flexboxpatterns.com/)
+2. [Cheatsheet flexbox](flexboxsheet.png)

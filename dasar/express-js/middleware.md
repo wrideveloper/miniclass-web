@@ -2,19 +2,21 @@
 
 ![middleware](middleware.png)
 
-## 1. Pengertian Middleware
+## 1. Permasalahan
 
-Middleware merupakan fungsi - fungsi yang akan dijalankan sebelum suatu request mencapai endpoint tujuan
+Biasanya, sebelum request dari client sampai ke tujuan. Perlu dilakukan sesuatu terhadap request tersebut. Misalnya autentikasi, sehingga hanya request yang sudah tervalidasi yang dapat dilanjutkan ke tujuan
+
+## 2. Penjelasan Middleware
+
+Middleware merupakan fungsi yang dijalankan sebelum suatu request mencapai endpoint tujuan
 
 ![middleware](middleware-detail.png)
 
-Suatu middleware dapat melewatkan request ke middleware selanjutnya hingga akhirnya request tersebut mencapai endpoint, atau mengakhiri request dengan response nya sendiri
+Suatu middleware dapat melanjutkan request ke middleware selanjutnya hingga mencapai tujuan. Selain itu middleware juga dapat mengakhiri request dengan response nya sendiri
 
-Middleware ini biasanya digunakan untuk melakukan autentikasi request, dimana hanya request yang sudah valid lah yang boleh menuju ke endpoint, selain itu maka request akan ditolak, selain autentikasi masih banyak middleware yang dapat digunakan misalnya parsing json dengan `express.json()`
+## 3. Cara Membuat Middleware pada Express.js
 
-## 2. Cara Menggunakan Middleware
-
-Untuk menggunakan middleware, kita bisa menggunakan `app.use()` sebelum endpoint tujuan
+Untuk membuat middleware, kita dapat menggunakan perintah `app.use`, dimana perintah tersebut harus diletakaan sebelum `app.get` yang menjadi tujuan akhir. Untuk melanjutkan request, kita harus menjalankan fungsi `next()`
 
 ```javascript
 const app = express()
@@ -31,25 +33,25 @@ app.get('/', function(req, res) {
 })
 ```
 
-Pada script diatas, kita meletakkan `app.use()` sebelum `app.get()`, sehingga apabila ada request dari client maka middleware kita akan dilewati terlebih dahulu sebelum sampai ke endpoint, perintah `next()` digunakan untuk melanjutkan request, apabila kita tidak menuliskan perintah `next()` maka request akan berhenti pada middleware tersebut.
+## 4. Contoh Middleware untuk Autentikasi
 
-## 3. Menggunakan Middleware Pada Endpoint Tertentu
-
-Kita juga bisa menerapkan middleware hanya ketika client menuju ke suatu endpoint tertentu, caranya adalah dengan memasukkan url kedalam parameter pertama
+Untuk membuat middleware, kita dapat menggunakan perintah `app.use`, dimana perintah tersebut harus diletakaan sebelum `app.get` yang menjadi tujuan akhir. Untuk melanjutkan request, kita harus menjalankan fungsi `next()`
 
 ```javascript
 const app = express()
 
-// middleware /produk
-app.use('/produk', function(req, res, next) {
-  console.log('middleware dilewati')
-  next()
+// validasi nama user
+app.use(function(req, res, next) {
+  if (req.query.user == 'budi') {
+    console.log('validasi sukses')
+    next()
+  } else {
+    res.send('access forbidden')
+  }
 })
 
-// endpoint tujuan
+// endpoint ini hanya akan dicapai apabila validasi middleware sukses
 app.get('/', function(req, res) {
-  res.send('endpoint tercapai')
+  res.send('selamat datang ' + req.query.user)
 })
 ```
-
-Pada script diatas, kita menerapkan middleware hanya ketika client mengunjungi URL `/produk`, selain itu maka middleware yang kita buat tidak akan diterapkan

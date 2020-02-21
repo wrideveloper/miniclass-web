@@ -39,50 +39,38 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 
     - :books: [Pengenalan Javascript](dasar/javascript/pengenalan-javascript.md)
     - :books: [Array dan Objek](dasar/javascript/array-dan-objek.md)
+    - :books: [Fungsi](dasar/javascript/fungsi.md)
     - :books: [Manipulasi DOM](dasar/javascript/manipulasi-dom.md)
     - :books: [Event](dasar/javascript/event.md)
-    - :books: [Local Storage](dasar/javascript/local-storage.md)
+    - :books: [XML HTTP Request](dasar/javascript/xmlhttprequest.md)
     - :computer: Membuat Aplikasi Web Sederhana
 
-5.  **Relasional Database**
-
-    - :books: Pengenalan Database
-    - :books: Structured Query Language
-    - :books: [Data Definition Language](dasar/relational-database/DDL.md)
-    - :books: [Data Manipulation Language](dasar/relational-database/DML.md)
-    - :books: [Relasi Antar Tabel](dasar/relational-database/relasi-antar-table.md)
-
-6.  **Node.js**
+5.  **Node.js**
 
     - :books: [Pengenalan Node.js](dasar/node-js/node-js.md)
+    - :books: [Membuat Server HTTP](dasar/node-js/http-server.md)
+    - :books: [Routing Sederhana](dasar/node-js/routing.md)
+    - :books: [Import Export](dasar/node-js/import-export.md)
     - :books: [Node Package Manager](dasar/node-js/node-package-manager.md)
-    - :books: [Import Export Module](dasar/node-js/import-export-module.md)
-    - :books: [Node HTTP Server](dasar/node-js/node-http-server.md)
-    - :books: [Node MySQL](dasar/node-js/node-mysql.md)
+    - :books: [Package.json](dasar/node-js/package-json.md)
 
-7.  **Express.js**
+6.  **Express.js**
 
     - :books: [Pengenalan Express.js](dasar/express-js/pengenalan-express-js.md)
     - :books: [Membuat Server dengan Express.js](dasar/express-js/membuat-server-dengan-express-js.md)
-    - :books: [Request dan Response](dasar/express-js/request-dan-response.md)
-    - :books: [Middleware](dasar/express-js/middleware.md)
-    - :books: [Request Body](dasar/express-js/request-body.md)
-    - :books: [Serving Static File](dasar/express-js/static-file-assets.md)
     - :books: [Routing](dasar/express-js/routing.md)
-    - :books: [Model View Controller](dasar/express-js/mvc.md)
-
-8.  **Kolaborasi Backend dan Frontend**
-    - :books: [Web Service](dasar/backend-frontend/web-service.md)
-    - :books: [AJAX](dasar/backend-frontend/ajax.md)
-    - :books: [Synchronous vs Asynchronous](dasar/backend-frontend/synchronous-vs-asynchronous.md)
-    - :computer: Membuat Aplikasi Backend dan Frontend Sederhana
+    - :books: [Menerima Data dari URL](dasar/express-js/handle-data-url.md)
+    - :books: [Middleware](dasar/express-js/middleware.md)
+    - :books: [Menerima Data dari Body](dasar/express-js/handle-data-body.md)
+    - :books: [Koneksi ke Database MySQL](dasar/express-js/node-mysql.md)
+    - :books: [Memisah Routing](dasar/express-js/memisah-routing.md)
+    - :books: [MVC](dasar/express-js/mvc.md)
 
 ### :sunflower: Materi Frontend
 
 1.  **Modern Frontend Development**
 
     - :books: [ECMAScript](front-end/modern-frontend-development/ecmascript.md)
-    - :books: [Task Runner](front-end/modern-frontend-development/task-runner.md)
     - :books: [Module Bundler](front-end/modern-frontend-development/module-bundler.md)
 
 2.  **React Fundamental**
@@ -95,49 +83,51 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: [Event](front-end/react-fundamental/event.md)
     - :books: [State](front-end/react-fundamental/state.md)
     - :books: [Component Lifecycle](front-end/react-fundamental/component-lifecycle.md)
-    - :books: [Styling Component](front-end/react-fundamental/styling-component.md)
-
-3.  **React Advanced**
-
     - :books: Passing Data to Parent Component
-    - :books: Using Web API
-    - :books: [Routing](front-end/react-advanced/routing.md)
+    - :books: Component Lifecycle
+    - :books: [Styling Component](front-end/react-fundamental/styling-component.md)
+    - :books: [Routing](front-end/react-fundamental/routing.md)
     - :computer: Membuat Aplikasi React
 
-4.  **Share Logic Between Component**
+3.  **Consume Web Service**
+
+    - :books: Consume REST
+    - :books: [Consume GraphQL](front-end/consume-web-service/graphql.md)
+
+4)  **Share Logic Between Component**
 
     - :books: [Higher Order Component](front-end/share-logic-between-component/higher-order-component.md)
     - :books: [Render Props](front-end/share-logic-between-component/render-props.md)
     - :books: [Context](front-end/share-logic-between-component/context.md)
     - :books: Hooks
 
-5.  **React Component Pattern**
+5)  **React Component Pattern**
 
     - :books: Container vs Presentional Component
     - :books: Compound Component
 
 ### :japanese_ogre: Materi Backend
 
-1.  **Object Relational Mapping**
+1. **Object Relational Mapping**
 
-    - :books: [Pengenalan Object Relational Mapping](back-end/object-relational-mapping/pengenalan-orm.md)
+   - :books: [Pengenalan Object Relational Mapping](back-end/object-relational-mapping/pengenalan-orm.md)
 
-2.  **Document Oriented Database**
+2. **Document Oriented Database**
 
-    - :books: [Document Oriented Database](back-end/document-oriented-database/document-oriented-database.md)
-    - :books: [Object Document Mapping](back-end/document-oriented-database/object-document-mapping.md)
+   - :books: [Document Oriented Database](back-end/document-oriented-database/document-oriented-database.md)
+   - :books: [Object Document Mapping](back-end/document-oriented-database/object-document-mapping.md)
 
-3.  **Web Service**
+3. **Web Service**
 
-    - :books: [REST](back-end/web-service/rest.md)
-    - :books: [GraphQL](back-end/web-service/graphql.md)
+   - :books: [REST](back-end/web-service/rest.md)
+   - :books: [GraphQL](back-end/web-service/graphql.md)
 
-4.  **Autentikasi**
+4. **Autentikasi**
 
-    - :books: [JSON Web Token](back-end/autentikasi/json-web-token.md)
-    - :computer: Membuat Web Service Sederhana
+   - :books: [JSON Web Token](back-end/autentikasi/json-web-token.md)
+   - :computer: Membuat Web Service Sederhana
 
-5.  **Microservices**
+5. **Microservices**
 
     - :books: [Microservices](back-end/microservice/microservice.md)
     - :books: Microservices Gateway
@@ -145,6 +135,6 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: Remote Procedure Call
     - :computer: Membuat Micro Service Sederhana
 
-6.  **Searching**
+6. **Searching**
 
-7.  **Caching**
+7. **Caching**
