@@ -82,6 +82,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: [Props](front-end/react-fundamental/props.md)
     - :books: [Event](front-end/react-fundamental/event.md)
     - :books: [State](front-end/react-fundamental/state.md)
+    - :books: [Component Lifecycle](front-end/react-fundamental/component-lifecycle.md)
     - :books: Passing Data to Parent Component
     - :books: Component Lifecycle
     - :books: [Styling Component](front-end/react-fundamental/styling-component.md)
@@ -128,11 +129,11 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 
 5. **Microservices**
 
-   - :books: Microservices
-   - :books: Microservices Gateway
-   - :books: Message Queue
-   - :books: Remote Procedure Call
-   - :computer: Membuat Micro Service Sederhana
+    - :books: [Microservices](back-end/microservice/microservice.md)
+    - :books: Microservices Gateway
+    - :books: Message Queue
+    - :books: Remote Procedure Call
+    - :computer: Membuat Micro Service Sederhana
 
 6. **Searching**
 
