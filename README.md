@@ -63,8 +63,6 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: [Middleware](dasar/express-js/middleware.md)
     - :books: [Menerima Data dari Body](dasar/express-js/handle-data-body.md)
     - :books: [Koneksi ke Database MySQL](dasar/express-js/node-mysql.md)
-    - :books: [Memisah Routing](dasar/express-js/memisah-routing.md)
-    - :books: [MVC](dasar/express-js/mvc.md)
 
 ### :sunflower: Materi Frontend
 
@@ -110,24 +108,31 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 
 1. **Object Relational Mapping**
 
-   - :books: [Pengenalan Object Relational Mapping](back-end/object-relational-mapping/pengenalan-orm.md)
+   - :books: [Object Relational Mapping](back-end/object-relational-mapping/pengenalan-orm.md)
 
 2. **Document Oriented Database**
 
    - :books: [Document Oriented Database](back-end/document-oriented-database/document-oriented-database.md)
    - :books: [Object Document Mapping](back-end/document-oriented-database/object-document-mapping.md)
 
-3. **Web Service**
+3. **Backend Architecture Layer**
+
+   - :books: Routes
+   - :books: Controller
+   - :books: Services
+   - :books: Data Access
+
+4. **Web Service**
 
    - :books: [REST](back-end/web-service/rest.md)
    - :books: [GraphQL](back-end/web-service/graphql.md)
 
-4. **Autentikasi**
+5. **Autentikasi**
 
    - :books: [JSON Web Token](back-end/autentikasi/json-web-token.md)
    - :computer: Membuat Web Service Sederhana
 
-5. **Microservices**
+6. **Microservices**
 
     - :books: [Microservices](back-end/microservice/microservice.md)
     - :books: Microservices Gateway
@@ -135,6 +140,6 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: Remote Procedure Call
     - :computer: Membuat Micro Service Sederhana
 
-6. **Searching**
+7. **Searching**
 
-7. **Caching**
+8. **Caching**
