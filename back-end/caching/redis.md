@@ -20,7 +20,7 @@ Kita dapat menggunakan cache agar dapat meningkatkan kecepatan, mengurangi pengg
 
 Redis, singkatan dari Remote Dictionary Server, adalah penyimpanan data nilai utama di dalam memori yang super cepat dengan sumber terbuka untuk digunakan sebagai database, cache, broker pesan, dan antrean. Redis adalah database temporary dan bersifat No SQL.
 
-### 4.1. Install MongoDB
+### 4.1. Install Redis
 
 Silahkan ikuti tutorial berikut berdasarkan platform yang digunakan
 
