@@ -143,3 +143,4 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 7. **Searching**
 
 8. **Caching**
+    - :books: [Redis](back-end/caching/redis.md)
