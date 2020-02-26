@@ -142,7 +142,9 @@ https://github.com/alfaben12/express-redis-caching
 ### 4.7. Perbandingan
 
 Sebelum menggunakan redis
+
 <img src="before-redis.png" width="500px" />
 
 Sesudah menggunakan redis
+
 <img src="after-redis.png" width="500px" />
