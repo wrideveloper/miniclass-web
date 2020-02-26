@@ -4,7 +4,8 @@ Dengan menggunakan HTML, kita bisa malakukan formatting terhadap text, seperti m
 
 ## 1. Heading
 
-Heading digunakan untuk menuliskan judul, terdapat enam jenis heading, diurutkan tergantung dari pentingnya dan ukurannya, menggunakan angka seperti `h1`, `h2`, `h3`, `h4`, `h5`, `h6`,
+Heading digunakan untuk menuliskan judul, terdapat enam jenis heading, diurutkan tergantung dari pentingnya dan ukurannya, menggunakan angka seperti `h1`, `h2`, `h3`, `h4`, `h5`, dan `h6`.
+Semakin kecil angka yang ada pada tag `h`, maka Heading akan semakin besar
 
 ```
 <h1>Ini heading 1 loh</h1>
@@ -14,6 +15,9 @@ Heading digunakan untuk menuliskan judul, terdapat enam jenis heading, diurutkan
 <h5>Ini heading 5 loh</h5>
 <h6>Ini heading 6 loh</h6>
 ```
+
+Output :
+![heading](heading.png)
 
 ## 2. Paragraph
 
@@ -28,6 +32,9 @@ Paragraph digunakan untuk mengelompokkan kumpulan text kedalam satu paragraph, u
 </p>
 ```
 
+Output :
+![paragraf](paragraf.png)
+
 ## 3. Styling Text
 
 Styling umum yang dapat digunakan antara lain bold `b`, italic `i`, underline `u`, dan strike-through `s`.
@@ -41,3 +48,6 @@ Styling umum yang dapat digunakan antara lain bold `b`, italic `i`, underline `u
 
 <s>mencoret text</s>
 ```
+
+Output :
+![style](style.png)
