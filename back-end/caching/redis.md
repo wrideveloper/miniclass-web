@@ -143,8 +143,8 @@ https://github.com/alfaben12/express-redis-caching
 
 Sebelum menggunakan redis
 
-<img src="before-redis.png" width="500px" />
+<img src="before-redis.png" width="100%" />
 
 Sesudah menggunakan redis
 
-<img src="after-redis.png" width="500px" />
+<img src="after-redis.png" width="100%" />
