@@ -19,7 +19,7 @@ Ordered list merupakan list yang berurutan, sehingga setiap itemnya akan diberi 
 
 disana juga terdapat tag `li` yang digunakan untuk membuat list item, sehingga untuk setiap item pada list tersebut perlu kita bungkus dengan tag `li`.
 
-Contoh tampilan Ordered List :
+Contoh tampilan Ordered List :  
 ![ordered-list](orderedList.jpg)
 
 ### 2.2. Unordered List
@@ -35,5 +35,5 @@ Unordered list merupakan list yang tidak berurutan, sehingga setiap item pada li
 
 disana juga terdapat tag `li` yang digunakan untuk membuat list item, sehingga untuk setiap item pada list tersebut perlu kita bungkus dengan tag `li`.
 
-Contoh tampilan Unordered List :
+Contoh tampilan Unordered List :  
 ![unordered-list](unorderedList.jpg)
