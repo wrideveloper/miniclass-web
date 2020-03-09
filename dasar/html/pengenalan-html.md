@@ -4,6 +4,16 @@
 
 Hypertext Markup Language (HTML) adalah satu dari banyak bahasa markup yang digunakan untuk menentukan struktur dari website yang akan kita buat.
 
+blablablablablalba
+geaigaeihjaehar
+hrahraharharh
+arhar
+hgaegaegae
+haehaehaeh
+ar
+harh
+a
+
 ## 2. Cara Penulisan
 
 Sintaks atau cara penulisan HTML biasanya terlihat seperti ini:
