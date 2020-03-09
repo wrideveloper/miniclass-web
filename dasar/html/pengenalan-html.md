@@ -1,6 +1,6 @@
 # Pengenalan HTML
 
-## 1. Penjelasan HTML
+## 1. Penjelasan HMML
 
 Hypertext Markup Language (HTML) adalah satu dari banyak bahasa markup yang digunakan untuk menentukan struktur dari website yang akan kita buat.
 
