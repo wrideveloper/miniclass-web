@@ -3,6 +3,10 @@
 Selamat datang di Miniclass Web - Workshop Riset Informatika,
 disini materi yang akan diajarkan yaitu diawali dengan materi Web dasar, baru kemudian selanjutnya akan difokuskan ke materi web tingkat lanjut (Frontend atau Backend).
 
+### :two_hearts: Kontributor
+
+Silahkan kunjungi [panduan berikut](CONTRIBUTION.md) untuk melakukan kontribusi
+
 ### :books: Materi Web Dasar
 
 Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
@@ -53,7 +57,6 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: [Import Export](dasar/node-js/import-export.md)
     - :books: [Node Package Manager](dasar/node-js/node-package-manager.md)
     - :books: [Package.json](dasar/node-js/package-json.md)
-    - :books: [Nodemon](dasar/node-js/nodemon.md)
 
 6.  **Express.js**
 
@@ -64,6 +67,8 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: [Middleware](dasar/express-js/middleware.md)
     - :books: [Menerima Data dari Body](dasar/express-js/handle-data-body.md)
     - :books: [Koneksi ke Database MySQL](dasar/express-js/node-mysql.md)
+    - :books: [Memisah Routing](dasar/express-js/memisah-routing.md)
+    - :books: [MVC](dasar/express-js/mvc.md)
 
 ### :sunflower: Materi Frontend
 
@@ -81,7 +86,6 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: [Props](front-end/react-fundamental/props.md)
     - :books: [Event](front-end/react-fundamental/event.md)
     - :books: [State](front-end/react-fundamental/state.md)
-    - :books: [Component Lifecycle](front-end/react-fundamental/component-lifecycle.md)
     - :books: Passing Data to Parent Component
     - :books: Component Lifecycle
     - :books: [Styling Component](front-end/react-fundamental/styling-component.md)
@@ -109,38 +113,31 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 
 1. **Object Relational Mapping**
 
-   - :books: [Object Relational Mapping](back-end/object-relational-mapping/pengenalan-orm.md)
+   - :books: [Pengenalan Object Relational Mapping](back-end/object-relational-mapping/pengenalan-orm.md)
 
 2. **Document Oriented Database**
 
    - :books: [Document Oriented Database](back-end/document-oriented-database/document-oriented-database.md)
    - :books: [Object Document Mapping](back-end/document-oriented-database/object-document-mapping.md)
 
-3. **Backend Architecture Layer**
-
-   - :books: Routes
-   - :books: Controller
-   - :books: Services
-   - :books: Data Access
-
-4. **Web Service**
+3. **Web Service**
 
    - :books: [REST](back-end/web-service/rest.md)
    - :books: [GraphQL](back-end/web-service/graphql.md)
 
-5. **Autentikasi**
+4. **Autentikasi**
 
    - :books: [JSON Web Token](back-end/autentikasi/json-web-token.md)
    - :computer: Membuat Web Service Sederhana
 
-6. **Microservices**
+5. **Microservices**
 
-    - :books: [Microservices](back-end/microservice/microservice.md)
-    - :books: Microservices Gateway
-    - :books: Message Queue
-    - :books: Remote Procedure Call
-    - :computer: Membuat Micro Service Sederhana
+   - :books: Microservices
+   - :books: Microservices Gateway
+   - :books: Message Queue
+   - :books: Remote Procedure Call
+   - :computer: Membuat Micro Service Sederhana
 
-7. **Searching**
+6. **Searching**
 
-8. **Caching**
+7. **Caching**
