@@ -2,31 +2,23 @@
 
 ## 1. Penjelasan CSS
 
-Cascading StyleSheet (CSS) merupakan bahasa `style sheet` yang berguna untuk membantu menyajikan dokumen yang ditulis dengan HTML. Apabila HTML hanya bisa menentukan struktur tampilannya, maka CSS dapat menentukan bagaimana gaya dari tampilan tersebut.
+ CSS adalah singkatan dari Cascading StyleSheet yang merupakan bahasa `style sheet` yang tujuan utama nya adalah untuk membantu mengatur keindahan di aplikasi web yang ditulis dengan HTML. Apabila HTML hanya bisa menentukan struktur tampilannya, maka CSS dapat menentukan bagaimana gaya dari tampilan tersebut.
 
-Apabila kita ingin membuat sebuah halaman web, maka kita akan menggunakan kombinasi dari HTML dan CSS agar tampilan web kita terstruktur dan indah
+ 
+ > 1 CSS dapat digunakan untuk banyak halaman HTML atau 1 Halaman HTML dapat terlihat berbeda jika menggunakan CSS berbeda pula.
 
-## 2. Cara Penulisan
+## 2. Cara Penulisan ( Anatomi css )
 
-Cara penulisan CSS biasanya terlihat seperti ini
+Cara penulisan strukture CSS biasanya terlihat seperti ini
 
 ```css
-h1 {
-  font-weight: 800;
-  color: gray;
-}
-p {
-  color: orange;
-}
-#website-title {
-  padding: 10px;
-}
-.container {
-  margin: 50px;
-}
-button:hover {
-  background-color: #ffecb3;
-}
+selector { property: value; }
+```
+
+contoh implementasi nya seperti ini 
+
+```css
+h1 { color: blue; }
 ```
 
 ## 3. Memasukkan CSS untuk HTML
