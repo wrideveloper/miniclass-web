@@ -18,7 +18,7 @@ selector { property: value; }
 contoh implementasi nya seperti ini 
 
 ```css
-h1 { color: blue; }
+h1 { color: red; }
 ```
 
 ## 3. Memasukkan CSS untuk HTML
