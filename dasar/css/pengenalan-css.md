@@ -2,12 +2,22 @@
 
 ## 1. Penjelasan CSS
 
- CSS adalah singkatan dari Cascading StyleSheet yang merupakan bahasa `style sheet` yang tujuan utama nya adalah untuk membantu mengatur keindahan di aplikasi web yang ditulis dengan HTML. Apabila HTML hanya bisa menentukan struktur tampilannya, maka CSS dapat menentukan bagaimana gaya dari tampilan tersebut.
+Jikalau di minggu kemarin kita belajar struktur penulisan html, menampilkan atribut html, belajar menggunakan atribut-atribut di html, maka kali ini kita akan belajar bahasa baru yaitu CSS apa itu ?
 
- 
- > 1 file CSS dapat digunakan untuk banyak halaman HTML atau 1 Halaman HTML dapat terlihat berbeda jika menggunakan file CSS berbeda pula.
+ > CSS adalah singkatan dari Cascading StyleSheet yang merupakan bahasa `style sheet` yang tujuan utama nya adalah untuk membantu kita mengatur keindahan atau style di aplikasi web yang akan kita tulis bersama dengan HTML. Apabila HTML hanya bisa menentukan struktur tampilannya, maka CSS dapat menentukan bagaimana gaya dari tampilan tersebut.
 
-## 2. Cara Penulisan ( Anatomi css )
+Untuk apa kita belajar CSS ? 
+ Alasan yang paling mendasar adalah karena css memang sangat dibutuhkan dalam mendesign aplikasi web ,karena denga css kita dapat membuat : 
+
+>    1. Halaman landing page yang menarik
+>   2. Template atau tema blog
+ >   3. Mengubah PSD (Desain web) menjadi HTML
+ >   4. dan sebagainya. 
+
+
+  *1 file CSS dapat digunakan untuk banyak halaman HTML atau 1 Halaman HTML dapat terlihat berbeda jika menggunakan file CSS berbeda pula.*
+
+## 2. Cara Penulisan ( Refactor css )
 
 Cara penulisan strukture CSS biasanya terlihat seperti ini
 
