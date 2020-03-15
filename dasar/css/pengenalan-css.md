@@ -2,7 +2,7 @@
 
 ## 1. Permasalahan
 
-Sebelumnya, kita dapat membuat struktur halaman website seperti paragraf, heading, image, list, dan sebagainya menggunakan HTML. Namun untuk membuat tampilan website yang baik dan nyaman untuk digunakan oleh user, kita juga harus melakukan styling seperti merubah warna background dan text.
+Sebelumnya, kita dapat membuat struktur halaman website seperti paragraf, heading, image, list, dan sebagainya menggunakan HTML. Namun untuk membuat tampilan website yang baik dan nyaman digunakan oleh user, kita juga harus melakukan styling seperti merubah warna background dan text.
 
 ## 2. Pengenalan CSS (Cascading Stylesheet)
 
@@ -31,7 +31,7 @@ p {
 
 ### 3.1 Selector
 
-Langkah pertama untuk membuat styling pada CSS, yaitu menentukan element apa yang ingin kita terapkan style, dimana element tersebut kita tulis pada bagian `selector`. Pada contoh diatas, kita akan menerapkan style pada element `p` atau paragraf.
+Langkah pertama untuk membuat styling pada CSS, yaitu menentukan element apa yang ingin kita terapkan style, dimana element tersebut kita tulis pada bagian `selector`. Pada contoh diatas, kita akan menerapkan style pada element `<p>` atau paragraf.
 
 Untuk mengetahui jenis - jenis selector, bisa mengunjungi link berikut
 
@@ -39,15 +39,15 @@ https://www.w3schools.com/css/css_selectors.asp
 
 ### 3.2 Property
 
-Langkah kedua, setelah menentukan element apa yang ingin kita terapkan style, selanjutnya kita menentukan property atau bagian apa yang ingin kita style dari element tersebut. Kita dapat menuliskannya pada `property`. Pada contoh diatas, kita akan mengubah `color` atau warna text dari element `p`
+Langkah kedua, setelah menentukan element apa yang ingin kita terapkan style, selanjutnya kita menentukan `property` atau bagian apa yang ingin kita style dari element tersebut. Pada contoh diatas, kita akan mengubah `color` atau warna text dari element `p`
 
-> catatan: kita dapat menuliskan lebih dari satu property pada satu selector
+> catatan : kita dapat menuliskan lebih dari satu property pada satu selector
 
 ### 3.3 Value
 
-Terakhir, kita dapat menuliskan nilai dari `property` yang sudah dipilih pada bagian `value`. Pada contoh diatas, kita akan memberikan warna `blue` pada property `color` pada element `p`. Sehingga semua element `p` yang ada pada website kita akan berubah menjadi berwarna biru.
+Terakhir, kita dapat menuliskan nilai dari `property` pada bagian `value`. Pada contoh diatas, kita akan memberikan warna `blue` pada property `color`. Sehingga semua element `<p>` yang ada pada website akan berubah menjadi berwarna biru.
 
-> catatan: masing - masing `property` memiliki `value` yang berbeda - beda yang dapat kita pelajari pada topik - topik selanjutnya
+> catatan : masing - masing `property` memiliki `value` yang berbeda - beda yang dapat dipelajari pada topik - topik selanjutnya
 
 ## 4. Memasukkan CSS untuk HTML
 
@@ -70,7 +70,7 @@ Setiap element HTML, pasti memiliki attribute `style`. Kita dapat langsung menul
 </html>
 ```
 
-Pada contoh diatas, kita menuliskan CSS secara langsung pada element `p` menggunakan attribute `style`. Kelemahan dari cara ini adalah struktur HTML akan terlihat kotor karena terdapat CSS pada setiap elementnya.
+Pada contoh diatas, kita menuliskan CSS secara langsung pada element `<p>` dan `<h1>` menggunakan attribute `style`. Kelemahan dari cara ini adalah struktur website akan terlihat kotor karena terdapat CSS pada setiap elementnya.
 
 ### 4.2. Ditulis pada tag `<style>`
 
@@ -97,11 +97,11 @@ Selain ditulis pada masing - masing element, CSS juga dapat dituliskan pada satu
 </html>
 ```
 
-Dengan menggunakan cara ini, struktur website akan lebih rapi dan mudah dilihat. Dimana semua struktur website berada di dalam tag `<body>` sedangkan semua styling terdapat pada tag `<style>`.
+Dengan menggunakan cara ini, struktur website akan terlihat lebih rapi. Dimana semua struktur website berada di dalam tag `<body>` sedangkan semua styling terdapat pada tag `<style>`.
 
 ### 4.3. Ditulis pada file CSS
 
-Sejauh ini, dengan menggunakan cara kedua, kita bisa fokus melihat struktur website di dalam tag `<body>`, sedangkan styling berada di dalam tag `<style>`. Namun, bagaimana apabila CSS yang kita tulis sudah memiliki puluhan hingga ratusan baris ? hal ini akan menyebabkan file HTML yang kita punya akan besar dan susah untuk dilihat.
+Sejauh ini, dengan menggunakan cara kedua, kita bisa fokus melihat struktur website di dalam tag `<body>`, sedangkan styling berada di dalam tag `<style>`. Namun, bagaimana apabila CSS yang kita tulis sudah memiliki puluhan hingga ratusan baris ? hal ini akan menyebabkan file HTML akan besar dan susah untuk dilihat.
 
 Maka dari itu, kita perlu memisah CSS pada file khusus berformat `.css`. Sehingga pada file `.html` hanya berisi struktur website saja, sedangkan style nya berada pada file `.css`. Contohnya :
 
@@ -131,3 +131,5 @@ p {
 ```
 
 Pada contoh diatas, kita membuat struktur website pada file `index.html`, sedangkan style nya berada pada file `index.css`
+
+> catatan : Pastikan `index.html` dan `index.css` berada pada folder yang sama. Apabila `index.css` berada pada folder yang berbeda, kita perlu menuliskan nama foldernya juga. misalnya `<link href="namaFolder/index.css" rel="stylesheet" />`
