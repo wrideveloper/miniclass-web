@@ -58,7 +58,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: [Routing](dasar/node-js/routing.md)
     - :books: [Import Export](dasar/node-js/import-export.md)
     - :books: [Node Package Manager](dasar/node-js/node-package-manager.md)
-    - :books: [Package.json](dasar/node-js/package-json.md)
+    - :books: NPM Script
 
 6.  **Express.js**
 
