@@ -31,12 +31,14 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 3.  **CSS**
 
     - :books: [Pengenalan CSS](dasar/css/pengenalan-css.md)
+    - :books: Selector CSS
     - :books: [Text Formatting](dasar/css/text-formatting.md)
     - :books: [Background](dasar/css/background.md)
     - :books: [Border](dasar/css/border.md)
     - :books: [Height dan Width](dasar/css/height-dan-width.md)
     - :books: [Spacing](dasar/css/spacing.md)
     - :books: [Layouting](dasar/css/layouting.md)
+    - :books: Responsive Design
     - :computer: Membuat Template Web Responsive
 
 4.  **Javascript**
@@ -53,7 +55,8 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 
     - :books: [Pengenalan Node.js](dasar/node-js/node-js.md)
     - :books: [Membuat Server HTTP](dasar/node-js/http-server.md)
-    - :books: [Routing Sederhana](dasar/node-js/routing.md)
+    - :books: [Routing](dasar/node-js/routing.md)
+    - :books: HTTP Method
     - :books: [Import Export](dasar/node-js/import-export.md)
     - :books: [Node Package Manager](dasar/node-js/node-package-manager.md)
     - :books: [Package.json](dasar/node-js/package-json.md)
