@@ -56,8 +56,6 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: [Pengenalan Node.js](dasar/node-js/node-js.md)
     - :books: [Membuat Server HTTP](dasar/node-js/http-server.md)
     - :books: [Routing](dasar/node-js/routing.md)
-    - :books: HTTP Method
-    - :books: URL Query
     - :books: [Import Export](dasar/node-js/import-export.md)
     - :books: [Node Package Manager](dasar/node-js/node-package-manager.md)
     - :books: [Package.json](dasar/node-js/package-json.md)
@@ -67,6 +65,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: [Pengenalan Express.js](dasar/express-js/pengenalan-express-js.md)
     - :books: [Membuat Server dengan Express.js](dasar/express-js/membuat-server-dengan-express-js.md)
     - :books: [Routing](dasar/express-js/routing.md)
+    - :books: HTTP Method
     - :books: [Menerima Data dari URL](dasar/express-js/handle-data-url.md)
     - :books: [Middleware](dasar/express-js/middleware.md)
     - :books: [Menerima Data dari Body](dasar/express-js/handle-data-body.md)
