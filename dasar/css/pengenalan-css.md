@@ -1,150 +1,135 @@
 # Pengenalan CSS
 
-## 1. Penjelasan CSS
+## 1. Permasalahan
 
-Cascading StyleSheet (CSS) merupakan bahasa `style sheet` yang berguna untuk membantu menyajikan dokumen yang ditulis dengan HTML. Apabila HTML hanya bisa menentukan struktur tampilannya, maka CSS dapat menentukan bagaimana gaya dari tampilan tersebut.
+Sebelumnya, kita dapat membuat struktur halaman website seperti paragraf, heading, image, list, dan sebagainya menggunakan HTML. Namun untuk membuat tampilan website yang baik dan nyaman digunakan oleh user, kita juga harus melakukan styling seperti merubah warna background dan text.
 
-Apabila kita ingin membuat sebuah halaman web, maka kita akan menggunakan kombinasi dari HTML dan CSS agar tampilan web kita terstruktur dan indah
+## 2. Pengenalan CSS (Cascading Stylesheet)
 
-## 2. Cara Penulisan
+Untuk melakukan styling pada halaman website yang sudah dibuat, kita dapat menggunakan CSS. Apabila HTML digunakan untuk menentukan struktur website, maka CSS digunakan untuk menentukan styling pada website tersebut. Misalnya :
 
-Cara penulisan CSS biasanya terlihat seperti ini
+1. Menentukan warna background dan text
+2. Membuat border atau garis tepi pada suatu element HTML
+3. Menentukan layout website
+4. Membuat website menjadi responsive
+
+## 3. Struktur Penulisan CSS
+
+CSS memiliki struktur penulisan seperti berikut
 
 ```css
-h1 {
-  font-weight: 800;
-  color: gray;
+/* struktur penulisan : */
+selector {
+  property: value;
 }
+
+/* contoh : */
 p {
-  color: orange;
-}
-#website-title {
-  padding: 10px;
-}
-.container {
-  margin: 50px;
-}
-button:hover {
-  background-color: #ffecb3;
+  color: blue;
 }
 ```
 
-## 3. Memasukkan CSS untuk HTML
+### 3.1 Selector
 
-Ada 3 metode untuk menyertakan CSS agar dapat mengubah layout HTML.
+Langkah pertama untuk membuat styling pada CSS, yaitu menentukan element apa yang ingin kita terapkan style, dimana element tersebut kita tulis pada bagian `selector`. Pada contoh diatas, kita akan menerapkan style pada element `<p>` atau paragraf.
 
-### 3.1. Embed HTML
+Untuk mengetahui jenis - jenis selector, bisa mengunjungi link berikut
 
-Menulis css ke dalam head html menggunakan tag `style`
+https://www.w3schools.com/css/css_selectors.asp
+
+### 3.2 Property
+
+Langkah kedua, setelah menentukan element apa yang ingin kita terapkan style, selanjutnya kita menentukan `property` atau bagian apa yang ingin kita style dari element tersebut. Pada contoh diatas, kita akan mengubah `color` atau warna text dari element `p`
+
+> catatan : kita dapat menuliskan lebih dari satu property pada satu selector
+
+### 3.3 Value
+
+Terakhir, kita dapat menuliskan nilai dari `property` pada bagian `value`. Pada contoh diatas, kita akan memberikan warna `blue` pada property `color`. Sehingga semua element `<p>` yang ada pada website akan berubah menjadi berwarna biru.
+
+> catatan : masing - masing `property` memiliki `value` yang berbeda - beda yang dapat dipelajari pada topik - topik selanjutnya
+
+## 4. Memasukkan CSS untuk HTML
+
+Untuk menerapkan CSS pada file HTML yang sudah kita buat, kita dapat menggunakan salah satu dari cara berikut
+
+### 4.1. Ditulis pada element HTML secara langsung
+
+Setiap element HTML, pasti memiliki attribute `style`. Kita dapat langsung menuliskan CSS pada attribute `style` tersebut. Contohnya :
 
 ```html
+<!-- index.html -->
 <html>
   <head>
+    <title>Contoh penulisan CSS</title>
+  </head>
+  <body>
+    <h1 style="color:red">judul ini akan berwarna merah</p>
+    <p style="color:blue">text ini akan berwarna biru</p>
+  </body>
+</html>
+```
+
+Pada contoh diatas, kita menuliskan CSS secara langsung pada element `<p>` dan `<h1>` menggunakan attribute `style`. Kelemahan dari cara ini adalah struktur website akan terlihat kotor karena terdapat CSS pada setiap elementnya.
+
+### 4.2. Ditulis pada tag `<style>`
+
+Selain ditulis pada masing - masing element, CSS juga dapat dituliskan pada satu tag khusus bernama `<style>` yang berada di dalam tag `<head>`. Contohnya :
+
+```html
+<!-- index.html -->
+<html>
+  <head>
+    <title>Contoh penulisan CSS</title>
     <style>
-      selector {
-        property: value;
+      h1 {
+        color: red;
+      }
+      p {
+        color: blue;
       }
     </style>
+    <body>
+      <h1>judul ini akan berwarna merah</p>
+      <p>text ini akan berwarna biru</p>
+    </body>
   </head>
 </html>
 ```
 
-### 3.2. Eksternal CSS
+Dengan menggunakan cara ini, struktur website akan terlihat lebih rapi. Dimana semua struktur website berada di dalam tag `<body>` sedangkan semua styling terdapat pada tag `<style>`.
 
-Memasukkan file css eksternal ke dalam html
+### 4.3. Ditulis pada file CSS
+
+Sejauh ini, dengan menggunakan cara kedua, kita bisa fokus melihat struktur website di dalam tag `<body>`, sedangkan styling berada di dalam tag `<style>`. Namun, bagaimana apabila CSS yang kita tulis sudah memiliki puluhan hingga ratusan baris ? hal ini akan menyebabkan file HTML akan besar dan susah untuk dilihat.
+
+Maka dari itu, kita perlu memisah CSS pada file khusus berformat `.css`. Sehingga pada file `.html` hanya berisi struktur website saja, sedangkan style nya berada pada file `.css`. Contohnya :
 
 ```html
+<!-- index.html -->
 <html>
   <head>
-    <link href="mystyles.css" rel="stylesheet" />
+    <title>Eksternal css</title>
+    <!-- untuk mengimport file css pada html menggunakan <link> -->
+    <link href="index.css" rel="stylesheet" />
   </head>
+  <body>
+      <h1>judul ini akan berwarna merah</p>
+      <p>text ini akan berwarna biru</p>
+  </body>
 </html>
 ```
 
-### 3.3. Inline CSS
-
-Menulis css langsung ke tag tertentu pada html
-
 ```css
-    <tag style="color:orange background:yellow;">isi tag</tag>
-```
-
-## 4. Selector
-
-Setiap elemen HTML yang ada di halaman web dapat dimodifikasi ataupun dihias dengan CSS. Selector digunakan untuk memilih elemen html mana yang akan kita ubah stylingnya.
-
-Bentuk umum selector seperti berikut:
-
-```css
-selector {
-  property: value;
-  property: value;
+/* index.css */
+h1 {
+  color: red;
+}
+p {
+  color: blue;
 }
 ```
 
-Ada beberapa cara untuk menyeleksi elemen dengan selector
+Pada contoh diatas, kita membuat struktur website pada file `index.html`, sedangkan style nya berada pada file `index.css`
 
-### 4.1. Seleksi elemen berdasarkan id
-
-```css
-#nama-id {
-  property: value;
-}
-```
-
-### 4.2. Seleksi elemen berdasarkan class
-
-```css
-.nama-class {
-  property: value;
-}
-```
-
-### 4.3. Seleksi semua elemen
-
-```css
-* {
-  property: value;
-}
-```
-
-### 4.4. Seleksi elemen yang berada didalam elemen lain
-
-```css
-div p {
-  property: value;
-}
-```
-
-### 4.5. Seleksi link yang sedang di hover
-
-```css
-a:hover {
-  property: value;
-}
-```
-
-## 5. Property
-
-Setelah elemen dipilih, property dari style yang tersedia dapat diterapkan pada elemen tersebut. Nama properti diikuti dengan tanda titik dua (colon) (`:`) diikuti dengan nilai atau value yang ditutup dengan titik koma (`;`)
-
-Properti umum yang bisa digunakan :
-
-- `color`
-- `font`
-- `background`
-- `border`
-- `width dan height`
-- `margin dan padding`
-- `display`
-
-## 6. Komentar
-
-Menambahkan Komentar pada CSS
-
-```css
-/* Komentar mabro  */
-selector {
-  property: value;
-}
-```
+> catatan : Pastikan `index.html` dan `index.css` berada pada folder yang sama. Apabila `index.css` berada pada folder yang berbeda, kita perlu menuliskan nama foldernya juga. misalnya `<link href="namaFolder/index.css" rel="stylesheet" />`
