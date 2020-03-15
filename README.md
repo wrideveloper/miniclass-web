@@ -57,6 +57,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: [Membuat Server HTTP](dasar/node-js/http-server.md)
     - :books: [Routing](dasar/node-js/routing.md)
     - :books: HTTP Method
+    - :books: URL Query
     - :books: [Import Export](dasar/node-js/import-export.md)
     - :books: [Node Package Manager](dasar/node-js/node-package-manager.md)
     - :books: [Package.json](dasar/node-js/package-json.md)
