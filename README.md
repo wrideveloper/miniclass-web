@@ -59,19 +59,18 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: [Import Export](dasar/node-js/import-export.md)
     - :books: [Node Package Manager](dasar/node-js/node-package-manager.md)
     - :books: NPM Script
+    - :books: [Nodemon](dasar/node-js/nodemon.md)
 
 6.  **Express.js**
 
     - :books: [Pengenalan Express.js](dasar/express-js/pengenalan-express-js.md)
-    - :books: [Membuat Server dengan Express.js](dasar/express-js/membuat-server-dengan-express-js.md)
-    - :books: [Routing](dasar/express-js/routing.md)
     - :books: HTTP Method
     - :books: [Menerima Data dari URL](dasar/express-js/handle-data-url.md)
     - :books: [Middleware](dasar/express-js/middleware.md)
     - :books: [Menerima Data dari Body](dasar/express-js/handle-data-body.md)
-    - :books: [Koneksi ke Database MySQL](dasar/express-js/node-mysql.md)
-    - :books: [Memisah Routing](dasar/express-js/memisah-routing.md)
-    - :books: [MVC](dasar/express-js/mvc.md)
+    - :books: Mengunggah File
+    - :books: Menampilkan File dalam Folder
+    - :books: [Menyimpan Data ke Database MySQL](dasar/express-js/node-mysql.md)
 
 ### :sunflower: Materi Frontend
 
