@@ -59,7 +59,7 @@ Untuk menerima inputan dari user, kita bisa menggunakan tag `input`.
 </form>
 ```
 ### 4.2 Label
-Label digunakan untuk memberikan label pada inputan yang kita buat, sehingga user tau data apa yang perlu dimasukkan
+Label digunakan untuk memberikan label pada inputan yang kita buat, sehingga user tau data apa yang perlu dimasukkan ke dalam form
 
 ```html
 <form>
