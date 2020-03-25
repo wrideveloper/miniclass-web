@@ -1,55 +1,68 @@
 # Menerima Data dari URL
 
-## 1. Penjelasan
+## 1. Permasalahan
 
-Ketika kita mengembangkan sebuah aplikasi, terkadang kita membutuhkan sebuah data yang harus diinputkan. Sehingga output dari program tersebut dapat berbeda berdasarkan data yang diinputkan. Pada pembuatan server, kita dapat mengirim inputan tersebut melalui URL
+Sebelumnya, kita sudah bisa membuat web server yang dapat melakukan manipulasi data dengan route sebagai berikut :
 
-## 2. Format Data dari URL
+`/contact` method GET - menampilkan semua data contact\
+`/contact` method POST - menambahkan data contact\
+`/contact` method PUT - mengubah data contact pada index 0\
+`/contact` method DELETE - menghapus seluruh data contact
+pada index 0
 
-Ada dua format data yang dikirimkan melalui URL. yaitu url query dan url params
+Namun, data dan index yang diinputkan selalu statis dalam artian data yang ditambahkan akan selalu sama yaitu
 
-## 1.1. URL Query
+```javascript
+{
+  name: "tono",
+  phone: "085637263625"
+}
+```
 
-### 1.1.1. Penjelasan URL Query
+dan ketika mengubah/menghapus data, kita hanya bisa mengubah/menghapus data yang terdapat pada index ke 0 saja
+
+Lalu bagaimana cara client memberitahu server index mana yang akan diubah / dihapus, dan data apa yang harus dibuat ?
+
+## 2. Penjelasan Umum
+
+Untuk mengirim data, client dapat menggunakan URL sebagai media untuk menginput data, data yang dikirim melalui URL tadi akan diterima dan diolah oleh server.
+
+Pada express, untuk menerima data dari URL tadi dapat dilakukan dengan menggunakan `req.query` dan `req.params`
+
+## 3. Penjelasan Detail Materi
+
+### 3.1. URL Query
 
 URL query merupakan string yang terletak diakhir sebuah URL yang diawali dengan tanda tanya
 
-```
-localhost:3000/?nama=budi&umur=20
-```
+**Contoh Struktur URL :**
+`localhost:3000/contact/?name=dwiputra&phone=08123456789`
 
-### 1.1.2 Mengambil Data dari URL Query
-
-Kita bisa menggunakan `req.query` untuk mengambil data dari url query
+Cara menerima data dari URL Query
 
 ```javascript
-app.get('/', function(req, res) {
-  const nama = req.query.nama
-  const umur = req.query.umur
-
-  res.send('halo ' + nama + ' umur kamu ' + umur)
-})
+app.post("/contact", function(req, res) {
+  contacts.push({ name: req.query.name, phone: req.query.phone });
+  res.send({ success: true });
+});
 ```
 
-## 1.2. URL Params
+### 3.2. URL Params
 
-### 1.2.1. Penjelasan URL Params
+Dengan url params kita bisa memasukkan data kedalam URL secara langsung, namun untuk urutan dalam penginputan data harus menuruti apa yang telah ditentukan pada route
 
-Dengan url params kita bisa memasukkan data kedalam URL dengan format yang lebih rapi daripada dengan menggunakan url query
+**Contoh Struktur URL :**
+`localhost:3000/contact/dwiputra/08123456789`
 
-```
-localhost:3000/:nama/:umur
-```
-
-### 1.2.2. Mengambil Data dari URL Params
-
-Kita bisa menggunakan `req.params` untuk mengambil data dari url params
+Cara menerima data dari URL Query
 
 ```javascript
-app.get('/:nama/:umur', function(req, res) {
-  const nama = req.params.nama
-  const umur = req.params.umur
-
-  res.send('halo ' + nama + ' umur kamu ' + umur)
-})
+app.post("/contact/:name/:phone", function(req, res) {
+  contacts.push({ name: req.params.name, phone: req.name.phone });
+  res.send({ success: true });
+});
 ```
+
+## 4. Contoh Kasus
+
+Disini kita akan melanjutkan
