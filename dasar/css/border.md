@@ -3,7 +3,7 @@
 Terkadang dalam membuat halaman web kita tidak mengetahui batas dari konten yang kita buat pada halaman web, salah satu cara untuk mengetahui batas konten yang telah kita buat kita dapat menggunakan `border`. 
 
 # 2. Pengertian
- `border` merupakan salah satu jenis dari property css yang biasa digunakan untuk memberi batasan pada kontent yang kita buat pada halaman website.
+ `border` merupakan salah satu jenis dari property css yang biasa digunakan untuk memberi batasan pada konten yang kita buat pada halaman website.
 
 # 3. Contoh Kasus
 
@@ -107,4 +107,3 @@ p {
 ### Hasil dari script :
 
 ![Alternate text](https://user-images.githubusercontent.com/36991049/77551894-718f3c00-6ee5-11ea-8d86-8c4011b124eb.PNG)
-
