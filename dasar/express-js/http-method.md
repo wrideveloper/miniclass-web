@@ -15,10 +15,10 @@ namun, muncul masalah baru yaitu **rute yang terlalu banyak.**
 
 Kita dapat membedakan rute tidak hanya berdasarkan *URL* nya saja. Tapi juga bisa berdasarkan *methodnya*, sehingga pada contoh diatas, bisa jadi seperti berikut :
 
-- `/contact` method GET
-- `/contact` method POST
-- `/contact` method PUT
-- `/contact` method DELETE
+- `/contact` method GET - Menampilkan semua data contact
+- `/contact` method POST - Menambahkan data contact
+- `/contact` method PUT - Mengubah data contact pada index 0
+- `/contact` method DELETE - Menghapus data contact pada index 0
 
 ## 3. Penjelasan HTTP Method
 
@@ -31,6 +31,7 @@ HTTP memiliki banyak method, 4 diantaranya adalah :
 
 jika ingin mengetahui lebih lengkap dapat klik link berikut [HTTP Method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
 
+## 4. Membuat Rute dengan HTTP Method Menggunakan Express 
 Cara membuat rute menggunakan method selain GET pada express :
 
 - Method POST
@@ -61,7 +62,7 @@ Cara membuat rute menggunakan method selain GET pada express :
 
 Contoh kasus menggunakan file dari materi sebelumnya,
 
-1. Mengubah kode untuk menambahkan kontak baru
+### 4.1. Mengubah kode untuk menambahkan kontak baru
 
     Dari `app.get` dan `/contact/create`:
 
@@ -83,7 +84,7 @@ Contoh kasus menggunakan file dari materi sebelumnya,
     })
     ```
 
-2. Mengubah kode untuk mengubah kontak pada index 0
+### 4.2. Mengubah kode untuk mengubah kontak pada index 0
 
     Dari `app.get` dan `/contact/edit`:
 
@@ -113,7 +114,7 @@ Contoh kasus menggunakan file dari materi sebelumnya,
     })
     ```
 
-3. mengubah kode untuk menghapus kontak pada index 0
+### 4.3. mengubah kode untuk menghapus kontak pada index 0
 
     Dari `app.get` dan `/contact/delete`:
 
@@ -143,7 +144,7 @@ Contoh kasus menggunakan file dari materi sebelumnya,
     })
     ```
 
-sehingga hasil akhir code kurang lebih seperti :
+### 4.4. Hasil akhir
 
 ```javascript
 const express = require('express')
