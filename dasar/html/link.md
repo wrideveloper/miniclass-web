@@ -9,7 +9,7 @@ Link pada HTML dapat digunakan untuk menghubungkan satu file HTML dengan file HT
 Link di HTML dapat dibuat dengan tag `<a>` atau anchor dengan diikuti atribut `href` yang nilainya berisi alamat yang akan diakses ketika link di klik. 
 
 ## 3. Cara Membuat Link
-### 3. 1 membuat link menuju file HTML lain
+### 3. 1 Membuat link menuju file HTML lain
 
 ```html
 <a href="about.html">About Us</a>
@@ -17,7 +17,7 @@ Link di HTML dapat dibuat dengan tag `<a>` atau anchor dengan diikuti atribut `h
 Untuk mencantumkan link yang berfungsi menghubungkan satu file dengan file HTML yang lain, file tujuan harus dipersiapkan terlebih dahulu lalu disimpan pada folder yang sama dengan file utama.  
 
 
-### 3. 2 membuat link menuju website lain
+### 3. 2 Membuat link menuju website lain
 ```html
 <a href="https://www.instagram.com/wri_polinema/">go to WRI Instagram</a>
 ```
