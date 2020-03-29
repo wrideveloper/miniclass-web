@@ -46,9 +46,9 @@ Tag `<body>` ditulis di bawah tag head. Tag `<body>` merupakan tag pembuka dari 
 
 ## 4. Studi Kasus
 Pada studi kasus kali ini, kita akan mencoba mengimplementasikan struktur dasar HTML diatas. Ikuti langkah berikut ini:
-1. Buka Visual Studio Code atau aplikasi Text Editor yang lain. 
-2. Buatlah file HTML di dalam Visual Studio Code dengan nama "pengenalan.html".
-3. Tulis kode program di bawah ini dalam file "pengenalan.html" tersebut.
+
+1. Buatlah file HTML di dalam Visual Studio Code aplikasi Text Editor yang lain dengan nama "pengenalan.html".
+2. Tulis kode program di bawah ini dalam file "pengenalan.html" tersebut.
 ```html
 <!DOCTYPE HTML>
 <html>
@@ -60,7 +60,7 @@ Pada studi kasus kali ini, kita akan mencoba mengimplementasikan struktur dasar 
   </body>
 </html>
 ``` 
-4. Tambahkan nama judul di dalam tag `<title>`.
+3. Tambahkan nama judul di dalam tag `<title>`.
 ```html
 <!DOCTYPE HTML>
 <html>
@@ -72,7 +72,7 @@ Pada studi kasus kali ini, kita akan mencoba mengimplementasikan struktur dasar 
   </body>
 </html>
 ```  
-5. Lalu di dalam tag `<body>`, tambahkan tag `<h1>` untuk heading dan tag `<p>` untuk paragraf. kalian bisa isi kedua tag tersebut dengan kalimat atau paragraf seperti yang ada di bawah ini.
+4. Lalu di dalam tag `<body>`, tambahkan tag `<h1>` untuk heading dan tag `<p>` untuk paragraf. kalian bisa isi kedua tag tersebut dengan kalimat atau paragraf seperti yang ada di bawah ini.
 ```html
 <!DOCTYPE HTML>
 <html>
@@ -85,12 +85,4 @@ Pada studi kasus kali ini, kita akan mencoba mengimplementasikan struktur dasar 
   </body>
 </html>
 ```  
-6. Simpan perubahan yang dilakukan kemudian buka file tersebut di web browser. Akan muncul website dengan judul "Belajar Website" dengan konten yang sudah dibuat sebelumnya.
-
-
-
-
-
-
-
-
+5. Simpan perubahan yang dilakukan kemudian buka file tersebut di web browser. Akan muncul website dengan judul "Belajar Website" dengan konten yang sudah dibuat sebelumnya.
