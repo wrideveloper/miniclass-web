@@ -15,7 +15,7 @@ Berikut source code dari penjelasan diatas :
 const express = require('express')
 const app = express()
 
-// menampilkan semua file atau folder yang ada pada folder public dan routingnya /image/namafile.png
+// menampilkan semua file atau folder yang ada pada folder public dan routingnya /images/namafile.png
 app.use("/images", express.static('public'))
 
 
