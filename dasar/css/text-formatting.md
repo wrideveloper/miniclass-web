@@ -302,4 +302,4 @@ a.references {
 
 Berikut tampilan akhir halaman website yang kita buat sebelumnya setelah menerapkan seluruh text formatting pada CSS.
 
-![File HTML yang berisi artikel](text-formatting-with-css.png)
+![Tampilan website setelah menerapkan text formatting](text-formatting-with-css.png)
