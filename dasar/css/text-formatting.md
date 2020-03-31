@@ -17,7 +17,7 @@ Properti yang digunakan untuk melakukan text formatting umumnya terbagi dalam du
 
 ### 3.1 Font Styling
 
-#### a. Font Family
+#### 3.1.1. Font Family
 
 Properti `font-family` digunakan untuk menentukan standar font yang digunakan dalam teks. Properti `font-family` dapat berisi beberapa nilai (dikenal sebagai font stack), sehingga jika browser pengguna tidak mendukung font utama yang digunakan, sistem dapat menggunakan font pengganti yang didukung oleh browser pengguna.
 
@@ -27,7 +27,7 @@ p {
 }
 ```
 
-#### b. Font Size
+#### 3.1.2. Font Size
 
 Kita dapat menggunakan properti `font-size` untuk menentukan ukuran teks. Font standar yang digunakan dalam browser umumnya berukuran `16px`.
 
@@ -37,7 +37,7 @@ p {
 }
 ```
 
-#### c. Font Weight
+#### 3.1.3. Font Weight
 
 Properti `font-weight` digunakan untuk mengatur ketebalan teks. Properti ini dapat diisi dengan nilai deskripsi seperti `normal`, `bold`, `lighter`, dan lain-lain, serta dapat diisi dengan angka, yaitu nilai dengan rentang antara `100` (paling tipis) hingga `900` (paling tebal). Nilai font `normal` adalah `400` dan nilai font `bold` adalah `700`.
 
@@ -51,7 +51,7 @@ h1 {
 }
 ```
 
-#### d. Font Style
+#### 3.1.4. Font Style
 
 Kita dapat menggunakan properti `font-style` untuk mengatur kemiringan teks. Properti ini mempunyai beberapa nilai, yaitu `normal` untuk teks normal, serta `italic` dan `oblique` untuk teks miring.
 
@@ -63,7 +63,7 @@ a {
 
 ### 3.2 Text Styling
 
-#### a. Text Color
+#### 3.2.1. Text Color
 
 Kita dapat menggunakan properti `color` untuk menentukan warna teks. Properti color dapat berisi nilai deskripsi, seperti `red`, `blue`, `yellow`, `purple`, dan lain-lain, atau dapat pula berisi color-hex, seperti `#FF0000` untuk warna merah, `#000000` untuk warna hitam, dan sebagainya.
 
@@ -77,7 +77,7 @@ h1 {
 }
 ```
 
-#### b. Text Alignment
+#### 3.2.2. Text Alignment
 
 Kita dapat menggunakan properti `text-align` untuk menentukan perataan teks. Nilai `text-align` pada CSS mirip dengan nilai text alignment pada Microsoft Word, yaitu `left`, `center`, `right`, dan `justify`.
 
@@ -99,7 +99,7 @@ h3 {
 }
 ```
 
-#### c. Text Indentation
+#### 3.2.3. Text Indentation
 
 Kita dapat menggunakan properti `text-indent` untuk menambahkan indentasi pada teks. Text indentation umumnya digunakan pada awal paragraf. Nilai `text-indent` dapat berupa nilai positif (indentasi ke dalam) dan nilai negatif (indentasi ke luar).
 
@@ -109,7 +109,7 @@ p {
 }
 ```
 
-#### d. Text Transformation
+#### 3.2.4. Text Transformation
 
 Kita dapat menggunakan properti `text-transform` untuk menentukan formasi teks. Properti ini dapat memudahkan kita untuk mengubah huruf besar-kecil pada teks tanpa harus mengubah teksnya satu per satu di HTML.
 
@@ -127,7 +127,7 @@ h3 {
 }
 ```
 
-#### e. Text Decoration
+#### 3.2.5. Text Decoration
 
 Kita dapat menggunakan properti `text-decoration` untuk mendekorasi teks, yang umumnya digunakan untuk memodifikasi garis bawah yang terdapat pada link. Namun, kita juga dapat menggunakan properti `text-decoration` untuk mendekorasi teks lainnya.
 
@@ -149,7 +149,7 @@ h3 {
 }
 ```
 
-#### f. Line Height
+#### 3.2.6. Line Height
 
 Properti `line-height` digunakan untuk mengatur jarak antar baris. Fungsi ini mirip dengan line spacing yang terdapat di Microsoft Word.
 
@@ -159,7 +159,7 @@ p {
 }
 ```
 
-#### g. Letter Spacing dan Word Spacing
+#### 3.2.7. Letter Spacing dan Word Spacing
 
 Kita dapat menggunakan properti `letter-spacing` untuk mengatur jarak antar huruf. Properti `letter-spacing` umumnya diterapkan pada teks yang menggunakan huruf kapital agar lebih mudah dibaca oleh pengguna.
 
@@ -179,7 +179,7 @@ h2 {
 
 Di sini kita akan membuat halaman website yang berisi sebuah artikel dan menerapkan text formatting CSS di dalamnya.
 
-### 4.1 Membuat File index.html
+### 4.1. Membuat File `index.html`
 
 Pertama-tama, buatlah file `index.html` dan isi file html tersebut dengan kode di bawah ini.
 
@@ -235,7 +235,7 @@ Berikut tampilan file `index.html` setelah dibuka dengan browser.
 
 ![File HTML yang berisi artikel](text-formatting-without-css.png)
 
-### 4.2 Mengedit Format Judul
+### 4.2. Mengedit Format Judul
 
 Pertama-tama, buatlah file `style.css` yang nantinya akan digunakan untuk menerapkan text formatting pada `index.html`. Gunakan selector `h1` untuk mengubah format judul di dalam CSS.
 
@@ -243,7 +243,7 @@ Lalu, terapkan kode di bawah ini untuk mengubah format judul artikel.
 
 ```css
 h1 {
-  font-family: "Times New Roman", Times, serif; /* mengatur jenis font yang dipakai */
+  font-family: 'Times New Roman', Times, serif; /* mengatur jenis font yang dipakai */
   font-weight: 900; /* mengatur ketebalan font */
   text-align: center; /* mengatur perataan teks judul */
   text-transform: uppercase; /* mengatur formasi teks judul */
@@ -251,7 +251,7 @@ h1 {
 }
 ```
 
-### 4.3 Mengedit Format Paragraf
+### 4.3. Mengedit Format Paragraf
 
 Setelah mengubah format judul, selanjutnya kita akan mengubah format paragraf dengan menggunakan selector `p`.
 
@@ -267,7 +267,7 @@ p {
 }
 ```
 
-### 4.4 Mengubah Format Link pada Artikel
+### 4.4. Mengubah Format Link pada Artikel
 
 Selanjutnya kita akan mengubah format link di dalam artikel agar tampilan artikel menjadi lebih menarik serta mudah dibaca oleh pengunjung.
 
@@ -280,7 +280,7 @@ a {
 }
 ```
 
-### 4.5 Mengubah Format Teks Referensi pada Akhir Paragraf
+### 4.5. Mengubah Format Teks Referensi pada Akhir Paragraf
 
 Karena referensi tidak termasuk ke dalam paragraf di dalam artikel, kita harus membuat tampilan paragraf referensi tampak berbeda dengan paragraf artikel. Hal ini bertujuan agar pengunjung dapat membedakan paragraf berisi artikel dengan paragraf khusus referensi. Gunakan selector `element.references` untuk mengubah format teks yang ada pada suatu element yang memiliki class `references`.
 
@@ -298,7 +298,7 @@ a.references {
 }
 ```
 
-### 4.6 Tampilan Halaman Website Setelah Menerapkan Text Formatting CSS
+### 4.6. Tampilan Halaman Website Setelah Menerapkan Text Formatting CSS
 
 Berikut tampilan akhir halaman website yang kita buat sebelumnya setelah menerapkan seluruh text formatting pada CSS.
 
