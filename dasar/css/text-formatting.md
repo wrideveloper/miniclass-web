@@ -282,7 +282,7 @@ a {
 
 ### 4.5 Mengubah Format Teks Referensi pada Akhir Paragraf
 
-Karena referensi tidak termasuk ke dalam paragraf di dalam artikel, kita harus membuat tampilan paragraf referensi tampak berbeda dengan paragraf artikel. Hal ini bertujuan agar pengunjung dapat membedakan paragraf berisi artikel dengan paragraf khusus referensi. Gunakan selector `element.references` untuk mengubah format teks paragraf referensi.
+Karena referensi tidak termasuk ke dalam paragraf di dalam artikel, kita harus membuat tampilan paragraf referensi tampak berbeda dengan paragraf artikel. Hal ini bertujuan agar pengunjung dapat membedakan paragraf berisi artikel dengan paragraf khusus referensi. Gunakan selector `element.references` untuk mengubah format teks yang ada pada suatu element yang memiliki class `references`.
 
 Terapkan kode di bawah ini untuk mengubah format paragraf referensi.
 
