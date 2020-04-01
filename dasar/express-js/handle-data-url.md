@@ -23,7 +23,7 @@ dan ketika mengubah atau menghapus data, kita hanya bisa mengubah atau menghapus
 
 Lalu bagaimana cara client memberitahu server index mana yang akan diubah atau dihapus, dan data apa yang harus dibuat ?
 
-## 2. Penjelasan Umum
+## 2. Mengirim Data Melalui URL
 
 Untuk mengirim data, client dapat menggunakan URL sebagai media untuk menginput data, data yang dikirim melalui URL tadi akan diterima dan diolah oleh server.
 
