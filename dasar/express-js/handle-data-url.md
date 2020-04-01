@@ -4,10 +4,10 @@
 
 Sebelumnya, kita sudah bisa membuat web server yang dapat melakukan manipulasi data dengan route sebagai berikut :
 
-`/contact` method GET - menampilkan semua data contact\
-`/contact` method POST - menambahkan data contact\
-`/contact` method PUT - mengubah data contact pada index 0\
-`/contact` method DELETE - menghapus seluruh data contact
+- `/contact` menggunakan method GET - menampilkan semua data contact
+- `/contact` menggunakan method POST - menambahkan data contact
+- `/contact` menggunakan method PUT - mengubah data contact pada index 0
+- `/contact` menggunakan method DELETE - menghapus seluruh data contact
 pada index 0
 
 Namun, data dan index yang diinputkan selalu statis dalam artian data yang ditambahkan akan selalu sama yaitu
