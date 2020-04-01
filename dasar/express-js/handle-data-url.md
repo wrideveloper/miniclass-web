@@ -27,7 +27,6 @@ Lalu bagaimana cara client memberitahu server index mana yang akan diubah atau d
 
 Untuk mengirim data, client dapat menggunakan URL sebagai media untuk menginput data, data yang dikirim melalui URL tadi akan diterima dan diolah oleh server.
 
-Pada express, untuk menerima data dari URL tadi dapat dilakukan dengan menggunakan `req.query` dan `req.params`
 
 ## 3. Format URL untuk Menerima Data
 Apabila kita ingin membuat server yang dapat menerima data melalui url, kita bisa menggunakan dua jenis format, yaitu `url query` dan `url params`
