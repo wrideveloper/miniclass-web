@@ -2,7 +2,7 @@
 
 ## 1. Permasalahan
 
-  Pada pembuatan website, biasanya kita butuh menampilkan data dalam bentuk list untuk mempermudah pembacaan. Namun, pada HTML kita tidak bisa langsung membuat list menggunakan text. contohnya seperti berikut:
+  Pada pembuatan website, biasanya kita butuh menampilkan data dalam bentuk list untuk mempermudah pembacaan. Misalnya pada website media sosial, kita dapat menampilkan daftar user yang sedang online menggunakan list. Namun, pada HTML kita tidak bisa langsung membuat list menggunakan text. contohnya seperti berikut :
 
   ```html
 - item 1 [enter]
@@ -10,14 +10,14 @@
 - item 3 [enter]    
   ```
 
-  kode di atas jika di tampilkan di web browser maka hasilnya akan seperti berikut:
+  kode di atas jika ditampilkan di web browser maka hasilnya akan seperti berikut:
 
   ![Permasalahan-list](studiKasusList.jpg)
 
 
 ## 2. Solusi
 
-  Oleh karena itu dengan adanya permasalahan di atas maka kita bisa menggunakan kombinasi dari tag ```<ol/> dan <ul/>```.
+  Oleh karena itu dengan adanya permasalahan di atas maka kita bisa menggunakan kombinasi dari tag `<ol/>`, `<ul/>` dan `<li/>`.
 
 ## 3. Detail Materi
   
