@@ -25,7 +25,7 @@ Lalu bagaimana cara client memberitahu server index mana yang akan diubah atau d
 
 ## 2. Mengirim Data Melalui URL
 
-Untuk mengirim data, client dapat menggunakan URL sebagai media untuk menginput data, data yang dikirim melalui URL tadi akan diterima dan diolah oleh server.
+Client dapat mengirimkan data melalui URL untuk memberi tahu server index mana yang akan diubah atau dihapus, dan data apa yang harus dibuat.
 
 ## 3. Format URL untuk Menerima Data
 
@@ -65,11 +65,11 @@ app.post("/contact/:name/:phone", function(req, res) {
 
 ## 4. Contoh Kasus
 
-Disini kita akan melanjutkan kode dari materi sebelumnya
+Disini kita akan melanjutkan kode dari materi sebelumnya, tujuannya adalah menerima data dari URL kemudian menggunakannnya untuk menambahkan data kontak baru pada array, dan juga untuk menentukan index mana yang akan diubah atau dihapus.
 
 ## 4.1. Mengubah kode untuk menambah kontak baru
 
-Disini data yang dipush kedalam array akan diterima dari url query, berbeda dari sebelumnya yang masih statis
+Data yang ditambahkan ke dalam array akan diterima dari url, berbeda dari sebelumnya yang masih statis. Berikut contoh penerapannya menggunakan url query dan url params, bisa dipilih salah satu.
 
 ### 4.1.1. URL Query
 
@@ -92,7 +92,7 @@ app.post("/contact/:name/:phone", function(req, res) {
 ## 4.2. Mengubah kode untuk mengubah kontak pada index yang diinginkan
 
 Yang sebelumnya kita hanya mengirim `name` dan `phone`, sekarang kita juga harus mengirim `index` untuk mengetahui data pada index mana yang akan diubah.
-Sebelum mengubah kontak, kita juga harus mengecek apakah data pada index tersebut ada atau tidak.
+Sebelum mengubah kontak, kita juga harus mengecek apakah data pada index tersebut ada atau tidak. Berikut contoh penerapannya menggunakan url query dan url params, bisa dipilih salah satu.
 
 ### 4.2.1. URL Query
 
@@ -126,11 +126,11 @@ app.put("/contact/:index/:name/:phone", function(req, res) {
 });
 ```
 
-## 4.1.2. Mengubah kode untuk menghapus kontak pada index yang diinginkan
+## 4.3. Mengubah kode untuk menghapus kontak pada index yang diinginkan
 
-Untuk menghapus kita perlu mengirimkan `index` untuk mengetahui data di index mana yang akan dihapus. Sebelum menghapus kontak, kita juga harus mengecek apakah data pada index tersebut ada atau tidak.
+Untuk menghapus kita perlu mengirimkan `index` untuk mengetahui data di index mana yang akan dihapus. Sebelum menghapus kontak, kita juga harus mengecek apakah data pada index tersebut ada atau tidak. Berikut contoh penerapannya menggunakan url query dan url params, bisa dipilih salah satu.
 
-### 4.1.1. URL Query
+### 4.3.1. URL Query
 
 ```javascript
 app.delete("/contact", function(req, res) {
@@ -143,7 +143,7 @@ app.delete("/contact", function(req, res) {
 });
 ```
 
-### 4.1.2. URL Params
+### 4.3.2. URL Params
 
 ```javascript
 app.delete("/contact/:index", function(req, res) {
