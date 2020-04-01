@@ -21,7 +21,7 @@ Namun, data dan index yang diinputkan selalu statis dalam artian data yang ditam
 
 dan ketika mengubah atau menghapus data, kita hanya bisa mengubah atau menghapus data yang terdapat pada index ke 0 saja
 
-Lalu bagaimana cara client memberitahu server index mana yang akan diubah / dihapus, dan data apa yang harus dibuat ?
+Lalu bagaimana cara client memberitahu server index mana yang akan diubah atau dihapus, dan data apa yang harus dibuat ?
 
 ## 2. Penjelasan Umum
 
