@@ -8,7 +8,7 @@ Sebelumnya, kita sudah bisa membuat web server yang dapat melakukan manipulasi d
 
 Agar data yang disimpan permanen, dan tidak hilang saat server direstart, maka data tersebut harus disimpan ke dalam suatu file. File disini bisa berupa file text, atau pada kasus ini lebih cocok menggunakan database seperti MySQL.
 
-## 3. Penjelasan Detail Materi
+## 3. Mengkoneksikan Express ke Database MySQL
 
 ### 3.1 Pembuatan Database dan Tabel MySQL
 
@@ -31,15 +31,21 @@ Sebelum memulai, pastikan sudah terdapat sebuah database dan tabel untuk menampu
 
 Sebuah database baru dengan tabel `contacts` akan terbuat dan terisi oleh 2 data.
 
-### 3.2 Install Package MySQL pada Project
+### 3.2 Install Package Express dan MySQL pada Project
 
-Setelah membuat database, kembali ke project dan install package `mysql`, agar server bisa terkoneksi dengan database MySQL yang sudah kita buat. Untuk menginstall package ini, cukup buka terminal pada lokasi project dan ketikkan
+Setelah membuat database, kembali ke project dan install package `express` dan `mysql`, agar server bisa terkoneksi dengan database MySQL yang sudah kita buat. Untuk menginstall package ini, cukup buka terminal pada lokasi project dan ketikkan
 
 ```bash
-npm install mysql
+npm install express mysql
 ```
 
-Lalu kita cek pada file `package.json` untuk melihat package yang telah kita install. Apabila install package sukses, bagian `dependencies` dari `package.json` akan terlihat seperti ini
+Perhatikan pada command terminal diatas, kita bisa langsung menginstall beberapa package dari npm. Dengan cara memisahkan **nama package dengan spasi**
+
+```bash
+npm install package1 package2 package3 . . .
+```
+
+Lalu kita cek pada file `package.json` untuk melihat package yang telah kita install. Apabila proses install package sukses, bagian `dependencies` dari `package.json` akan terlihat seperti ini
 
 ```json
 "dependencies": {
@@ -65,6 +71,7 @@ const mysql = require("mysql");
 Kedua, buat sebuah variabel yang akan menampung lokasi koneksi database kita dengan fungsi `createConnection()`
 
 ```javascript
+// membuat variable con untuk menampung data koneksi ke MySQL
 const con = mysql.createConnection({
   host: "localhost",
   user: "root",
@@ -76,6 +83,7 @@ const con = mysql.createConnection({
 Lalu sambungkan koneksi tersebut dengan menggunakan fungsi `connect()`
 
 ```javascript
+// menyambungkan variable con dengan MySQL
 con.connect(function(err) {
   if (err) throw err;
   console.log("-> Database Connected");
@@ -91,25 +99,13 @@ Dan bisa langsung kita coba dengan menjalankan aplikasi Express kita
 
 ### 3.3 Menjalankan Query MySQL pada Express
 
-Sebelum menjalankan query, ada baiknya kita membuat sebuah rute baru agar pengeksekusian kode lebih mudah dan jelas.
-
-#### 3.1 Buat Endpoint Contact
+Koneksi sudah siap, kita lanjut untuk menjalankan query pada Express. Query MySQL dapat dijalankan dengan menggunakan fungsi `query()`
 
 ```javascript
-app.get("/contact", function(req, res) {});
-```
-
-#### 3.2 Jalankan Query pada Endpoint Contact
-
-Endpoint sudah siap, koneksi sudah siap, kita lanjut untuk menjalankan query pada Express. Query MySQL dapat dijalankan dengan menggunakan fungsi `query()`
-
-```javascript
-app.get("/contact", function(req, res) {
-  con.query("SELECT * FROM contacts", function(err, rows) {
-    if (err) throw err;
-    console.log(rows);
-    res.json(rows);
-  });
+// Eksekusi query SELECT degan koneksi dari variable con
+con.query("SELECT * FROM contacts", function(err, rows) {
+  if (err) throw err;
+  console.log(rows);
 });
 ```
 
@@ -122,6 +118,167 @@ Karena kita juga menggunakan `console.log()`, hasil dari query bisa kita lihat p
   RowDataPacket { id: 2, name: 'Ani', phone: '081356789877' } ]
 ```
 
-## 4. Contoh Kasus
+## 4. Aplikasi CRUD dengan Express
 
-Diberikan langkah - langkah untuk melakukan CRUD ke database menggunakan express dan MySQL
+Setelah mengetahui cara mengkoneksikan database diatas, kita coba untuk membuat sebuah webservice yang bisa melakukan operasi Create, Read, Update, Delete. Sebenarnya kita sudah mengimplementasikan proses Read Data pada contoh diatas. Tetapi, kita belum membuat endpoint untuk mengakses query tersebut. Sehingga perlu dibuat sebuah endpoint agar bisa kita akses dengan REST Client
+
+### 4.1 Read Data
+
+Saat client mengakses URL `/contact` dengan method `GET`, maka aplikasi akan menjalankan query untuk mengambil semua data `contact` dari database.
+
+```javascript
+app.get("/contact", function(req, res) {
+  con.query("SELECT * FROM contacts", function(err, rows) {
+    if (err) throw err;
+    res.json(rows);
+  });
+});
+```
+
+### 4.2 Create Data
+
+Saat client mengakses URL `/contact` dengan method `POST`, maka aplikasi akan mengambil data dari `body` untuk dimasukkan ke dalam tabel `contact` pada database.
+
+```javascript
+app.post("/contact", function(req, res) {
+  let name = req.body.name;
+  let phone = req.body.phone;
+  con.query(
+    "INSERT INTO contacts(name, phone) VALUES (?, ?)",
+    [name, phone],
+    function(err, rows) {
+      if (err) throw err;
+      res.json({
+        success: true,
+        message: "Data Berhasil ditambahkan"
+      });
+    }
+  );
+});
+```
+
+### 4.3 Update Data
+
+Saat client mengakses URL `/contact/:id` dengan method `PUT`, maka aplikasi akan mengambil data dari `body` untuk memperbarui data dari tabel `contact` pada database berdasarkan parameter `/:id` yang diinputkan. Contohnya kita ingin memperbarui data dengan `id` = 1 pada tabel, maka URL akan menjadi `/contact/1`.
+
+```javascript
+app.put("/contact/:id", function(req, res) {
+  let id = req.params.id;
+  let name = req.body.name;
+  let phone = req.body.phone;
+  con.query(
+    "UPDATE contacts SET name = ?, phone = ? WHERE id = ?",
+    [name, phone, id],
+    function(err, rows) {
+      if (err) throw err;
+      res.json({
+        success: true,
+        message: "Data Berhasil diubah"
+      });
+    }
+  );
+});
+```
+
+### 4.4 Delete Data
+
+Sama seperti diatas, client mengakses URL `/contact/:id` dengan method `DELETE` akan menghapus data pada tabel `contact` sesuai dengan parameter `/:id` yang diinputkan. Contoh kita akan menghapus data dengan `id` = `1`, maka URL akan menjadi `/contact/1`.
+
+```javascript
+app.delete("/contact/:id", function(req, res) {
+  let id = req.params.id;
+  con.query("DELETE FROM contacts WHERE id = ?", [id], function(err, rows) {
+    if (err) throw err;
+    res.json({
+      success: true,
+      message: "Data Dihapus"
+    });
+  });
+});
+```
+
+### 4.5 Source Code Lengkap
+
+```javascript
+const express = require("express");
+const mysql = require("mysql");
+
+const con = mysql.createConnection({
+  host: "localhost",
+  user: "root",
+  password: "",
+  database: "expressmysql"
+});
+
+con.connect(function(err) {
+  if (err) throw err;
+  console.log("-> Database Connected");
+});
+
+const app = express();
+
+app.use(express.json());
+
+app.get("/", function(req, res) {
+  res.json({
+    success: true,
+    message: "Hello World!"
+  });
+});
+
+app.get("/contact", function(req, res) {
+  con.query("SELECT * FROM contacts", function(err, rows) {
+    if (err) throw err;
+    console.log(rows);
+    res.json(rows);
+  });
+});
+
+app.post("/contact", function(req, res) {
+  let name = req.body.name;
+  let phone = req.body.phone;
+  con.query(
+    "INSERT INTO contacts(name, phone) VALUES (?, ?)",
+    [name, phone],
+    function(err, rows) {
+      if (err) throw err;
+      res.json({
+        success: true,
+        message: "Data Berhasil ditambahkan"
+      });
+    }
+  );
+});
+
+app.put("/contact/:id", function(req, res) {
+  let id = req.params.id;
+  let name = req.body.name;
+  let phone = req.body.phone;
+  con.query(
+    "UPDATE contacts SET name = ?, phone = ? WHERE id = ?",
+    [name, phone, id],
+    function(err, rows) {
+      if (err) throw err;
+      res.json({
+        success: true,
+        message: "Data Berhasil diubah"
+      });
+    }
+  );
+});
+
+app.delete("/contact/:id", function(req, res) {
+  let id = req.params.id;
+  con.query("DELETE FROM contacts WHERE id = ?", [id], function(err, rows) {
+    if (err) throw err;
+    res.json({
+      success: true,
+      message: "Data Dihapus"
+    });
+  });
+});
+
+app.listen(3000, function() {
+  console.log("-> Server running on :3000");
+});
+```
