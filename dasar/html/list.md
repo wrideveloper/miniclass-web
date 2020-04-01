@@ -19,7 +19,7 @@
 
   Oleh karena itu dengan adanya permasalahan di atas maka kita bisa menggunakan kombinasi dari tag `<ol/>`, `<ul/>` dan `<li/>`.
 
-## 3. Detail Materi
+## 3. Penjelasan List HTML
   
   List digunakan untuk menampilkan kumpulkan text dalam bentuk daftar (list), ada dua jenis list, yaitu berurutan (ordered list), dan tidak berurutan (unordered list). 
 
@@ -59,19 +59,49 @@ Contoh tampilan Unordered List :
 ![unordered-list](unorderedList.jpg)
 
 
-## 4. Praktek!
+## 4. Contoh Kasus
 
-Dari materi di atas sudah dijelaskan ringkasan mengenai list, untuk lebih memahami lagi, Ikuti intruksi dibawah ini:
 
-1. Buatlah Website sederhana untuk menampilkan menu Favorit Anda.
+Dari materi di atas sudah dijelaskan ringkasan mengenai list, untuk lebih memahami lagi, mari kita mencoba untuk membuat website sederhana untuk menampilkan list menu favorit. 
 
-2. List yang perlu ditampilkan adalah hobi, makanan, lagu, dan film. 
 
-3. Untuk list hobi dan makanan berikan tag ``<ol/>``
+Pada pembuatan website yang akan kita buat yang perlu ditampilkan adalah hobi, makanan, lagu, dan film. Misalkan Untuk hobi dan makanan menggunakan tag `<ol/>` sedangkan lagu dan film menggunakan tag `<ul/>` 
 
-4. Untuk list lagu dan film berikan tag ``<ul>``
 
-  Contoh tampilan hasil kasus diatas sebagai berikut: 
+ ```html
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belajar list</title>
+</head>
+<body>
+	<h1>List Favorit</h1>
+	<h3>Hobi</h3>
+	<ol>
+		<li>Ngoding</li>
+		<li>Game</li>
+	</ol>
+	<h3>Makanan</h3>
+	<ol>
+		<li>Nasi Goreng</li>
+		<li>Ayam Bakar</li>
+	</ol>
+	<h3>Lagu</h3>
+	<ul>
+		<li>Make You Mine (Put Your Hand in Mine)</li>
+		<li>Imagine Dragons-Bad Liar</li>
+	</ul>
+	<h3>Film</h3>
+	<ul>
+		<li>The Matriks (1999)</li>
+		<li>Who Am I (2014)</li>
+	</ul>
+</body>
+
+</html>
+```
+
 
 
   ![Latihan list](latihanList.jpg)
