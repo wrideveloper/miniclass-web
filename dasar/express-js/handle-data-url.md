@@ -8,7 +8,7 @@ Sebelumnya, kita sudah bisa membuat web server yang dapat melakukan manipulasi d
 - `/contact` menggunakan method POST - menambahkan data contact
 - `/contact` menggunakan method PUT - mengubah data contact pada index 0
 - `/contact` menggunakan method DELETE - menghapus seluruh data contact
-pada index 0
+  pada index 0
 
 Namun, data dan index yang diinputkan selalu statis dalam artian data yang ditambahkan akan selalu sama yaitu
 
@@ -27,8 +27,8 @@ Lalu bagaimana cara client memberitahu server index mana yang akan diubah atau d
 
 Untuk mengirim data, client dapat menggunakan URL sebagai media untuk menginput data, data yang dikirim melalui URL tadi akan diterima dan diolah oleh server.
 
-
 ## 3. Format URL untuk Menerima Data
+
 Apabila kita ingin membuat server yang dapat menerima data melalui url, kita bisa menggunakan dua jenis format, yaitu `url query` dan `url params`
 
 ### 3.1. URL Query
@@ -65,4 +65,95 @@ app.post("/contact/:name/:phone", function(req, res) {
 
 ## 4. Contoh Kasus
 
-Disini kita akan melanjutkan
+Disini kita akan melanjutkan kode dari materi sebelumnya
+
+## 4.1. Mengubah kode untuk menambah kontak baru
+
+Disini data yang dipush kedalam array akan diterima dari url query, berbeda dari sebelumnya yang masih statis
+
+### 4.1.1. URL Query
+
+```javascript
+app.post("/contact", function(req, res) {
+  contacts.push({ name: req.query.name, phone: req.query.phone });
+  res.send({ success: true });
+});
+```
+
+### 4.1.2. URL Params
+
+```javascript
+app.post("/contact/:name/:phone", function(req, res) {
+  contacts.push({ name: req.params.name, phone: req.params.phone });
+  res.send({ success: true });
+});
+```
+
+## 4.2. Mengubah kode untuk mengubah kontak pada index yang diinginkan
+
+Yang sebelumnya kita hanya mengirim `name` dan `phone`, sekarang kita juga harus mengirim `index` untuk mengetahui data pada index mana yang akan diubah.
+Sebelum mengubah kontak, kita juga harus mengecek apakah data pada index tersebut ada atau tidak.
+
+### 4.2.1. URL Query
+
+```javascript
+app.put("/contact", function(req, res) {
+  if (contacts[req.query.index] !== undefined) {
+    contacts[req.query.index] = {
+      name: req.query.name,
+      phone: req.query.phone
+    };
+    res.send({ success: true });
+  } else {
+    res.send({ success: false });
+  }
+});
+```
+
+### 4.2.2. URL Params
+
+```javascript
+app.put("/contact/:index/:name/:phone", function(req, res) {
+  if (contacts[req.params.index] !== undefined) {
+    contacts[req.params.index] = {
+      name: req.params.name,
+      phone: req.params.phone
+    };
+    res.send({ success: true });
+  } else {
+    res.send({ success: false });
+  }
+});
+```
+
+## 4.1.2. Mengubah kode untuk menghapus kontak pada index yang diinginkan
+
+Untuk menghapus kita perlu mengirimkan `index` untuk mengetahui data di index mana yang akan dihapus. Sebelum menghapus kontak, kita juga harus mengecek apakah data pada index tersebut ada atau tidak.
+
+### 4.1.1. URL Query
+
+```javascript
+app.delete("/contact", function(req, res) {
+  if (contacts[req.query.index] !== undefined) {
+    contacts.splice(req.query.index, 1);
+    res.send({ success: true });
+  } else {
+    res.send({ success: false });
+  }
+});
+```
+
+### 4.1.2. URL Params
+
+```javascript
+app.delete("/contact/:index", function(req, res) {
+  if (contacts[req.params.index] !== undefined) {
+    contacts.splice(req.params.index, 1);
+    res.send({ success: true });
+  } else {
+    res.send({ success: false });
+  }
+});
+```
+
+Untuk mengetes web server yang telah dibuat bisa menggunakan aplikasi REST Client sama seperti materi sebelumnya
