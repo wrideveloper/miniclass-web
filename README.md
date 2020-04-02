@@ -70,7 +70,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: [Menerima Data dari Body](dasar/express-js/handle-data-body.md)
     - :books: Mengunggah File
     - :books: Menampilkan File dalam Folder
-    - :books: [Menyimpan Data ke Database MySQL](dasar/express-js/node-mysql.md)
+    - :books: [Menyimpan Data ke Database MySQL](dasar/express-js/express-mysql.md)
 
 ### :sunflower: Materi Frontend
 
