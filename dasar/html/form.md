@@ -7,45 +7,64 @@ Web tidak hanya digunakan untuk menampilkan informasi saja, akan tetapi digunaka
 ## 2. Penjelasan Form
 Form digunakan untuk menerima data dari inputan user, biasanya diterapkan pada form login, pendaftaran, transaksi, dan sebagainya. 
 
-Form dalam web bisa disamakan dengan formulir di dunia nyata. Form dapat diisi, kemudian diproses dengan program tertentu.
+Form dalam web bisa disamakan dengan formulir di dunia nyata. Form dapat diisi, kemudian diproses menggunakan bahasa pemrograman tertentu.
 
-## 3. Cara Membuat Form
+## 3. Membuat Form Pada Website 
 
 Form di HTML dapat kita buat dengan tag `<form>`.
-nantinya semua inputan akan dimasukkan ke dalam tag ini
+nantinya semua tag input akan dimasukkan ke dalam tag ini
 
+### 3.1. Tag Form
 ```html
 <form >
   <!-- input form ada disini -->
 </form>
 ```
 Kode html diatas tidak akan menghasilkan apa-apa. 
-Karena kita belum membuat field-nya.
+Karena kita belum membuat input-nya.
 
-Apa itu field ?
-`Field` adalah ruas yang dapat diisi dengan data.
+### 3.2. Tag Input
 
-Contoh field :
+`Input` adalah ruas yang dapat diisi dengan data.
+
+Contoh input :
 ```html
 <form>
   <input type="text" name="info" />
 </form>
 ```
-Field memiliki beberapa attribut yang harus diberikan :
--> `type` merupakan type dari field.
--> `name` merupakan nama dari field yang akan menjadi kunci dan variabel di dalam program.
+Input memiliki beberapa attribut yang harus diberikan :
+-> `type` merupakan type dari input.
+-> `name` merupakan nama dari input yang akan menjadi kunci dan variabel di dalam program.
+-> `placeholder` merupakan keterangan atau petunjuk yang mendeskripsikan nilai seperti apa yang harusnya diinputkan oleh user. Attribute ini hanya berguna apabila `type` dari input adalah `text`, `search`, `url`, `tel`, `email`, dan `password`.
+
+### 3.3. Tag Label
+
+`Label` ini digunakan untuk menyeleksi pilihan yang diberikan pada sebuah form.
+tag yang digunakan adalah `<label>`.
+
+Contoh label : 
+```html
+<label>
+  Username:
+  <input type="text" name="username" placeholder="username..." />
+</label>
+```
 
 ### 4. Membuat Form Login
 
-Pada form login, terdapat beberapa field dan elemen : 
--> Field untuk input username atau email
--> Field untuk input password
+Pada form login, terdapat beberapa input, yaitu : 
+-> Input username atau email
+-> Input password
+-> Checkbox untuk remember me
+-> Tombol untuk login
 -> Checkbox untuk remember me
 -> Tombol untuk login
 
-### 4.1 Input
 
-Untuk menerima inputan dari user, kita bisa menggunakan tag `input`.
+### 4.1  Membuat Form dan Input
+
+Langkah pertama yang akan dilakukan untuk membuat form login pada website, adalah dengan membuat inputnya menggunakan tag `input` dengan `type` yang berbeda - beda sesuai kebutuhan. Jangan lupa untuk membungkus semua tag `input` tersebut dengan tag `form`.
 
 ```html
 <form>
@@ -73,32 +92,35 @@ Label digunakan untuk memberikan label pada inputan yang kita buat, sehingga use
   <input type="checkbox" name="remember" value="remember" />
 </form>
 ```
-### 4.3 Baris Kode 
+### 4.3  Hasil Akhir
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Form Login</title>
 </head>
+
 <body>
-    <form>
-        <fieldset>
-        <legend>Login</legend>
-        <p>
-            <label>Username:</label>
-            <input type="text" name="username" placeholder="username..." />
-        </p>
-        <p>
-            <label>Password:</label>
-            <input type="password" name="password" placeholder="password..." />
-        </p>
-        <p>
-            <label><input type="checkbox" name="remember" value="remember" /> Remember me</label>
-        </p>
-        <p>
-            <input type="submit" name="submit" value="Login" />
-        </p>
-        </fieldset>
-    </form>
+  <form>
+      <h3>Login</h3>
+
+      <label>
+          Username:
+          <input type="text" name="username" placeholder="username..." />
+      </label> <br>
+
+      <label>
+      Password:
+      <input type="password" name="password" placeholder="password..." /> <br>
+      </label>
+
+      <label>Remember me </label>
+      <input type="checkbox" name="remember" value="remember" />
+
+      <input type="submit" name="submit" value="Login" /> <br>
+
+  </form>
 </body>
+
 </html>
