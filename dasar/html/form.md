@@ -41,7 +41,7 @@ Input memiliki beberapa attribut yang harus diberikan :
 ### 3.3. Tag Label
 
 `Label` ini digunakan untuk menyeleksi pilihan yang diberikan pada sebuah form.
-tag yang digunakan adalah `<label>`.
+tag yang digunakan yaitu `<label>`.
 
 Contoh label : 
 ```html
