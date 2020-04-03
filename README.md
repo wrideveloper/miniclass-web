@@ -64,7 +64,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 6.  **Express.js**
 
     - :books: [Pengenalan Express.js](dasar/express-js/pengenalan-express-js.md)
-    - :books: HTTP Method
+    - :books: [HTTP Method](dasar/express-js/http-method.md)
     - :books: [Menerima Data dari URL](dasar/express-js/handle-data-url.md)
     - :books: [Middleware](dasar/express-js/middleware.md)
     - :books: [Menerima Data dari Body](dasar/express-js/handle-data-body.md)
