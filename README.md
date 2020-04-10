@@ -77,39 +77,35 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 1.  **Modern Frontend Development**
 
     - :books: [ECMAScript](front-end/modern-frontend-development/ecmascript.md)
+    - :books: Transpiler
     - :books: [Module Bundler](front-end/modern-frontend-development/module-bundler.md)
 
-2.  **React Fundamental**
+2.  **React**
 
     - :books: [Pengenalan React JS](front-end/react-fundamental/pengenalan-reactjs.md)
     - :books: [Install React JS](front-end/react-fundamental/install-reactjs.md)
     - :books: [JSX](front-end/react-fundamental/jsx.md)
     - :books: [Component](front-end/react-fundamental/component.md)
+    - :books: [Styling Component](front-end/react-fundamental/styling-component.md)
     - :books: [Props](front-end/react-fundamental/props.md)
     - :books: [Event](front-end/react-fundamental/event.md)
     - :books: [State](front-end/react-fundamental/state.md)
     - :books: Passing Data to Parent Component
-    - :books: Component Lifecycle
-    - :books: [Styling Component](front-end/react-fundamental/styling-component.md)
-    - :books: [Routing](front-end/react-fundamental/routing.md)
-    - :computer: Membuat Aplikasi React
+    - :books: Effect
+    - :books: Custom Hook
+    - :books: Context
 
-3.  **Consume Web Service**
+3.  **React Performance**
 
-    - :books: Consume REST
-    - :books: [Consume GraphQL](front-end/consume-web-service/graphql.md)
+    - :books: Debounce
+    - :books: Memoization
+    - :books: Profiling
 
-4)  **Share Logic Between Component**
+4.  **React Testing**
 
-    - :books: [Higher Order Component](front-end/share-logic-between-component/higher-order-component.md)
-    - :books: [Render Props](front-end/share-logic-between-component/render-props.md)
-    - :books: [Context](front-end/share-logic-between-component/context.md)
-    - :books: Hooks
-
-5)  **React Component Pattern**
-
-    - :books: Container vs Presentional Component
-    - :books: Compound Component
+    - :books: Component Testing
+    - :books: Hook Testing
+    - :books: End to End Testing
 
 ### :japanese_ogre: Materi Backend
 
