@@ -4,7 +4,7 @@
 
 ## 1. Permasalahan
 
-Sebelumnya, kita sudah terbiasa dengan bahasa pemrograman Javascript untuk membuat frontend dari suatu website. Namun, untuk membuat backend kita membutuhkan bahasa pemrograman lain seperti Golang, PHP, Java, dll. Dikarenakan Javascript hanya berjalan pada sisi client/browser saja, sehingga Javascript tidak dapat dijalankan di server. Maka NodeJS lah yang melengkapi peran dari Javascript sehingga bisa kita gunakan juga untuk sisi servernya.
+Sebelumnya, kita sudah terbiasa dengan bahasa pemrograman Javascript untuk membuat frontend dari suatu website. Namun, untuk membuat backend kita membutuhkan bahasa pemrograman lain seperti Golang, PHP, Java, dll. Dikarenakan Javascript hanya berjalan pada sisi client atau browser saja, sehingga Javascript tidak dapat dijalankan di server. Maka NodeJS lah yang melengkapi peran dari Javascript sehingga bisa kita gunakan juga untuk sisi servernya.
 
 ## 2. Penjelasan Node.js
 
@@ -26,6 +26,7 @@ Untuk Sistem Operasi Ubuntu lakukan langkah-langkah berikut
 curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
+
 ### 3.3. MacOS
 
 Untuk Sistem Operasi MacOS anda cukup mendownload installer yang juga disediakan pada link dibawah ini. Jalankan installer seperti anda menginstall aplikasi pada umumnya.
@@ -41,13 +42,15 @@ Untuk membuat script node.js, kita membutuhkan file dengan menggunakan ekstensi 
 ```javascript
 // app.js
 
-console.log("Hello World")
+console.log('Hello World')
 ```
 
 ### 4.2. Menjalankan Script Node.js
 
-Kemudian untuk menjalankan script yang telah kita buat, gunakanlah perintah `node` 
+Kemudian untuk menjalankan script yang telah kita buat, gunakanlah perintah `node`
+
 ```bash
 node app.js
 ```
+
 Maka setelah itu akan muncul pada console "Hello World" yang telah kita buat tadi.
