@@ -18,7 +18,7 @@ pastikan kita telah membuat file `javascript`, contohnya seperti `index.js` atau
 
 ### 3.1. Mengimport http module
 
-Untuk membuat http server menggunakan Node.js, maka kita perlu mengimport module bawaan Node.js yang bernama `http`, cara mengimport module adalah dengan mengetikkan kode program `require('nama-module')` dan menaruhnya kedalam variabel / konstanta, contohnya seperti ini
+Untuk membuat http server menggunakan Node.js, maka kita perlu mengimport module bawaan Node.js yang bernama `http`, cara mengimport module adalah dengan mengetikkan kode program `require('nama-module')` dan menaruhnya kedalam variabel atau konstanta, contohnya seperti ini
 
 ```javascript
 // index.js
