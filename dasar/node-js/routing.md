@@ -93,7 +93,7 @@ Sebuah server sungguhan selalu mengirim `response` berupa Array of Object. Karen
 
 Data diatas menunjukkan bahwa `key` **warna** memiliki `value` **merah**.
 
-Untuk membuat server kita mengirim data yang berbentuk Array of Object, kita buat dahulu variable untuk menampung datanya
+Untuk membuat server kita mengirim data yang berbentuk Array of Object, kita buat dahulu variable untuk menampung datanya. Kita buat sebuah variable dengan nama `contacts`
 
 ```javascript
 const contacts = [
