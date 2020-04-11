@@ -10,7 +10,7 @@ Langkah pertama untuk belajar membuat sebuah *backend* adalah dengan cara membua
 
 ## 2. HTTP Server
 
-Dengan menggunakan Node.js, kita dapat membuat *HTTP Server*  menggunakan module `http`, module `http` ini secara *default* telah ter*install* saat kita meng*install* Node.js sehingga kita tidak dapat langsung menggunakan module `http` tersebut tanpa melakukan modifikasi apapun
+Dengan menggunakan Node.js, kita dapat membuat *HTTP Server*  menggunakan module `http`, module `http` ini secara *default* telah ter*install* saat kita meng*install* Node.js sehingga kita bisa langsung menggunakan module `http` tersebut tanpa meng*install*nya terlebih dahulu
 
 ## 3. Membuat HTTP Server
 
