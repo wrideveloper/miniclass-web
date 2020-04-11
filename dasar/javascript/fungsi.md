@@ -41,6 +41,7 @@ saya memiliki 2 buah kubus ,kubus a dan kubus b ,kita akan membuat program untuk
   volumeB = b * b * b;
 
   total = volumeA + volumeB;
+  console.log(total);
 
 ```
 
