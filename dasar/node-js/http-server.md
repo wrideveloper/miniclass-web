@@ -68,6 +68,6 @@ http.createServer(function (req, res) { //Create function
 
 maksud dari kode diatas adalah kita menjalankan HTTP Server pada port 3000 dan ketika ada request kita akan merespon dengan **Hello World**
 
-simpan kode program yang telah dibuat dan jalankan file tersebut dengan cara ketikkan `node namafile.js` di command prompt / terminal kamu
+simpan kode program yang telah dibuat dan jalankan file tersebut dengan cara ketikkan `node namafile.js` di command prompt atau terminal kamu
 
 kemudian buka browser lalu ketik `localhost:3000` di URL bar untuk melihat hasil akhirnya yang seharusnya akan muncul teks **Hello World**
