@@ -31,7 +31,26 @@ Tag `<th>` digunakan untuk membuat table header atau kolom header. Biasanya tag 
 </table>
 
 ### 2.4. Tag `<td>`
-Tag `<td>` digunakan untuk menulis isi data pada table tersebut seperti data siswa.
+Tag `<td>` digunakan untuk membuat table data, atau bisa dibilang data yang akan disajikan pada table tersebut. Untuk membuat table data baru, masukkan tag `<td>` ke dalam tag `<tr>` baru.
+
+```html
+<table>
+  <tr>
+    <th>kolom 1</th>
+    <th>kolom 2</th>
+    <th>kolom 3</th>
+  </tr>
+  <tr>
+    <td>data baris 1 kolom 1</td>
+    <td>data baris 1 kolom 2</td>
+    <td>data baris 1 kolom 3</td>
+  </tr>
+  <tr>
+    <td>data baris 2 kolom 1</td>
+    <td>data baris 2 kolom 2</td>
+    <td>data baris 2 kolom 3</td>
+  </tr>
+</table>
 
 ## 3. Contoh penggunaan table dalam sebuah kasus
 
