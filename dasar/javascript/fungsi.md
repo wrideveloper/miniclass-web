@@ -2,14 +2,14 @@
 
 ## 1. Permasalahan
 
-saya memiliki 2 buah kubus ,kubus a dan kubus b ,kita akan membuat program untuk menghitung jumlah volume dari tiap-tiap kubus ,hal yang perlu diketahui adalah :
+saya memiliki 2 buah kubus ,kubus a dan kubus b ,kita akan membuat program untuk menghitung jumlah volume dari tiap-tiap kubus lalu menambahkan nya ,hal yang perlu diketahui adalah :
 
 ![contoh-kasus](img/js-1.png)
 
-1. sisi dari tiap-tiap kubus (a/b)
-2. lalu hitung volume kubus a dan kubus b
-3. lalu kita jumlahkan hasilnya dengan rumus (volumeA + volumeB).
-4. lalu kita lapor/return kan hasil dari penjumlahan nya.
+1. Sisi dari tiap-tiap kubus, kubus a atau kubus b.
+2. Lalu hitung volume kubus a dan kubus b
+3. Lalu kita jumlahkan hasilnya dengan rumus (volumeA + volumeB).
+4. Lalu kita lapor/return kan hasil dari penjumlahan nya.
 
 
 ## 2. Cara Menghitung volume(review materi)
