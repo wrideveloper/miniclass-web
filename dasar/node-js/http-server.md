@@ -14,7 +14,7 @@ Dengan menggunakan Node.js, kita dapat membuat *HTTP Server*  menggunakan module
 
 ## 3. Membuat HTTP Server
 
-pastikan telah membuat file `javascript`, contohnya seperti `index.js` / `app.js` / sesuai nama file yang diinginkan
+pastikan kita telah membuat file `javascript`, contohnya seperti `index.js` atau `app.js` atau sesuai dengan nama file yang diinginkan
 
 ### 3.1. Mengimport http module
 
