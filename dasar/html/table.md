@@ -69,7 +69,7 @@ Selanjutnya, tambahkan table header untuk memberikan deskripsi tentang data apa 
 ```
 ### 3.4 Membuat table data
 
-Table data digunakan untuk menampilkan data-data yang inin disajikan. Sebelum membuat table data jangan lupa untuk membuat baris baru terlebih dahulu. Untuk membuat table data tulislah tag `<td>` lalu tutup dengan `</td>`
+Table data digunakan untuk menampilkan data-data yang ingin disajikan. Sebelum membuat table data jangan lupa untuk membuat baris baru menggunakan tag `<tr>` terlebih dahulu. Untuk membuat table data tulislah tag `<td>` lalu tutup dengan `</td>`
 
 ```html
 <html>
