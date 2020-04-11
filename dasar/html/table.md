@@ -11,7 +11,12 @@ Dalam table terdapat baris dan kolom untuk memudahkan penyajian data. Untuk memb
 Disini dijelaskan tag `<table>` buat apa, jangan lupa juga dijelasin kalo si table ini juga punya attribute `border` buat ngasih border ke tablenya.
 
 ### 2.2. Tag `<tr>`
-Tag `<tr>` digunakan untuk membuat baris baru.
+Sebelum membuat table header atau table data, kita perlu membuat baris baru terlebih dahulu. Untuk membuat baris baru, kita bisa menuliskan tag `<tr>` di dalam tag `<table>` seperti berikut.
+
+```html
+<table>
+  <tr></tr>
+</table>
 
 ### 2.3. Tag `<th>`
 Tag `<th>` digunakan untuk menulis table header. Biasanya tag ini digunakan untuk mendeskripsikan data-data yang ada dibawahnya.
