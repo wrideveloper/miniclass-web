@@ -48,7 +48,7 @@ Tulislah dalam html dengan tag `<table>` lalu tutup dengan `</table>`
 
 ### 3.3 Membuat table header
 
-Table header digunakan untuk memberikan deskripsi tentang data yang ada di bawahnya. Untuk membuat table header tulislah tag `<th>` lalu tutup dengan `</th>`
+Selanjutnya, tambahkan table header untuk memberikan deskripsi tentang data apa yang akan ditampilkan. Disini kita bisa membuat baris baru menggunakan `<tr>`, kemudian di dalam baris tersebut bisa kita tambahkan tag `<th>` untuk membuat beberapa table header sesuai kebutuhan.
 
 ```html
 <html>
@@ -152,4 +152,3 @@ Agar table mudah dilihat, kita bisa memberikan table border. Untuk memberikan ta
   </body>
 </html>
 ```
-
