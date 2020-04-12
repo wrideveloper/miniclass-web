@@ -2,148 +2,125 @@
 
 ## 1. Permasalahan
 
-saya memiliki 2 buah kubus ,kubus a dan kubus b ,kita akan membuat program untuk menghitung jumlah volume dari tiap-tiap kubus lalu menambahkan nya ,hal yang perlu diketahui adalah :
+Terkadang, saat kita membuat fitur program, kita memiliki beberapa perintah yang sama, yang selalu kita tulis berulang - ulang, sehingga baris kode yang kita miliki menjadi banyak sehingga kode yang kita buat tidak cukup efektif.
 
-![contoh-kasus](img/js-1.png)
+ Lalu bagaimana cara agar kita membuat program kita lebih efektif, tidak menulis perintah yang sama secara berulang - ulang ?
 
-1. Sisi dari tiap-tiap kubus, kubus a atau kubus b.
-2. Lalu hitung volume kubus a dan kubus b
-3. Lalu kita jumlahkan hasilnya dengan rumus (volumeA + volumeB).
-4. Lalu kita lapor/return kan hasil dari penjumlahan nya.
+Di javascript kita ditawarkan fungsi ,dengan fungsi kita bisa memecah permasalahan seperti ditas ,
 
 
-## 2. Cara Menghitung volume(review materi)
-  Pertama-tama kita buat file baru ``index.js`` 
 
-  ```html
-      <!DOCTYPE html>
-      <html lang="en">
-      <head>
-        <meta charset = "UTF-8">
-        <title>Function</title>
-      </head>
-      <body>
-        <script src="script.js"></script>
-      </body>
-      </html>
-
-  ```
-      
-  Langkah kedua kita akan buat ``script.js``
-
- ```javascript
-  var a = 8;
-  var b = 3;
-  var volumeA;
-  var volumeB;
-  var total;
-  volumeA = a * a * a;
-  volumeB = b * b * b;
-
-  total = volumeA + volumeB;
-  console.log(total);
-
-```
-
-2 file diatas adalah cara menjumlah kan volume balok secara manual ,masalah nya akan sangat ribet sekali jika banyak balok yang akan dihitung volume nya pasti akan sangat banyak kode yang berulang ,solusi nya adalah kita membuat suatu fungsi dimana fungsi ini akan menghitung otamatis dengan hanya beberapa baris kode yang nilai inputannya bisa kita ubah dengan mudah. 
+## 2. Fungsi 
+  Fungsi adalah kumpulan gabungan perintah-perintah yang digabung menjadi satu dan bisa dipanggil secara bersamaan. 
 
 ### 2.1 Struktur Fungsi
 ```javascript
+  // index.js
 
-function hitungJumlahVolumeDuaKubus(a,b){
-var volumeA;
-var volumeB;
-var total;
+  // membuat fungsi untuk menghitung luas persegi panjang
+  function hitungLuasPersegiPanjang() {
+    var panjang = 5
+    var lebar = 6
+    var luas = panjang * lebar
+    console.log(luas)
+  }
 
-volumeA = a * a * a;
-volumeB = b * b * b;
-
-return total = volumeA + volumeB;
-}
-
-```
+// menjalankan fungsi
+hitungLuasPersegiPanjang() // output : 30
+  ```
 
 **function** = keyword pada javascript.  
-**HitungVolume** = nama fungsinya.  
+**hitungLuasPersegiPanjang** = nama fungsinya.  
 **()** = Parameter/argument(tempat inputan).  
 **a dan b** = adalah bahan-bahan inputan atau nilai yang akan di proses oleh fungsi.  
 **{}** = pembatas dari fungsi tersebut.  
 **var** = adalah cara javascript membuat variable.  
-**return** = keyword yang bisa mengembalikan nilai/hasil laporan dari sebuah proses.
+**console.log** = sebuah fungsi di javascript untuk menampilkan nilai yang sudah ditetntukan untuk ditampilkan kepada pengguna (di console)
 
-*cara baca nya adalah javascript tolong buatkan saya sebuah fungsi yang bernama **hitungJumlahVolumeDuaKubus** dengan bahan inputan **a dan b** dimana perhitungan nya adalah menghitung sebuah volume dari beberapa kubus dengan rumus (sisi X sisi X sisi) lalu jika sudah **tambahkan nilai yang ada pada volume-volume tersebut lalu simpan pada variable total dan laporkan hasilnya nya .***
+*cara baca nya adalah javascript tolong buatkan saya sebuah fungsi yang bernama **hitungLuasPersegiPanjang** dari nilai **panjang dan lebar** dimana perhitungan nya adalah menghitung luas dari suatu persegi lalu jika sudah **simpan nilai perkaliannya dalam variable luas dan tampilkan hasilnya nya di console .***
 
+setelah kita mengetahui beberapa struktur fungsi maka kita akan coba membuatnya.
+### 2.2 Ada 3 cara membuat fungsi di javascript
 
-### 2.2 Penerapan fungsi
+1. Menggunakan cara biasa;
+2. Menggunakan ekspresi;
+3. Menggunakan tanda panah (=>);
+4. Menggunakan parameter
+5. Menggunakan return
 
-dari file diatas ``index.html`` dan ``script.js``
-maka kita perlu merubah code di script.js
-seperti berikut :
-```javascript
-// script.js
-
-function jumlahVolumeDuaKubus(a,b) {
-  var volumeA;
-  var volumeB;
-  var total;
-
-  volumeA = a * a * a;
-  volumeB = b * b * b;
-
-  total = volumeA + volumeB;
-  return total;
-  
-}
-
-console.log(jumlahVolumeDuaKubus(8,6));
-
-
-```
-
-lalu setelah kita selesai merubah code nya kita panggil fungsi nya dengan cara *namaFungsi()* yang dituliskan di ``script.js`` ,dikode diatas saya menggunakan console.log 
-
-kita juga dapat merubah bahan-bahan inputan nilai yang ada di parameter sesuai keinginan
+#### 2.2.1. Membuat Fungsi dengan Cara Biasa
+Cara ini paling sering digunakan, terutama buat yang baru belajar Javascript.
 
 ```javascript
-// script.js
-
-function jumlahVolumeDuaKubus(a,b) {
-  var volumeA;
-  var volumeB;
-  var total;
-
-  volumeA = a * a * a;
-  volumeB = b * b * b;
-
-  total = volumeA + volumeB;
-  return total;
-  
-}
-
-console.log(jumlahVolumeDuaKubus(8,6));
-console.log(jumlahVolumeDuaKubus(9,3));
-console.log(jumlahVolumeDuaKubus(5,10));
-
+  function namaFungsi(){
+      console.log("Hello World!");
+  }
 ```
 
-### 2.3 Fungsi tidak mengembalikan nilai tanpa return
-Berikut contoh pembuatan fungsi sederhana bernama hitungLuasPersegiPanjang. Setelah fungsi tersebut dibuat, maka bisa dijalankan berkali - kali
+### 2.2.2. Membuat Fungsi dengan Ekspresi
+Cara membuat fungsi dengan ekspresi:
+
+```javascript
+var namaFungsi = function(){
+    console.log("Hello World!");
+}
+```
+*Kita menggunakan variabel, lalu diisi dengan fungsi. Fungsi ini sebenarnya adalah fungsi anonim (anonymous function) atau fungsi tanpa nama.*
+
+### 2.2.3. Membuat Fungsi dengan Tanda Panah
+Cara ini sering digunakan di kode Javascript masa kini, karena lebih sederhana. Akan tetapi sulit dipahami bagi pemula. Fungsi ini mulai muncul pada standar ES6.
+
+```javascript
+var namaFungsi = () => {
+    console.log("Hello World!");
+}
+
+// atau seperti ini (jika isi fungsi hanya satu baris):
+var namaFungsi = () => console.log("Hello World!");
+```
+
+*Sebenarnya hampir sama dengan yang menggunakan ekspresi. Bedanya, kita menggunakan tanda panah (=>) sebagai ganti function.*
+
+Pembuatan fungsi dengan cara ini disebut **arrow function.**
+
+### 2.2.4. Membuat Fungsi yang menggunakan parameter
+
+Agar kita dapat mengubah nilai dari ``panjang`` dan ``lebar`` pada fungsi hitungLuasPersegiPanjang, maka kita dapat menggunakan parameter
 ```javascript
 // index.js
 
-// membuat fungsi untuk menghitung luas persegi panjang
-function hitungLuasPersegiPanjang() {
-  var panjang = 5
-  var lebar = 6
+// membuat fungsi dengan parameter panjang dan lebar
+function hitungLuasPersegiPanjang(panjang, lebar) {
   var luas = panjang * lebar
   console.log(luas)
 }
 
-// menjalankan fungsi
-hitungLuasPersegiPanjang() // output : 30
-
+// menjalankan fungsi dengan memasukkan nilai parameter
+hitungLuasPersegiPanjang(5, 6) // output : 30
+hitungLuasPersegiPanjang(2, 4) // output : 8
+hitungLuasPersegiPanjang(3, 5) // output : 15
 ```
 
-jika diawal kita menggunakan return atau mengisi nilai pada parameter maka di fungsi sederhana diatas ini kita langsung mendeklarasikan nilai pada variable nya ,sengaja saya menjelaskan bab ini terakhir hanya sebagai pelengkap saja karena yang common atau sering dipakai adalah function yang berparameter.
+### 2.2.5. Membuat Fungsi yang mengembalikan nilai
+Agar nilai dari perhitungan luas persegi panjang dapat diolah kembali, kita dapat mengembalikan nilai dari fungsi ``hitungLuasPersegiPanjang`` menggunakan perintah ``return``
 
-file javascript bisa di cek di [sini](implementation/fungsi)
+```javascript
+// index.js
+
+// membuat fungsi yang mengembalikan nilai dari luas
+function hitungLuasPersegiPanjang(panjang, lebar) {
+  var luas = panjang * lebar
+  return luas
+}
+
+var hasil = hitungLuasPersegiPanjang(5, 6) + 20
+console.log(hasil) // output : 50
+```
+
+## 3.Contoh kasus
+Cobalah temen-temen buat file html yang didalamnya terdapat 1 kotak beserta beberapa button yang apabila button tersebut di klik akan merubah warna dari kubus tersebut.
+
+hingga hasilnya seperti berikut :
+![alt text](img/js-0.gif)
+
+  [.file contoh kasus](implementation/fungsi/fungsi.zip) 

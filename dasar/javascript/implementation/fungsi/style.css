@@ -1,0 +1,26 @@
+#kotak {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background: transparent;
+    margin: 50px 50px 50px 150px;
+
+  }
+
+  button {
+      margin-left: 40px;
+      transition-duration: 0.4s;
+  }
+
+  .merah{
+      color: red;
+  }
+  .salmon {
+    color:salmon;
+}
+  .hijau{
+    color: green;
+}
+  .orange{
+    color: orange;
+}
