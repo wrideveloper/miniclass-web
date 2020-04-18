@@ -8,7 +8,7 @@ Selain menerima data dari body menggunakan format `url encoded` dan `json`, sebu
 
 Untuk mengirim sebuah file, client harus mengirimkan data melalui body dengan format `form data`. Kemudian server dapat memparsingnya menggunakan middleware `multer`. `Multer` adalah middleware untuk Express dan Node.js untuk menghandle `form data` ketika user melakukan upload file.
 
-## 3. Penjelasan Detail Materi
+## 3. Cara Parsing Form Data Menggunakan Middleware Multer
 
 
   Node JS sendiri tidak dapat menghandle multipart request. Sehingga membutuhkan Multer.  
