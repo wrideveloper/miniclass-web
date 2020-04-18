@@ -14,14 +14,6 @@ Untuk mengirim sebuah file, client harus mengirimkan data melalui body dengan fo
   Node JS sendiri tidak dapat menghandle multipart request. Sehingga membutuhkan Multer.  
   `Multer` adalah middleware node.js untuk menangani multipart / form-data, yang biasanya digunakan untuk mengunggah file.
 
-  - cara mengirim form data dari frontend javascript  
-    Menggunakan `FormData` object seperti berikut :
-    ```
-    const data = new FormData();
-        data.append("username", "aka");
-        data.append("password", "123");
-        axios.post("/", data);
-    ```
   - cara parsing form data ke req.files menggunakan middleware `multer`
 
     1. Buatlah folder untuk menyimpan file terlebih dahulu.
