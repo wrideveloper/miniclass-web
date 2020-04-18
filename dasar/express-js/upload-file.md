@@ -10,13 +10,6 @@ Untuk mengirim sebuah file, client harus mengirimkan data melalui body dengan fo
 
 ## 3. Penjelasan Detail Materi
 
-- penjelasan form data  
-  form data digunakan untuk mengambil data dari sebuah form.
-  Jika pada HTML, biasanya menggunakan syntax berikut :
-
-  ```
-  <form action="submit.php" method="post" enctype="multipart/form-data" />
-  ```
 
   Node JS sendiri tidak dapat menghandle multipart request. Sehingga membutuhkan Multer.  
   `Multer` adalah middleware node.js untuk menangani multipart / form-data, yang biasanya digunakan untuk mengunggah file.
