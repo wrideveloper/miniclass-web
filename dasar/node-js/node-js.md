@@ -4,45 +4,53 @@
 
 ## 1. Permasalahan
 
-Javascript merupakan bahasa pemrograman yang hanya dapat dijalankan di web browser sebagai frontend. Sehingga kita membutuhkan bahasa pemrograman lain untuk membuat backend
+Sebelumnya, kita sudah terbiasa dengan bahasa pemrograman Javascript untuk membuat frontend dari suatu website. Namun, untuk membuat backend kita membutuhkan bahasa pemrograman lain seperti Golang, PHP, Java, dll. Dikarenakan Javascript hanya berjalan pada sisi client atau browser saja, sehingga Javascript tidak dapat dijalankan di server. Maka NodeJS lah yang melengkapi peran dari Javascript sehingga bisa kita gunakan juga untuk sisi servernya.
 
 ## 2. Penjelasan Node.js
 
-Node.js merupakan runtime environment javascript yang membuat javascript dapat berjalan di server
+Agar kita dapat menjalankan javascript pada server, maka kita harus menginstall node.js pada server. Node.js bukan bahasa pemrograman baru, melainkan runtime environment atau suatu wadah dimana bahasa pemrograman dapat berjalan di dalamnya. Dalam kasus ini, node.js yang diinstall ke server membuat bahasa pemrograman javascript dapat berjalan pada server.
 
 ## 3. Install Node.js
 
 ### 3.1. Windows
 
-Download instalasi node.js untuk windows pada link berikut :
+Untuk Sistem Operasi Windows, anda cukup mendownload installer yang telah disediakan pada link dibawah. Untuk cara menginstallnya hampir sama seperti menginstall aplikasi pada Windows.
 
 https://nodejs.org/en/download/
 
 ### 3.2. Ubuntu
 
-Gunakan perintah berikut untuk menginstall node.js versi 13 pada ubuntu
+Untuk Sistem Operasi Ubuntu lakukan langkah-langkah berikut
 
 ```bash
-curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
-sudo apt install nodejs
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+sudo apt-get install -y nodejs
 ```
+
+### 3.3. MacOS
+
+Untuk Sistem Operasi MacOS anda cukup mendownload installer yang juga disediakan pada link dibawah ini. Jalankan installer seperti anda menginstall aplikasi pada umumnya.
+
+https://nodejs.org/en/download/
 
 ## 4. Hello World
 
 ### 4.1. Membuat Script Node.js
 
-Untuk membuat script node.js, buatlah sebuah file dengan ekstensi `.js`, misalnya `index.js`
+Untuk membuat script node.js, kita membutuhkan file dengan menggunakan ekstensi `.js`, misalnya `app.js`
 
 ```javascript
-// index.js
+// app.js
 
-console.log('hello world')
+console.log('Hello World')
 ```
 
 ### 4.2. Menjalankan Script Node.js
 
-Kemudian untuk menjalankan script tersebut, gunakanlah perintah `node`
+Kemudian untuk menjalankan script yang telah kita buat, gunakanlah perintah `node`
 
 ```bash
-node index.js
+node app.js
 ```
+
+Maka setelah itu akan muncul pada console "Hello World" yang telah kita buat tadi.

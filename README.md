@@ -59,58 +59,53 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: [Import Export](dasar/node-js/import-export.md)
     - :books: [Node Package Manager](dasar/node-js/node-package-manager.md)
     - :books: NPM Script
+    - :books: [Nodemon](dasar/node-js/nodemon.md)
 
 6.  **Express.js**
 
     - :books: [Pengenalan Express.js](dasar/express-js/pengenalan-express-js.md)
-    - :books: [Membuat Server dengan Express.js](dasar/express-js/membuat-server-dengan-express-js.md)
-    - :books: [Routing](dasar/express-js/routing.md)
-    - :books: HTTP Method
+    - :books: [HTTP Method](dasar/express-js/http-method.md)
     - :books: [Menerima Data dari URL](dasar/express-js/handle-data-url.md)
     - :books: [Middleware](dasar/express-js/middleware.md)
     - :books: [Menerima Data dari Body](dasar/express-js/handle-data-body.md)
-    - :books: [Koneksi ke Database MySQL](dasar/express-js/node-mysql.md)
-    - :books: [Memisah Routing](dasar/express-js/memisah-routing.md)
-    - :books: [MVC](dasar/express-js/mvc.md)
+    - :books: Mengunggah File
+    - :books: Menampilkan File dalam Folder
+    - :books: [Menyimpan Data ke Database MySQL](dasar/express-js/express-mysql.md)
 
 ### :sunflower: Materi Frontend
 
 1.  **Modern Frontend Development**
 
     - :books: [ECMAScript](front-end/modern-frontend-development/ecmascript.md)
+    - :books: Transpiler
     - :books: [Module Bundler](front-end/modern-frontend-development/module-bundler.md)
 
-2.  **React Fundamental**
+2.  **React**
 
     - :books: [Pengenalan React JS](front-end/react-fundamental/pengenalan-reactjs.md)
     - :books: [Install React JS](front-end/react-fundamental/install-reactjs.md)
     - :books: [JSX](front-end/react-fundamental/jsx.md)
     - :books: [Component](front-end/react-fundamental/component.md)
+    - :books: [Styling Component](front-end/react-fundamental/styling-component.md)
     - :books: [Props](front-end/react-fundamental/props.md)
     - :books: [Event](front-end/react-fundamental/event.md)
     - :books: [State](front-end/react-fundamental/state.md)
     - :books: Passing Data to Parent Component
-    - :books: Component Lifecycle
-    - :books: [Styling Component](front-end/react-fundamental/styling-component.md)
-    - :books: [Routing](front-end/react-fundamental/routing.md)
-    - :computer: Membuat Aplikasi React
+    - :books: Effect
+    - :books: Custom Hook
+    - :books: Context
 
-3.  **Consume Web Service**
+3.  **React Performance**
 
-    - :books: Consume REST
-    - :books: [Consume GraphQL](front-end/consume-web-service/graphql.md)
+    - :books: Debounce
+    - :books: Memoization
+    - :books: Profiling
 
-4)  **Share Logic Between Component**
+4.  **React Testing**
 
-    - :books: [Higher Order Component](front-end/share-logic-between-component/higher-order-component.md)
-    - :books: [Render Props](front-end/share-logic-between-component/render-props.md)
-    - :books: [Context](front-end/share-logic-between-component/context.md)
-    - :books: Hooks
-
-5)  **React Component Pattern**
-
-    - :books: Container vs Presentional Component
-    - :books: Compound Component
+    - :books: Component Testing
+    - :books: Hook Testing
+    - :books: End to End Testing
 
 ### :japanese_ogre: Materi Backend
 

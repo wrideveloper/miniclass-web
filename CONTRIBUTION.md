@@ -44,4 +44,52 @@ $ git push origin [nama-branch]
 
 ### 4. Membuat Pull Request
 
-Silahkan buat pull request baru pada github dengan cara menakan tombol `New pull request`. Kemudian pilih branch `master` sebagai `base`. Dan `branch anda` sebagai `compare`. Tunggulah review dari kontributor lain. Apabila sudah diterima, maka pull request anda akan di merge ke master
+Silahkan buat pull request baru pada github dengan cara menakan tombol `New pull request`. Kemudian pilih branch `master` sebagai `base`. Dan `branch anda` sebagai `compare`. Tunggulah review dari kontributor lain. Apabila sudah diterima, maka perubahan yang ada pada branch pull request akan dipindahkan ke branch `master`.
+
+## Kontribusi Ulang
+
+Ada beberapa hal yang perlu dilakukan untuk mulai melakukan kontribusi ulang. Silahkan ikuti langkah - langkah berikut
+
+### 1. Mengupdate Branch Master Setelah Pull Request Diterima
+
+Setelah pull request diterima, maka perubahan yang ada pada branch pull request akan dipindahkan ke branch `master`. Namun branch `master` yang dimaksud disini adalah branch `master` yang ada di server github. Sedangkan branch master di komputer kita tidak akan menerima perubahan tersebut. Sehingga perlu di update manual
+
+Pertama, pindah dulu dari branch pull request ke branch `master`
+
+```bash
+$ git checkout master
+```
+
+Kemudian, ambil perubahan yang ada pada branch `master` di server github ke branch `master` di komputer kita
+
+```bash
+$ git pull origin master
+```
+
+Sekarang perubahan yang ada di branch `master` di laptop kita, telah sama seperti yang ada di branch `master` server github.
+
+### 2. Menghapus Branch Pull Request Sebelumnya
+
+Karena perubahan yang dilakukan pada branch pull request sebelumnya sudah dimasukkan ke master, maka branch tersebut sudah tidak digunakan lagi. Sehingga bisa dihapus menggunakan perintah berikut
+
+```bash
+$ git branch -D [nama-branch]
+```
+
+### 3. Membuat Branch Baru
+
+Sekarang, karena branch `master` sudah terupdate, dan branch pull request sebelumnya sudah dihapus. Kita bisa membuat branch baru untuk mulai melakukan kontribusi lagi.
+
+Sebelum membuat branch baru, pastikan anda telah berada pada branch master terlebih dahulu. Sehingga commit yang ada pada branch baru, akan berdasarkan commit yang ada pada branch `master`
+
+```bash
+$ git checkout master
+```
+
+Kemudian, kita bisa membuat branch baru menggunakan perintah berikut.
+
+```bash
+$ git branch [nama-branch]
+```
+
+Langkah selanjutnya akan sama seperti langkah 3 pada _getting started_
