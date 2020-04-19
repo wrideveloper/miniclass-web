@@ -9,20 +9,18 @@ Saat membuat fitur web,terkadang kita membutuhkan perintah sebagai respon sistem
 
 Event merupakan suatu respon dari web atau sistem terhadap kegiatan yang dilakukan oleh user dimana kegiatan tersebut akan memicu jalannya script javascript yang terhubung dengan file HTML dari web tersebut. 
 
-Normalnya, event dikombinasikan dengan fungsi dimana fungsi tidak akan dieksekusi sebelum event terjadi
-
 ## 3. Penjelasan Detail Materi
 Contoh-contoh event umum pada javascript, misalnya : 
 
-1. **onclick**    : Event ketika user melakukan klik pada button 
-2. **onkeypress** : Event ketika user menekan keyboard
-3. **onchange**   : Event ketika nilai dari input form berubah 
-4. **onload**     : Event ketika suatu elemen selesai dimuat
-5. **onkeydown**  : Event ketika tombol keyboard ditekan atau dalam posisi down
-6. **onkeyup**    : Event ketika tombol keyboard selesai ditekan atau dalam posisi up
-7. **onsubmit**   : Event ketika suatu form akan mengirimkan data inputan 
-8. **onblur**     : Event ketika kursor user terletak diluar kolom text 
-9. **onfocus**    : Event ketika kursor user terletak pada kolom text. Contoh penggunaan  **onblur** dan **onfocus** pada form inputan data
+1. `onclick`    : Event ketika user melakukan klik pada button 
+2. `onkeypress` : Event ketika user menekan keyboard
+3. `onchange`   : Event ketika nilai dari input form berubah 
+4. `onload`     : Event ketika suatu elemen selesai dimuat
+5. `onkeydown`  : Event ketika tombol keyboard ditekan atau dalam posisi down
+6. `onkeyup`    : Event ketika tombol keyboard selesai ditekan atau dalam posisi up
+7. `onsubmit`   : Event ketika suatu form akan mengirimkan data inputan 
+8. `onblur`     : Event ketika kursor user terletak diluar kolom text 
+9. `onfocus`    : Event ketika kursor user terletak pada kolom text. Contoh penggunaan  **onblur** dan **onfocus** pada form inputan data
 
 contoh lain dari event javascript dapat dilihat pada referensi
 ## 4. Event Handler
@@ -38,6 +36,8 @@ Ada tiga cara umum yang dapat kita gunakan untuk membuat event handler pada java
 #### 4.2.1 Menggunakan Inline Event Handler
 
 Inline Event Handler diterapkan didalam file HTML dengan menambahkan attribute pada suatu element
+Aktivitas onclick pada syntax dapat dilihat pada console yang dapat dibuka dengan mengklik kanan mouse, lalu pilih inspeksi.
+Angka yang terdapat pada console bertanda merah di gambar akan bertambah setiap tombol di klik
 
 ```html
 <!-- index.html -->
@@ -52,8 +52,7 @@ Inline Event Handler diterapkan didalam file HTML dengan menambahkan attribute p
   </body>
 </html>
 ```
-Aktivitas onclick pada syntax diatas dapat dilihat pada console yang dapat dibuka dengan mengklik kanan mouse, lalu pilih inspeksi.
-Angka yang terdapat pada console bertanda merah tersebut akan bertambah setiap tombol di klik
+
 
 <img src="event(2).png" width="600" />
 
@@ -102,6 +101,7 @@ input.onchange = function(event) {
 ## 6. Studi Kasus Form Biodata
 Pada studi kasus ini, kita akan membuat form biodata yang dapat ditambahkan datanya dan menampilkan alert yang berisi "hallo (nama yang diinputkan)". Setelah alert muncul, data yang diinputkan akan ditampilkan. Berikut contohnya
 
+Pada div dengan class `app`, berisi 2 div dengan class `form` dan `biodata`. class `form` berisi kolom yang dapat disi dengan data dan button submit untuk menampilkan data. sedangkan class `biodata` berfungsi untuk menampilkan data yang telah diinputkan. Jangan lupa mencantumkan link yang menghubungkan file html dengan file css dan file javascript
 
 <img src="event(3).png" width="600" />
 <img src="event(4).png" width="600" />
@@ -139,7 +139,7 @@ Pada studi kasus ini, kita akan membuat form biodata yang dapat ditambahkan data
 </html>
 ```
 
-Pada div dengan class `app`, berisi 2 div dengan class `form` dan `biodata`. class `form` berisi kolom yang dapat disi dengan data dan button submit untuk menampilkan data. sedangkan class `biodata` berfungsi untuk menampilkan data yang telah diinputkan. Jangan lupa mencantumkan link yang menghubungkan file html dengan file css dan file javascript
+
 
 ### 6.2 Membuat File `event.css` untuk styling website
 #### 6.2.1 Styling untuk form inputan
@@ -225,6 +225,7 @@ Pada div dengan class `app`, berisi 2 div dengan class `form` dan `biodata`. cla
 
 ### 6.3 Membuat file `event.js`
 #### 6.3.1 Deklarasi variabel
+Deklarasikan variabel yang digunakan untuk mengambil elemen yang ada pada file html dengan selection `getElementById`.
 ```javascript
 // array untuk menampung data inputan
 var data = []
@@ -236,9 +237,11 @@ var input_phone = document.getElementById('input_phone')
 var input_email = document.getElementById('input_email')
 var id_button = document.getElementById('id_button')
 ```
-Deklarasikan variabel yang digunakan untuk mengambil elemen yang ada pada file html dengan selection `getElementById`.
+
 
 #### 6.3.2 Fungsi pada saat mengeklik button submit
+Buatlah fungsi yang akan dijalankan saat button di klik. Fungsi ini menampilkan alert yang berisi "hallo (nama yang diinput)" dan bertugas untuk memanggil fungsi selanjutnya, yaitu `addBio()`
+
 ```javascript
 id_button.onclick = function () {
     var nama = input_nama.value
@@ -246,9 +249,10 @@ id_button.onclick = function () {
     addBio()
 }
 ```
-Buatlah fungsi yang akan dijalankan saat button di klik. Fungsi ini menampilkan alert yang berisi "hallo (nama yang diinput)" dan bertugas untuk memanggil fungsi selanjutnya, yaitu `addBio()`
 
 #### 6.3.3 Fungsi untuk menampilkan data
+Fungsi ini berfungsi untuk menampilkan data dan memanggil fungsi selanjutnya, yaitu `renderBio()`
+
 ```javascript
 function addBio() {
     var nama = input_nama.value
@@ -263,9 +267,11 @@ function addBio() {
     renderBio()
 }
 ```
-Fungsi ini berfungsi untuk menampilkan data dan memanggil fungsi selanjutnya, yaitu `renderBio()`
+
 
 ### 6.3.4 Fungsi `renderBio()`
+Fungsi ini berfungsi untuk melooping data ke dalam Array yang telah di deklarasikan sebelumnya
+
 ```javascript
 function renderBio() {
     biodata.innerHTML = ''
@@ -283,7 +289,7 @@ function renderBio() {
 
 renderBio()
 ```
-Fungsi ini berfungsi untuk melooping data ke dalam Array yang telah di deklarasikan sebelumnya
+
 
 ## 7. Referensi
 
