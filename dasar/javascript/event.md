@@ -11,16 +11,103 @@ Event merupakan suatu respon dari web atau sistem terhadap kegiatan yang dilakuk
 
 ## 3. Penjelasan Detail Materi
 Contoh-contoh event umum pada javascript, misalnya : 
+### 3.1 `onclick`
+`onclick` adalah event yang terjadi ketika user melakukan klik pada button. Syntax dibawah ini akan menampilkan tulisan "event click terjadi" dan jumlah banyak nya user mengeklik button. Tulisan tersebut akan terlihat pada console
+```html
+<html>
+  <head>
+      <title>Belajar Event</title>
+  </head>
+  <body>
+      <button onclick="console.log('event click terjadi')">Tekan saya</button>
+  </body>
 
-1. `onclick`    : Event ketika user melakukan klik pada button 
-2. `onkeypress` : Event ketika user menekan keyboard
-3. `onchange`   : Event ketika nilai dari input form berubah 
-4. `onload`     : Event ketika suatu elemen selesai dimuat
-5. `onkeydown`  : Event ketika tombol keyboard ditekan atau dalam posisi down
-6. `onkeyup`    : Event ketika tombol keyboard selesai ditekan atau dalam posisi up
-7. `onsubmit`   : Event ketika suatu form akan mengirimkan data inputan 
-8. `onblur`     : Event ketika kursor user terletak diluar kolom text 
-9. `onfocus`    : Event ketika kursor user terletak pada kolom text. Contoh penggunaan  **onblur** dan **onfocus** pada form inputan data
+</html>
+
+```
+
+### 3.2 `onkeypress`
+`onkeypress` adalah event yang terjadi ketika user menekan keyboard. syntax dibawah ini akan menampilkan alert yang berisi "hallo! ini pakai onkeypress" saat user menekan keyboard. Isi alert dapat disesuaikan dengan kebutuhan dan keinginan. Onkeypress tidak berlaku untuk semua key (contoh: ALT,CTRL,SHIFT) di semua browsers.
+
+```html
+<html>
+  <head>
+      <title>Belajar Event</title>
+  </head>
+  <body>
+      <input type="text" onkeypress="alert('hallo! ini pakai onkeypress')" placeholder="onkeypress" />
+  </body>
+</html>
+
+```
+
+### 3.3 `onchange`   
+`onchange` adalah event yang terjadi ketika nilai dari input form berubah. Syntax ini akan menampilkan inputan yang dibuat user dalam console. console dapat dibuka dengan klik kanan halaman website, pilih inspeksi
+```html
+<html>
+  <head>
+      <title>Belajar Event</title>
+  </head>
+  <body>
+      <input onchange="console.log(event.target.value)" />
+  </body>
+</html>
+
+```
+
+### 3.4 `onload`
+`onload` merupakan event yang terjadi ketika suatu elemen selesai dimuat. Pada syntax ini, setelah elemen selesai dimuat akan muncul gambar. File gambar yang disertakan disimpan dalam 1 file yang sama dengan file html
+
+```html
+<html>
+  <head>
+      <title>Belajar Event</title>
+  </head>
+  <body>
+      <img src="wri.jpg" onload="alert('gambar dimuat')" width="100" height="132">
+  </body>
+</html>
+
+```
+
+
+### 3.5 `onkeydown`  
+`onkeydown` merupakan event yang terjadi ketika tombol keyboard ditekan atau dalam posisi down. jika `onkeypress` tidak berlaku pada key tertentu, hal itu tidak terjadi pada `onkeydown`. `onkeydown` dapat digunakan juga saat user menekan tombol ALT,CTRL,SHIFT
+```html
+<input type="text" onkeydown="alert('hallo. ini pakai onkeydown')" placeholder="onkeydown" />
+```
+
+### 3.6 `onkeyup`
+`onkeyup` merupakan event yang terjadi ketika tombol keyboard selesai ditekan atau dalam posisi up
+
+```html
+<html>
+  <head>
+      <title>Belajar Event</title>
+  </head>
+  <body>
+      <input type="text" onkeyup="alert('hallo. ini pakai onkeyup')" placeholder="onkeyup" />
+  </body>
+</html>
+
+```
+
+### 3.7 `onsubmit`
+`onsubmit` merupakan event yang terjadi ketika suatu form akan mengirimkan data inputan
+```html
+<html>
+  <head>
+      <title>Belajar Event</title>
+  </head>
+  <body>
+      <form onsubmit="alert('data sudah terkumpul')">
+          Enter name: <input type="text">
+          <input type="submit">
+  </form>
+  </body>
+</html>
+
+```
 
 contoh lain dari event javascript dapat dilihat pada referensi
 ## 4. Event Handler
@@ -61,235 +148,24 @@ Angka yang terdapat pada console bertanda merah di gambar akan bertambah setiap 
 note:
 kelemahan menggunakan cara ini adalah akan mencampur-adukkan file HTML dan Javasript
 ```
-#### 4.2.2 Menggunakan DOM Event Handler
-
-Kita juga dapat menuliskan event handler pada file javascript  
-
-```javascript
-// index.js
-
-// ambil element yang akan ditambahkan event handler
-var button = document.getElementById("id")
-
-// masukkan event handler pada onclick
-button.onclick = function() {
-  console.log('event click terjadi')
-}
-```
-
 
 ## 5. Event Object
 
 Dalam Event, Event handler sebagai button yang dikenai aksi oleh user sedangkan Event object sebagai parameter pertama dari event handler yang berisi informasi terkait event yang sedang terjadi
 
-```javascript
-// index.js
-
-var button = document.getElementById("id-button")
-button.onclick = function(event) {
-  // menampilkan button mouse mana yang diklik (kanan atau kiri)
-  console.log(event.button)
-}
-
-var input = document.getElementById("id-input")
-input.onchange = function(event) {
-  // menampilkan value dari input setelah valuenya berubah
-  console.log(event.target.value)
-}
-```
-
-## 6. Studi Kasus Form Biodata
-Pada studi kasus ini, kita akan membuat form biodata yang dapat ditambahkan datanya dan menampilkan alert yang berisi "hallo (nama yang diinputkan)". Setelah alert muncul, data yang diinputkan akan ditampilkan. Berikut contohnya
-
-Pada div dengan class `app`, berisi 2 div dengan class `form` dan `biodata`. class `form` berisi kolom yang dapat disi dengan data dan button submit untuk menampilkan data. sedangkan class `biodata` berfungsi untuk menampilkan data yang telah diinputkan. Jangan lupa mencantumkan link yang menghubungkan file html dengan file css dan file javascript
-
-<img src="event(3).png" width="600" />
-<img src="event(4).png" width="600" />
-
-
-### 6.1 Membuat file `event.html` 
 ```html
 <html>
+    <head>
+        <title>Belajar Event</title>
+    </head>
 
-<head>
-    <title> Form app</title>
-    <!-- link menuju file css -->
-    <link rel="stylesheet" href="event.css" />
-</head>
-
-<body>
-    <div class="app">
-        <div class="form">
-            <h1 class="form__title">Biodata</h1>
-            <input class="form__input" type="text" placeholder="Nama" id="input_nama" />
-            <input class="form__input" type="text" placeholder="Jurusan" id="input_jurusan" />
-            <input class="form__input" type="text" placeholder="Phone" id="input_phone" />
-            <input class="form__input" type="text" placeholder="Email" id="input_email" />
-            <button class="form__button" type="submit" id="id_button">Submit</button>
-        </div>
-        <div class="biodata" id="biodata">
-
-        </div>
-    </div>
-
-    <!-- link menuju file javascipt -->
-    <script src="event.js"></script>
-</body>
-
+    <body>
+        <!-- (event.target.value) merupakan parameter -->
+        <input onchange="console.log(event.target.value)" />
+    </body>
 </html>
+
 ```
-
-
-
-### 6.2 Membuat File `event.css` untuk styling website
-#### 6.2.1 Styling untuk form inputan
-
-```css
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .app {
-    display: flex;
-    justify-content: space-around;
-    margin: 100px;
-  }
-  
-  .form {
-    border-right: dashed 2px #ccc;
-    padding-right: 100px;
-    margin-right: 100px;
-  }
-  
-  .form__title {
-    font-size: 25px;
-    color: #424242;
-  }
-  
-  .form__input {
-    display: block;
-    padding: 10px 15px;
-    margin-bottom: 15px;
-    border: solid 1px #ccc;
-    border-radius: 5px;
-    outline: none;
-  }
-  
-  .form__submit {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #2d89d9;
-    color: white;
-    font-weight: bold;
-  }
-  ```
-  #### 6.2.2 Styling untuk tampilan biodata yang telah diinputkan
-  ```css
-  .biodata {
-    flex: 1;
-  }
-  
-  .biodata__item {
-    border: solid 1px #ccc;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    padding: 15px;
-  }
-  
-  .biodata__nama {
-    
-    color: #252525;
-    font-weight: bold;
-    font-size: 30px;
-  }
-  .biodata__jurusan {
-    color: #424242;
-    font-size: 14px;
-  }
-  .biodata__phone {
-    color: #424242;
-    font-size: 14px;
-  }
-
-  .biodata__email {
-    color: #424242;
-    font-size: 14px;
-  }
-  ```
-
-### 6.3 Membuat file `event.js`
-#### 6.3.1 Deklarasi variabel
-Deklarasikan variabel yang digunakan untuk mengambil elemen yang ada pada file html dengan selection `getElementById`.
-```javascript
-// array untuk menampung data inputan
-var data = []
-// mengambil elemen berupa Id
-var biodata = document.getElementById('biodata')
-var input_nama = document.getElementById('input_nama')
-var input_jurusan = document.getElementById('input_jurusan')
-var input_phone = document.getElementById('input_phone')
-var input_email = document.getElementById('input_email')
-var id_button = document.getElementById('id_button')
-```
-
-
-#### 6.3.2 Fungsi pada saat mengeklik button submit
-Buatlah fungsi yang akan dijalankan saat button di klik. Fungsi ini menampilkan alert yang berisi "hallo (nama yang diinput)" dan bertugas untuk memanggil fungsi selanjutnya, yaitu `addBio()`
-
-```javascript
-id_button.onclick = function () {
-    var nama = input_nama.value
-    alert('Hallo ' + nama)
-    addBio()
-}
-```
-
-#### 6.3.3 Fungsi untuk menampilkan data
-Fungsi ini berfungsi untuk menampilkan data dan memanggil fungsi selanjutnya, yaitu `renderBio()`
-
-```javascript
-function addBio() {
-    var nama = input_nama.value
-    var jurusan = input_jurusan.value
-    var phone = input_phone.value
-    var email = input_email.value
-
-    data.push({
-        nama: nama, jurusan: jurusan, phone: phone,
-        email: email
-    })
-    renderBio()
-}
-```
-
-
-### 6.3.4 Fungsi `renderBio()`
-Fungsi ini berfungsi untuk melooping data ke dalam Array yang telah di deklarasikan sebelumnya
-
-```javascript
-function renderBio() {
-    biodata.innerHTML = ''
-    for (var i = 0; i < data.length; i++) {
-        biodata.innerHTML += `
-        <div class="biodata__item">
-            <p class= "biodata__nama">${data[i].nama}</p>
-            <p class= "biodata__jurusan">${data[i].jurusan}</p>
-            <p class= "biodata__phone">${data[i].phone}</p>
-            <p class= "biodata__email">${data[i].email}</p>
-        </div>
-        `
-    }
-}
-
-renderBio()
-```
-
 
 ## 7. Referensi
 
