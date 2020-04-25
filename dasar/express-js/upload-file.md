@@ -25,7 +25,7 @@ let filename;
  Nama file diambil dari nama field pada form kalian kemudian tanggal dan diakhiri dengan format photo yang di upload.
 
 ```javascript
-const storage = multer.diskStorage({
+const diskStorage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, path.join(__dirname, "<lokasi folder untuk menyimpan file>"));
   },
