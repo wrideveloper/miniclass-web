@@ -20,12 +20,6 @@ $ npm i multer --save
 
 Selanjutnya untuk menerapkan multer pada express adalah dengan membuat folder untuk menyimpan file yang akan diunggah, misalnya folder `upload`
 
-### 3.2 Install `multer`
-
-```bash
-$ npm i multer --save
-```
-
 ### 3.3 Mendefinisikan Dependency `multer` dan `path`
 
 Sebelum menggunakan `multer`, kita perlu mendefinisikan dependency multer terlebih dahulu :
