@@ -12,42 +12,100 @@ Untuk mengirim sebuah file, client harus mengirimkan data melalui body dengan fo
 ## 3. Cara Parsing Form Data Menggunakan Middleware Multer
 
 ### 3.1 Membuat folder untuk menyimpan file
+
 Langkah pertama untuk menerapkan multer pada express adalah dengan membuat folder untuk menyimpan file yang akan diunggah, misalnya folder `upload`
 
-3.2 Buat variable untuk menyimpan nama file yang akan di upload.
+### 3.2 Mendefinisikan Dependency `multer` dan `path`
+
+Sebelum menggunakan `multer`, kita perlu mendefinisikan dependency multer terlebih dahulu :
 
 ```javascript
-let filename;
+const multer = require("multer");
 ```
 
-3.3 Aturlah lokasi penyimpanan file :  
- note : ubah kalimat dalam tanda `<>` sesuai dengan lokasi folder kalian.  
- Nama file diambil dari nama field pada form kalian kemudian tanggal dan diakhiri dengan format photo yang di upload.
+`Multer` memiliki fitur untuk menghasilkan jalur tujuan dan nama file secara dinamis, yaitu `path`.  
+Jadi, kita harus melewati fungsi yang akan melakukan generate path dan mengembalikannya melalui callback (cb).  
+Sehingga kita membutuhkan dependency untuk `path` sebelum kita dapat menggunakannya :
 
 ```javascript
+// dependency multer
+const multer = require("multer");
+// dependency path
+const path = require("path");
+```
+
+### 3.3 Membuat Configurasi Storage Multer
+
+`diskStorage` engine memungkinkan kita untuk menyimpan file kedalam disk. Disini kita akan menyimpan file pada directory upload seperti yang telah kita buat pada langkah 3.1 sebelumnya.
+
+```javascript
+// konfigurasi diskStorage multer
 const diskStorage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, path.join(__dirname, "<lokasi folder untuk menyimpan file>"));
+    cb(null, path.join(__dirname, "/uploads"));
   },
   filename: function (req, file, cb) {
     cb(
       null,
-      (fileName =
-        file.fieldname + "-" + Date.now() + path.extname(file.originalname))
+      file.fieldname + "-" + Date.now() + path.extname(file.originalname)
     );
   },
 });
-let upload = multer({ storage });
 ```
 
-3.4 Buatlah rute untuk upload file (boleh POST/PUT) :  
- note : ubah kalimat dalam tanda `<>` sesuai dengan nama field input file pada form kalian.
+### 3.4 Mengkonfigurasi Destination Storage Multer
+
+`destination` merupakan Folder tempat file tersebut disimpan. Agar folder yang telah kita sediakan dapat selalu digunakan setiap kali kita melakukan upload file, kita gunakan `path.join` pada callback (cb) dari `destination`. Karena jika tanpa path.join, maka ketika kita memperbaruhi server (reload), akan ada folder baru dengan nama yang sama. Jadi sebaiknya kita gunakan path.join.
 
 ```javascript
+// konfigurasi diskStorage multer
+const diskStorage = multer.diskStorage({
+  // konfigurasi folder penyimpanan file
+  destination: function (req, file, cb) {
+    cb(null, path.join(__dirname, "/uploads"));
+  },
+  filename: function (req, file, cb) {
+    cb(
+      null,
+      file.fieldname + "-" + Date.now() + path.extname(file.originalname)
+    );
+  },
+});
+```
+
+### 3.5 Mengkonfigurasi Filename Storage Multer
+
+`filename` merupakan Nama file yang akan disimpan di dalam `destination`. Gunakan `path.extname` untuk melakukan generate nama file yang unik dan dinamis.
+
+```javascript
+// konfigurasi diskStorage multer
+const diskStorage = multer.diskStorage({
+  // konfigurasi folder penyimpanan file
+  destination: function (req, file, cb) {
+    cb(null, path.join(__dirname, "/uploads"));
+  },
+  // konfigurasi penamaan file yang unik
+  filename: function (req, file, cb) {
+    cb(
+      null,
+      file.fieldname + "-" + Date.now() + path.extname(file.originalname)
+    );
+  },
+});
+```
+
+### 3.6 Menerapkan Middleware Multer
+
+`multer({ storage: diskStorage })` untuk menggunakan multer dengan key `storage` dan value `diskStorage` sesuai penamaan variable `diskStorage` pada langkah 3.3 sebelumnya.  
+`multer({ storage: diskStorage }).single("photo")` digunakan untuk menerima satu file dengan nama fieldname, yaitu "photo". Lalu file tunggal itu dapat diakses melalui req.file.  
+pengecekan kondisi `IF` harus disertakan agar tidak muncul error karena file tidak ditemukan.
+
+```javascript
+// menerapkan middleware multer hanya pada rute berikut
 app.put(
   "/contact/upload",
-  upload.single("<nama input file pada form data>"),
-  (req, res, next) => {
+  multer({ storage: diskStorage }).single("photo"),
+  (req, res) => {
     const file = req.file.path;
     console.log(file);
     if (!file) {
@@ -56,166 +114,90 @@ app.put(
         data: "No File is selected.",
       });
     }
-    next();
-    //sesuaikan baris kode dibawah ini dengan data kalian
-    // ini adalah contoh menyimpan lokasi upload data contacts pada index yang diinginkan (karena data contact berbentuk array)
-    contacts[req.query.index].photo = req.file.path;
-    res.send({ success: true });
+    res.send(file);
   }
 );
 ```
 
 ## 4. Contoh Kasus
 
-source code akhir contoh kasus :
+Disini kita akan melanjutkan contoh kasus yang sudah kita buat pada materi sebelumnya. Kita akan menambahkan fitur untuk mengupload photo pada data contact yang sudah dibuat.
 
-### Langkah - langkah :
+Berikut langkah - langkah untuk melakukannya :
 
-4.1 Buatlah folder dengan nama upload-file, lalu masuk ke dalam folder tersebut, dan ketikkan npm init untuk membuat file `package.json` yang akan mengatur semua dependency project kita.
-
-```bash
-$ mkdir upload-file
-$ cd upload-file
-$ npm init
-```
-
-4.2 Install `express` dan `multer`
+### 4.1 Install `multer`
 
 ```bash
-$ npm i express multer --save
+$ npm i multer --save
 ```
 
-4.3 Buatlah folder `public` yang didalamnya terdapat folder `upload` untuk menyimpan file yang akan di upload. Sehingga struktur foldernya seperti dibawah ini :
+### 4.2 Konfigurasi Folder Penyimpanan
+
+Buatlah folder `public` yang didalamnya terdapat folder `upload` untuk menyimpan file yang akan di upload. Sehingga struktur foldernya seperti dibawah ini :
 
 ![struktur folder](struktur-folder-uploadFile.png)
 
-4.4 Buatlah file `server.js` yang letak penyimpanan nya sejajar dengan package.json. Seperti contoh di bawah ini :  
-![struktur folder server.js](struktur-folder-file-serverjs.png)
+### 4.3 Buatlah file `server.js`, kemudian edit.
 
-4.5 Selanjutnya kita akan mengedit file `server.js`.  
 Pertama, definisikan dependency yang akan kita gunakan :
 
 ```javascript
 // definisikan dependency yang dibutuhkan
 const express = require("express");
 const app = express();
+// dependency multer
 const multer = require("multer");
 //untuk menambahkan path
 const path = require("path");
 ```
 
-4.6 Buat variable `filename` untuk menyimpan nama file yang akan di upload.
+### 4.4 Mengatur lokasi penyimpanan file.
 
-```javascript
-// variabel untuk menyimpan nama file ketika akan di upload
-let fileName;
-```
-
-4.7 Mengatur lokasi penyimpanan file. Yaitu pada folder `public/uploads`.  
-Nama file diambil dari nama field input file pada form kemudian tanggal dan diakhiri dengan format photo yang di upload.
+Lokasi penyimpanan yaitu pada folder `public/uploads`.
 
 ```javascript
 // menentukan lokasi pengunggahan
-const storage = multer.diskStorage({
+const diskStorage = multer.diskStorage({
+  // konfigurasi folder penyimpanan file
   destination: function (req, file, cb) {
     cb(null, path.join(__dirname, "public/uploads"));
   },
+  // konfigurasi penamaan file yang unik
   filename: function (req, file, cb) {
     cb(
       null,
-      (fileName =
-        file.fieldname + "-" + Date.now() + path.extname(file.originalname))
+      file.fieldname + "-" + Date.now() + path.extname(file.originalname)
     );
   },
 });
-let upload = multer({ storage });
 ```
 
-4.8 Lalu buatlah data array contact (seperti materi sebelumnya).
+### 4.5 Konfigurasi Middleware Multer
 
-```javascript
-const contacts = [
-  {
-    name: "amir",
-    phone: "085482938471",
-  },
-  {
-    name: "budi",
-    phone: "086452738493",
-  },
-];
-```
-
-4.9 Buatlah fungsi untuk mengecek validasi index (seperti materi sebelumnya).
-
-```javascript
-function validateIndex(req, res, next) {
-  if (
-    req.query.index !== undefined &&
-    contacts[req.query.index] === undefined
-  ) {
-    res.send({ success: false });
-  } else {
-    next();
-  }
-}
-```
-
-4.10 Buatlah `middleware` seperti pada materi sebelumnya :
-
-```javascript
-app.use(validateIndex);
-app.use(express.json());
-
-app.get("/contact", function (req, res) {
-  res.send(contacts);
-});
-
-app.post("/contact", function (req, res) {
-  contacts.push({ name: req.body.name, phone: req.body.phone });
-  res.send({ success: true });
-});
-
-app.put("/contact", function (req, res) {
-  contacts[req.query.index] = { name: req.body.name, phone: req.body.phone };
-  res.send({ success: true });
-});
-
-app.delete("/contact", function (req, res) {
-  contacts.splice(req.query.index, 1);
-  res.send({ success: true });
-});
-```
-
-4.11 Selanjutnya buat `middleware` untuk penerapan `multer` pada data array :
+Selanjutnya buat `middleware` untuk penerapan `multer` pada data array contact :
 
 ```javascript
 // menerapkan middleware multer hanya pada rute berikut
-app.put("/contact/upload", upload.single("photo"), (req, res, next) => {
-  const file = req.file.path;
-  console.log(file);
-  if (!file) {
-    res.status(400).send({
-      status: false,
-      data: "No File is selected.",
-    });
+app.put(
+  "/contact/upload",
+  multer({ storage: diskStorage }).single("photo"),
+  (req, res) => {
+    const file = req.file.path;
+    console.log(file);
+    if (!file) {
+      res.status(400).send({
+        status: false,
+        data: "No File is selected.",
+      });
+    }
+    // menyimpan lokasi upload data contacts pada index yang diinginkan
+    contacts[req.query.index].photo = req.file.path;
+    res.send(file);
   }
-  next();
-  // menyimpan lokasi upload data contacts pada index yang diinginkan
-  contacts[req.query.index].photo = req.file.path;
-  res.send({ success: true });
-});
+);
 ```
 
-4.12 Sertakan baris kode program untuk mengatur port yang akan digunakan untuk menjalankan server.
-
-```javascript
-app.listen(3000, function () {
-  console.log("server running");
-});
-```
-
-## Source Code Lengkap server.js :
+### Source Code Lengkap server.js :
 
 ```javascript
 // definisikan dependency yang dibutuhkan
@@ -225,23 +207,18 @@ const multer = require("multer");
 //untuk menambahkan path
 const path = require("path");
 
-//menyimpan nama file ketika akan di upload
-let fileName;
-
 // menentukan lokasi pengunggahan
-const storage = multer.diskStorage({
+const diskStorage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, path.join(__dirname, "public/uploads"));
   },
   filename: function (req, file, cb) {
     cb(
       null,
-      (fileName =
-        file.fieldname + "-" + Date.now() + path.extname(file.originalname))
+      file.fieldname + "-" + Date.now() + path.extname(file.originalname)
     );
   },
 });
-let upload = multer({ storage });
 
 const contacts = [
   {
@@ -288,46 +265,59 @@ app.delete("/contact", function (req, res) {
 });
 
 // menerapkan middleware multer hanya pada rute berikut
-app.put("/contact/upload", upload.single("photo"), (req, res, next) => {
-  const file = req.file.path;
-  console.log(file);
-  if (!file) {
-    res.status(400).send({
-      status: false,
-      data: "No File is selected.",
-    });
+app.put(
+  "/contact/upload",
+  multer({ storage: diskStorage }).single("photo"),
+  (req, res) => {
+    const file = req.file.path;
+    console.log(file);
+    if (!file) {
+      res.status(400).send({
+        status: false,
+        data: "No File is selected.",
+      });
+    }
+    // menyimpan lokasi upload data contacts pada index yang diinginkan
+    contacts[req.query.index].photo = req.file.path;
+    res.send(file);
   }
-  next();
-  // menyimpan lokasi upload data contacts pada index yang diinginkan
-  contacts[req.query.index].photo = req.file.path;
-  res.send({ success: true });
-});
+);
 
 app.listen(3000, function () {
   console.log("server running");
 });
 ```
 
-4.13 Jalankan file server.js
+### 4.6 Jalankan file server.js
 
 ```
 $ nodemon server.js
 ```
 
-4.14 Buka app postman untuk mengecek data array (gunakan method `GET`):
+### 4.7 Mengecek di POSTMAN
+
+Buka app postman untuk mengecek data array (gunakan method `GET`):
 
 ![get data contact](GET-data-contact.png)
 
-4.15 Masuk ke rute : `localhost:3000/contact/upload` dengan method `PUT`.  
-Isikan index array dengan menggunakan req.query. Yaitu menambahkan `?index=1` setelah rute. Nilai 1 disesuaikan dengan index array yang akan kita tambahkan file photo.  
-Pilih tab `Body` lalu klik `form-data` pada postman dan isikan seperti dibawah ini :
+### 4.8 Mengupload file photo
 
-![upload foto](put-upload-photo.jpeg)  
+Masuk ke rute : `localhost:3000/contact/upload` dengan method `PUT`.  
+Isikan index array dengan menggunakan req.query. Yaitu menambahkan `?index=0` setelah rute. Nilai `0` disesuaikan dengan index array yang akan kita tambahkan file photo.  
+Penulisan rutenya menjadi seperti berikut ini :  
+`localhost:3000/contact/upload?index=0`
+
+Kemudian pilih tab `Body` lalu klik `form-data` pada postman dan isikan `KEY` dengan nama field `photo` seperti dibawah ini :
+
+![upload foto](upload-file.png)  
 note: pastikan ubah tipe field photo menjadi `file`. Karena akan digunakan untuk mengupload file.
 
-4.16 Jika output telah `"success": true` seperti pada gambar di langkah sebelumnya, maka file photo telah berhasil di upload.  
+### 4.9 Mengecek file photo
+
+Jika output telah menampilkan lokasi file seperti pada gambar di langkah sebelumnya, maka file photo telah berhasil di upload.
+
 Cek kembali menggunakan method `GET` pada route `localhost:3000/contact`
 
 ![upload sukses](output-upload-success.jpeg)
 
-## Selesai. Yeayyy
+## Selesai. Yeayyy :grin:
