@@ -16,7 +16,7 @@ Untuk membuat data yang memiliki banyak property didalamnya, kita bisa menggunak
 
 #### 3.1.1 Array
 
-Array merupakan sebuah variable yang dapat menampung lebih dari satu nilai.
+Array merupakan sebuah variable yang dapat menampung lebih dari satu nilai yang memiliki bentuk yang sama
 
 Array memiliki elemen dan index.
 - Elemen : Merupakan banyaknya data yang ditampung pada array.
