@@ -2,24 +2,23 @@
 
 ## 1. Permasalahan 
 
-Sejauh ini, kita telah belajar bagaimana cara membuat tampilan web dan memberikan beberapa property pada tampilan tersebut. Kali ini, kita akan belajar tentang layouting atau tata letak. Sebelumnya, semua elemen seperti `text`, `gambar`, `gif`, dan lain lain hanya tersusun secara vertikal. Lalu bagaimanakah caranya jika kita ingin menyusun secara horizontal? 
+Sejauh ini, kita telah belajar bagaimana cara membuat tampilan web dan memberikan beberapa property pada tampilan tersebut. Kali ini, kita akan belajar tentang layouting atau tata letak. Sebelumnya, semua elemen seperti `text`, `gambar`, `gif`, dan lain lain hanya tersusun secara vertikal. Lalu bagaimanakah caranya jika kita ingin menyusun secara horizontal ? 
 
-## 2. Penjelasan Materi
+## 2. Penjelasan Property Display
 
 Untuk membuat desain website seperti yang telah kita tanyakan tadi, kita perlu belajar melakukan layouting menggunakan CSS. Untuk melakukan hal tersebut kita dapat menggunakan property `display` untuk menentukan layout suatu elemen, ada beberapa jenis layout yang bisa kita gunakan, yaitu `block`, `inline`, `inline-block`, dan `flexbox`. Namun kali ini kita hanya belajar `block`, `inline`, dan `inline-block` saja.
 
-## 3. Detail Materi
+## 3. Jenis - Jenis Property Display
 
 ### 3.1. Block
-Pernahkah kalian bertanya-tanya, mengapa susunan tampilan web yang dibuat sebelumnya tidak pernah tersusun secara horizontal? Alasannya adalah ada `tag` yang memiliki display property default block. Atau tag tersebut memiliki lebar selebar layar. Bagaimana maksudnya? Mari kita lihat contoh berikut.
+Pernahkah kalian bertanya-tanya, mengapa susunan tampilan web yang dibuat sebelumnya tidak pernah tersusun secara horizontal ? Alasannya adalah ada `tag` yang memiliki display property default block. Atau tag tersebut memiliki lebar selebar layar. Bagaimana maksudnya? Mari kita lihat contoh berikut.
 
 ```html
 <!-- index.html -->
-<p class = "p-example">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+<p class="p-example">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Ad aperiam excepturi eum dolores repellendus in ipsum doloremque cum enim
         delectus saepe sunt voluptatibus,magnam quisquam dicta? Porro natus velit mollitia?</p> 
-
-    <p class = "p-example">Quos commodi numquam, expedita quas eius magni? Alias explicabo hic voluptas!</p>
+<p class="p-example">Quos commodi numquam, expedita quas eius magni? Alias explicabo hic voluptas!</p>
 ```
 
 Tampilannya akan menjadi seperti ini
@@ -28,7 +27,7 @@ Tampilannya akan menjadi seperti ini
 
 Textnya akan terisi hingga sepanjang layar bukan? Jadi bisa dikatakan bahwa block merupakan layout default yang diterapkan ke beberapa elemen seperti `div`, `ul`, `ol`, `p`, `h1` dan sebagainya. Ciri khas dari layout ini yaitu selalu membuat baris sendiri
 
-Untuk tag lain, kita ambil saja tag `ul`. 
+Untuk tag lain, kita ambil contoh tag `ul`. 
 
 ```html
 <!-- index.html -->
@@ -46,11 +45,11 @@ Untuk pembuktian bagaimana display block bekerja, kita beri warna pada backgroun
 
 ```css
 /* index.css */
-.p-example{
+.p-example {
     background-color: cyan ;
 }
 
-ul{
+ul {
     background-color: darksalmon;
 }
 ```
@@ -68,16 +67,16 @@ Inline merupakan layout default yang diterapkan ke beberapa elemen seperti `span
 
 ```html
 <!-- index.html -->
-<p class = "p-example">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aperiam excepturi eum <span class="inl">dolores</span> <span class="inl">repellendus </span> in ipsum doloremque cum enim delectus saepe sunt voluptatibus,magnam quisquam dicta? Porro natus velit mollitia?</p> 
+<p class="p-example">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aperiam excepturi eum <span class="inl">dolores</span> <span class="inl">repellendus </span> in ipsum doloremque cum enim delectus saepe sunt voluptatibus,magnam quisquam dicta? Porro natus velit mollitia?</p> 
 
-<p class = "p-example">Quos commodi numquam, expedita quas eius magni? Alias explicabo hic voluptas!</p>
+<p class="p-example">Quos commodi numquam, expedita quas eius magni? Alias explicabo hic voluptas!</p>
 
 ```
-Untuk memudahkan kita melihat tag `span` yang kita buat, buat file css untuk tag `span` class `inl` untuk memberikan warna pada background tag tersebut, lalu berikan border.  
+Untuk memudahkan kita dalam melihat tag `span` yang kita buat, kita akan menambahkan background tag dan border pada tag `span` tersebut.  
 
 ```css
 /* index.css */
-.inl{
+.inl {
     background-color:cyan;
     border : 1px solid black;
 }
