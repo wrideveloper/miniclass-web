@@ -44,8 +44,8 @@ Objek adalah sebuah variabel yang menyimpan nilai (properti) dibuat dengan tanda
     notelp : '081322928088'
   }
 ```
-  nama : merupakan key
-  notelp : merupakan value
+`nama` : merupakan key
+`Doni` : merupakan value
 
 
 ### 3.2 Cara Membuat dan Menggunakan Objek
