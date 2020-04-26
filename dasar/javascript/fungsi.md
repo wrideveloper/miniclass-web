@@ -102,6 +102,82 @@ console.log(hasil) // output : 50
 ## 3.Contoh kasus
 Cobalah temen-temen buat file html yang didalamnya terdapat 1 kotak beserta beberapa button yang apabila button tersebut di klik akan merubah warna dari kubus tersebut.
 
+Disini kita akan membuat penerapan fungsi yang sudah kita pelajari sebelumnya di dalam html
+
+### 3.1.Membuat file index
+Pertama-tama, buatlah file `index.html` dan isi file html tersebut dengan kode di bawah ini.
+
+```html
+<!-- index html -->
+
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset = "UTF-8">
+      <title>Function</title>
+      <link rel="stylesheet" href="style.css"> <!-- menghubungkan ke file style.css -->
+    </head>
+    <body>
+      <div id="kotak"></div>
+      <button class="merah"  onclick="berubah('red')" >Merah</button>
+      <button class="salmon" onclick="berubah('salmon')" >Salmon</button>
+      <button class="hijau" onclick="berubah('greenyellow')" >Green</button>
+      <button class="orange" onclick="berubah('orange')" >Orange</button>
+    </body>
+    <script src="script.js"></script><!-- menghubungkan dengan file script.js -->
+    </html>
+```
+
+### 3.2.Membuat file style.css 
+Buatlah file style.css yang nantinya akan digunakan untuk menerapkan text formatting pada index.html
+
+Lalu, terapkan kode di bawah ini untuk mengubah style di div yang memiliki nama id kotak ubah juga style button .
+
+Kode di bawah ini .
+
+```css
+/* style.css */
+
+  #kotak {
+      width: 100px;
+      height: 100px;
+      position: relative;
+      background: transparent;
+      margin: 50px 50px 50px 150px;
+
+    }
+
+    button {
+        margin-left: 40px;
+        transition-duration: 0.4s;
+    }
+
+    .merah{
+        color: red;
+    }
+    .salmon {
+      color:salmon;
+  }
+    .hijau{
+      color: green;
+  }
+    .orange{
+      color: orange;
+  }
+```
+
+### 3.3.Membuat file javascript
+Buatlah file script.js yang nantinya akan digunakan untuk menerapkan fungsi yang akan mengubah warna dari setiap kotak ketika button di klik.
+
+
+```javascript
+// script.js
+
+function berubah(warna) {
+    document.getElementById("kotak").style.background=warna;
+  }
+```
+
 hingga hasilnya seperti berikut :
 ![alt text](img/js-0.gif)
 
