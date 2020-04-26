@@ -44,9 +44,8 @@ setelah kita mengetahui beberapa struktur fungsi maka kita akan coba membuatnya.
 
 1. Menggunakan cara biasa;
 2. Menggunakan ekspresi;
-3. Menggunakan tanda panah (=>);
-4. Menggunakan parameter
-5. Menggunakan return
+3. Menggunakan parameter
+4. Menggunakan return
 
 #### 2.2.1. Membuat Fungsi dengan Cara Biasa
 Cara ini paling sering digunakan, terutama buat yang baru belajar Javascript.
@@ -67,23 +66,7 @@ var namaFungsi = function(){
 ```
 *Kita menggunakan variabel, lalu diisi dengan fungsi. Fungsi ini sebenarnya adalah fungsi anonim (anonymous function) atau fungsi tanpa nama.*
 
-### 2.2.3. Membuat Fungsi dengan Tanda Panah
-Cara ini sering digunakan di kode Javascript masa kini, karena lebih sederhana. Akan tetapi sulit dipahami bagi pemula. Fungsi ini mulai muncul pada standar ES6.
-
-```javascript
-var namaFungsi = () => {
-    console.log("Hello World!");
-}
-
-// atau seperti ini (jika isi fungsi hanya satu baris):
-var namaFungsi = () => console.log("Hello World!");
-```
-
-*Sebenarnya hampir sama dengan yang menggunakan ekspresi. Bedanya, kita menggunakan tanda panah (=>) sebagai ganti function.*
-
-Pembuatan fungsi dengan cara ini disebut **arrow function.**
-
-### 2.2.4. Membuat Fungsi yang menggunakan parameter
+### 2.2.3. Membuat Fungsi yang menggunakan parameter
 
 Agar kita dapat mengubah nilai dari ``panjang`` dan ``lebar`` pada fungsi hitungLuasPersegiPanjang, maka kita dapat menggunakan parameter
 ```javascript
@@ -101,7 +84,7 @@ hitungLuasPersegiPanjang(2, 4) // output : 8
 hitungLuasPersegiPanjang(3, 5) // output : 15
 ```
 
-### 2.2.5. Membuat Fungsi yang mengembalikan nilai
+### 2.2.4. Membuat Fungsi yang mengembalikan nilai
 Agar nilai dari perhitungan luas persegi panjang dapat diolah kembali, kita dapat mengembalikan nilai dari fungsi ``hitungLuasPersegiPanjang`` menggunakan perintah ``return``
 
 ```javascript
