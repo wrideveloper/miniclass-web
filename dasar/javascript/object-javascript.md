@@ -19,8 +19,8 @@ Untuk membuat data yang memiliki banyak property didalamnya, kita bisa menggunak
 Array merupakan sebuah variable yang dapat menampung lebih dari satu nilai.
 
 Array memiliki elemen dan index.
---> Elemen : Merupakan banyaknya data yang ditampung pada array.
---> Index  : Merupakan urutan data yang terletak pada array dan biasanya diawali dengan 0.
+- Elemen : Merupakan banyaknya data yang ditampung pada array.
+- Index  : Merupakan urutan data yang terletak pada array dan biasanya diawali dengan 0.
 
 <img src="array.png"/>
 
