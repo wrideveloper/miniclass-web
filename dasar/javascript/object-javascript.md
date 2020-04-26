@@ -33,7 +33,6 @@ Inisialisasi Array
   ]
 ```
 #### 3.1.2 Object
-**Pengertian objek** 
 
 Objek memiliki banyak properti didalamnya, misalnya kita ambil contoh objek laptop memiliki properti seperti merk, jenis processor, ukuran layar, jumlah RAM, warna, dan sebagainya.
 
