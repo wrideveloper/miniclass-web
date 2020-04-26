@@ -2,7 +2,7 @@
 
 ## 1. Permasalahan
 
-Selain menerima data dari body menggunakan format `url encoded` dan `json`, sebuah web server juga dapat menerima file dari client. Misalnya apabila kita akan membuat sebuah web yang memiliki fitur upload seperti upload foto profile.
+Selain menerima data dari body menggunakan format `url encoded` dan `json`, sebuah web server juga dapat menerima `file` dari client. Misalnya apabila kita akan membuat sebuah web yang memiliki fitur upload seperti upload foto profile ataupun upload file pdf.
 
 ## 2. Solusi
 
