@@ -19,7 +19,7 @@ $ npm i multer --save
 
 ### 3.2 Membuat folder untuk menyimpan file
 
-Langkah pertama untuk menerapkan multer pada express adalah dengan membuat folder untuk menyimpan file yang akan diunggah, misalnya folder `upload`
+Selanjutnya untuk menerapkan multer pada express adalah dengan membuat folder untuk menyimpan file yang akan diunggah, misalnya folder `upload`
 
 ### 3.3 Mendefinisikan Dependency `multer` dan `path`
 
