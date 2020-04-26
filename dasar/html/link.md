@@ -114,6 +114,7 @@ Agar link yang sudah dibuat pada langkah sebelumnya dapat digunakan, maka kita p
   </body>
 </html>
 ```
+Untuk mencantumkan link yang berfungsi menghubungkan satu file dengan file HTML yang lain, file tujuan harus dipersiapkan terlebih dahulu lalu disimpan pada folder yang sama dengan file utama.  
 
 Pada halaman ini kita akan menampilkan penjelasan dari link html, serta sebuah link untuk kembali ke file `index.html`
 

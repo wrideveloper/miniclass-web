@@ -2,79 +2,115 @@
 
 <img src="event.png" width="600" />
 
-## 1. Penjelasan Event
+## 1. Permasalahan
+Saat membuat fitur web,terkadang kita membutuhkan perintah sebagai respon sistem terhadap kegiatan yang dilakukan oleh user pada web. Contohnya menampilkan pesan (alert) setelah user mengisi sebuah form, merubah warna button setelah di klik, dll.
 
-Event merupakan suatu hal yang terjadi pada website kita, contoh dari event misalnya : 
+## 2. Penjelasan Event
 
-1. Ketika user melakukan klik pada button (**onclick**)
-2. Ketika user menekan keyboard (**onkeypress**)
-3. Ketika nilai dari input form berubah (**onchange**)
-4. Ketika suatu elemen selesai dimuat (**onload**)
-5. Dan masih banyak lagi
-  
-## 2. Event Handler
+Event merupakan suatu respon dari web atau sistem terhadap kegiatan yang dilakukan oleh user dimana kegiatan tersebut akan memicu jalannya script javascript yang terhubung dengan file HTML dari web tersebut. 
 
-### 2.1. Penjelasan Event Handler
+## 3. Penjelasan Detail Materi
+Contoh-contoh event umum pada javascript, misalnya : 
 
-Event handler merupakan suatu fungsi yang akan dijalankan saat suatu event terjadi
-
-### 2.2. Cara Membuat Event Handler
-
-Ada tiga cara umum yang dapat kita gunakan untuk membuat event handler pada javascript
-
-#### 2.2.1 Menggunakan Inline Event Handler
-
-Kita dapat menuliskan event handler langsung pada file html dengan menambahkan attribute pada suatu element
-
+### 3.1 `onclick`
+`onclick` adalah event yang terjadi ketika user melakukan klik pada suatu element. Syntax dibawah ini akan menampilkan pesan "event click terjadi"
 ```html
-<!-- index.html -->
 <html>
   <head>
-    <title>Belajar Event</title>
+      <title>Belajar Event</title>
   </head>
   <body>
-
-    <!-- tambahkan attribute onclick untuk menulis event handler -->
-    <button onclick="console.log('event click terjadi')">Tekan saya</button>
+      <button onclick="alert('event click terjadi')">Tekan saya</button>
   </body>
 </html>
 ```
 
-#### 2.2.2 Menggunakan DOM Event Handler
+### 3.2 `onkeypress`
+`onkeypress` adalah event yang terjadi ketika user menekan keyboard. Syntax dibawah ini akan menampilkan alert yang berisi "hallo! ini pakai onkeypress" saat user menekan keyboard. Isi alert dapat disesuaikan dengan kebutuhan dan keinginan. Onkeypress tidak berlaku untuk semua key (contoh: `ALT`, `CTRL`, `SHIFT`) di semua browser.
 
-Kita juga dapat menuliskan event handler pada file javascript  
+```html
+<html>
+  <head>
+      <title>Belajar Event</title>
+  </head>
+  <body>
+      <input type="text" onkeypress="alert('hallo! ini pakai onkeypress')" />
+  </body>
+</html>
 
-```javascript
-// index.js
-
-// ambil element yang akan ditambahkan event handler
-var button = document.getElementById("id")
-
-// masukkan event handler pada onclick
-button.onclick = function() {
-  console.log('event click terjadi')
-}
 ```
 
-## 3. Event Object
+### 3.3 `onchange`   
+`onchange` adalah event yang terjadi ketika nilai dari input form berubah. Syntax ini akan menampilkan inputan yang dibuat user dalam console browser.
 
-Sebuah event handler akan mendapatkan object `event` sebagai parameter pertama yang berisi informasi terkait event yang sedang terjadi
+```html
+<html>
+  <head>
+      <title>Belajar Event</title>
+  </head>
+  <body>
+      <input onchange="console.log('halo, ini pakai onchange')" />
+  </body>
+</html>
 
-```javascript
-// index.js
-
-var button = document.getElementById("id-button")
-button.onclick = function(event) {
-  // menampilkan button mouse mana yang diklik (kanan atau kiri)
-  console.log(event.button)
-}
-
-var input = document.getElementById("id-input")
-input.onchange = function(event) {
-  // menampilkan value dari input setelah valuenya berubah
-  console.log(event.target.value)
-}
 ```
+
+### 3.4 `onload`
+`onload` merupakan event yang terjadi ketika suatu elemen selesai dimuat. Pada contoh dibawah ini, akan muncul pesan `gambar dimuat` saat `<img />` selesai dimuat pada browser.
+
+```html
+<html>
+  <head>
+      <title>Belajar Event</title>
+  </head>
+  <body>
+      <img src="wri.jpg" onload="alert('gambar dimuat')" width="100" height="132">
+  </body>
+</html>
+
+```
+
+
+### 3.5 `onkeydown`  
+`onkeydown` merupakan event yang terjadi ketika tombol keyboard ditekan atau dalam posisi down. jika `onkeypress` tidak berlaku pada key tertentu, hal itu tidak berlaku pada `onkeydown`. `onkeydown` dapat digunakan juga saat user menekan tombol `ALT`, `CTRL`,`SHIFT`
+```html
+<input type="text" onkeydown="alert('hallo. ini pakai onkeydown')" />
+```
+
+### 3.6 `onkeyup`
+`onkeyup` merupakan event yang terjadi ketika tombol keyboard selesai ditekan atau dalam posisi up
+
+```html
+<html>
+  <head>
+      <title>Belajar Event</title>
+  </head>
+  <body>
+      <input type="text" onkeyup="alert('hallo. ini pakai onkeyup')" placeholder="onkeyup" />
+  </body>
+</html>
+
+```
+
+### 3.7 `onsubmit`
+`onsubmit` merupakan event yang terjadi ketika suatu form akan mengirimkan data inputan
+```html
+<html>
+  <head>
+      <title>Belajar Event</title>
+  </head>
+  <body>
+    <form onsubmit="alert('data sudah terkumpul')">
+      Enter name: 
+      <input type="text">
+      <input type="submit">
+    </form>
+  </body>
+</html>
+
+```
+
+contoh lain dari event javascript dapat dilihat pada referensi
 
 ## 4. Referensi
 
