@@ -2,7 +2,7 @@
 
 ## 1. Permasalahan
 
-Selain menerima data dari body menggunakan format `url encoded` dan `json`, sebuah web server juga dapat menerima file dari client. Misalnya apabila kita akan membuat sebuah web yang memiliki fitur upload seperti upload foto profile.
+Selain menerima data dari body menggunakan format `url encoded` dan `json`, sebuah web server juga dapat menerima `file` dari client. Misalnya apabila kita akan membuat sebuah web yang memiliki fitur upload seperti upload foto profile.
 
 ## 2. Solusi
 
@@ -12,6 +12,7 @@ Untuk mengirim sebuah file, client harus mengirimkan data melalui body dengan fo
 ## 3. Cara Parsing Form Data Menggunakan Middleware Multer
 
 ### 3.1 Membuat folder untuk menyimpan file
+
 Langkah pertama untuk menerapkan multer pada express adalah dengan membuat folder untuk menyimpan file yang akan diunggah, misalnya folder `upload`
 
 3.2 Buat variable untuk menyimpan nama file yang akan di upload.
