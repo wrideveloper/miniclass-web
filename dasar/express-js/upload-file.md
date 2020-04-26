@@ -11,11 +11,17 @@ Untuk mengirim sebuah file, client harus mengirimkan data melalui body dengan fo
 
 ## 3. Cara Parsing Form Data Menggunakan Middleware Multer
 
-### 3.1 Membuat folder untuk menyimpan file
+### 3.1 Pertama, Install `Multer` terlebih dahulu
+
+```bash
+$ npm i multer --save
+```
+
+### 3.2 Membuat folder untuk menyimpan file
 
 Langkah pertama untuk menerapkan multer pada express adalah dengan membuat folder untuk menyimpan file yang akan diunggah, misalnya folder `upload`
 
-### 3.2 Mendefinisikan Dependency `multer` dan `path`
+### 3.3 Mendefinisikan Dependency `multer` dan `path`
 
 Sebelum menggunakan `multer`, kita perlu mendefinisikan dependency multer terlebih dahulu :
 
@@ -34,7 +40,7 @@ const multer = require("multer");
 const path = require("path");
 ```
 
-### 3.3 Membuat Configurasi Storage Multer
+### 3.4 Membuat Configurasi Storage Multer
 
 `diskStorage` engine memungkinkan kita untuk menyimpan file kedalam disk. Disini kita akan menyimpan file pada directory upload seperti yang telah kita buat pada langkah 3.1 sebelumnya.
 
@@ -53,7 +59,7 @@ const diskStorage = multer.diskStorage({
 });
 ```
 
-### 3.4 Mengkonfigurasi Destination Storage Multer
+### 3.5 Mengkonfigurasi Destination Storage Multer
 
 `destination` merupakan Folder tempat file tersebut disimpan. Agar folder yang telah kita sediakan dapat selalu digunakan setiap kali kita melakukan upload file, kita gunakan `path.join` pada callback (cb) dari `destination`. Karena jika tanpa path.join, maka ketika kita memperbaruhi server (reload), akan ada folder baru dengan nama yang sama. Jadi sebaiknya kita gunakan path.join.
 
@@ -73,7 +79,7 @@ const diskStorage = multer.diskStorage({
 });
 ```
 
-### 3.5 Mengkonfigurasi Filename Storage Multer
+### 3.6 Mengkonfigurasi Filename Storage Multer
 
 `filename` merupakan Nama file yang akan disimpan di dalam `destination`. Gunakan `path.extname` untuk melakukan generate nama file yang unik dan dinamis.
 
@@ -94,7 +100,7 @@ const diskStorage = multer.diskStorage({
 });
 ```
 
-### 3.6 Menerapkan Middleware Multer
+### 3.7 Menerapkan Middleware Multer
 
 `multer({ storage: diskStorage })` untuk menggunakan multer dengan key `storage` dan value `diskStorage` sesuai penamaan variable `diskStorage` pada langkah 3.3 sebelumnya.  
 `multer({ storage: diskStorage }).single("photo")` digunakan untuk menerima satu file dengan nama fieldname, yaitu "photo". Lalu file tunggal itu dapat diakses melalui req.file.  
