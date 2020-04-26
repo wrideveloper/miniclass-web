@@ -18,8 +18,9 @@ Di javascript kita ditawarkan fungsi ,dengan fungsi kita bisa memecah permasalah
   // index.js
 
   // membuat fungsi untuk menghitung luas persegi panjang
-  function hitungLuasPersegiPanjang() {
-    var panjang = 5
+
+  function hitungLuasPersegiPanjang() { //function = keyword pada javascript dan hitungLuasPersegiPanjang adalah nama fungsinya.
+    var panjang = 5 //var = adalah cara javascript membuat variable.  
     var lebar = 6
     var luas = panjang * lebar
     console.log(luas)
@@ -27,17 +28,15 @@ Di javascript kita ditawarkan fungsi ,dengan fungsi kita bisa memecah permasalah
 
 // menjalankan fungsi
 hitungLuasPersegiPanjang() // output : 30
+
+//cara baca nya kurang lebih adalah
+//javascript tolong buatkan saya sebuah fungsi 
+//yang bernama hitungLuasPersegiPanjang
+//dari nilai panjang dan lebar dimana perhitungan nya adalah menghitung luas dari suatu persegi 
+//lalu jika sudah simpan nilai perkaliannya dalam variable luas dan tampilkan hasilnya nya di console .
+
   ```
 
-**function** = keyword pada javascript.  
-**hitungLuasPersegiPanjang** = nama fungsinya.  
-**()** = Parameter/argument(tempat inputan).  
-**a dan b** = adalah bahan-bahan inputan atau nilai yang akan di proses oleh fungsi.  
-**{}** = pembatas dari fungsi tersebut.  
-**var** = adalah cara javascript membuat variable.  
-**console.log** = sebuah fungsi di javascript untuk menampilkan nilai yang sudah ditetntukan untuk ditampilkan kepada pengguna (di console)
-
-*cara baca nya adalah javascript tolong buatkan saya sebuah fungsi yang bernama **hitungLuasPersegiPanjang** dari nilai **panjang dan lebar** dimana perhitungan nya adalah menghitung luas dari suatu persegi lalu jika sudah **simpan nilai perkaliannya dalam variable luas dan tampilkan hasilnya nya di console .***
 
 setelah kita mengetahui beberapa struktur fungsi maka kita akan coba membuatnya.
 ### 2.2 Ada 3 cara membuat fungsi di javascript
