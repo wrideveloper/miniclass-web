@@ -69,7 +69,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: [Menerima Data dari URL](dasar/express-js/handle-data-url.md)
     - :books: [Middleware](dasar/express-js/middleware.md)
     - :books: [Menerima Data dari Body](dasar/express-js/handle-data-body.md)
-    - :books: Mengunggah File
+    - :books: [Mengunggah File](dasar/express-js/upload-file.md)
     - :books: Menampilkan File dalam Folder
     - :books: [Menyimpan Data ke Database MySQL](dasar/express-js/express-mysql.md)
 
