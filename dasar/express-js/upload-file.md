@@ -10,9 +10,15 @@ Untuk mengirim sebuah file, client harus mengirimkan data melalui body dengan fo
 
 ## 3. Cara Parsing Form Data Menggunakan Middleware Multer
 
-### 3.1 Membuat folder untuk menyimpan file
+### 3.1 Pertama, Install `Multer` terlebih dahulu
 
-Langkah pertama untuk menerapkan multer pada express adalah dengan membuat folder untuk menyimpan file yang akan diunggah, misalnya folder `upload`
+```bash
+$ npm i multer --save
+```
+
+### 3.2 Membuat folder untuk menyimpan file
+
+Selanjutnya untuk menerapkan multer pada express adalah dengan membuat folder untuk menyimpan file yang akan diunggah, misalnya folder `upload`
 
 ### 3.2 Install `multer`
 
