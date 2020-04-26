@@ -48,6 +48,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: [Manipulasi DOM](dasar/javascript/manipulasi-dom.md)
     - :books: [Fungsi](dasar/javascript/fungsi.md)
     - :books: [Array dan Objek](dasar/javascript/array-dan-objek.md)
+    - :books: [Object](dasar/javascript/object-javascript.md)
     - :books: [XML HTTP Request](dasar/javascript/xmlhttprequest.md)
     - :computer: Membuat Aplikasi Web Sederhana
 
