@@ -84,7 +84,6 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 2.  **React Fundamental**
 
     - :books: [Pengenalan React JS](front-end/react-fundamental/pengenalan-reactjs.md)
-    - :books: [Component](front-end/react-fundamental/component.md)
     - :books: [Props](front-end/react-fundamental/props.md)
     - :books: [Event](front-end/react-fundamental/event.md)
     - :books: [State](front-end/react-fundamental/state.md)
