@@ -87,6 +87,8 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: [Props](front-end/react-fundamental/props.md)
     - :books: [Event](front-end/react-fundamental/event.md)
     - :books: [State](front-end/react-fundamental/state.md)
+    - :books: Conditional Rendering
+    - :books: Component Mapping
     - :books: Side Effect
     - :books: Custom Hook
 
