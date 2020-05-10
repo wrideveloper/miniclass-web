@@ -48,6 +48,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: [Manipulasi DOM](dasar/javascript/manipulasi-dom.md)
     - :books: [Fungsi](dasar/javascript/fungsi.md)
     - :books: [Array dan Objek](dasar/javascript/array-dan-objek.md)
+    - :books: [Object](dasar/javascript/object-javascript.md)
     - :books: [XML HTTP Request](dasar/javascript/xmlhttprequest.md)
     - :computer: Membuat Aplikasi Web Sederhana
 
@@ -68,7 +69,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: [Menerima Data dari URL](dasar/express-js/handle-data-url.md)
     - :books: [Middleware](dasar/express-js/middleware.md)
     - :books: [Menerima Data dari Body](dasar/express-js/handle-data-body.md)
-    - :books: Mengunggah File
+    - :books: [Mengunggah File](dasar/express-js/upload-file.md)
     - :books: Menampilkan File dalam Folder
     - :books: [Menyimpan Data ke Database MySQL](dasar/express-js/express-mysql.md)
 
@@ -80,31 +81,35 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: Transpiler
     - :books: [Module Bundler](front-end/modern-frontend-development/module-bundler.md)
 
-2.  **React**
+2.  **React Fundamental**
 
     - :books: [Pengenalan React JS](front-end/react-fundamental/pengenalan-reactjs.md)
-    - :books: [Install React JS](front-end/react-fundamental/install-reactjs.md)
-    - :books: [JSX](front-end/react-fundamental/jsx.md)
-    - :books: [Component](front-end/react-fundamental/component.md)
-    - :books: [Styling Component](front-end/react-fundamental/styling-component.md)
     - :books: [Props](front-end/react-fundamental/props.md)
     - :books: [Event](front-end/react-fundamental/event.md)
     - :books: [State](front-end/react-fundamental/state.md)
-    - :books: Passing Data to Parent Component
-    - :books: Effect
+    - :books: Conditional Rendering
+    - :books: Component Mapping
+    - :books: Side Effect
     - :books: Custom Hook
-    - :books: Context
 
-3.  **React Performance**
+3.  **React State Management**
+
+    - :books: Lifting State Up
+    - :books: Context
+    - :books: Reducer
+
+4.  **React Performance**
 
     - :books: Debounce
+    - :books: Throttling
     - :books: Memoization
     - :books: Profiling
 
-4.  **React Testing**
+5.  **React Testing**
 
     - :books: Component Testing
     - :books: Hook Testing
+    - :books: Mocking
     - :books: End to End Testing
 
 ### :japanese_ogre: Materi Backend
