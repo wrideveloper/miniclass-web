@@ -2,7 +2,7 @@
 
 ## 1. Permasalahan
 
-terkadang dalam membuat suatu program kita akan bekerja secara terpisah antara backend dan frontend, hal ini membuat kita harus mencari jalan lain untuk menyambungkan data yang ada pada backend menuju frontend, dan javascript sendiri memiliki fitur bawaan yaitu Fecth Api.
+Dalam membuat suatu program kita terbiasa membuat variable untuk tempat menyimpan data,namun jika kita melakukan refresh pada aplikasi kita data yang kita ubah nilainya melalui aplikasi akan kembali seperti data yang ada pada code yang telah kita buat,untuk menyimpan data agar hasil perubahan datanya dapat kita simpan, kita memerlukan backend.
 
 ## 2. Pengertian
 
@@ -13,8 +13,54 @@ untuk mengolah data dari backend maka kita perlu memahami API(Application Progra
 ## Contoh Data API
 ![Alternate text](https://user-images.githubusercontent.com/36991049/79677375-d30fa580-821a-11ea-8fec-5db0428c5611.PNG)
 
+## 3. Detail Materi
 
-## 3. Contoh Kasus
+pada dasarnya Fetch API sendiri memiliki beberapa perintah yaitu :
+   - GET    : Mengambil data dari backend
+   - POST   : Mengirim data ke backend
+   - PUT    : Mengubah data di backend
+   - DELETE : Menghapus data di backend
+
+### Pengaplikasian   
+
+### Get
+
+```js
+1| fetch('Url_api_yang_ingin_diakses', {
+2|    method: 'GET' //perintah
+3| }).then(res => res.json())
+4|    .then(data => console.log(data));
+
+// pada baris 2 isikan dengan perintah seperti diatas
+// pada baris 3 kembalikan hasil res menjadi json
+// pada baris 4 lakukan print data untuk mengetahui hasilnya
+
+```
+
+### Post
+untuk post memiliki sedikit perbedaan sebagai berikut :
+
+```js
+1 |   fetch('Url_api_yang_ingin_diakses', {
+2 |       method: 'POST' //perintah
+3 |       headers: {
+4 |           'Content-Type': 'application/json'
+5 |       }
+6 |       body : {
+7 |         "key_data" : value
+8 |       }
+9 |   }).then(res => res.json())
+10|        .then(data => console.log(data));
+
+// pada baris 2 isikan dengan perintah seperti diatas
+// pada baris 4 kita gunakan untuk mengatur format pengiriman disini kita menggunakan json
+// pada baris 6 untuk isi dari body ini ditentukan dari endpoint yang telah dibuat
+// pada baris 9 kembalikan hasil res menjadi json
+// pada baris 10 lakukan print data untuk mengetahui hasilnya
+```
+
+
+## 4. Contoh Kasus
 
 pada percobaan kali ini kita akan melakukan implementasi Fecth Api Javascript
 
@@ -35,23 +81,11 @@ pada percobaan kali ini kita akan melakukan implementasi Fecth Api Javascript
 ```
 
 2. Kedua kita perlu membuat file baru yaitu file.js untuk melakukan percobaan Fecth API,
-   pada dasarnya Fetch API sendiri memiliki beberapa perintah yaitu :
-   - GET    : Mengambil data dari backend
-   - POST   : Mengirim data ke backend
-   - PUT    : Mengubah data di backend
-   - DELETE : Menghapus data di backend
-
-    pada kesempatan ini kita akan belajar GET dan juga POST
 
 ### GET
 
 ```js
-// fetch('Url_api_yang_ingin_diakses', {
-//     method: 'perintah'                   // isi dengan 1 perintah seperti diatas        
-// }).then(res => res.json())               // buat variable lalu kembalikan dalam bentuk json        
-//     .then(data => console.log(data));    // cetak data untuk mengetahui hasil
-
-  fetch('https://aka-contact-backend.herokuapp.com/contact', {
+fetch('https://aka-contact-backend.herokuapp.com/contact', {
     method: 'GET'
 }).then(res => res.json())
     .then(data => console.log(data));
@@ -68,19 +102,7 @@ langkah berikutnya jalankan file html pada browser lalu click kanan pada browser
 untuk percobaan ini kita masih menggunakan file yang sama,namun akan ada sedikit perbedaan format pada file.js
 
 ```js
-// fetch('Url_api_yang_ingin_diakses', {
-//     method: 'perintah'                        // isi dengan 1 perintah seperti diatas     
-//     headers: {
-//         'Content-Type': 'application/json'   // untuk mengatur format pengiriman
-//     }   
-//     body : {                                 // untuk isi dari body ini ditentukan dari endpoint yang  
-//                                                 telah dibuat
-//      "key_data" : value
-//    }
-// }).then(res => res.json())               // buat variable lalu kembalikan dalam bentuk json        
-//     .then(data => console.log(data));    // cetak data untuk mengetahui hasil
-
- fetch('https://aka-contact-backend.herokuapp.com/contact', {
+fetch('https://aka-contact-backend.herokuapp.com/contact', {
     method: 'Post',
     headers: {
         'Content-Type': 'application/json'
