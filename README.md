@@ -49,7 +49,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: [Fungsi](dasar/javascript/fungsi.md)
     - :books: [Array dan Objek](dasar/javascript/array-dan-objek.md)
     - :books: [Object](dasar/javascript/object-javascript.md)
-    - :books: [XML HTTP Request](dasar/javascript/xmlhttprequest.md)
+    - :books: [Fetch API](dasar/javascript/fetch-api.md)
     - :computer: Membuat Aplikasi Web Sederhana
 
 5.  **Node.js**
