@@ -38,7 +38,7 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
     - :books: [Height dan Width](dasar/css/height-dan-width.md)
     - :books: [Spacing](dasar/css/spacing.md)
     - :books: [Layouting](dasar/css/layouting.md)
-    - :books: Responsive Design
+    - :books: [Responsive Design](dasar/css/responsive.md)
     - :computer: Membuat Template Web Responsive
 
 4.  **Javascript**
