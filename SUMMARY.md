@@ -2,15 +2,13 @@
 
 - [Miniclass Web](README.md)
 
-## Materi Web Dasar
-
-### 1. Pengenalan Pemrograman Web
+## 1. Pengenalan Pemrograman Web
 
 - [Cara Kerja Website](dasar/pendahuluan/cara-kerja-website.md)
 - [Pengenalan Backend dan Frontend](dasar/pendahuluan/pengenalan-backend-dan-frontend.md)
 - [HTTP Request dan HTTP Response](dasar/pendahuluan/http-request-dan-response.md)
 
-### 2. HTML
+## 2. HTML
 
 - [Pengenalan HTML](dasar/html/pengenalan-html.md)
 - [Text Formatting](dasar/html/text-formatting.md)
@@ -21,7 +19,7 @@
 - [Form](dasar/html/form.md)
 - [Grouping](dasar/html/grouping.md)
 
-### 3. CSS
+## 3. CSS
   
 - [Pengenalan CSS](dasar/css/pengenalan-css.md)
 - Selector CSS
@@ -34,7 +32,7 @@
 - [Responsive Design](dasar/css/responsive.md)
 - Membuat Template Web Responsive
 
-### 4. Javascript
+## 4. Javascript
 
 -[Pengenalan Node.js](dasar/node-js/node-js.md)
 - [Membuat Server HTTP](dasar/node-js/http-server.md)
@@ -44,7 +42,7 @@
 - NPM Script
 - [Nodemon](dasar/node-js/nodemon.md)
   
-### 5. Node.js
+## 5. Node.js
 
 - [Pengenalan Node.js](dasar/node-js/node-js.md)
 - [Membuat Server HTTP](dasar/node-js/http-server.md)
@@ -54,7 +52,7 @@
 - NPM Script
 - [Nodemon](dasar/node-js/nodemon.md)
 
-### 6. Express.js
+## 6. Express.js
 
 - [Pengenalan Express.js](dasar/express-js/pengenalan-express-js.md)
 - [HTTP Method](dasar/express-js/http-method.md)
