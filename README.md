@@ -135,12 +135,20 @@ Berikut merupakan materi awal yang akan dipelajari di Miniclass Web:
 
 5. **Microservices**
 
-   - :books: Microservices
-   - :books: Microservices Gateway
-   - :books: Message Queue
-   - :books: Remote Procedure Call
-   - :computer: Membuat Micro Service Sederhana
+   - :books: Pendahuluan dari microservices
+   - :books: From monolith to microservices
+   - :books: Microservice development pattern
+   - :books: Microservices communication
+   - :books: High availabilty concept
+   - :computer: Implementation
 
-6. **Searching**
+6. **Tech Pendukung Microservices**
 
-7. **Caching**
+    - :books: Containerization (Docker, K8S)
+    - :books: Cloud Native Platform
+    - :books: Message Broker (Event Driven Development) 
+    - :books: API Gateway (Development Pattern)
+    
+7. **Searching**
+
+8. **Caching**
