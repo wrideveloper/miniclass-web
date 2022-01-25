@@ -41,10 +41,10 @@ A. Buat file PHP baru dengan nama misal buatSession.php
             <title>Membuat Session PHP</title>
         </head>
         <body>
-            ```php
+            <?php
                 $_SESSION["nama"] = "Max Verstappen";
                 $_SESSION["kebangsaan"] = "Belanda";
-            ```
+            ?>
         </body>
     </html>
 ```
@@ -59,10 +59,10 @@ B. Kemudian buatlah file baru lagi dengan nama panggilSession.php yang berguna u
             <title>Memanggil Session PHP</title>
         </head>
         <body>
-            ```php
+            <?php
                 echo "Juara dunia Formula One 2021 ". $_SESSION["nama"]. ".<br>";
                 echo "Dia berasal dari ". $_SESSION["kebangsaan"]. ".";
-            ```
+           ?>
         </body>
     </html>
 ```
@@ -79,12 +79,12 @@ PHP menyediakan fungsi 'session_destroy()' yang dapat digunakan untuk menghapus 
             <title>Menghapus Session PHP</title>
         </head>
         <body>
-            ```php
+            <?php
                 session_unset();
                 session_destroy();
 
                 echo "Semua session telah dihapus";
-            ```
+            ?>
         </body>
     </html>
 ```
