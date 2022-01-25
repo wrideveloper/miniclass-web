@@ -1,4 +1,4 @@
-# Session PHP
+# Session Pada PHP
 
 ## 1. Permasalahan
 Seringkali saat melakukan suatu proses pada website, misal Login atau mengupdate data. Kita perlu menyimpan sebuah parameter sebagai penanda atas proses apa yang hendak kita lakukan pada website tersebut.
