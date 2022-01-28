@@ -201,3 +201,72 @@ Berikut 6 jenis operator PHP:
     echo "Hasil operasi tersebut adalah $angka";
 ?>
 ```
+
+# 2. Percabangan
+## 2.1. If - Else
+Percabangan If/Else memiliki dua pilihan. Jika kondisi bernilai true, maka blok if akan dikerjakan. Jika kondisi bernilai false, maka blok else akan dikerjakan.
+
+```php
+<?php
+
+$tiket = 1;
+
+if ($tiket > 0 ){
+    echo "Kamu boleh masuk ke kereta ini";
+} else {
+    echo "Silahkan beli tiket dulu";
+}
+?>
+```
+## 2.2. If - Else if - Else
+Percabangan If/Elseif/Else sama dengan percabangan If/Else. Bedanya percabangan If/Elseif/Else bisa memiliki lebih dari 2 kondisi
+```php
+<?php
+
+$tiket = 1;
+
+if ($tiket = 1 ){
+    echo "Kamu boleh masuk ke kereta ini";
+} elseif($tiket > 1){
+    echo "Siapa pemilik tiket yang lainnya?";
+}
+} else {
+    echo "Silahkan beli tiket dulu";
+}
+?>
+```
+
+# 3. Perulangan
+## 3.1. For
+Perulangan for digunakan ketika Anda mengetahui sebelumnya berapa kali skrip tersebut harus dijalankan.
+```php
+<?php
+for ($x = 0; $x <= 10; $x++) {
+    echo "The number is: $x <br>";
+}
+?>
+```
+## 3.2. While
+Perulangan while mengeksekusi blok kode selama kondisi yang ditentukan itu bernilai benar.
+```php
+<?php
+$x = 1;
+
+while($x <= 5) {
+    echo "The number is: $x<br>";
+    $x++;
+}
+?>
+```
+## 3.3. Do While
+Perulangan do while akan selalu mengeksekusi blok kode satu kali, kemudian akan memeriksa kondisi, dan jika kondisinya benar maka blok kode tersebut akan diulangi lagi sampai menemukan kondisi yang bernilai salah.
+```php
+<?php
+$x = 1;
+
+do {
+    echo "The number is: $x <br>";
+    $x++;
+} while ($x <= 5);
+?>
+```
