@@ -29,15 +29,15 @@ expire adalah jangka waktu cookies akan disimpan di dalam komputer
 1. Jalankan Apache
 2. Buat file dengan nama cookiesCreate.php untuk membuat cookies
 
-    ```php
-        setcookie("user", "Polinema", time()+3600);
-    ```
+```php
+    setcookie("user", "Polinema", time()+3600);
+```
 
 3. Buat file baru dengan nama cookiesCall.php untuk memanggil cookies yang telah dibuat
 
-    ```php
-        echo $_COOKIE['user'];
-    ```
+```php
+    echo $_COOKIE['user'];
+```
 
 4.Jalankan file cookiesCall.php pada localhost
 
@@ -47,9 +47,9 @@ expire adalah jangka waktu cookies akan disimpan di dalam komputer
 ### B. Contoh Menghapus Cookies
 1. Buat file baru dengan nama cookiesDel.php untuk menghapus nilai cookies
 
-    ```php
-        setcookie("user", "Polinema", time()-3600);
-    ```
+```php
+    setcookie("user", "Polinema", time()-3600);
+```
 
 2. Jalankan file cookiesDel.php pada localhost
 3. Lalu jalankan file cookiesCall.php pada localhost untuk melihat hasilnya
