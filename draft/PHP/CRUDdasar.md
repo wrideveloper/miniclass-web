@@ -14,13 +14,17 @@ Berikut ini penerapan dengan menggunakan database mysql.
 
 ### 3.1 Membuat Database
 
-```
+Membuat database bisa melalui phpmyadmin langsung atau melalui command prompt dengan mengarahkannya ke direktori xampp\mysql\bin. Kemudian menuliskan "mysql -u root" pada cmd.
+
+```mysql
 CREATE DATABASE databasename;
 ```
 
 ### 3.2 Membuat Tabel
 
-```
+Sama seperti saat membuat database, membuat tabel dapat dilakukan di phpmyadmin atau melalui command prompt.
+
+```mysql
 CREATE TABLE `tablename` (
     `id` INT NOT NULL AUTO_INCREMENT ,
     `nama` VARCHAR(64) NOT NULL ,
@@ -158,15 +162,19 @@ Merupakan proses penghapusan data yang ada di dalam Database.
 
 ## 5. Contoh Kasus
 
-### 5.1 Membuat database pada mysql
+### 5.1 Membuat database mysql
 
-```
+Membuat database melalui command prompt atau phpmyadmin.
+
+```mysql
 CREATE DATABASE `dbuser`;
 ```
 
 ### 5.2 Diikuti dengan membuat tabel di dalam database yang telah dibuat
 
-```
+Kemudian membuat tabel di dalam database dbuser dengan nama user dan juga berikan tipe data di setiap kolomnya.
+
+```mysql
 CREATE TABLE ‘user’(
 ‘id’ VARCHAR(64) NOT NULL ,
 ‘nama’ VARCHAR(64) NOT NULL ,
@@ -177,7 +185,9 @@ PRIMARY KEY (‘id’)
 
 ### 5.3 Memasukkan beberapa data ke dalam tabel
 
-```
+Kemudian kita isi tabel user dengan data seperti berikut.
+
+```mysql
 INSERT INTO `user` (`id`, `nama`, `phone`) VALUES
 ('pg674kf', 'M. Nindra Zaka', '085335473895'),
 ('04khd6i', 'Raka Ardinata', '08533124098'),
