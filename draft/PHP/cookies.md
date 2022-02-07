@@ -1,14 +1,12 @@
 # Cookies Pada PHP
 
 ## 1. Permasalahan
-    Seringkali saat client melakukan suatu aktivitas yang berhubungan dengan mengisi data (form), client terkadang malas untuk mengetik kembali data atau informasi yang sudah pernah user ketikkan sebelumnya.
+Seringkali saat client melakukan suatu aktivitas yang berhubungan dengan mengisi data (form), client terkadang malas untuk mengetik kembali data atau informasi yang sudah pernah user ketikkan sebelumnya.
 
 ## 2. Cookies Pada PHP
-    Untuk mengatasi masalah diatas, kita bisa menggunakan teknologi yang bernama cookies pada bahasa pemrograman PHP.
-    
-    Cookies adalah file berukuran kecil yang diletakkan pada komputer pengguna ketika mengunjungi suatu website. Cookies menampung informasi sederhana tentang kebiasaan user, seperti nama, telepon, alamat.
-
-    Cookies berguna untuk memudahkan pengguna, seperti "mengingat" user setiap kali mengunjungi website yang sama.
+Untuk mengatasi masalah diatas, kita bisa menggunakan teknologi yang bernama cookies pada bahasa pemrograman PHP.
+Cookies adalah file berukuran kecil yang diletakkan pada komputer pengguna ketika mengunjungi suatu website. Cookies menampung informasi sederhana tentang kebiasaan user, seperti nama, telepon, alamat.
+Cookies berguna untuk memudahkan pengguna, seperti "mengingat" user setiap kali mengunjungi website yang sama.
 
 
 ## 3. Membuat Cookies pada PHP dan Contoh Kode Program
