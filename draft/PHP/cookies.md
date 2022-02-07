@@ -12,7 +12,7 @@
 
 
 ## 3. Membuat Cookies pada PHP dan Contoh Kode Program
-    A. Untuk membuat cookies pada PHP,  fungsi 'setcookie()'
+### A. Untuk membuat cookies pada PHP,  fungsi 'setcookie()'
 
     ```php
         setcookie(nama, value, expire);
@@ -21,13 +21,13 @@
     value berisi nilai yang tersimpan dalam cookies
     expire adalah jangka waktu cookies akan disimpan di dalam komputer
 
-    B. Setelah cookie dibuat, selanjutnya kita dapat mengambil cookie yang telah dibuat dengan variabel cookie '$_COOKIE'
+### B. Setelah cookie dibuat, selanjutnya kita dapat mengambil cookie yang telah dibuat dengan variabel cookie '$_COOKIE'
 
     ```php
         $_COOKIE['user'];
     ```
 
-    C. Contoh Pembuatan Cookie
+### C. ontoh Pembuatan Cookie
         1. Jalankan Apache
         2. Buat file dengan nama cookiesCreate.php untuk membuat cookies
 
@@ -44,9 +44,9 @@
         4.Jalankan file cookiesCall.php pada localhost
 
 ## 4. Menghapus Cookies pada PHP dan Contoh Kode Program
-    A. Untuk menghapus cookies sangat mudah yaitu dengan mengubah expire nya yang semula time()+3600 menjadi time()-3600
+### A. Untuk menghapus cookies sangat mudah yaitu dengan mengubah expire nya yang semula time()+3600 menjadi time()-3600
 
-    B. Contoh Menghapus Cookies
+### B. Contoh Menghapus Cookies
         1. Buat file baru dengan nama cookiesDel.php untuk menghapus nilai cookies
 
             ```php
