@@ -92,8 +92,7 @@ DROP TABLE nama_tabel;
 
 dibawah ini terdapat contoh ERD, yang dimana akan kita implementasikan ke dalam database.
 
-![ERD database](img/erd.png)
-
+![erd](https://user-images.githubusercontent.com/48237280/152759887-38630db0-9785-40dd-9e4d-556726aa6ed6.png)
 ### 4.1 Membuat Database
 
 membuat database terlebih dahulu dengan cara:

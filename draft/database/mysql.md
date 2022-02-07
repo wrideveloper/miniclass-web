@@ -28,7 +28,7 @@ https://www.apachefriends.org/download.html
 
 setelah proses instalasi selesai, Jalankan aplikasi XAMPP dan klik tombol start pada mysql dan apache.
 
-![database](img/xampp.png)
+![xampp](https://user-images.githubusercontent.com/48237280/152759670-88f2b2ab-01d7-4ec9-9985-a89576189250.png)
 
 dan cara menjalankan localhost dengan cara mengakses localhost/phpmyadmin 
 atau kalian juga bisa klik link dibawah ini
