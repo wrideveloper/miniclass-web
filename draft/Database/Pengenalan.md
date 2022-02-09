@@ -23,7 +23,7 @@ Basis Data (Database) terdiri dari 2 gabungan istilah:
 Pengaturan data/arsip
 
 ## Tujuan Utama: 
-Kemudahan dan kecepatan dalam pengambilam kembali suatu data/arsip
+Kemudahan dan kecepatan dalam pengambilan kembali suatu data/arsip
 
 ## Penerapan Database
 
@@ -35,8 +35,12 @@ Penerapan database sebagai komponen sistem informasi dalam organisasi/perusahaan
 
 3. Swalayan: pengelolaan data customer, produk, transaksi, supplier, dll.
 
-## ERD ada 2 Versi
+# ERD ada 2 Versi 
+---
+## Pendahuluan
 
+ERD (Entity Relationship Diagram) atau diagram hubungan entitas adalah sebuah diagram yang digunakan untuk perancangan suatu database dan menunjukan relasi atau hubungan antar objek atau entitas beserta atribut-atributnya secara detail. Dengan menggunakan ERD, sistem database yang sedang dibentuk dapat digambarkan dengan lebih terstruktur dan terlihat rapi.
+ 
 1. Peter Chen<br>
 ![2](https://user-images.githubusercontent.com/73374855/151656571-c48991ae-2c42-43f4-bddc-86af987fdca8.jpg)
 
@@ -47,15 +51,11 @@ Penerapan database sebagai komponen sistem informasi dalam organisasi/perusahaan
 
 # ERD Martin
 
-## Pendahuluan
-
-ERD (Entity Relationship Diagram) atau diagram hubungan entitas adalah sebuah diagram yang digunakan untuk perancangan suatu database dan menunjukan relasi atau hubungan antar objek atau entitas beserta atribut-atributnya secara detail. Dengan menggunakan ERD, sistem database yang sedang dibentuk dapat digambarkan dengan lebih terstruktur dan terlihat rapi.
-
 ERD Martin merupakan jenis ERD yang diusulkan oleh James Martin pada 1981. Hubungan antar entititas digambarkan dengan simbol-simbol di bawah ini:
 
 ![image](https://user-images.githubusercontent.com/73374855/151655654-7997e6e9-a1ed-46ff-bab0-f784b33b6c89.png)
 
-# Entity 
+## Entity 
 
 Entity merupakan objek yang mewakili sesuatu yang nyata yang dapat diidentifikasi secara unik dan berbeda satu dengan yang lainnya.
 <br><br>
@@ -63,7 +63,7 @@ Penggambaran entity dan atribut:
 <br><center>
  ![image](https://user-images.githubusercontent.com/73374855/151655686-7f111dd5-42c8-482f-9cb7-152b72fef971.png)</center>
 
-# Atribut
+## Atribut
 Atribut adalah properti atau karakteristik dari suatu entitas. Atribut memiliki beberapa jenis
 - Atribut Key
 Atribut yang digunakan untuk mendefinisikan entitas secara unik
@@ -74,7 +74,7 @@ Atribut yang memiliki sekelompok nilai yang banyak
 - Atribut Composite – atribut yang masih dapat diuraikan lagi, misal alamat, korban, waktu.
 - Atribut Derivatif – atribut yang dihasilkan dari turunan atribut lain, misal umur dari tanggal lahir
 
-# Jenis Key Pada Database 
+## Jenis Key Pada Database 
 
 <table style="width:100%">
   <tr>
@@ -106,7 +106,7 @@ Atribut yang memiliki sekelompok nilai yang banyak
 <p style="text-align: justify;">
 Sebagai contoh disini kita telah memiliki sebuah tabel staff dimana atribut – atribut nya terdiri dari id_staff, nama, kontak, alamat. pada tabel tersebut atrribut id_staff akan kita jadikan sebagai primary key sehingga pada Gambar 2 nilai dari attribut yang kita jadikan primary key value nya harus bersifat unik atau harus berbeda dengan nilai pada baris lainya.
 
-# Relationship
+## Relationship
 
 Dalam ERD Martin terdapat 5 jenis relasi, yakni:
 
