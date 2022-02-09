@@ -111,37 +111,52 @@ Sama seperti di bahasa pemrograman yang lain, di dalam PHP juga memiliki tipe da
 ## 1.6 Operator
 Operator adalah simbol operasi yang digunakan untuk suatu nilai dan variabel.
 
-Berikut 6 jenis operator PHP:
+Berikut 7 jenis operator PHP:
+- Operator Relasi
+- Operator Logika
 - Operator Aritmatika
 - Operator Assignment
 - Operator Increment & Decrement
-- Operator Relasi
-- Operator Logika
 - Operator Bitwise, dan
 - Operator Ternary
+
+### <br>1.6.1 Operator Relasi
 ``` PHP
 <?php
     $angka1 = 8;
     $angka2 = 23;
     
-    // Operator Relasi
     echo "<h2>Operator Relasi</h2>";
     echo "$angka1 < $angka2 adalah "; var_dump($angka1 < $angka2);
     echo "<br>$angka1 > $angka2 adalah "; var_dump($angka1 > $angka2);
     echo "<br>$angka1 == $angka2 adalah "; var_dump($angka1 == $angka2);
     echo "<br>$angka1 != $angka2 adalah "; var_dump($angka1 != $angka2);
+?>
+```
 
-    // Operator Logika
+### 1.6.2 Operator Logika
+``` PHP
+<?php
+    $angka1 = 8;
+    $angka2 = 23;
+
     echo "<h2>Operator Logika</h2>";
-    echo "nilai angka1 AND angka2 adalah "; var_dump($angka1 AND $angka2);
-    echo "<br> nilai angka1 OR angka2 adalah "; var_dump($angka1 OR $angka2);
-    echo "<br> nilai angka1 XOR angka2 adalah "; var_dump($angka1 XOR $angka2);
-    echo "<br> nilai angka1 && angka2 adalah "; var_dump($angka1 && $angka2);
-    echo "<br> nilai angka1 || angka2 adalah "; var_dump($angka1 || $angka2);
-    echo "<br> nilai !angka1 || angka2 adalah "; var_dump(!$angka1 || $angka2);
-    
-    // Operator Aritmatika
-    echo "<br><br><h2>Operator Aritmatika</h2>";
+    echo "angka1 AND angka2 adalah "; var_dump($angka1 AND $angka2);
+    echo "<br> angka1 OR angka2 adalah "; var_dump($angka1 OR $angka2);
+    echo "<br> angka1 XOR angka2 adalah "; var_dump($angka1 XOR $angka2);
+    echo "<br> angka1 && angka2 adalah "; var_dump($angka1 && $angka2);
+    echo "<br> angka1 || angka2 adalah "; var_dump($angka1 || $angka2);
+    echo "<br> !angka1 || angka2 adalah "; var_dump(!$angka1 || $angka2);
+?>
+```
+
+### 1.6.3 Operator Aritmatika
+``` PHP
+<?php
+    $angka1 = 8;
+    $angka2 = 23;
+
+    echo "<h2>Operator Aritmatika</h2>";
     echo "Hasil penjumlahan $angka1 dan $angka2 adalah ";
     echo $angka1 + $angka2;
 
@@ -164,41 +179,198 @@ Berikut 6 jenis operator PHP:
     echo ++$angka2;
 ?>
 ```
+
+### 1.6.4 Operator Assignment
+Assignment by Value yaitu memberikan nilai ke suatu variabel
 ``` PHP
 <?php
-    echo "Hasil operasi penjumlahan";
+    echo "<h3>Operasi Penjumlahan</h3>";
     $angka = 8;
     $angka += 23;
     echo "Hasil operasi tersebut adalah $angka";
+    echo "<br><br>";
 
-    echo "Hasil operasi pengurangan";
+    echo "<h3>Operasi Pengurangan</h3>";
     $angka = 8;
     $angka -= 23;
     echo "Hasil operasi tersebut adalah $angka";
     echo "<br><br>";
 
-    echo "Hasil operasi perkalian";
+    echo "<h3>Operasi Perkalian</h3>";
     $angka = 8;
     $angka *= 23;
     echo "Hasil operasi tersebut adalah $angka";
     echo "<br><br>";
 
-    echo "Hasil operasi pembagian";
+    echo "<h3>Operasi Pembagian</h3>";
     $angka = 8;
     $angka /= 23;
     echo "Hasil operasi tersebut adalah $angka";
     echo "<br><br>";
 
-    echo "Hasil operasi modulus";
+    echo "<h3>Operasi Modulus</h3>";
     $angka = 8;
     $angka %= 23;
     echo "Hasil operasi tersebut adalah $angka";
     echo "<br><br>";
 
-    echo "Hasil operasi penggabungan angka";
+    echo "<h3>Operasi Penggabungan Angka</h3>";
     $angka = 8;
     $angka .= 23;
     echo "Hasil operasi tersebut adalah $angka";
+?>
+```
+
+### 1.6.5 Operator Increment & Decrement
+- Pre-Increment (++a)
+<br>Menambahkan 1 nilai sebelum operasi telah dilakukan
+
+- Post-Increment (a++)
+<br>Menambahkan 1 nilai setelah operasi telah dilakukan
+
+- Pre-Decrement (--a)
+<br>Mengurangi 1 nilai sebelum operasi telah dilakukan
+
+- Post-Decrement (a--)
+<br>Mengurangi 1 nilai setelah operasi telah dilakukan
+
+``` PHP
+<?php
+    $a = 2; 
+    echo "-- Pre Increment --";  
+    echo "<br>Hasil A: " . $a; 
+    echo "<br>Hasil A: " . ++$a;
+    echo "<br>Hasil A: " . $a;
+    
+    $a = 2; 
+    echo "<br><br>-- Post Increment --";  
+    echo "<br>Hasil A: " . $a; 
+    echo "<br>Hasil A: " . $a++;
+    echo "<br>Hasil A: " . $a;
+?>
+```
+
+``` PHP
+<?php
+    $b = 5; 
+    echo "-- Pre Decrement --";  
+    echo "<br>Hasil B: " . $b; 
+    echo "<br>Hasil B: " . --$b;
+    echo "<br>Hasil B: " . $b;
+    
+    $b = 5; 
+    echo "<br><br>-- Post Decrement --";  
+    echo "<br>Hasil B: " . $b; 
+    echo "<br>Hasil B: " . $b--;
+    echo "<br>Hasil B: " . $b;
+?>
+```
+### 1.6.6 Operator Bitwise
+- Bitwise OR ( | )
+<br>Bernilai 1 jika salah satu bit bernilai 1 dan selain itu bernilai 0
+
+``` PHP
+<?php
+    $a = 3; // 0011 (Bilangan Biner)
+    $b = 6; // 0110
+
+    echo "Hasil Output = " . ($a|$b); // output = 7
+
+    // 0011
+    // 0110
+    // -----
+    // 0111 -> 7
+?>
+```
+
+- Bitwise AND ( & )
+<br>Bernilai 1 ketika semua bit bernilai 1 dan selain itu bernilai 0
+
+``` PHP
+<?php
+    $a = 3; // 0011 (Bilangan Biner)
+    $b = 6; // 0110
+
+    echo "Hasil Output = " . ($a&$b); // output = 2
+
+    // 0011
+    // 0110
+    // -----
+    // 0010 -> 2
+?>
+```
+
+- Bitwise XOR ( ^ )
+<br>Bernilai 1 jika terdapat salah satu bit-nya memiliki nilai 1 dan 0 dan bernilai 0 jika semua bit memiliki nilai 1 atau 0
+
+``` PHP
+<?php
+    $a = 3; // 0011 (Bilangan Biner)
+    $b = 6; // 0110
+
+    echo "Hasil Output = " . ($a^$b); // output = 5
+
+    // 0011
+    // 0110
+    // -----
+    // 0101 -> 5
+?>
+```
+
+- Bitwise Negasi/Kebalikan ( ~ )
+<br>Jika bit bernilai 1 maka akan menghasilkan 0 sedangkan bit bernilai 0 maka akan menghasilkan 1
+
+``` PHP
+<?php
+    $c = 7; // 0111 (Bilangan Biner)
+
+    echo "Hasil Output = " . ~$c; // output = -8
+
+    // 0111                 // RUMUS
+    // -----                // ~n = -(n+1)
+    // 1000 -> 8            // ~(-n) = (n-1)
+?>
+```
+
+- Bitwise Right Shift ( >> )
+<br>Pergeseran bit ke kanan sebanyak n. n adalah banyaknya pergeseran
+
+``` PHP
+<?php
+    $d = 4; // 0100 (Bilangan Biner)
+
+    echo "Hasil Output = " . $d>>2; // output = 1
+
+    // 0100
+    // -----
+    // 0001 -> 1
+?>
+```
+
+- Bitwise Left Shift ( << )
+<br>Pergeseran bit ke kiri sebanyak n. n adalah banyaknya pergeseran
+
+``` PHP
+<?php
+    $d = 4; // 0100 (Bilangan Biner)
+
+    echo "Hasil Output = " . $d<<2; // output = 16
+
+    // 0100
+    // -----
+    // 0000 -> 16
+?>
+```
+
+### 1.6.7 Operator Ternary
+Operator Ternary adalah operator yang melibatkan 3 buah operand. Operator Ternary digunakan untuk melakukan penilaian terhadap suatu nilai yang didasari oleh ekspresi tertentu.
+``` PHP
+<?php
+    $p = "Miniclass Web";
+    $hasil;
+     
+    $hasil = ($p == "Miniclass Web" ? "Mari Kita Belajar Web" : "Batal Belajar Web");
+    echo $hasil; // Output = Mari Kita Belajar Web
 ?>
 ```
 
