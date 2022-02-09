@@ -2,11 +2,11 @@
 
 ## 1. Permasalahan
 
-website tentunya membutuhkan database server untuk menampung berbagai jenis informasi seperti data pribadi dan sebagainya. terdapat banyak sekali database server seperti Oracle, Redis, MongoDB, MYSQL dll. Namun pada kali ini kita akan menggunakan MySQL sebagai sistem manajemen basis data dikarenakan yang umum digunakan untuk mengelola data.
+Website tentunya membutuhkan database server untuk menampung berbagai jenis informasi seperti data pribadi dan sebagainya. Terdapat banyak sekali database server seperti Oracle, Redis, MongoDB, MYSQL dll. Namun pada kali ini kita akan menggunakan MySQL sebagai sistem manajemen basis data dikarenakan yang umum digunakan untuk mengelola data.
 
 ## 2. Penjelasan MYSQL
 
-MySQL adalah Database Management System (DBMS) yang menggunakan bahasa SQL(Structured Query Language) sebagai bahasa penghubung antara perangkat lunak aplikasi dengan database server. MySQL termasuk ke dalam RDBMS (Relational Database Management System). Sehingga, menggunakan tabel, kolom, baris, di dalam struktur databasenya.
+MySQL adalah Database Management System (DBMS) yang menggunakan bahasa SQL (Structured Query Language) sebagai bahasa penghubung antara perangkat lunak aplikasi dengan database server. MySQL termasuk ke dalam RDBMS (Relational Database Management System). Sehingga, menggunakan tabel, kolom, baris, di dalam struktur databasenya.
 
 MySQL dikategorikan sebagai open source dengan dua format lisensi: perangkat lunak bebas (free software) dan shareware (perangkat lunak berpemilik dengan penggunaan terbatas). Singkatnya, MySQL adalah server database  gratis dengan  GNU General Public License (GPL), sehingga kalian dapat menggunakannya untuk keperluan pribadi atau komersial tanpa  membayar lisensi.
 
@@ -26,7 +26,7 @@ https://www.apachefriends.org/download.html
 
 ## 4. Menjalankan Localhost MYSQL
 
-setelah proses instalasi selesai, Jalankan aplikasi XAMPP dan klik tombol start pada mysql dan apache.
+Setelah proses instalasi selesai, Jalankan aplikasi XAMPP dan klik tombol start pada mysql dan apache.
 
 ![xampp](https://user-images.githubusercontent.com/48237280/152759670-88f2b2ab-01d7-4ec9-9985-a89576189250.png)
 
