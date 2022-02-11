@@ -269,28 +269,27 @@ Membuat form pada form-user.html
 
         <body>
             <header>
-            <h3>Formulir Pendaftaran User Baru</h3>
+                <h3>Formulir Pendaftaran User Baru</h3>
             </header>
 
             <form action="proses-pendaftaran.php" method="POST">
-            <fieldset>
-                <p>
-                <label for="id">Id : &ensp;&ensp;&ensp;&ensp;</label>
-                <input type="text" name="id" />
-                </p>
-                <p>
-                <label for="nama">Nama : &ensp;</label>
-                <input type="text" name="nama" placeholder="nama lengkap" />
-                </p>
-                <p>
-                <label for="phone">Phone : &nbsp;</label>
-                <input type="text" name="phone" />
-                </p>
-
-                <p>
-                <input type="submit" value="Daftar" name="daftar" />
-                </p>
-            </fieldset>
+                <fieldset>
+                    <p>
+                        <label for="id">Id : &ensp;&ensp;&ensp;&ensp;</label>
+                        <input type="text" name="id" />
+                    </p>
+                    <p>
+                        <label for="nama">Nama : &ensp;</label>
+                        <input type="text" name="nama" placeholder="nama lengkap" />
+                    </p>
+                    <p>
+                        <label for="phone">Phone : &nbsp;</label>
+                        <input type="text" name="phone" />
+                    </p>
+                    <p>
+                        <input type="submit" value="Daftar" name="daftar" />
+                    </p>
+                </fieldset>
             </form>
         </body>
     </html>
