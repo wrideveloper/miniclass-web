@@ -419,7 +419,7 @@ for ($x = 0; $x <= 10; $x++) {
 ?>
 ```
 ## 3.2. While
-Perulangan while mengeksekusi blok kode selama kondisi yang ditentukan itu bernilai benar.
+Perulangan while akan melakukan pengecekan kondisi terlebih dahulu. Setelah itu, jika kondisinya bernilai benar maka blok kode tersebut akan dieksekusi. Begitupun seterusnya, sampai menemukan kondisi yang bernilai salah.
 ```php
 <?php
 $x = 1;
@@ -431,7 +431,7 @@ while($x <= 5) {
 ?>
 ```
 ## 3.3. Do While
-Perulangan do while akan selalu mengeksekusi blok kode satu kali, kemudian akan memeriksa kondisi, dan jika kondisinya benar maka blok kode tersebut akan diulangi lagi sampai menemukan kondisi yang bernilai salah.
+Perulangan do while akan selalu mengeksekusi blok kode satu kali. Kemudian akan memeriksa kondisi, dan jika kondisinya bernilai benar maka blok kode tersebut akan diulangi lagi sampai menemukan kondisi yang bernilai salah.
 ```php
 <?php
 $x = 1;
