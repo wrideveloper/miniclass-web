@@ -5,9 +5,200 @@ Dalam merancang kode program, kadang kita sering membuat kode yang melakukan tug
 ## Penjelasan Function
 `Fungsi` atau `Function` dalam bahasa pemograman adalah kode program yang dirancang untuk menyelesaikan sebuah tugas tertentu, dan merupakan bagian dari program utama. Kita dapat membuat fungsi sendiri, atau menggunakan fungsi yang dibuat oleh programmer lain.
 
-## Pengertian Argumen dan Parameter dalam Function PHP
-Sebuah fungsi dalam memproses data, kadang memerlukan beberapa inputan atau nilai masukan. Inputan inilah yang dimaksud dengan argumen. Sebuah fungsi bisa membutuhkan 1, 2, atau 5 argumen, namun bisa juga tidak memerlukan argumen sama sekali.
-Parameter adalah sebutan lain untuk argumen. Perbedaannya, parameter merujuk kepada inputan fungsi pada saat pendefenisian fungsi tersebut, dan agrumen adalah sebutan untuk inputan fungsi pada saat pemanggilan fungsi. Kita akan membahas perbedaan Argumen dan Parameter secara lebih dalam  pada tutorial selanjutnya, namun pada dasarnya argumen dan parameter merujuk kepada hal yang sama, yaitu inputan kepada fungsi dan kedua istilah ini sering dipertukarkan.
+### Fungsi Bawaan
+Dalam bahasa pemograman PHP terdapat banyak fungsi bawaan dari PHP itu sendiri, berikut beberapa fungsi bawaan dari php dan kegunaannya.
+- `isset()` digunakan untuk mengecek apakah suatu variabel sudah ada dan tidak bernilai NULL
+- `empty()` digunakan untuk mengecek apakah suatu variabel bernilai kosong atau tidak
+- `unset()` digunakan untuk menghilangkan variabel yang telah dibuat sebelumnya
+- `ucwords()` digunakan untuk mengubah huruf pertama setiap kata menjadi kapital
+- `strtoupper()` digunakan untuk mengubah suatu string menjadi kapital
+- `strtolower()` kebalikan fungsi `strtoupper()`
+- `sqrt()` digunakan untuk mencari akar pangkat dua dari integer
+- `print_r()` digunakan untuk mencetak output ke browser dengan format yang lebih mudah dibaca
+- `var_dump()` digunakan untuk mencetak informasi suaty variabel
+- `echo` digunakan untuk mencetak variabel (sering digunakan) contoh penggunaan:
+```php
+<?php
+  // deklarasi variabel string
+  $var = 'ayang';
+  // penggunaan echo
+  echo 'udah bisa makan soalnya uda diingetin ' . $var;
+  // outputnya :
+  // udah bisa makan soalnya uda diingetin ayang
+  // titik digunakan untuk menggabung string.
+```
+
+selain itu echo juga dapat mengembalikan elemen html, contohnya :
+
+```php
+<?php
+  echo "<b> Mas Fauzan lagi coding sendirian </b>";
+  // outputnya akan menampilkan tulisan diatas dengan penulisan tebal atau bold
+```
+
+dalam praktenya, fungsi echo sering digunakan dan penulisannya yang cukup merepotkan kalau banyak,  maka terdapat penulisan ringkas : 
+
+```php
+<?php
+  // deklarasi variabel
+  $nama = 'Nauvan';
+  ?>
+  <p> Kemarin aku bertemu dengan Mas <?php echo $nama ?> di Isekai </p> 
+  // output : Kemarin aku bertemu dengan Mas Nauvan di Isekai
+  // penulisan diatas bisa dipersingkat menjadi
+  <p> Kemarin aku bertemu dengan Mas <?= $nama ?> di Isekai </p>
+```
+
+
+</br>
+
+### Fungsi Bukan Bawaan
+Selain fungsi bawaan dari PHP kita juga dapat membuat fungsi kita sendiri. adapun cara pendeklarasian fungsi dalam bahasa pemograman PHP 
+
+```php
+<?php
+  // Pendeklarasian fungsi
+  function namaFungsi(){
+    // kode program fungsi
+  }
+  
+```
+
+Fungsi sendiri secara umum bisa dibedakan menjadi 4 jenis fungsi, yakni `Fungsi tanpa parameter`, `berparameter`, `mengembalikan nilai`, dan `fungsi rekursif`.
+
+**1. Fungsi Tanpa Parameter** </br>
+contoh pendeklarasian dan pemanggilan fungsi tanpa parameter :
+
+```php
+<?php
+  
+  // Pendeklarasian Fungsi
+  function alamat() {
+    echo 'Jl. Soekarno Hatta No. 9 Malang' . "</br>";
+    echo 'Kota Malang - Provinsi Jawa Timur - Indonesia' . "</br>";
+    echo 'Telp. (0341) 404424-404425' . "</br>";
+  }
+  
+  // Pemanggilan Fungsi
+  alamat();
+  
+  // Menghasilkan Output :
+    // Jl. Soekarno Hatta No. 9 Malang
+    // Kota Malang - Provinsi Jawa Timur - Indonesia
+    // Telp. (0341) 404424-404425
+  
+  // dapat dipanggil lagi untuk menampilkan output yang sama
+  alamat();
+  
+```
+</br>
+
+**2. Fungsi Berparameter** </br>
+contoh pendeklarasian dan pemanggilan fungsi Berparameter :
+
+```php
+<?php
+  
+  // Pendeklarasian Fungsi
+  function hasilKali($a, $b) {
+    echo 'Hasil Kali nya menghasilkan angka ' . ($a * $b);
+  }
+  
+  // Pemanggilan Fungsi
+  hasilKali(3,8);
+  
+  // Menghasilkan Output :
+    // Hasil Kali nya menghasilkan angka 24
+  
+  // dapat dipanggil lagi untuk diisi argumen yang berbeda
+  hasilKali(2,10);
+  
+  // Menghasilkan Output :
+    // Hasil Kali nya menghasilkan angka 20
+  
+```
+</br>
+
+contoh lain :
+
+```php
+<?php
+  
+  // Pendeklarasian Fungsi
+  function tujuanSurat($jabatan, $ket, $nama) {
+    echo 'Kpd. ' . $jabatan . '</br>';
+    echo $ket . '. ' . $nama . '</br>';
+    echo 'Ditempat. </br>';
+  }
+  
+  // Pemanggilan Fungsi
+  tujuanSurat("Lurah Sukorame", "Bpk", "Akhmadeta");
+  
+  // Menghasilkan Output :
+    // Kpd. Lurah Sukorame
+    // Bpk. Akhmadeta
+    // Ditempat.
+  
+  // dapat dipanggil lagi untuk diisi argumen yang berbeda
+  
+  $a = "Kepala SDN 1 Konoha";
+  $b = "Ibu";
+  $c = "Rindu";
+  
+  tujuanSurat($a, $b, $c);
+  
+  // Menghasilkan Output :
+    // Kpd. Kepala SDN 1 Konoha
+    // Ibu. Rindu
+    // Ditempat.
+  
+```
+
+Adapun perbedaan Argumen dan Parameter dalam fungsi PHP adalah sebagai berikut, </br>
+![foto](ArgumenVsParameterPhp.jpg)
+
+**3. Fungsi Mengembalikan Nilai** </br>
+merupakan fungsi yang ditandai dengan sintaks `return` di dalam fungsinya. Contoh fungsi mengembalikan return :
+
+```php
+<?php
+  // membuat fungsi
+  function kelilingSegiTiga($sisi_a, $sisi_b, $sisi_c) {
+    $keliling = $sisi_a + $sisi_b + $sisi_c;
+    return $keliling;
+  }
+  
+  // penerapan fungsi
+  echo "Keliling Segitiga dengan panjang sisi 3, 4, dan 6 adalah " . kelilingSegiTiga(3, 4, 6);
+  
+  // outputnya :
+    // keliling Segitiga dengan panjang sisi 3, 4, dan 6 adalah 13
+  
+```
+</br>
+
+**4. Fungsi Rekursif** </br>
+fungsi rekursif singkatnya ialah memanggil fungsi A di dalam fungsi A, atau fungsi yang memanggil dirinya sendiri. contoh dari fungsi rekursif adalah sebagai berikut :
+
+```php
+<?php
+  // deklarasi fungsi
+  function faktorial($number) {
+    if ($number < 2) {
+      return 1;
+    } else {
+      // bagian rekursif
+      return ($number * faktorial($number-1));
+    }
+  } 
+  
+  // pemanggilan fungsi
+  echo "faktorial dari 8 ialah " . faktorial(8);
+  
+```
+
+</br>
+
 
 ## Contoh Pemanggilan Fungsi PHP
 Sebagai latihan dan prakter dalam menggunakan fungsi,  Berikut adalah format dasar pemanggilan, dan pengembalian nilai fungsi:
