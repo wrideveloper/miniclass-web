@@ -1,5 +1,5 @@
-# ERD ada 2 Versi 
----
+# ERD (Entity Relationship Diagram)
+
 ## Pendahuluan
 
 ERD (Entity Relationship Diagram) atau diagram hubungan entitas adalah sebuah diagram yang digunakan untuk perancangan suatu database dan menunjukan relasi atau hubungan antar objek atau entitas beserta atribut-atributnya secara detail. Dengan menggunakan ERD, sistem database yang sedang dibentuk dapat digambarkan dengan lebih terstruktur dan terlihat rapi.
@@ -9,8 +9,6 @@ ERD (Entity Relationship Diagram) atau diagram hubungan entitas adalah sebuah di
 
 2. James Martin<br>
 ![3](https://user-images.githubusercontent.com/73374855/151656580-df60aa29-8789-4ef6-b014-0d37b21397cf.jpg)
-
-<br>
 
 # ERD Martin
 
