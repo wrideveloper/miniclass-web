@@ -34,13 +34,14 @@
 
 ## 4. Javascript
 
--[Pengenalan Node.js](dasar/node-js/node-js.md)
-- [Membuat Server HTTP](dasar/node-js/http-server.md)
-- [Routing](dasar/node-js/routing.md)
-- [Import Export](dasar/node-js/import-export.md)
-- [Node Package Manager](dasar/node-js/node-package-manager.md)
-- NPM Script
-- [Nodemon](dasar/node-js/nodemon.md)
+- [Pengenalan JavaScript](dasar/javascript/pengenalan-javascript.md)
+- [Array](dasar/javascript/array.md)
+- [Fungsi](dasar/javascript/fungsi.md)
+- [Manipulasi DOM](dasar/javascript/manipulasi-dom.md)
+- [Event](dasar/javascript/event.md)
+- [Fetch API](dasar/javascript/fetch-api.md)
+- [Object JavaScript](dasar/javascript/object-javascript.md)
+- [UI Component Lanjutan](dasar/javascript/ui-component-lanjutan.md)
   
 ## 5. Node.js
 
@@ -49,7 +50,6 @@
 - [Routing](dasar/node-js/routing.md)
 - [Import Export](dasar/node-js/import-export.md)
 - [Node Package Manager](dasar/node-js/node-package-manager.md)
-- NPM Script
 - [Nodemon](dasar/node-js/nodemon.md)
 
 ## 6. Express.js
