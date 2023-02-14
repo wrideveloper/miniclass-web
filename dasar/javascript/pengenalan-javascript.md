@@ -77,6 +77,31 @@ Kemudian, import file javascript yang sudah dibuat ke html, hal ini dapat dilaku
   </body>
 </html>
 ```
+
+Urutan penulisan tag `script` perlu diperhatikan karena dapat mempengaruhi behaviour dari Javascript. Terdapat 3 macam cara untuk meng-import Javascript ke dalam file HTML kita.
+
+1. **Meletakkan tag `script` di dalam tag `head`**
+
+    Apabila kita meletakkan tag `script` di dalam tag `head`, maka Javascript akan di-execute lebih duluan dibanding HTML. Sehingga apabila kita memiliki kode untuk memanipulasi DOM di dalam Javascript kita, maka akan terjadi error karena browser belum sempat melakukan parsing untuk membentuk DOM Tree dari HTML kita.
+
+    Contoh kasus yang membutuhkan Javascript untuk dieksekusi terlebih dahulu sebelum HTML yaitu menghindari *Flash of Unstyled Content* atau sering disingkat FOUC. Biasanya hal ini terjadi ketika kita ingin menambahkan light mode dan dark mode pada website kita.
+
+2. **Meletakkan tag `script` di dalam tag `body`**
+
+    Cara kedua merupakan cara yang paling sering dilakukan, karena dengan begini Javascript akan dieksekusi setelah browser membentuk DOM Tree dari HTML kita sehingga kita dapat dengan bebas melakukan manipulasi terhadap DOM.
+
+3. **Meletakkan tag `script` di dalam tag `head` dengan attribute `async`**
+
+    Tag `script` memiliki attribute `async`. Apabila kita menggunakan tag ini, maka script yang kita buat akan di-download secara parallel dengan markup kita. Setelah script berhasil di-download, maka script akan langsung di-eksekusi tanpa menunggu DOM Tree selesai dibangun.
+
+4. **Meletakkan tag `script` di dalam tag `head` dengan attribute `defer`**
+
+    Mirip seperti attribute `async`, script akan di-download secara parallel oleh browser bersamaan dengan markup kita. Namun tidak seperti `async`, script tidak akan langsung ter-eksekusi, namun akan menunggu browser selesai membentuk DOM Tree. Metode ini paling dianjurkan karena script akan di-download secara parallel sehingga performa load website kita akan lebih cepat namun kita masih bebas untuk melakukan manipulasi DOM.
+
+Untuk lebih lengkapnya, kalian bisa melihat grafik dibawah ini
+
+![script-execution-graph](./script-execution-graph.png)
+
 ## 4. Contoh Kasus
 ### 4.1 Membuat File HTML
 Pertama, buatlah file HTML baru dengan nama pengenalan-js.html dan isi file tersebut dengan kode program di bawah ini: 
