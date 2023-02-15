@@ -96,7 +96,6 @@ Urutan penulisan tag `script` perlu diperhatikan karena dapat mempengaruhi behav
 2. **Meletakkan tag `script` di dalam tag `body`**
 
    Cara kedua merupakan cara yang paling sering dilakukan, karena dengan begini Javascript akan dieksekusi setelah browser membentuk DOM Tree dari HTML kita sehingga kita dapat dengan bebas melakukan manipulasi terhadap DOM.
-
 3. **Meletakkan tag `script` di dalam tag `head` dengan attribute `async`**
 
    Tag `script` memiliki attribute `async`. Apabila kita menggunakan tag ini, maka script yang kita buat akan di-download secara parallel dengan markup kita. Setelah script berhasil di-download, maka script akan langsung di-eksekusi tanpa menunggu DOM Tree selesai dibangun.
@@ -124,14 +123,14 @@ Pertama, buatlah file HTML baru dengan nama pengenalan-js.html dan isi file ters
   </head>
 
   <body>
-    <script src="index.js"></script>
-
     <div class="form">
       <h1 class="form_title">Login</h1>
       <input class="form_input" type="text" placeholder="Username" />
       <input class="form_input" type="password" placeholder="Password" />
       <button class="form_submit" id="button" type="submit">submit</button>
     </div>
+    
+    <script src="index.js"></script>
   </body>
 </html>
 ```
