@@ -20,7 +20,7 @@
 - [Grouping](dasar/html/grouping.md)
 
 ## 3. CSS
-  
+
 - [Pengenalan CSS](dasar/css/pengenalan-css.md)
 - Selector CSS
 - [Text Formatting](dasar/css/text-formatting.md)
@@ -35,6 +35,7 @@
 ## 4. Javascript
 
 - [Pengenalan JavaScript](dasar/javascript/pengenalan-javascript.md)
+- [Javascript for Java developer](dasar/javascript/javascript-for-java-dev.md)
 - [Array](dasar/javascript/array.md)
 - [Fungsi](dasar/javascript/fungsi.md)
 - [Manipulasi DOM](dasar/javascript/manipulasi-dom.md)
@@ -42,7 +43,7 @@
 - [Fetch API](dasar/javascript/fetch-api.md)
 - [Object JavaScript](dasar/javascript/object-javascript.md)
 - [UI Component Lanjutan](dasar/javascript/ui-component-lanjutan.md)
-  
+
 ## 5. Node.js
 
 - [Pengenalan Node.js](dasar/node-js/node-js.md)
@@ -101,7 +102,7 @@
 - End to End Testing
 
 ## 12. Object Relational Mapping
-  
+
 - [Pengenalan Object Relational Mapping](back-end/object-relational-mapping/pengenalan-orm.md)
 
 ## 13. Document Oriented Database
