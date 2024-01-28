@@ -1,3 +1,10 @@
+> [!CAUTION]
+> This repository is no longer maintained, please visit [wrideveloper/roadmap](https://github.com/wrideveloper/roadmap) for further development / contribution
+>
+> We're consolidating/aggregating all miniclass into a centralised repository so it's easier to manage.
+> Also, GitBook is not free apart from its basic stuff so we're moving from it. Hence, this repo is archived.
+> All of its content are moved to [wrideveloper/roadmap](https://github.com/wrideveloper/roadmap) repository with some adjustment.
+
 # :earth_asia: Miniclass Web
 
 Selamat datang di Miniclass Web - Workshop Riset Informatika,
